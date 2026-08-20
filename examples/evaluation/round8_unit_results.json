@@ -1,0 +1,166 @@
+{
+  "passed": 32,
+  "total": 32,
+  "results": [
+    {
+      "name": "r8_wrapper_does_not_swallow",
+      "pass": true,
+      "detail": "code=VALIDATION_FAILURE cause=ValueError: openai FA validation failed: uncertainty_preservation: gap completed"
+    },
+    {
+      "name": "r8_failure_record_fields",
+      "pass": true,
+      "detail": "{'code': 'VALIDATION_FAILURE', 'stage': 'validation', 'severity': 'recoverable', 'message': 'uncertainty_preservation: gap completed', 'recoverable': True, 'details': [], 'cause': 'uncertainty_preservation: gap completed', 'action': 'fallba"
+    },
+    {
+      "name": "r8_validation_classified",
+      "pass": true,
+      "detail": "VALIDATION_FAILURE"
+    },
+    {
+      "name": "r8_evidence_repair_classified",
+      "pass": true,
+      "detail": "EVIDENCE_REPAIR_FAILURE"
+    },
+    {
+      "name": "r8_provider_transient_retryable",
+      "pass": true,
+      "detail": "timeout"
+    },
+    {
+      "name": "r8_provider_empty_retryable",
+      "pass": true,
+      "detail": "empty"
+    },
+    {
+      "name": "r8_provider_non_transient_no_retry",
+      "pass": true,
+      "detail": "validation"
+    },
+    {
+      "name": "r8_quota_402_not_retryable",
+      "pass": true,
+      "detail": "402"
+    },
+    {
+      "name": "r8_quota_code",
+      "pass": true,
+      "detail": "PROVIDER_QUOTA_FAILURE"
+    },
+    {
+      "name": "r8_quota_helper",
+      "pass": true,
+      "detail": "helper"
+    },
+    {
+      "name": "r8_provider_repair_not_retryable",
+      "pass": true,
+      "detail": "repair"
+    },
+    {
+      "name": "r8_recoverable_validation_whitelist",
+      "pass": true,
+      "detail": "gap"
+    },
+    {
+      "name": "r8_exception_stage_validation",
+      "pass": true,
+      "detail": "validation"
+    },
+    {
+      "name": "r8_exception_stage_repair",
+      "pass": true,
+      "detail": "evidence_repair"
+    },
+    {
+      "name": "r8_unresolved_regenerate_once",
+      "pass": true,
+      "detail": "posts=2 notes=['regenerate_used=true', 'failure_attribution={\"code\": \"EVIDENCE_REPAIR_FAILURE\", \"stage\": \"evidence_repair\", \"cause\": \"openai FA evidence repair failed: unresolved_numbers=99.99123\", \"action\": \"fallback\", \"attempt\": 2, \"fallb"
+    },
+    {
+      "name": "r8_unresolved_attributed_as_repair",
+      "pass": true,
+      "detail": "EVIDENCE_REPAIR_FAILURE"
+    },
+    {
+      "name": "r8_validation_regenerate_once",
+      "pass": true,
+      "detail": "posts=2"
+    },
+    {
+      "name": "r8_validation_attributed",
+      "pass": true,
+      "detail": "VALIDATION_FAILURE"
+    },
+    {
+      "name": "r8_no_third_regenerate",
+      "pass": true,
+      "detail": "posts=2"
+    },
+    {
+      "name": "r8_provider_transient_retry",
+      "pass": true,
+      "detail": "posts=2"
+    },
+    {
+      "name": "r8_provider_attributed",
+      "pass": true,
+      "detail": "PROVIDER_FAILURE"
+    },
+    {
+      "name": "r8_non_transient_no_extra_retry",
+      "pass": true,
+      "detail": "posts=2"
+    },
+    {
+      "name": "r8_fallback_not_openai_success",
+      "pass": true,
+      "detail": "grounded"
+    },
+    {
+      "name": "r8_information_loss_zero",
+      "pass": true,
+      "detail": "Debate resolution is an input, not the answer support_strength calibrates claim "
+    },
+    {
+      "name": "r8_unsupported_external_fact_zero",
+      "pass": true,
+      "detail": "hard invariant retained"
+    },
+    {
+      "name": "r8_contract_violation_zero",
+      "pass": true,
+      "detail": "hard invariant retained"
+    },
+    {
+      "name": "r8_debate_state_no_drift",
+      "pass": true,
+      "detail": "unresolved vs unresolved"
+    },
+    {
+      "name": "r8_primary_axis_stable",
+      "pass": true,
+      "detail": "growth_vs_profitability"
+    },
+    {
+      "name": "r8_benchmark_threshold_unchanged",
+      "pass": true,
+      "detail": "0.7"
+    },
+    {
+      "name": "r8_benchmark_acceptable_path",
+      "pass": true,
+      "detail": "score=1.0"
+    },
+    {
+      "name": "r8_bare_wrapper_not_provider",
+      "pass": true,
+      "detail": "UNKNOWN"
+    },
+    {
+      "name": "r8_structured_attribution_preferred",
+      "pass": true,
+      "detail": "JSON_PARSE_FAILURE"
+    }
+  ]
+}

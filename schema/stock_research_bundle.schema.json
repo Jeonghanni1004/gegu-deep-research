@@ -1,0 +1,387 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/ashare-deep-research/stock_research_bundle.schema.json",
+  "title": "AShareStockResearchBundle",
+  "type": "object",
+  "required": ["schema_version", "stock_code", "retrieved_at", "layers"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "stock_code": { "type": "string", "pattern": "^[0-9]{6}$" },
+    "retrieved_at": { "type": "string", "format": "date-time" },
+    "todos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": { "type": "string" },
+          "reason": { "type": "string" },
+          "alternative": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "layers": {
+      "type": "object",
+      "required": ["raw", "derived", "ai_analysis"],
+      "properties": {
+        "raw": {
+          "type": "object",
+          "required": [
+            "company_info",
+            "main_business",
+            "financials",
+            "market_history",
+            "market_snapshot"
+          ],
+          "properties": {
+            "company_info": {
+              "type": "object",
+              "properties": {
+                "stock_code": { "type": "string" },
+                "stock_name": { "type": "string" },
+                "exchange": { "type": "string" },
+                "listing_date": { "type": ["string", "null"] },
+                "industry": { "type": ["string", "null"] },
+                "total_shares": { "type": ["number", "null"] },
+                "float_shares": { "type": ["number", "null"] },
+                "total_market_cap": { "type": ["number", "null"] },
+                "_meta": { "$ref": "#/$defs/meta" }
+              }
+            },
+            "main_business": {
+              "type": "object",
+              "properties": {
+                "stock_code": { "type": "string" },
+                "latest_report_date": { "type": ["string", "null"] },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "report_date": { "type": ["string", "null"] },
+                      "category_type": { "type": ["string", "null"] },
+                      "business_segment": { "type": ["string", "null"] },
+                      "revenue": { "type": ["number", "null"] },
+                      "revenue_ratio": { "type": ["number", "null"] },
+                      "gross_margin": { "type": ["number", "null"] },
+                      "_meta": { "$ref": "#/$defs/meta" }
+                    }
+                  }
+                }
+              }
+            },
+            "financials": {
+              "type": "object",
+              "properties": {
+                "income_statement": {
+                  "type": "object",
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "report_date": { "type": ["string", "null"] },
+                          "operating_revenue": { "type": ["number", "null"] },
+                          "operating_cost": { "type": ["number", "null"] },
+                          "operating_profit": { "type": ["number", "null"] },
+                          "net_profit_parent": { "type": ["number", "null"] },
+                          "gross_profit": { "type": ["number", "null"] },
+                          "eps_basic": { "type": ["number", "null"] },
+                          "rd_expense": { "type": ["number", "null"] },
+                          "selling_expense": { "type": ["number", "null"] },
+                          "admin_expense": { "type": ["number", "null"] },
+                          "finance_expense": { "type": ["number", "null"] }
+                        }
+                      }
+                    }
+                  }
+                },
+                "balance_sheet": {
+                  "type": "object",
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "report_date": { "type": ["string", "null"] },
+                          "total_assets": { "type": ["number", "null"] },
+                          "total_liabilities": { "type": ["number", "null"] },
+                          "total_equity": { "type": ["number", "null"] },
+                          "cash_and_equivalents": { "type": ["number", "null"] },
+                          "accounts_receivable": { "type": ["number", "null"] },
+                          "inventory": { "type": ["number", "null"] },
+                          "goodwill": { "type": ["number", "null"] },
+                          "short_term_borrowings": { "type": ["number", "null"] },
+                          "long_term_borrowings": { "type": ["number", "null"] }
+                        }
+                      }
+                    }
+                  }
+                },
+                "cash_flow": {
+                  "type": "object",
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "report_date": { "type": ["string", "null"] },
+                          "operating_cash_flow": { "type": ["number", "null"] },
+                          "investing_cash_flow": { "type": ["number", "null"] },
+                          "financing_cash_flow": { "type": ["number", "null"] }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "market_history": {
+              "type": "object",
+              "properties": {
+                "adjust": { "type": "string" },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "date": { "type": ["string", "null"] },
+                      "open": { "type": ["number", "null"] },
+                      "high": { "type": ["number", "null"] },
+                      "low": { "type": ["number", "null"] },
+                      "close": { "type": ["number", "null"] },
+                      "volume": { "type": ["number", "null"] },
+                      "amount": { "type": ["number", "null"] }
+                    }
+                  }
+                }
+              }
+            },
+            "market_snapshot": {
+              "type": "object",
+              "properties": {
+                "latest_price": { "type": ["number", "null"] },
+                "pe": { "type": ["number", "null"] },
+                "pb": { "type": ["number", "null"] },
+                "ps": { "type": ["number", "null"] },
+                "total_market_cap": { "type": ["number", "null"] },
+                "float_market_cap": { "type": ["number", "null"] },
+                "turnover_rate": { "type": ["number", "null"] },
+                "data_date": { "type": ["string", "null"] }
+              }
+            }
+          }
+        },
+        "derived": {
+          "type": "object",
+          "properties": {
+            "fundamentals": {
+              "type": "object",
+              "properties": {
+                "latest": {
+                  "type": ["object", "null"],
+                  "properties": {
+                    "report_date": { "type": ["string", "null"] },
+                    "revenue_yoy": { "type": ["number", "null"] },
+                    "net_profit_yoy": { "type": ["number", "null"] },
+                    "gross_margin": { "type": ["number", "null"] },
+                    "net_margin": { "type": ["number", "null"] },
+                    "roe": { "type": ["number", "null"] },
+                    "debt_to_asset_ratio": { "type": ["number", "null"] },
+                    "ocf_to_net_profit": { "type": ["number", "null"] }
+                  }
+                }
+              }
+            },
+            "technicals": {
+              "type": "object",
+              "properties": {
+                "latest": {
+                  "type": ["object", "null"],
+                  "properties": {
+                    "data_date": { "type": ["string", "null"] },
+                    "ma5": { "type": ["number", "null"] },
+                    "ma20": { "type": ["number", "null"] },
+                    "ma60": { "type": ["number", "null"] },
+                    "ma250": { "type": ["number", "null"] },
+                    "macd_dif": { "type": ["number", "null"] },
+                    "macd_dea": { "type": ["number", "null"] },
+                    "macd_hist": { "type": ["number", "null"] },
+                    "rsi_14": { "type": ["number", "null"] },
+                    "high_52w": { "type": ["number", "null"] },
+                    "low_52w": { "type": ["number", "null"] },
+                    "price_position_in_52w_range": { "type": ["number", "null"] }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ai_analysis": {
+          "type": "object",
+          "properties": {
+            "status": { "type": "string" },
+            "note": { "type": "string" },
+            "items": { "type": "array" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "meta": {
+      "type": "object",
+      "required": ["source", "retrieved_at"],
+      "properties": {
+        "source": { "type": "string" },
+        "retrieved_at": { "type": "string" },
+        "data_date": { "type": ["string", "null"] },
+        "report_date": { "type": ["string", "null"] }
+      }
+    }
+  },
+  "examples": [
+    {
+      "schema_version": "1.0.0",
+      "stock_code": "600519",
+      "retrieved_at": "2026-08-14T08:00:00+00:00",
+      "layers": {
+        "raw": {
+          "company_info": {
+            "stock_code": "600519",
+            "stock_name": "贵州茅台",
+            "exchange": "Shanghai Stock Exchange",
+            "listing_date": "2001-08-27",
+            "industry": "白酒",
+            "total_shares": 1250081601,
+            "float_shares": 1250081601,
+            "total_market_cap": 1677597000000,
+            "_meta": {
+              "source": "akshare.stock_individual_info_em",
+              "retrieved_at": "2026-08-14T08:00:00+00:00"
+            }
+          },
+          "main_business": {
+            "latest_report_date": "2025-12-31",
+            "items": [
+              {
+                "report_date": "2025-12-31",
+                "category_type": "按产品分类",
+                "business_segment": "茅台酒",
+                "revenue": 146499906480.49,
+                "revenue_ratio": 0.867695,
+                "gross_margin": 0.935258
+              }
+            ]
+          },
+          "financials": {
+            "income_statement": {
+              "items": [
+                {
+                  "report_date": "2025-12-31",
+                  "operating_revenue": 168838102514.79,
+                  "operating_cost": 14892277570.91,
+                  "operating_profit": 100000000000.0,
+                  "net_profit_parent": 80000000000.0,
+                  "gross_profit": 153945824943.88,
+                  "eps_basic": 60.0,
+                  "rd_expense": 0,
+                  "selling_expense": 7253499600.68,
+                  "admin_expense": 8320061659.66,
+                  "finance_expense": -815240284.72
+                }
+              ]
+            },
+            "balance_sheet": {
+              "items": [
+                {
+                  "report_date": "2025-12-31",
+                  "total_assets": 300000000000.0,
+                  "total_liabilities": 50000000000.0,
+                  "total_equity": 250000000000.0,
+                  "cash_and_equivalents": 100000000000.0,
+                  "accounts_receivable": 1000000000.0,
+                  "inventory": 40000000000.0,
+                  "goodwill": 0,
+                  "short_term_borrowings": 0,
+                  "long_term_borrowings": 0
+                }
+              ]
+            },
+            "cash_flow": {
+              "items": [
+                {
+                  "report_date": "2025-12-31",
+                  "operating_cash_flow": 60000000000.0,
+                  "investing_cash_flow": -30000000000.0,
+                  "financing_cash_flow": -70000000000.0
+                }
+              ]
+            }
+          },
+          "market_history": {
+            "adjust": "qfq",
+            "items": [
+              {
+                "date": "2026-08-14",
+                "open": 1355.0,
+                "high": 1359.0,
+                "low": 1338.14,
+                "close": 1341.99,
+                "volume": 2985315,
+                "amount": 4024066000
+              }
+            ]
+          },
+          "market_snapshot": {
+            "latest_price": 1341.99,
+            "pe": 20.28,
+            "pb": 6.19,
+            "ps": 9.57,
+            "total_market_cap": 1677597000000,
+            "float_market_cap": 1677597000000,
+            "turnover_rate": 0.24,
+            "data_date": "2026-08-14"
+          }
+        },
+        "derived": {
+          "fundamentals": {
+            "latest": {
+              "report_date": "2025-12-31",
+              "revenue_yoy": 0.15,
+              "net_profit_yoy": 0.14,
+              "gross_margin": 0.91,
+              "net_margin": 0.48,
+              "roe": 0.32,
+              "debt_to_asset_ratio": 0.17,
+              "ocf_to_net_profit": 0.75
+            }
+          },
+          "technicals": {
+            "latest": {
+              "data_date": "2026-08-14",
+              "ma5": 1345.0,
+              "ma20": 1360.0,
+              "ma60": 1400.0,
+              "ma250": 1550.0,
+              "macd_dif": -5.2,
+              "macd_dea": -3.1,
+              "macd_hist": -4.2,
+              "rsi_14": 45.0,
+              "high_52w": 1800.0,
+              "low_52w": 1200.0,
+              "price_position_in_52w_range": 0.24
+            }
+          }
+        },
+        "ai_analysis": {
+          "status": "not_implemented",
+          "note": "Reserved for stage-2 AI agent.",
+          "items": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "grounded_resolution": "unresolved",
+  "openai_resolution": "unresolved",
+  "grounded_len": 592,
+  "openai_len": 716,
+  "openai_richer": true,
+  "grounded_exec": "as_of=2026-08-15：Debate 主 resolution=unresolved（support_strength=n/a）。事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）支持“高盈利与增长承压并存”，但 Challenge/Rebuttal 未能裁定解释框架；校准后主判断：事实清楚、解释未决；不得机械中性，也不得越权裁定。assessment_strength=unresolved；evidence_pressure=elev",
+  "openai_exec": "as_of=2026-08-15：Debate 主 resolution=unresolved（support_strength=n/a）。事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）支持“高盈利与增长承压并存”，但 Challenge/Rebuttal 未能裁定解释框架；校准后主判断：事实清楚、解释未决；不得机械中性，也不得越权裁定。assessment_strength=unresolved；evidence_pressure=elevated。删除 Debate 将无法得到该未决裁定。 跨 tension DER"
+}

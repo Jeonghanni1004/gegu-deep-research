@@ -1,0 +1,78 @@
+{
+  "stock": "601127",
+  "requested_as_of": null,
+  "research_as_of": "2026-08-19",
+  "debate_as_of": "2026-08-19",
+  "mode": "grounded",
+  "final_mode": "grounded",
+  "status": "PASS",
+  "failure_code": null,
+  "repair_action": "none",
+  "fallback": false,
+  "final_gate": {
+    "decision": "ACCEPT",
+    "status": "PASS",
+    "failures": [],
+    "checks": {
+      "research_contract": true,
+      "debate_contract": true,
+      "as_of_consistent": true,
+      "fa_present": true,
+      "schema_valid": true,
+      "semantic_valid": true,
+      "evidence_grounding": true,
+      "no_unsupported_fact": true,
+      "no_information_loss": true,
+      "no_trade_advice": true,
+      "analytical_increment": true,
+      "phrase_seal_free": true
+    },
+    "notes": [
+      "accept"
+    ],
+    "timestamp": "2026-08-19T07:37:55.206147+00:00",
+    "primary_failure_code": null
+  },
+  "stages": [
+    {
+      "stage": "evidence",
+      "status": "OK",
+      "ts": "2026-08-19T07:37:55.169799+00:00",
+      "pack_path": "C:\\Users\\86137\\ashare-deep-research\\examples\\601127_evidence_pack.json"
+    },
+    {
+      "stage": "research",
+      "status": "OK",
+      "ts": "2026-08-19T07:37:55.172179+00:00",
+      "as_of": "2026-08-19"
+    },
+    {
+      "stage": "debate",
+      "status": "OK",
+      "ts": "2026-08-19T07:37:55.184929+00:00",
+      "as_of": "2026-08-19"
+    },
+    {
+      "stage": "fa_input",
+      "status": "OK",
+      "ts": "2026-08-19T07:37:55.185105+00:00"
+    },
+    {
+      "stage": "fa_generate",
+      "status": "OK",
+      "ts": "2026-08-19T07:37:55.196174+00:00",
+      "analyst_mode": "grounded"
+    },
+    {
+      "stage": "production_gate",
+      "status": "ACCEPT",
+      "ts": "2026-08-19T07:37:55.206207+00:00",
+      "gate_status": "PASS"
+    }
+  ],
+  "notes": [
+    "research_loaded_from_artifacts",
+    "debate_loaded_from_artifacts"
+  ],
+  "timestamp": "2026-08-19T07:37:55.208203+00:00"
+}

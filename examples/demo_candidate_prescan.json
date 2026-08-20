@@ -1,0 +1,2914 @@
+{
+  "generated_at": "2026-08-19T07:27:11+00:00",
+  "mode": "demo_prescan_no_llm",
+  "heat_source": "seed_fallback",
+  "control_symbol": "600519",
+  "pool_size": 25,
+  "scoring": "1.5*has_financials + 1.2*has_eps + 1.0*log1p(news_30) + 1.0*log1p(ann_30) + 0.8*log1p(holder) + 0.4*heat_rank",
+  "top10": [
+    {
+      "symbol": "000725",
+      "name": "京东方A",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.04,
+      "heat_rank": 0.04,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 12,
+      "news_sample_titles": [
+        "行业首个全局165Hz！一加16首发东方屏，三星屏幕神话要被打破了",
+        "京东方A：8月18日获融资买入27.70亿元，融资余额119.54亿元占流通市值比例5.22%，超过近一年80%分位水平",
+        "频准激光首日涨5倍股价一度超茅台 年入4.18亿产品销往哈佛麻省理工",
+        "元立光电北交所IPO将上会：上半年净利增51%，客户涵盖京东方、联创光电",
+        "京东方以创新引领显示产业价值升维"
+      ],
+      "ann_30": 13,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "京东方Ａ:关于董事辞职的公告",
+        "京东方Ａ:关于控股股东持股结构变更的提示性公告",
+        "京东方Ａ:040-2026年8月6日投资者关系活动记录表"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000725",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 0.22,
+          "min_value": 0.2,
+          "max_value": 0.26,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 19,
+            "最小值": 0.2,
+            "均值": 0.22,
+            "最大值": 0.26,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000725",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 0.32,
+          "min_value": 0.27,
+          "max_value": 0.37,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 19,
+            "最小值": 0.27,
+            "均值": 0.32,
+            "最大值": 0.37,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 11.2247,
+      "gaps": [],
+      "rank": 1
+    },
+    {
+      "symbol": "002475",
+      "name": "立讯精密",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.16,
+      "heat_rank": 0.16,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 13,
+      "news_sample_titles": [
+        "立讯精密跌7.34%，成交额86.29亿元，人气排名47位！后市是否有机会？附走势预测",
+        "立讯精密：8月18日获融资买入4.76亿元，融资余额62.86亿元占流通市值比例1.48%，低于近一年30%分位水平",
+        "双第一！ 深圳IPO领跑全国的背后逻辑",
+        "深圳26家暂领跑",
+        "小摩减持立讯精密约152.96万股 最新持股比例为7.97%"
+      ],
+      "ann_30": 13,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "立讯精密:H股公告-翌日披露报表",
+        "立讯精密:关于部分行使超额配售权、稳定价格行动及稳定价格期结束的公告",
+        "立讯精密:H股公告-翌日披露报表"
+      ],
+      "holder_events": 17,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002475",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 2.98,
+          "min_value": 2.89,
+          "max_value": 3.26,
+          "institution_count": 15,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 15,
+            "最小值": 2.89,
+            "均值": 2.98,
+            "最大值": 3.26,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002475",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 3.82,
+          "min_value": 3.69,
+          "max_value": 4.12,
+          "institution_count": 15,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 15,
+            "最小值": 3.69,
+            "均值": 3.82,
+            "最大值": 4.12,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 11.1493,
+      "gaps": [],
+      "rank": 2
+    },
+    {
+      "symbol": "601127",
+      "name": "赛力斯",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.2,
+      "heat_rank": 0.2,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 8,
+      "news_sample_titles": [
+        "吉利完成职业经理人接棒！营收破1700亿增15%，打响民营车企去家族化",
+        "港股汽车板块承压，小米微涨，赛力斯创历史新低",
+        "欧委会批准奔驰宝马赛力斯共同控股逸安启",
+        "欧委会批准奔驰、宝马、赛力斯共同控股超充合资公司逸安启",
+        "赛力斯：8月18日获融资买入1.48亿元，融资余额连续3天增加，市场人气旺盛属强势市场"
+      ],
+      "ann_30": 7,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "赛力斯:H股公告(董事会会议召开日期)",
+        "赛力斯:2026年7月份产销快报",
+        "赛力斯:关于股份回购进展公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601127",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 4.8,
+          "min_value": 3.52,
+          "max_value": 6.39,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 22,
+            "最小值": 3.52,
+            "均值": 4.8,
+            "最大值": 6.39,
+            "行业平均数": 1.7
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601127",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 6.31,
+          "min_value": 4.31,
+          "max_value": 8.18,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 22,
+            "最小值": 4.31,
+            "均值": 6.31,
+            "最大值": 8.18,
+            "行业平均数": 2.19
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 10.729,
+      "gaps": [],
+      "rank": 3
+    },
+    {
+      "symbol": "300274",
+      "name": "阳光电源",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.12,
+      "heat_rank": 0.12,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 6,
+      "news_sample_titles": [
+        "阳光电源：8月18日获融资买入6.07亿元，融资余额84.47亿元占流通市值比例3.45%，低于近一年20%分位水平",
+        "COP进入“实施时代”：中国新能源为什么正在成为全球气候治理最有分量的产业语言？",
+        "利润由盈转亏，还要3年干到40亿，上纬新材的机器人野心靠谱吗？",
+        "300MW/1.2GWh！河北单体最大独立储能电站并网！",
+        "上半年全球储能系统出货排行榜：比亚迪、阳光电源、华为、特斯拉、海博思创列前五"
+      ],
+      "ann_30": 7,
+      "ann_90": 17,
+      "ann_sample_titles": [
+        "阳光电源:关于首次回购公司股份的公告",
+        "阳光电源:关于回购股份事项前十名股东及前十名无限售条件股东持股情况的公告",
+        "阳光电源:关于回购公司股份方案的公告暨回购股份报告书"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300274",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 7.39,
+          "min_value": 5.95,
+          "max_value": 8.21,
+          "institution_count": 29,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 29,
+            "最小值": 5.95,
+            "均值": 7.39,
+            "最大值": 8.21,
+            "行业平均数": 2.65
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300274",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 9.07,
+          "min_value": 8.19,
+          "max_value": 10.15,
+          "institution_count": 28,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 28,
+            "最小值": 8.19,
+            "均值": 9.07,
+            "最大值": 10.15,
+            "行业平均数": 3.41
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 10.697,
+      "gaps": [],
+      "rank": 4
+    },
+    {
+      "symbol": "002230",
+      "name": "科大讯飞",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.24,
+      "heat_rank": 0.24,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 7,
+      "news_sample_titles": [
+        "宇树上市首日遇上板块回调，机器人赛道从“热度交易”走向“兑现检验”",
+        "科大讯飞：8月18日获融资买入2.20亿元，融资余额55.06亿元占流通市值比例5.78%，低于近一年20%分位水平",
+        "11天暴增36亿！宇树科技上市引爆机器人赛道，产业逻辑迎重塑时刻，资金抢筹这只ETF",
+        "中信建投证券股份有限公司2026年半年度报告摘要",
+        "安徽：“高冷”科技温暖寻常日子"
+      ],
+      "ann_30": 5,
+      "ann_90": 17,
+      "ann_sample_titles": [
+        "科大讯飞:关于回购公司股份的进展公告",
+        "科大讯飞:关于回购股份事项前十名股东及前十名无限售条件股东持股情况的公告",
+        "科大讯飞:回购报告书"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002230",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 0.51,
+          "min_value": 0.47,
+          "max_value": 0.57,
+          "institution_count": 14,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 14,
+            "最小值": 0.47,
+            "均值": 0.51,
+            "最大值": 0.57,
+            "行业平均数": 1.34
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002230",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 0.66,
+          "min_value": 0.54,
+          "max_value": 0.86,
+          "institution_count": 14,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 14,
+            "最小值": 0.54,
+            "均值": 0.66,
+            "最大值": 0.86,
+            "行业平均数": 1.94
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 10.4574,
+      "gaps": [],
+      "rank": 5
+    },
+    {
+      "symbol": "601138",
+      "name": "工业富联",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.08,
+      "heat_rank": 0.08,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 10,
+      "news_sample_titles": [
+        "百度、阿里验证云业务高收入，算力基建持续高景气，通信ETF华夏（515050）昨日吸金2.5亿元",
+        "优邦科技IPO：毛利率逐年下降，董事兼职隐而未宣，还涉嫌遗漏关联方",
+        "工业富联：8月18日获融资买入11.17亿元，融资余额连续5天增加，市场人气旺盛属强势市场",
+        "【峰会主论坛演讲嘉宾介绍（二）】工业富联董事长 郑弘孟 ：半导体技术驱动AI算力革命",
+        "向上突围 锻造广东AI产业硬核底气"
+      ],
+      "ann_30": 10,
+      "ann_90": 29,
+      "ann_sample_titles": [
+        "工业富联:富士康工业互联网股份有限公司关于召开2026年半年度业绩说明会的公告",
+        "工业富联:富士康工业互联网股份有限公司2026年半年度募集资金存放、管理与实际使用情况的专项报告",
+        "工业富联:富士康工业互联网股份有限公司第四届董事会第三次会议决议公告"
+      ],
+      "holder_events": 0,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601138",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 3.09,
+          "min_value": 2.63,
+          "max_value": 3.36,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 22,
+            "最小值": 2.63,
+            "均值": 3.09,
+            "最大值": 3.36,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601138",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 4.17,
+          "min_value": 3.22,
+          "max_value": 4.8,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 22,
+            "最小值": 3.22,
+            "均值": 4.17,
+            "最大值": 4.8,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 8.5639,
+      "gaps": [
+        "无增减持事件记录"
+      ],
+      "rank": 6
+    },
+    {
+      "symbol": "300750",
+      "name": "宁德时代",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.76,
+      "heat_rank": 0.76,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 24,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "宁德时代:关于宁德时代新能源科技股份有限公司2026年第一次临时股东会的法律意见书",
+        "宁德时代:关于参与投资海南时代绿色产业投资基金合伙企业(有限合伙)的公告",
+        "宁德时代:2026年第一次临时股东会决议公告"
+      ],
+      "holder_events": 12,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300750",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 20.77,
+          "min_value": 19.65,
+          "max_value": 22.14,
+          "institution_count": 39,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 39,
+            "最小值": 19.65,
+            "均值": 20.77,
+            "最大值": 22.14,
+            "行业平均数": 2.65
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300750",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 25.87,
+          "min_value": 23.68,
+          "max_value": 29.99,
+          "institution_count": 39,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 39,
+            "最小值": 23.68,
+            "均值": 25.87,
+            "最大值": 29.99,
+            "行业平均数": 3.41
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz300750&Page=1"
+      },
+      "score": 8.2748,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 7
+    },
+    {
+      "symbol": "603259",
+      "name": "药明康德",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.32,
+      "heat_rank": 0.32,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 15,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "药明康德:2026年第一次临时股东会会议材料",
+        "药明康德:关于召开2026年第一次临时股东会的通知",
+        "药明康德:自愿性公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "603259",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 7.26,
+          "min_value": 5.66,
+          "max_value": 8.71,
+          "institution_count": 35,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 35,
+            "最小值": 5.66,
+            "均值": 7.26,
+            "最大值": 8.71,
+            "行业平均数": 2.25
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "603259",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 8.8,
+          "min_value": 6.72,
+          "max_value": 11.38,
+          "institution_count": 35,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 35,
+            "最小值": 6.72,
+            "均值": 8.8,
+            "最大值": 11.38,
+            "行业平均数": 2.83
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh603259&Page=1"
+      },
+      "score": 8.0362,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 8
+    },
+    {
+      "symbol": "600276",
+      "name": "恒瑞医药",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.68,
+      "heat_rank": 0.68,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 21,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "恒瑞医药:H股公告-翌日披露报表",
+        "恒瑞医药:H股公告-翌日披露报表",
+        "恒瑞医药:H股公告-翌日披露报表"
+      ],
+      "holder_events": 7,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600276",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 1.42,
+          "min_value": 1.31,
+          "max_value": 1.67,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 26,
+            "最小值": 1.31,
+            "均值": 1.42,
+            "最大值": 1.67,
+            "行业平均数": 1.4
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600276",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 1.68,
+          "min_value": 1.49,
+          "max_value": 1.93,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 26,
+            "最小值": 1.49,
+            "均值": 1.68,
+            "最大值": 1.93,
+            "行业平均数": 1.62
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600276&Page=1"
+      },
+      "score": 7.7266,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 9
+    },
+    {
+      "symbol": "600030",
+      "name": "中信证券",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.4,
+      "heat_rank": 0.4,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 10,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "中信证券:中信证券股份有限公司关于召开2026年半年度业绩说明会的公告",
+        "中信证券:中信证券股份有限公司关于间接子公司发行中期票据并由全资子公司提供担保的公告",
+        "中信证券:中信证券股份有限公司关于完成向特定对象发行H股股票暨股本变动的提示性公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600030",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 2.44,
+          "min_value": 1.84,
+          "max_value": 3.04,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 26,
+            "最小值": 1.84,
+            "均值": 2.44,
+            "最大值": 3.04,
+            "行业平均数": 1.27
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600030",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 2.64,
+          "min_value": 1.97,
+          "max_value": 3.03,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 26,
+            "最小值": 1.97,
+            "均值": 2.64,
+            "最大值": 3.03,
+            "行业平均数": 1.39
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600030&Page=1"
+      },
+      "score": 7.6935,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 10
+    }
+  ],
+  "control": {
+    "symbol": "600519",
+    "name": "贵州茅台",
+    "price": null,
+    "pct_chg": null,
+    "amount": null,
+    "turnover": null,
+    "heat_reasons": [
+      "seed_fallback"
+    ],
+    "is_control": true,
+    "heat_score": 1.0,
+    "heat_rank": 1.0,
+    "news_30": 0,
+    "news_90": 0,
+    "news_source": "eastmoney.search-api",
+    "name_hit_in_recent": 0,
+    "news_sample_titles": [],
+    "ann_30": 6,
+    "ann_90": 25,
+    "ann_sample_titles": [
+      "贵州茅台:贵州茅台关于召开2026年半年度业绩说明会的公告",
+      "贵州茅台:贵州茅台关于贵州茅台集团财务有限公司的风险评估报告",
+      "贵州茅台:贵州茅台2026年半年度报告摘要"
+    ],
+    "holder_events": 13,
+    "has_financials": true,
+    "latest_report_date": "2026-06-30",
+    "has_eps_consensus": true,
+    "eps_sample": [
+      {
+        "type": "consensus_estimate",
+        "stock_code": "600519",
+        "metric": "EPS",
+        "forecast_year": "2026",
+        "value": 68.12,
+        "min_value": 64.94,
+        "max_value": 77.85,
+        "institution_count": 49,
+        "updated_at": "2026-08-19",
+        "source": "同花顺",
+        "raw_row": {
+          "年度": 2026,
+          "预测机构数": 49,
+          "最小值": 64.94,
+          "均值": 68.12,
+          "最大值": 77.85,
+          "行业平均数": 8.46
+        }
+      },
+      {
+        "type": "consensus_estimate",
+        "stock_code": "600519",
+        "metric": "EPS",
+        "forecast_year": "2027",
+        "value": 72.02,
+        "min_value": 67.23,
+        "max_value": 84.02,
+        "institution_count": 48,
+        "updated_at": "2026-08-19",
+        "source": "同花顺",
+        "raw_row": {
+          "年度": 2027,
+          "预测机构数": 48,
+          "最小值": 67.23,
+          "均值": 72.02,
+          "最大值": 84.02,
+          "行业平均数": 9.0
+        }
+      }
+    ],
+    "probe_errors": {
+      "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600519&Page=1"
+    },
+    "score": 7.1572,
+    "gaps": [
+      "近30天个股新闻为空"
+    ],
+    "rank": 15
+  },
+  "all_candidates": [
+    {
+      "symbol": "000725",
+      "name": "京东方A",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.04,
+      "heat_rank": 0.04,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 12,
+      "news_sample_titles": [
+        "行业首个全局165Hz！一加16首发东方屏，三星屏幕神话要被打破了",
+        "京东方A：8月18日获融资买入27.70亿元，融资余额119.54亿元占流通市值比例5.22%，超过近一年80%分位水平",
+        "频准激光首日涨5倍股价一度超茅台 年入4.18亿产品销往哈佛麻省理工",
+        "元立光电北交所IPO将上会：上半年净利增51%，客户涵盖京东方、联创光电",
+        "京东方以创新引领显示产业价值升维"
+      ],
+      "ann_30": 13,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "京东方Ａ:关于董事辞职的公告",
+        "京东方Ａ:关于控股股东持股结构变更的提示性公告",
+        "京东方Ａ:040-2026年8月6日投资者关系活动记录表"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000725",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 0.22,
+          "min_value": 0.2,
+          "max_value": 0.26,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 19,
+            "最小值": 0.2,
+            "均值": 0.22,
+            "最大值": 0.26,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000725",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 0.32,
+          "min_value": 0.27,
+          "max_value": 0.37,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 19,
+            "最小值": 0.27,
+            "均值": 0.32,
+            "最大值": 0.37,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 11.2247,
+      "gaps": [],
+      "rank": 1
+    },
+    {
+      "symbol": "002475",
+      "name": "立讯精密",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.16,
+      "heat_rank": 0.16,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 13,
+      "news_sample_titles": [
+        "立讯精密跌7.34%，成交额86.29亿元，人气排名47位！后市是否有机会？附走势预测",
+        "立讯精密：8月18日获融资买入4.76亿元，融资余额62.86亿元占流通市值比例1.48%，低于近一年30%分位水平",
+        "双第一！ 深圳IPO领跑全国的背后逻辑",
+        "深圳26家暂领跑",
+        "小摩减持立讯精密约152.96万股 最新持股比例为7.97%"
+      ],
+      "ann_30": 13,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "立讯精密:H股公告-翌日披露报表",
+        "立讯精密:关于部分行使超额配售权、稳定价格行动及稳定价格期结束的公告",
+        "立讯精密:H股公告-翌日披露报表"
+      ],
+      "holder_events": 17,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002475",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 2.98,
+          "min_value": 2.89,
+          "max_value": 3.26,
+          "institution_count": 15,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 15,
+            "最小值": 2.89,
+            "均值": 2.98,
+            "最大值": 3.26,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002475",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 3.82,
+          "min_value": 3.69,
+          "max_value": 4.12,
+          "institution_count": 15,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 15,
+            "最小值": 3.69,
+            "均值": 3.82,
+            "最大值": 4.12,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 11.1493,
+      "gaps": [],
+      "rank": 2
+    },
+    {
+      "symbol": "601127",
+      "name": "赛力斯",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.2,
+      "heat_rank": 0.2,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 8,
+      "news_sample_titles": [
+        "吉利完成职业经理人接棒！营收破1700亿增15%，打响民营车企去家族化",
+        "港股汽车板块承压，小米微涨，赛力斯创历史新低",
+        "欧委会批准奔驰宝马赛力斯共同控股逸安启",
+        "欧委会批准奔驰、宝马、赛力斯共同控股超充合资公司逸安启",
+        "赛力斯：8月18日获融资买入1.48亿元，融资余额连续3天增加，市场人气旺盛属强势市场"
+      ],
+      "ann_30": 7,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "赛力斯:H股公告(董事会会议召开日期)",
+        "赛力斯:2026年7月份产销快报",
+        "赛力斯:关于股份回购进展公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601127",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 4.8,
+          "min_value": 3.52,
+          "max_value": 6.39,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 22,
+            "最小值": 3.52,
+            "均值": 4.8,
+            "最大值": 6.39,
+            "行业平均数": 1.7
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601127",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 6.31,
+          "min_value": 4.31,
+          "max_value": 8.18,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 22,
+            "最小值": 4.31,
+            "均值": 6.31,
+            "最大值": 8.18,
+            "行业平均数": 2.19
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 10.729,
+      "gaps": [],
+      "rank": 3
+    },
+    {
+      "symbol": "300274",
+      "name": "阳光电源",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.12,
+      "heat_rank": 0.12,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 6,
+      "news_sample_titles": [
+        "阳光电源：8月18日获融资买入6.07亿元，融资余额84.47亿元占流通市值比例3.45%，低于近一年20%分位水平",
+        "COP进入“实施时代”：中国新能源为什么正在成为全球气候治理最有分量的产业语言？",
+        "利润由盈转亏，还要3年干到40亿，上纬新材的机器人野心靠谱吗？",
+        "300MW/1.2GWh！河北单体最大独立储能电站并网！",
+        "上半年全球储能系统出货排行榜：比亚迪、阳光电源、华为、特斯拉、海博思创列前五"
+      ],
+      "ann_30": 7,
+      "ann_90": 17,
+      "ann_sample_titles": [
+        "阳光电源:关于首次回购公司股份的公告",
+        "阳光电源:关于回购股份事项前十名股东及前十名无限售条件股东持股情况的公告",
+        "阳光电源:关于回购公司股份方案的公告暨回购股份报告书"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300274",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 7.39,
+          "min_value": 5.95,
+          "max_value": 8.21,
+          "institution_count": 29,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 29,
+            "最小值": 5.95,
+            "均值": 7.39,
+            "最大值": 8.21,
+            "行业平均数": 2.65
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300274",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 9.07,
+          "min_value": 8.19,
+          "max_value": 10.15,
+          "institution_count": 28,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 28,
+            "最小值": 8.19,
+            "均值": 9.07,
+            "最大值": 10.15,
+            "行业平均数": 3.41
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 10.697,
+      "gaps": [],
+      "rank": 4
+    },
+    {
+      "symbol": "002230",
+      "name": "科大讯飞",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.24,
+      "heat_rank": 0.24,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 7,
+      "news_sample_titles": [
+        "宇树上市首日遇上板块回调，机器人赛道从“热度交易”走向“兑现检验”",
+        "科大讯飞：8月18日获融资买入2.20亿元，融资余额55.06亿元占流通市值比例5.78%，低于近一年20%分位水平",
+        "11天暴增36亿！宇树科技上市引爆机器人赛道，产业逻辑迎重塑时刻，资金抢筹这只ETF",
+        "中信建投证券股份有限公司2026年半年度报告摘要",
+        "安徽：“高冷”科技温暖寻常日子"
+      ],
+      "ann_30": 5,
+      "ann_90": 17,
+      "ann_sample_titles": [
+        "科大讯飞:关于回购公司股份的进展公告",
+        "科大讯飞:关于回购股份事项前十名股东及前十名无限售条件股东持股情况的公告",
+        "科大讯飞:回购报告书"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002230",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 0.51,
+          "min_value": 0.47,
+          "max_value": 0.57,
+          "institution_count": 14,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 14,
+            "最小值": 0.47,
+            "均值": 0.51,
+            "最大值": 0.57,
+            "行业平均数": 1.34
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002230",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 0.66,
+          "min_value": 0.54,
+          "max_value": 0.86,
+          "institution_count": 14,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 14,
+            "最小值": 0.54,
+            "均值": 0.66,
+            "最大值": 0.86,
+            "行业平均数": 1.94
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 10.4574,
+      "gaps": [],
+      "rank": 5
+    },
+    {
+      "symbol": "601138",
+      "name": "工业富联",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.08,
+      "heat_rank": 0.08,
+      "news_30": 30,
+      "news_90": 30,
+      "news_source": "sina.fallback",
+      "name_hit_in_recent": 10,
+      "news_sample_titles": [
+        "百度、阿里验证云业务高收入，算力基建持续高景气，通信ETF华夏（515050）昨日吸金2.5亿元",
+        "优邦科技IPO：毛利率逐年下降，董事兼职隐而未宣，还涉嫌遗漏关联方",
+        "工业富联：8月18日获融资买入11.17亿元，融资余额连续5天增加，市场人气旺盛属强势市场",
+        "【峰会主论坛演讲嘉宾介绍（二）】工业富联董事长 郑弘孟 ：半导体技术驱动AI算力革命",
+        "向上突围 锻造广东AI产业硬核底气"
+      ],
+      "ann_30": 10,
+      "ann_90": 29,
+      "ann_sample_titles": [
+        "工业富联:富士康工业互联网股份有限公司关于召开2026年半年度业绩说明会的公告",
+        "工业富联:富士康工业互联网股份有限公司2026年半年度募集资金存放、管理与实际使用情况的专项报告",
+        "工业富联:富士康工业互联网股份有限公司第四届董事会第三次会议决议公告"
+      ],
+      "holder_events": 0,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601138",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 3.09,
+          "min_value": 2.63,
+          "max_value": 3.36,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 22,
+            "最小值": 2.63,
+            "均值": 3.09,
+            "最大值": 3.36,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601138",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 4.17,
+          "min_value": 3.22,
+          "max_value": 4.8,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 22,
+            "最小值": 3.22,
+            "均值": 4.17,
+            "最大值": 4.8,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {},
+      "score": 8.5639,
+      "gaps": [
+        "无增减持事件记录"
+      ],
+      "rank": 6
+    },
+    {
+      "symbol": "300750",
+      "name": "宁德时代",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.76,
+      "heat_rank": 0.76,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 24,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "宁德时代:关于宁德时代新能源科技股份有限公司2026年第一次临时股东会的法律意见书",
+        "宁德时代:关于参与投资海南时代绿色产业投资基金合伙企业(有限合伙)的公告",
+        "宁德时代:2026年第一次临时股东会决议公告"
+      ],
+      "holder_events": 12,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300750",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 20.77,
+          "min_value": 19.65,
+          "max_value": 22.14,
+          "institution_count": 39,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 39,
+            "最小值": 19.65,
+            "均值": 20.77,
+            "最大值": 22.14,
+            "行业平均数": 2.65
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300750",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 25.87,
+          "min_value": 23.68,
+          "max_value": 29.99,
+          "institution_count": 39,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 39,
+            "最小值": 23.68,
+            "均值": 25.87,
+            "最大值": 29.99,
+            "行业平均数": 3.41
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz300750&Page=1"
+      },
+      "score": 8.2748,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 7
+    },
+    {
+      "symbol": "603259",
+      "name": "药明康德",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.32,
+      "heat_rank": 0.32,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 15,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "药明康德:2026年第一次临时股东会会议材料",
+        "药明康德:关于召开2026年第一次临时股东会的通知",
+        "药明康德:自愿性公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "603259",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 7.26,
+          "min_value": 5.66,
+          "max_value": 8.71,
+          "institution_count": 35,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 35,
+            "最小值": 5.66,
+            "均值": 7.26,
+            "最大值": 8.71,
+            "行业平均数": 2.25
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "603259",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 8.8,
+          "min_value": 6.72,
+          "max_value": 11.38,
+          "institution_count": 35,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 35,
+            "最小值": 6.72,
+            "均值": 8.8,
+            "最大值": 11.38,
+            "行业平均数": 2.83
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh603259&Page=1"
+      },
+      "score": 8.0362,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 8
+    },
+    {
+      "symbol": "600276",
+      "name": "恒瑞医药",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.68,
+      "heat_rank": 0.68,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 21,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "恒瑞医药:H股公告-翌日披露报表",
+        "恒瑞医药:H股公告-翌日披露报表",
+        "恒瑞医药:H股公告-翌日披露报表"
+      ],
+      "holder_events": 7,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600276",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 1.42,
+          "min_value": 1.31,
+          "max_value": 1.67,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 26,
+            "最小值": 1.31,
+            "均值": 1.42,
+            "最大值": 1.67,
+            "行业平均数": 1.4
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600276",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 1.68,
+          "min_value": 1.49,
+          "max_value": 1.93,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 26,
+            "最小值": 1.49,
+            "均值": 1.68,
+            "最大值": 1.93,
+            "行业平均数": 1.62
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600276&Page=1"
+      },
+      "score": 7.7266,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 9
+    },
+    {
+      "symbol": "600030",
+      "name": "中信证券",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.4,
+      "heat_rank": 0.4,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 10,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "中信证券:中信证券股份有限公司关于召开2026年半年度业绩说明会的公告",
+        "中信证券:中信证券股份有限公司关于间接子公司发行中期票据并由全资子公司提供担保的公告",
+        "中信证券:中信证券股份有限公司关于完成向特定对象发行H股股票暨股本变动的提示性公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600030",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 2.44,
+          "min_value": 1.84,
+          "max_value": 3.04,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 26,
+            "最小值": 1.84,
+            "均值": 2.44,
+            "最大值": 3.04,
+            "行业平均数": 1.27
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600030",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 2.64,
+          "min_value": 1.97,
+          "max_value": 3.03,
+          "institution_count": 26,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 26,
+            "最小值": 1.97,
+            "均值": 2.64,
+            "最大值": 3.03,
+            "行业平均数": 1.39
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600030&Page=1"
+      },
+      "score": 7.6935,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 10
+    },
+    {
+      "symbol": "002415",
+      "name": "海康威视",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.52,
+      "heat_rank": 0.52,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 9,
+      "ann_90": 13,
+      "ann_sample_titles": [
+        "海康威视:2026年半年度权益分派实施公告",
+        "海康威视:2026年半年度报告(英文版)",
+        "海康威视:2026年7月25日投资者关系活动记录表"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002415",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 1.89,
+          "min_value": 1.74,
+          "max_value": 2.1,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 19,
+            "最小值": 1.74,
+            "均值": 1.89,
+            "最大值": 2.1,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002415",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 2.16,
+          "min_value": 1.94,
+          "max_value": 2.68,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 19,
+            "最小值": 1.94,
+            "均值": 2.16,
+            "最大值": 2.68,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz002415&Page=1"
+      },
+      "score": 7.6462,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 11
+    },
+    {
+      "symbol": "000001",
+      "name": "平安银行",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.84,
+      "heat_rank": 0.84,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 9,
+      "ann_90": 14,
+      "ann_sample_titles": [
+        "平安银行:2026年半年度报告",
+        "平安银行:2026年半年度财务报告",
+        "平安银行:半年度非经营性资金占用及其他关联资金往来情况汇总表"
+      ],
+      "holder_events": 16,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000001",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 2.17,
+          "min_value": 2.1,
+          "max_value": 2.29,
+          "institution_count": 23,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 23,
+            "最小值": 2.1,
+            "均值": 2.17,
+            "最大值": 2.29,
+            "行业平均数": 1.87
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000001",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 2.25,
+          "min_value": 2.16,
+          "max_value": 2.39,
+          "institution_count": 23,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 23,
+            "最小值": 2.16,
+            "均值": 2.25,
+            "最大值": 2.39,
+            "行业平均数": 2.01
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz000001&Page=1"
+      },
+      "score": 7.6052,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 12
+    },
+    {
+      "symbol": "601318",
+      "name": "中国平安",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.92,
+      "heat_rank": 0.92,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 5,
+      "ann_90": 11,
+      "ann_sample_titles": [
+        "中国平安:中国平安关于披露平安银行2026年半年度报告摘要的公告",
+        "中国平安:平安银行股份有限公司2026年半年度报告摘要",
+        "中国平安:中国平安关于召开2026年中期业绩发布会的公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601318",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 8.21,
+          "min_value": 7.53,
+          "max_value": 9.0,
+          "institution_count": 24,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 24,
+            "最小值": 7.53,
+            "均值": 8.21,
+            "最大值": 9.0,
+            "行业平均数": 6.82
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601318",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 8.98,
+          "min_value": 7.89,
+          "max_value": 9.89,
+          "institution_count": 24,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 24,
+            "最小值": 7.89,
+            "均值": 8.98,
+            "最大值": 9.89,
+            "行业平均数": 7.38
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh601318&Page=1"
+      },
+      "score": 7.2954,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 13
+    },
+    {
+      "symbol": "601012",
+      "name": "隆基绿能",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.8,
+      "heat_rank": 0.8,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 5,
+      "ann_90": 23,
+      "ann_sample_titles": [
+        "隆基绿能:关于提供担保的进展公告",
+        "隆基绿能:第六届董事会2026年第二次会议决议公告",
+        "隆基绿能:关于暂不向下修正“隆22转债”转股价格的公告"
+      ],
+      "holder_events": 18,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601012",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": -0.07,
+          "min_value": -0.47,
+          "max_value": 0.25,
+          "institution_count": 13,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 13,
+            "最小值": -0.47,
+            "均值": -0.07,
+            "最大值": 0.25,
+            "行业平均数": 2.65
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601012",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 0.38,
+          "min_value": 0.02,
+          "max_value": 0.57,
+          "institution_count": 13,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 13,
+            "最小值": 0.02,
+            "均值": 0.38,
+            "最大值": 0.57,
+            "行业平均数": 3.41
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh601012&Page=1"
+      },
+      "score": 7.1673,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 14
+    },
+    {
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": true,
+      "heat_score": 1.0,
+      "heat_rank": 1.0,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 6,
+      "ann_90": 25,
+      "ann_sample_titles": [
+        "贵州茅台:贵州茅台关于召开2026年半年度业绩说明会的公告",
+        "贵州茅台:贵州茅台关于贵州茅台集团财务有限公司的风险评估报告",
+        "贵州茅台:贵州茅台2026年半年度报告摘要"
+      ],
+      "holder_events": 13,
+      "has_financials": true,
+      "latest_report_date": "2026-06-30",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600519",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 68.12,
+          "min_value": 64.94,
+          "max_value": 77.85,
+          "institution_count": 49,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 49,
+            "最小值": 64.94,
+            "均值": 68.12,
+            "最大值": 77.85,
+            "行业平均数": 8.46
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600519",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 72.02,
+          "min_value": 67.23,
+          "max_value": 84.02,
+          "institution_count": 48,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 48,
+            "最小值": 67.23,
+            "均值": 72.02,
+            "最大值": 84.02,
+            "行业平均数": 9.0
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600519&Page=1"
+      },
+      "score": 7.1572,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 15
+    },
+    {
+      "symbol": "000858",
+      "name": "五粮液",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.96,
+      "heat_rank": 0.96,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 6,
+      "ann_90": 28,
+      "ann_sample_titles": [
+        "五粮液:关于四川省宜宾五粮液集团有限公司增持公司股票的进展公告",
+        "五粮液:关于回购公司股份进展的公告",
+        "五粮液:第七届董事会2026年第10次会议决议公告"
+      ],
+      "holder_events": 13,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000858",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 4.45,
+          "min_value": 3.58,
+          "max_value": 6.87,
+          "institution_count": 20,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 20,
+            "最小值": 3.58,
+            "均值": 4.45,
+            "最大值": 6.87,
+            "行业平均数": 8.46
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000858",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 4.78,
+          "min_value": 3.88,
+          "max_value": 6.77,
+          "institution_count": 19,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 19,
+            "最小值": 3.88,
+            "均值": 4.78,
+            "最大值": 6.77,
+            "行业平均数": 9.0
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz000858&Page=1"
+      },
+      "score": 7.1412,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 16
+    },
+    {
+      "symbol": "002594",
+      "name": "比亚迪",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.72,
+      "heat_rank": 0.72,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 4,
+      "ann_90": 19,
+      "ann_sample_titles": [
+        "比亚迪:H股公告(董事会会议通告)",
+        "比亚迪:H股公告(股份发行人及根据《上市规则》第十九B章上市的香港预托证券发行人的证券变动月报表)",
+        "比亚迪:2026年7月产销快报"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002594",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 4.52,
+          "min_value": 4.0,
+          "max_value": 5.2,
+          "institution_count": 35,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 35,
+            "最小值": 4.0,
+            "均值": 4.52,
+            "最大值": 5.2,
+            "行业平均数": 1.7
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "002594",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 5.71,
+          "min_value": 4.61,
+          "max_value": 6.72,
+          "institution_count": 35,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 35,
+            "最小值": 4.61,
+            "均值": 5.71,
+            "最大值": 6.72,
+            "行业平均数": 2.19
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz002594&Page=1"
+      },
+      "score": 7.0331,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 17
+    },
+    {
+      "symbol": "601899",
+      "name": "紫金矿业",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.44,
+      "heat_rank": 0.44,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 4,
+      "ann_90": 20,
+      "ann_sample_titles": [
+        "紫金矿业:福建至理律师事务所关于紫金矿业集团股份有限公司差异化分红事项的法律意见书",
+        "紫金矿业:紫金矿业集团股份有限公司2026年中期权益分派实施公告",
+        "紫金矿业:紫金矿业H股市场公告"
+      ],
+      "holder_events": 18,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601899",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 3.07,
+          "min_value": 2.38,
+          "max_value": 3.46,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 22,
+            "最小值": 2.38,
+            "均值": 3.07,
+            "最大值": 3.46,
+            "行业平均数": 2.1
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601899",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 3.61,
+          "min_value": 2.67,
+          "max_value": 4.01,
+          "institution_count": 22,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 22,
+            "最小值": 2.67,
+            "均值": 3.61,
+            "最大值": 4.01,
+            "行业平均数": 2.55
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh601899&Page=1"
+      },
+      "score": 6.841,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 18
+    },
+    {
+      "symbol": "300059",
+      "name": "东方财富",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.48,
+      "heat_rank": 0.48,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 3,
+      "ann_90": 13,
+      "ann_sample_titles": [
+        "东方财富:东方财富信息股份有限公司关于子公司东方财富证券股份有限公司2026年面向专业投资者公开发行次级债券(第三期)发行结果的公告",
+        "东方财富:东方财富信息股份有限公司关于子公司东方财富证券股份有限公司2026年度第八期短期融资券发行情况的公告",
+        "东方财富:东方财富信息股份有限公司关于子公司东方财富证券股份有限公司2026年面向专业投资者公开发行公司债券(第三期)发行结果的公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300059",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 0.93,
+          "min_value": 0.86,
+          "max_value": 1.01,
+          "institution_count": 23,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 23,
+            "最小值": 0.86,
+            "均值": 0.93,
+            "最大值": 1.01,
+            "行业平均数": 1.27
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "300059",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 1.05,
+          "min_value": 0.91,
+          "max_value": 1.2,
+          "institution_count": 23,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 23,
+            "最小值": 0.91,
+            "均值": 1.05,
+            "最大值": 1.2,
+            "行业平均数": 1.39
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz300059&Page=1"
+      },
+      "score": 6.7139,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 19
+    },
+    {
+      "symbol": "600036",
+      "name": "招商银行",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.88,
+      "heat_rank": 0.88,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 2,
+      "ann_90": 18,
+      "ann_sample_titles": [
+        "招商银行:[H股公告]招商银行股份有限公司董事会会议召开日期",
+        "招商银行:招商银行股份有限公司关于行长任职资格核准的公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600036",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 6.0,
+          "min_value": 5.75,
+          "max_value": 6.22,
+          "institution_count": 24,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 24,
+            "最小值": 5.75,
+            "均值": 6.0,
+            "最大值": 6.22,
+            "行业平均数": 1.87
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600036",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 6.26,
+          "min_value": 5.89,
+          "max_value": 6.6,
+          "institution_count": 24,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 24,
+            "最小值": 5.89,
+            "均值": 6.26,
+            "最大值": 6.6,
+            "行业平均数": 2.01
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600036&Page=1"
+      },
+      "score": 6.5862,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 20
+    },
+    {
+      "symbol": "688981",
+      "name": "中芯国际",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.28,
+      "heat_rank": 0.28,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 7,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "中芯国际:港股公告:中芯国际截至2026年6月30日止三个月未经审核业绩公布",
+        "中芯国际:港股公告:证券变动月报表",
+        "中芯国际:中芯国际关于召开2026年第二季度业绩说明会的预告公告"
+      ],
+      "holder_events": 7,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "688981",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 0.84,
+          "min_value": 0.76,
+          "max_value": 0.96,
+          "institution_count": 10,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 10,
+            "最小值": 0.76,
+            "均值": 0.84,
+            "最大值": 0.96,
+            "行业平均数": 2.8
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "688981",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 1.03,
+          "min_value": 0.88,
+          "max_value": 1.19,
+          "institution_count": 9,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 9,
+            "最小值": 0.88,
+            "均值": 1.03,
+            "最大值": 1.19,
+            "行业平均数": 4.0
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh688981&Page=1"
+      },
+      "score": 6.555,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 21
+    },
+    {
+      "symbol": "000333",
+      "name": "美的集团",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.64,
+      "heat_rank": 0.64,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 2,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "美的集团:关于以集中竞价交易方式回购A股股份进展情况的公告",
+        "美的集团:2026年7月29日投资者关系活动记录表"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000333",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 6.18,
+          "min_value": 5.95,
+          "max_value": 6.41,
+          "institution_count": 32,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 32,
+            "最小值": 5.95,
+            "均值": 6.18,
+            "最大值": 6.41,
+            "行业平均数": 2.65
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000333",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 6.7,
+          "min_value": 6.39,
+          "max_value": 7.05,
+          "institution_count": 32,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 32,
+            "最小值": 6.39,
+            "均值": 6.7,
+            "最大值": 7.05,
+            "行业平均数": 3.41
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz000333&Page=1"
+      },
+      "score": 6.4902,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 22
+    },
+    {
+      "symbol": "600900",
+      "name": "长江电力",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.56,
+      "heat_rank": 0.56,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 1,
+      "ann_90": 25,
+      "ann_sample_titles": [
+        "长江电力:长江电力关于公司总法律顾问辞职的公告"
+      ],
+      "holder_events": 20,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600900",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 1.46,
+          "min_value": 1.41,
+          "max_value": 1.52,
+          "institution_count": 18,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 18,
+            "最小值": 1.41,
+            "均值": 1.46,
+            "最大值": 1.52,
+            "行业平均数": 0.6
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "600900",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 1.52,
+          "min_value": 1.42,
+          "max_value": 1.63,
+          "institution_count": 18,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 18,
+            "最小值": 1.42,
+            "均值": 1.52,
+            "最大值": 1.63,
+            "行业平均数": 0.65
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh600900&Page=1"
+      },
+      "score": 6.0528,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 23
+    },
+    {
+      "symbol": "000568",
+      "name": "泸州老窖",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.36,
+      "heat_rank": 0.36,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 1,
+      "ann_90": 14,
+      "ann_sample_titles": [
+        "泸州老窖:第十一届董事会二十七次会议决议公告"
+      ],
+      "holder_events": 18,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000568",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 6.67,
+          "min_value": 5.87,
+          "max_value": 8.3,
+          "institution_count": 33,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 33,
+            "最小值": 5.87,
+            "均值": 6.67,
+            "最大值": 8.3,
+            "行业平均数": 8.46
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "000568",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 7.04,
+          "min_value": 6.13,
+          "max_value": 8.64,
+          "institution_count": 32,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 32,
+            "最小值": 6.13,
+            "均值": 7.04,
+            "最大值": 8.64,
+            "行业平均数": 9.0
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sz000568&Page=1"
+      },
+      "score": 5.8927,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 24
+    },
+    {
+      "symbol": "601888",
+      "name": "中国中免",
+      "price": null,
+      "pct_chg": null,
+      "amount": null,
+      "turnover": null,
+      "heat_reasons": [
+        "seed_fallback"
+      ],
+      "is_control": false,
+      "heat_score": 0.6,
+      "heat_rank": 0.6,
+      "news_30": 0,
+      "news_90": 0,
+      "news_source": "eastmoney.search-api",
+      "name_hit_in_recent": 0,
+      "news_sample_titles": [],
+      "ann_30": 4,
+      "ann_90": 30,
+      "ann_sample_titles": [
+        "中国中免:H股公告-董事会会议召开日期",
+        "中国中免:H股公告-月报表",
+        "中国中免:中国旅游集团中免股份有限公司第六届董事会第二次会议(通讯方式)决议公告"
+      ],
+      "holder_events": 4,
+      "has_financials": true,
+      "latest_report_date": "2026-03-31",
+      "has_eps_consensus": true,
+      "eps_sample": [
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601888",
+          "metric": "EPS",
+          "forecast_year": "2026",
+          "value": 2.48,
+          "min_value": 2.24,
+          "max_value": 2.78,
+          "institution_count": 30,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2026,
+            "预测机构数": 30,
+            "最小值": 2.24,
+            "均值": 2.48,
+            "最大值": 2.78,
+            "行业平均数": 1.09
+          }
+        },
+        {
+          "type": "consensus_estimate",
+          "stock_code": "601888",
+          "metric": "EPS",
+          "forecast_year": "2027",
+          "value": 2.92,
+          "min_value": 2.68,
+          "max_value": 3.65,
+          "institution_count": 30,
+          "updated_at": "2026-08-19",
+          "source": "同花顺",
+          "raw_row": {
+            "年度": 2027,
+            "预测机构数": 30,
+            "最小值": 2.68,
+            "均值": 2.92,
+            "最大值": 3.65,
+            "行业平均数": 1.27
+          }
+        }
+      ],
+      "probe_errors": {
+        "news": "456 Client Error:  for url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh601888&Page=1"
+      },
+      "score": 5.837,
+      "gaps": [
+        "近30天个股新闻为空"
+      ],
+      "rank": 25
+    }
+  ]
+}

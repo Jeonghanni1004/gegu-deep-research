@@ -1,0 +1,71 @@
+{
+  "passed": 13,
+  "total": 13,
+  "results": [
+    {
+      "name": "e2e_as_of_mismatch_fail_closed",
+      "pass": true,
+      "detail": "status=FAIL code=AS_OF_MISMATCH"
+    },
+    {
+      "name": "e2e_as_of_writes_trace",
+      "pass": true,
+      "detail": "C:\\Users\\86137\\ashare-deep-research\\examples\\600519_pipeline_trace.json"
+    },
+    {
+      "name": "e2e_grounded_pass",
+      "pass": true,
+      "detail": "status=PASS mode=grounded"
+    },
+    {
+      "name": "e2e_trace_has_stages",
+      "pass": true,
+      "detail": "C:\\Users\\86137\\ashare-deep-research\\examples\\600519_pipeline_trace.json"
+    },
+    {
+      "name": "e2e_trace_fields",
+      "pass": true,
+      "detail": "['stock', 'requested_as_of', 'research_as_of', 'debate_as_of', 'mode', 'final_mode', 'status', 'failure_code', 'repair_action', 'fallback', 'final_gate', 'stages']"
+    },
+    {
+      "name": "e2e_trace_no_secrets",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "e2e_production_gate_accept",
+      "pass": true,
+      "detail": "{'decision': 'ACCEPT', 'status': 'PASS', 'failures': [], 'checks': {'research_contract': True, 'debate_contract': True, 'as_of_consistent': True, 'fa_present': True, 'schema_valid': True, 'semantic_valid': True, 'evidence_grounding': True, "
+    },
+    {
+      "name": "e2e_unsupported_fact_reject",
+      "pass": true,
+      "detail": "REJECT"
+    },
+    {
+      "name": "e2e_information_loss_reject",
+      "pass": true,
+      "detail": "REJECT"
+    },
+    {
+      "name": "e2e_failure_taxonomy_map",
+      "pass": true,
+      "detail": "{'UNSUPPORTED_EXTERNAL_FACT', 'AS_OF_MISMATCH', 'VALIDATION_FAILURE'}"
+    },
+    {
+      "name": "e2e_evidence_repair",
+      "pass": true,
+      "detail": "REPAIR"
+    },
+    {
+      "name": "e2e_fa_input_contract",
+      "pass": true,
+      "detail": "600519"
+    },
+    {
+      "name": "e2e_cli_module_importable",
+      "pass": true,
+      "detail": "pipeline.run"
+    }
+  ]
+}

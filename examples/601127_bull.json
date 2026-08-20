@@ -1,0 +1,67 @@
+{
+  "stock_code": "601127",
+  "stance": "bull",
+  "thesis": "基于相同 Evidence，Bull Case 强调高盈利韧性与财务缓冲，并承认利润同比下滑等负面事实；立场差异来自 interpretation，而非新造数据。",
+  "claims": [
+    {
+      "claim_id": "BULL_01",
+      "stance": "bull",
+      "claim": "公司盈利能力仍具有较强韧性，资本回报与毛利率水平提供支持性证据。",
+      "reasoning": "Fundamental Research 与 DERIVED 指标显示高 ROE / 高毛利率并存；这支持“盈利质量仍强”的解释，而非股价必然上涨。 同时需承认：2025-12-31 归母净利润同比增长 0.18% 表明短期利润增速承压。 立场对齐 Research canonical `TENSION_FUND_PROFIT_VS_GROWTH`（不重复生成同义研究结论）。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8"
+      ],
+      "confidence": 0.82,
+      "importance": 0.95,
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ]
+    },
+    {
+      "claim_id": "BULL_02",
+      "stance": "bull",
+      "claim": "财务健康与现金流证据支持公司基本面具备抗风险缓冲。",
+      "reasoning": "经营现金流及相关比率、资产负债结构可被解释为基本面缓冲；Bull Case 将其视为投资价值的支持性事实，同时不否认增速放缓风险。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5",
+        "derived_derived_601127_20251231_f8cff2e6b7"
+      ],
+      "confidence": 0.74,
+      "importance": 0.8,
+      "canonical_finding_ids": [
+        "FINDING_FUND_CASH_QUALITY"
+      ]
+    },
+    {
+      "claim_id": "BULL_03",
+      "stance": "bull",
+      "claim": "短中期价格结构与一致预期快照提供偏积极的市场侧支持线索。",
+      "reasoning": "Market Research 中的均线结构/52周位置/一致预期属于可引用证据；可解释为短中期动能与机构预期仍存，但不能外推为确定性上涨。",
+      "evidence_ids": [
+        "derived_derived_601127_20260819_0d349d4b18",
+        "derived_derived_601127_20260819_226cac6ef6",
+        "derived_derived_601127_20260819_5666692101",
+        "derived_derived_601127_20260819_99c90bf1e6",
+        "ths_expectation_601127_2026_e6f6e866a9"
+      ],
+      "confidence": 0.68,
+      "importance": 0.7,
+      "canonical_finding_ids": [
+        "TENSION_MKT_SHORT_VS_LONG"
+      ]
+    }
+  ],
+  "key_risks": [
+    "负面证据需承认：2025-12-31 归母净利润同比增长 0.18%",
+    "营收增速风险：2025-12-31 营业收入同比增长 13.69%",
+    "长期均线压力线索：2026-08-19 MA250为 105.3671"
+  ],
+  "uncertainties": [
+    "当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+    "当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。",
+    "短期增速承压是否阶段性，现有 Evidence 无法单独裁定。"
+  ]
+}

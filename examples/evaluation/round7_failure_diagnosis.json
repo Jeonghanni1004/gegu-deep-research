@@ -1,0 +1,105 @@
+{
+  "round": 7,
+  "basis": "FINAL_ANALYST_SIXTH_AUDIT.md + stability_10x10_openai.json + last_openai_error/raw + source review",
+  "baseline_10x10_openai": {
+    "total_runs": 100,
+    "openai_success": 54,
+    "grounded_fallback": 46,
+    "acceptable": 60,
+    "reject": 0,
+    "information_loss": 0,
+    "unsupported_external_fact": 0,
+    "contract_violation": 0,
+    "judgment_drift_fixtures": 10
+  },
+  "answers": {
+    "q1_failure_code_distribution": {
+      "note": "Round-6 stability_bench did not persist per-run failure_code; inferred from last_openai_error pattern + client raise sites + fixture signatures.",
+      "estimated_share_of_46_fallbacks": {
+        "EVIDENCE_REPAIR_FAILURE_unresolved_numbers": "dominant (~70-85%)",
+        "VALIDATION_FAILURE_live_hard_errors": "secondary (~10-20%)",
+        "SCHEMA_SANITIZATION_FAILURE_or_ValidationError": "minor (~5-10%)",
+        "JSON_PARSE_FAILURE": "rare",
+        "PROVIDER_FAILURE_HTTP": "rare in this run"
+      },
+      "evidence": [
+        "last_openai_error.txt repeatedly: ValueError: openai FA evidence repair failed: unresolved_numbers=...",
+        "examples: 0.5016, 1347.13, 8.2%/18.4%/22%, 1326.00"
+      ]
+    },
+    "q2_unresolved_numbers_root_cause": {
+      "primary": "LLM invents or rewrites numeric tokens not present in INPUT numbers_preserved / ALLOWED evidence surface",
+      "example": "0.5016 as『52周区间中部』ratio — not in canonical numbers_preserved; pack=None cannot soft-ground via EvidencePack blobs",
+      "secondary": "LLM truncates/rounds INPUT numbers (e.g. 1341.99→1347.13 lookalikes) so token_map miss",
+      "repair_behavior": "Level1–2 attach evidence_ids when unique token match exists; no match → REGENERATE → client raises → grounded fallback",
+      "not_validator_false_kill": "Invented decimals genuinely unsupported under FACT freedom=0"
+    },
+    "q3_schema_failure_root_cause": {
+      "observed": "Existing _sanitize_llm_json already handles null-string, direction aliases, nested tension defaults",
+      "remaining": "Occasional ValidationError on missing required nested fields / wrong list vs object after partial truncation",
+      "share": "Not the dominant 46% failure mode"
+    },
+    "q4_citation_failure_mode": {
+      "mode": "Mixed",
+      "detail": "Often numbers present in text WITHOUT evidence_ids; repair can fill when token∈INPUT. Failures are when number not in INPUT at all (invented), not merely missing citation format."
+    },
+    "q5_repair_strictness": {
+      "verdict": "Repair is correctly strict for invented numbers; under-invested in regenerate-with-feedback and ALLOWED_NUMBERS prompting",
+      "not": "Not over-rejecting unique INPUT-groundable numbers in the dominant failure sample (0.5016)"
+    },
+    "q6_judgmentframe_drift_on_openai_success": {
+      "sources": [
+        {
+          "type": "extraction_bug",
+          "field": "primary_axis",
+          "detail": "_infer_primary_axis keyword '毛利率'/'销量' maps consumer PROFIT_VS_GROWTH text → volume_vs_margin (false positive). Visible in E01–E05 signatures."
+        },
+        {
+          "type": "contract_gap",
+          "field": "debate_state",
+          "detail": "extract uses out.meta.primary_resolution; LLM may rewrite resolution; client calibrates USING LLM resolution without pinning to Debate/metadata force_resolution. Fallback grounded restores correct state → fixture-level multi-signature drift."
+        },
+        {
+          "type": "mode_mix",
+          "field": "signature",
+          "detail": "openai success vs grounded fallback in same fixture×10 produce different debate_state/axis; counted as judgment_drift=10/10"
+        }
+      ]
+    },
+    "q7_primary_axis_source": {
+      "current": "Keyword heuristic on FA executive/core_thesis/tension_id text — NOT Research-structure-first",
+      "required": "Prefer Research/Debate tension ids (PROFIT_VS_GROWTH, VOLUME_VS_MARGIN, SEMI_UTIL, …); text fallback last"
+    },
+    "q8_real_vs_extraction_drift": {
+      "extraction_error": "consumer volume_vs_margin false positive from 毛利率",
+      "real_analytical_or_contract": "debate_state flip when LLM rewrites primary_resolution (should be hard contract)",
+      "acceptable_stochastic": "wording-only variation within same axis/state/strength notch"
+    },
+    "q9_fallback_vs_openai_frame": {
+      "consistent": false,
+      "detail": "Grounded fallback typically restores expected debate_state; openai success path often differs (axis false-positive and/or rewritten resolution) → dual signatures per fixture"
+    },
+    "q10_validator_false_kill": {
+      "dominant_no": "Main failures are real ungrounded numbers / real resolution rewrite",
+      "partial_yes": "Axis extraction bug falsely marks drift/acceptable failure without LLM being analytically wrong on axis"
+    }
+  },
+  "failure_before_repair_vs_after": {
+    "before_repair": "LLM JSON often passes schema but contains uncited/invented numbers",
+    "after_repair_attempt": "Unique INPUT matches get evidence_ids (REPAIR); invented tokens remain → REGENERATE raise → fallback",
+    "gap": "No single regenerate-with-unresolved_numbers feedback loop; no ALLOWED_NUMBERS hard list in prompt; no pin of Debate resolution before calibrate"
+  },
+  "proposed_minimal_fixes": [
+    "Pin meta/assessment_basis/core_tensions debate resolution from resolve_debate_for_tension / metadata force_resolution before calibration",
+    "JudgmentFrame primary_axis: structure-first from tension/finding ids; remove bare 毛利率→volume_vs_margin",
+    "Prompt: ALLOWED_NUMBERS; forbid invented ratios; emphasize fixed DebateResolution",
+    "OpenAI client: one regenerate pass feeding unresolved_numbers; still no scrub PASS",
+    "Schema sanitizer: evidence_ids scalar→list; optional empties; log sanitizer_action",
+    "stability_bench: track failure_code histogram before fallback; debate_state_drift metric"
+  ],
+  "non_goals": [
+    "Do not widen compare_judgment_frame acceptable thresholds",
+    "Do not count fallback as openai_success",
+    "Do not restore phrase seal or scrub-as-PASS"
+  ]
+}

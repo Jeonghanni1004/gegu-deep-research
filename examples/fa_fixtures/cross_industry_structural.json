@@ -1,0 +1,9 @@
+{
+  "note": "Structural FA path without liquor-specific resolution rules; validated by cross_industry_* tests in test_final_analyst.py",
+  "resolution_driven": true,
+  "liquor_hardcoded_rules_required": false,
+  "primary_checks": [
+    "cross_industry_fixture_validate",
+    "cross_industry_no_liquor_rule_required"
+  ]
+}

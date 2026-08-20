@@ -1,0 +1,21 @@
+{
+  "n_fixtures": 6,
+  "live_requested": false,
+  "live_available": true,
+  "modes": {
+    "A_unresolved": "skipped",
+    "B_bull_moderate": "skipped",
+    "C_bear_moderate": "skipped",
+    "D_bull_strong_limiting": "skipped",
+    "E_dual_tension": "skipped",
+    "F_adversarial_debate": "skipped"
+  },
+  "openai_error_counts": {
+    "A_unresolved": 0,
+    "B_bull_moderate": 0,
+    "C_bear_moderate": 0,
+    "D_bull_strong_limiting": 0,
+    "E_dual_tension": 0,
+    "F_adversarial_debate": 0
+  }
+}

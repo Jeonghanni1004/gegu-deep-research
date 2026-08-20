@@ -1,0 +1,209 @@
+{
+  "passed": 38,
+  "total": 38,
+  "results": [
+    {
+      "name": "test_semantic_unresolved",
+      "pass": true,
+      "detail": "Base（非机械）：resolution=unresolved、support_strength=None、evidence_pressure=elevated"
+    },
+    {
+      "name": "test_semantic_unresolved_paraphrase",
+      "pass": true,
+      "detail": "当前证据不足以裁定阶段性与结构性两种解释。"
+    },
+    {
+      "name": "test_semantic_challenge",
+      "pass": true,
+      "detail": "CH_BEAR_01"
+    },
+    {
+      "name": "test_semantic_new_evidence_boundary",
+      "pass": true,
+      "detail": "Bull 边界：仅当出现可核对的新证据——连续报告期收入与利润同比改善——之后，Bull 解释才获得更强支持，主解释才可移向“阶段性承压得到验证”。在该新证据出"
+    },
+    {
+      "name": "test_phrase_seal_not_required",
+      "pass": true,
+      "detail": "['Debate resolution is an input, not the answer', 'support_strength calibrates claim amplitude (not probability)', 'evidence_pressure from Research prevents mechanical Debate following', 'Grounded syn"
+    },
+    {
+      "name": "test_phrase_seal_deprecated_marks_dependency",
+      "pass": true,
+      "detail": "['evidence_pressure from Research prevents mechanical Debate following', 'Grounded synthesizer is deterministic, not autonomous research', 'openai_phrase_seal']"
+    },
+    {
+      "name": "test_challenge_semantics_without_english_word",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "test_new_evidence_boundary_conditional",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "test_number_repair",
+      "pass": true,
+      "detail": "action=REPAIR repaired=10 miss=[]"
+    },
+    {
+      "name": "test_number_repair_from_canonical",
+      "pass": true,
+      "detail": "['evidence_repair:repaired_ids=10']"
+    },
+    {
+      "name": "test_number_repair_failure",
+      "pass": true,
+      "detail": "action=REGENERATE miss=['99.99%']"
+    },
+    {
+      "name": "test_no_information_loss_before_reject",
+      "pass": true,
+      "detail": "['evidence_repair:repaired_ids=10', 'scrub_used_information_loss']"
+    },
+    {
+      "name": "test_scrub_cannot_create_partial_number",
+      "pass": true,
+      "detail": "intact"
+    },
+    {
+      "name": "test_scrub_detects_partial_damage",
+      "pass": true,
+      "detail": "damaged"
+    },
+    {
+      "name": "test_calibration_matrix_monotonic_bull",
+      "pass": true,
+      "detail": "weak≤moderate≤strong"
+    },
+    {
+      "name": "test_calibration_matrix_monotonic_bear",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "test_weak_debate_no_overclaim",
+      "pass": true,
+      "detail": "tentative < strong"
+    },
+    {
+      "name": "test_strong_debate_under_severe_pressure",
+      "pass": true,
+      "detail": "strength=moderate lim=['severe_research_pressure_caps_amplitude', 'boundary:现金消耗加速']"
+    },
+    {
+      "name": "test_strong_debate_no_certainty",
+      "pass": true,
+      "detail": "matrix[bull_supported|strong|severe] → moderate; 建设性解释可更清晰，但不得写成已证实改善; frame=主导解释更明确偏向盈利缓冲 / 非结构性恶化框"
+    },
+    {
+      "name": "test_unresolved_not_forced_neutral",
+      "pass": true,
+      "detail": "unresolved Debate：不得机械中性，也不得越权裁定；evidence_pressure=severe"
+    },
+    {
+      "name": "test_pressure_modulates_assessment",
+      "pass": true,
+      "detail": "mild_lim=[] sev_lim=['severe_research_pressure_caps_amplitude']"
+    },
+    {
+      "name": "industry_validate_consumer_unresolved",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "industry_validate_mfg_bull_moderate",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "industry_validate_semi_bear_moderate",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "industry_validate_mfg_bull_strong_mild",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "industry_validate_semi_bull_strong_severe",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "test_cross_industry_non_mechanical",
+      "pass": true,
+      "detail": "mfg=bull_supported|strong|strong|mild|Base（非机械）：resolution=bull_supported、support_st || semi=bull_supported|moderate|strong|severe|Base（非机械）：resolution=bull_supported、suppor"
+    },
+    {
+      "name": "test_same_resolution_different_research",
+      "pass": true,
+      "detail": "p_mfg=mild p_semi=severe"
+    },
+    {
+      "name": "test_industry_specific_tension",
+      "pass": true,
+      "detail": "as_of=2026-08-19：Debate 主 resolution=bull_supported（support_strength=moderate）。在事实（2026-08-14、20.28、"
+    },
+    {
+      "name": "test_industry_semi_not_liquor_template",
+      "pass": true,
+      "detail": "as_of=2026-08-19：Debate 主 resolution=bear_supported（support_strength=moderate）。在事实（2026-08-14、20.28、6.19、2025-12-31、33.6"
+    },
+    {
+      "name": "test_live_multi_run_invariants",
+      "pass": true,
+      "detail": "skipped_no_live"
+    },
+    {
+      "name": "test_live_assessment_drift",
+      "pass": true,
+      "detail": "skipped_no_live"
+    },
+    {
+      "name": "test_live_uncertainty_preservation",
+      "pass": true,
+      "detail": "skipped_no_live"
+    },
+    {
+      "name": "test_live_scenario_boundary",
+      "pass": true,
+      "detail": "skipped_no_live"
+    },
+    {
+      "name": "test_live_no_external_fact",
+      "pass": true,
+      "detail": "skipped_no_live"
+    },
+    {
+      "name": "test_live_number_grounding",
+      "pass": true,
+      "detail": "skipped_no_live"
+    },
+    {
+      "name": "hard_gate_phrase_seal_dependency_zero",
+      "pass": true,
+      "detail": "industry grounded"
+    },
+    {
+      "name": "hard_gate_semantic_suite_clean",
+      "pass": true,
+      "detail": "A_unresolved"
+    }
+  ],
+  "live_stats": {
+    "run_count": 0,
+    "schema_failures": 0,
+    "grounding_failures": 0,
+    "unsupported_numbers": 0,
+    "fallback_count": 0,
+    "semantic_failures": 0,
+    "assessment_drift": 0,
+    "phrase_seal_dependency": 0,
+    "information_loss": 0,
+    "modes": [],
+    "strengths": []
+  }
+}

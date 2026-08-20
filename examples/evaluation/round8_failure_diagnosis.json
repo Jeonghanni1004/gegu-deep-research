@@ -1,0 +1,101 @@
+{
+  "total_runs": 6,
+  "openai_success": 0,
+  "fallback": 0,
+  "regenerate": 0,
+  "retry": 0,
+  "acceptable": 6,
+  "aborted_quota": false,
+  "incomplete": false,
+  "abort_reason": "",
+  "formal_adjudicable": true,
+  "failure_distribution": {
+    "PROVIDER_QUOTA_FAILURE": 0,
+    "PROVIDER_FAILURE": 0,
+    "VALIDATION_FAILURE": 0,
+    "EVIDENCE_REPAIR_FAILURE": 0,
+    "JSON_PARSE_FAILURE": 0,
+    "SCHEMA_SANITIZATION_FAILURE": 0
+  },
+  "failure_stages": {},
+  "runs": [
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 1,
+      "openai_success": false,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 2,
+      "openai_success": false,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 1,
+      "openai_success": false,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 2,
+      "openai_success": false,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 1,
+      "openai_success": false,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 2,
+      "openai_success": false,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    }
+  ]
+}

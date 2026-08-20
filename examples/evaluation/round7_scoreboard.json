@@ -1,0 +1,121 @@
+{
+  "passed": 23,
+  "total": 23,
+  "results": [
+    {
+      "name": "r7_dataset_intact",
+      "pass": true,
+      "detail": "15"
+    },
+    {
+      "name": "r7_unresolved_numbers_reject_or_regenerate",
+      "pass": true,
+      "detail": "action=REGENERATE missing=['99.99123%']"
+    },
+    {
+      "name": "r7_unresolved_numbers_repair",
+      "pass": true,
+      "detail": "action=REPAIR repaired=10"
+    },
+    {
+      "name": "r7_schema_normalization",
+      "pass": true,
+      "detail": "['scalar_to_list:evidence_ids', 'scalar_to_list:canonical_finding_ids', 'empty_list:numbers_used']"
+    },
+    {
+      "name": "r7_schema_sanitizer_no_invented_facts",
+      "pass": true,
+      "detail": "['eid_1']"
+    },
+    {
+      "name": "r7_citation_repair",
+      "pass": true,
+      "detail": "REPAIR"
+    },
+    {
+      "name": "r7_invalid_citation_reject",
+      "pass": true,
+      "detail": "REGENERATE"
+    },
+    {
+      "name": "r7_debate_state_preserve_unresolved",
+      "pass": true,
+      "detail": "meta=unresolved frame=unresolved"
+    },
+    {
+      "name": "r7_debate_state_preserve_bull_supported",
+      "pass": true,
+      "detail": "meta=bull_supported frame=bull_supported"
+    },
+    {
+      "name": "r7_debate_state_preserve_bear_supported",
+      "pass": true,
+      "detail": "meta=bear_supported frame=bear_supported"
+    },
+    {
+      "name": "r7_strong_severe_calibration",
+      "pass": true,
+      "detail": "utilization_vs_asp|moderate|bull_supported|conditional|severe|strong|xt|preserved"
+    },
+    {
+      "name": "r7_primary_axis_structure_first",
+      "pass": true,
+      "detail": "growth_vs_profitability"
+    },
+    {
+      "name": "r7_consumer_axis_no_false_volume",
+      "pass": true,
+      "detail": "growth_vs_profitability"
+    },
+    {
+      "name": "r7_mfg_axis_volume_vs_margin",
+      "pass": true,
+      "detail": "volume_vs_margin"
+    },
+    {
+      "name": "r7_fallback_trace_contract",
+      "pass": true,
+      "detail": "openai_attempt/fallback=true/final_mode=grounded required on live fallback"
+    },
+    {
+      "name": "r7_openai_failure_taxonomy",
+      "pass": true,
+      "detail": "EVIDENCE_REPAIR_FAILURE"
+    },
+    {
+      "name": "r7_frame_deterministic",
+      "pass": true,
+      "detail": "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+    },
+    {
+      "name": "r7_same_input_same_frame",
+      "pass": true,
+      "detail": "['growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved', 'growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved', 'growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt"
+    },
+    {
+      "name": "r7_cross_industry_frame",
+      "pass": true,
+      "detail": "growth_vs_profitability/volume_vs_margin"
+    },
+    {
+      "name": "r7_no_information_loss_grounded",
+      "pass": true,
+      "detail": "['evidence_pressure from Research prevents mechanical Debate following', 'Grounded synthesizer is deterministic, not autonomous research', 'debate_contract_pinned']"
+    },
+    {
+      "name": "r7_no_unsupported_marker",
+      "pass": true,
+      "detail": "gate covered in e2e"
+    },
+    {
+      "name": "r7_benchmark_threshold_unchanged",
+      "pass": true,
+      "detail": "score=1.0"
+    },
+    {
+      "name": "r7_contract_resolution_unresolved",
+      "pass": true,
+      "detail": "unresolved/None/elevated"
+    }
+  ]
+}

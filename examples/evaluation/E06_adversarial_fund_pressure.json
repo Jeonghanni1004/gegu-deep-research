@@ -1,0 +1,758 @@
+{
+  "fixture_id": "E06_adversarial_fund_pressure",
+  "title": "基本面压力 + 误导性 bull metadata",
+  "industry": "消费",
+  "structures": [
+    "fundamental_weak_market_mixed",
+    "adversarial"
+  ],
+  "metadata": {
+    "source": "live:F_adversarial_debate"
+  },
+  "input": {
+    "stock_code": "600519",
+    "research_as_of_date": "2026-08-15",
+    "mode": "grounded",
+    "fundamental": {
+      "stock_code": "600519",
+      "agent": "fundamental",
+      "research_as_of_date": "2026-08-15",
+      "canonical_findings": [
+        {
+          "claim": "ROE 高但增长明显恶化、现金流同步恶化：不得因误导性 Debate 写成已经恢复。既有数字仍为 33.65%、4.53%、1.21%，压力来自关系解读而非新造数字。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "reasoning": "候选证据经 weight 选择后对照盈利能力指标与增长指标。",
+          "interpretation": "现有证据可以支持“盈利能力仍强、增长承压”的分化判断；但单期同比不足以判定是短期波动还是结构性问题，需后续验证需求、渠道与管理层指引。",
+          "confidence": 0.84,
+          "status": "supported",
+          "finding_kind": "tension",
+          "finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+          "research_question": "盈利能力是否仍强，增长动能是否承压？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "33.65%",
+            "4.53%",
+            "1.21%"
+          ]
+        },
+        {
+          "claim": "2025-12-31 经营现金流/净利润为 74.74%；2026-03-31 经营活动现金流为 269.10 亿元；2026-03-31 归母净利润为 272.43 亿元。经营现金流与净利润对照后，利润质量需要用现金含量来约束，而不能只看利润表结果。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_e5ea7a9e51",
+            "akshare_fact_600519_20260331_f8d51f60b8",
+            "akshare_fact_600519_20260331_f83c681f65"
+          ],
+          "reasoning": "在同一研究问题下联合经营现金流与净利润证据。",
+          "interpretation": "若现金含量稳定，则利润表波动的说服力更强；反之需提高对利润质量的警惕。边界：未覆盖完整多期趋势时不作趋势定论。",
+          "confidence": 0.78,
+          "status": "supported",
+          "finding_kind": "cross",
+          "finding_id": "FINDING_FUND_CASH_QUALITY",
+          "research_question": "利润质量是否得到经营现金流支持？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2025-12-31",
+            "74.74%",
+            "2026-03-31",
+            "269.10",
+            "272.43"
+          ]
+        },
+        {
+          "claim": "2025-12-31 资产负债率为 16.42%；2026-03-31 货币资金为 487.87 亿元；2026-03-31 营业收入为 539.09 亿元；2026-03-31 归母净利润为 272.43 亿元。杠杆/流动性指标需对照经营规模理解：财务缓冲提供风险约束，但不能单独替代增长判断。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_e5ef691e0a",
+            "akshare_fact_600519_20260331_30e2904d77",
+            "akshare_fact_600519_20260331_2fb3ab92d0",
+            "akshare_fact_600519_20260331_f83c681f65"
+          ],
+          "reasoning": "资产负债表与经营结果共同约束风险判断。",
+          "interpretation": "财务健康是缓冲维度；与增长压力并存时，二者回答不同问题。",
+          "confidence": 0.74,
+          "status": "supported",
+          "finding_kind": "cross",
+          "finding_id": "FINDING_FUND_BALANCE_OP",
+          "research_question": "财务缓冲与经营规模如何共同约束风险判断？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2025-12-31",
+            "16.42%",
+            "2026-03-31",
+            "487.87",
+            "539.09",
+            "272.43"
+          ]
+        },
+        {
+          "claim": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2025-12-31 ROE为 33.65%；2025-12-31 归母净利润同比下降 4.53%；2025-12-31 营业收入同比下降 1.21%。估值属于 as_of 市场截面，盈利/增速属于财报期；若增长承压而盈利能力仍高，则估值合理性更依赖未来增长恢复，而不能仅由历史盈利能力解释。",
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "reasoning": "跨时间尺度：估值截面 × 财务期盈利/增长。",
+          "interpretation": "这是条件判断而非买卖建议；证据不足以给出目标估值。",
+          "confidence": 0.72,
+          "status": "supported",
+          "finding_kind": "tension",
+          "finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+          "research_question": "当前估值需要怎样的盈利/增长假设才能成立？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "2025-12-31",
+            "33.65%",
+            "4.53%",
+            "1.21%"
+          ]
+        }
+      ],
+      "research_tensions": [
+        {
+          "claim": "ROE 高但增长明显恶化、现金流同步恶化：不得因误导性 Debate 写成已经恢复。既有数字仍为 33.65%、4.53%、1.21%，压力来自关系解读而非新造数字。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "reasoning": "候选证据经 weight 选择后对照盈利能力指标与增长指标。",
+          "interpretation": "现有证据可以支持“盈利能力仍强、增长承压”的分化判断；但单期同比不足以判定是短期波动还是结构性问题，需后续验证需求、渠道与管理层指引。",
+          "confidence": 0.84,
+          "status": "supported",
+          "finding_kind": "tension",
+          "finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+          "research_question": "盈利能力是否仍强，增长动能是否承压？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "33.65%",
+            "4.53%",
+            "1.21%"
+          ]
+        },
+        {
+          "claim": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2025-12-31 ROE为 33.65%；2025-12-31 归母净利润同比下降 4.53%；2025-12-31 营业收入同比下降 1.21%。估值属于 as_of 市场截面，盈利/增速属于财报期；若增长承压而盈利能力仍高，则估值合理性更依赖未来增长恢复，而不能仅由历史盈利能力解释。",
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "reasoning": "跨时间尺度：估值截面 × 财务期盈利/增长。",
+          "interpretation": "这是条件判断而非买卖建议；证据不足以给出目标估值。",
+          "confidence": 0.72,
+          "status": "supported",
+          "finding_kind": "tension",
+          "finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+          "research_question": "当前估值需要怎样的盈利/增长假设才能成立？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "2025-12-31",
+            "33.65%",
+            "4.53%",
+            "1.21%"
+          ]
+        }
+      ],
+      "research_gaps": [
+        {
+          "claim": "当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+          "evidence_ids": [],
+          "reasoning": "insufficient_evidence",
+          "interpretation": "insufficient_evidence",
+          "confidence": 0.9,
+          "status": "insufficient_evidence",
+          "finding_kind": "insufficient",
+          "finding_id": null,
+          "research_question": null,
+          "ref_finding_id": null,
+          "numbers_preserved": []
+        },
+        {
+          "claim": "当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。",
+          "evidence_ids": [],
+          "reasoning": "insufficient_evidence",
+          "interpretation": "insufficient_evidence",
+          "confidence": 0.9,
+          "status": "insufficient_evidence",
+          "finding_kind": "insufficient",
+          "finding_id": null,
+          "research_question": null,
+          "ref_finding_id": null,
+          "numbers_preserved": []
+        }
+      ],
+      "evidence_references": [
+        "akshare_fact_600519_20260331_2fb3ab92d0",
+        "akshare_fact_600519_20260331_30e2904d77",
+        "akshare_fact_600519_20260331_f83c681f65",
+        "akshare_fact_600519_20260331_f8d51f60b8",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "akshare_fact_600519_industry_573f00e16d",
+        "akshare_fact_600519_stockname_8342d03388",
+        "derived_derived_600519_20251231_1aa9df0253",
+        "derived_derived_600519_20251231_23d97142ea",
+        "derived_derived_600519_20251231_326895f599",
+        "derived_derived_600519_20251231_b21d45697e",
+        "derived_derived_600519_20251231_e5ea7a9e51",
+        "derived_derived_600519_20251231_e5ef691e0a"
+      ],
+      "excluded_audit": [
+        {
+          "evidence_id": "eastmoney_event_600519_20251230_8edd2c4a89",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=228"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20251106_8643d65ba0",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=282"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20250902_75635c8100",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=347"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20230628_484be97a87",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=1144"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20230628_4f1a933788",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=1144"
+        },
+        {
+          "evidence_id": "财政部网站_event_600519_20260814_f6334b0299",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "界面新闻_event_600519_20260814_f2621cde5b",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_600519_20260814_acb7968054",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_600519_20260814_c5d05a2e8f",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "证券时报_event_600519_20260814_4165aced76",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "上海证券报_event_600519_20260814_0544591350",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "界面新闻_event_600519_20260814_2fc2b6ca4f",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "中国经营报_event_600519_20260814_8b1137d773",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_6d9382ef80",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_9c89d80d57",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_40f0ec6a2e",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:51:58 [market] 【机构龙虎榜解读】CDN+液冷+算力租赁，提供GPU云算力、CPU云算力等一站式算力云服务，在国内已建"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_33ee7e32ba",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_bef6c39dee",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_b780101e98",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:44:05 [market] 南向资金今日净卖出逾13亿港元 联想集团遭卖出居前"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_9c4eceda63",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_38dd9ab0b8",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_85fa70f428",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:41:53 [market] 富维股份：获合资品牌客户座椅项目定点 预计总销售金额28.6亿元"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_8374cf9b66",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:36:33 [market] *ST闻泰：上半年净亏损4.06亿元 同比转亏"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_65ca4a31b4",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_d854a9d085",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_af09a5c13b",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_5f840a23a3",
+          "reason": "irrelevant",
+          "detail": "macro_not_in_fundamental_core"
+        }
+      ],
+      "relevance_notes": [
+        "irrelevant excluded from core",
+        "macro_market → macro_background only",
+        "industry_related requires strong industry tokens"
+      ],
+      "time_context": {
+        "research_as_of_date": "2026-08-15"
+      },
+      "uncertainty_boundaries": [
+        "现有证据可以支持“盈利能力仍强、增长承压”的分化判断；但单期同比不足以判定是短期波动还是结构性问题，需后续验证需求、渠道与管理层指引。",
+        "若现金含量稳定，则利润表波动的说服力更强；反之需提高对利润质量的警惕。边界：未覆盖完整多期趋势时不作趋势定论。",
+        "财务健康是缓冲维度；与增长压力并存时，二者回答不同问题。",
+        "这是条件判断而非买卖建议；证据不足以给出目标估值。",
+        "insufficient_evidence"
+      ],
+      "contract_notes": [
+        "canonical_findings is the only authoritative research expression",
+        "compat/reference/cross_evidence_findings must not invent new research facts",
+        "weight is selection priority, not investment probability",
+        "Grounded synthesis is deterministic, not autonomous research"
+      ]
+    },
+    "market": {
+      "stock_code": "600519",
+      "agent": "market",
+      "research_as_of_date": "2026-08-15",
+      "canonical_findings": [
+        {
+          "claim": "2026-08-14 最新价格为 1341.99 元；2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA60为 1259.2065；2026-08-14 MA250为 1357.7337。对照结果显示短中期均线呈多头排列；价格相对均线的位置需分短中长期解读，不等于趋势预测。",
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_0e265beb0b",
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_84f0964810",
+            "derived_derived_600519_20260814_5570a1a010"
+          ],
+          "reasoning": "价格与均线在同一 as_of 截面对照。",
+          "interpretation": "描述状态，不给出交易指令。",
+          "confidence": 0.8,
+          "status": "supported",
+          "finding_kind": "cross",
+          "finding_id": "FINDING_MKT_PRICE_MA",
+          "research_question": "价格相对均线结构处于什么状态？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2026-08-14",
+            "1341.99",
+            "1347.1280",
+            "1325.9990",
+            "1259.2065",
+            "1357.7337"
+          ]
+        },
+        {
+          "claim": "2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA250为 1357.7337；2026-08-14 最新价格为 1341.99 元。短中期均线与长期均线（MA250）可能指向不同时间尺度状态；因此短期动能与长期压力/支撑必须分开表述，避免混用。",
+          "evidence_ids": [
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_5570a1a010",
+            "akshare_fact_600519_20260814_0e265beb0b"
+          ],
+          "reasoning": "不同时间尺度均线对照形成趋势张力。",
+          "interpretation": "冲突存在并不自动指向方向选择；只定义研究问题。",
+          "confidence": 0.82,
+          "status": "supported",
+          "finding_kind": "tension",
+          "finding_id": "TENSION_MKT_SHORT_VS_LONG",
+          "research_question": "短中期趋势与长期均线是否冲突？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2026-08-14",
+            "1347.1280",
+            "1325.9990",
+            "1357.7337",
+            "1341.99"
+          ]
+        },
+        {
+          "claim": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2026-08-14 最新价格为 1341.99 元；2026-08-14 当前价格在52周区间中的位置为 0.5016。估值与价格/52周位置同属 as_of 截面，可共同描述定价状态，但不能单独推导涨跌方向。",
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "akshare_fact_600519_20260814_0e265beb0b",
+            "derived_derived_600519_20260814_94d80062bf"
+          ],
+          "reasoning": "估值指标与价格位置在同一研究问题下联合。",
+          "interpretation": "状态描述；不作目标价。",
+          "confidence": 0.76,
+          "status": "supported",
+          "finding_kind": "cross",
+          "finding_id": "FINDING_MKT_VAL_PRICE",
+          "research_question": "估值与价格位置如何共同描述定价状态？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "1341.99",
+            "52",
+            "0.5016"
+          ]
+        }
+      ],
+      "research_tensions": [
+        {
+          "claim": "2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA250为 1357.7337；2026-08-14 最新价格为 1341.99 元。短中期均线与长期均线（MA250）可能指向不同时间尺度状态；因此短期动能与长期压力/支撑必须分开表述，避免混用。",
+          "evidence_ids": [
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_5570a1a010",
+            "akshare_fact_600519_20260814_0e265beb0b"
+          ],
+          "reasoning": "不同时间尺度均线对照形成趋势张力。",
+          "interpretation": "冲突存在并不自动指向方向选择；只定义研究问题。",
+          "confidence": 0.82,
+          "status": "supported",
+          "finding_kind": "tension",
+          "finding_id": "TENSION_MKT_SHORT_VS_LONG",
+          "research_question": "短中期趋势与长期均线是否冲突？",
+          "ref_finding_id": null,
+          "numbers_preserved": [
+            "2026-08-14",
+            "1347.1280",
+            "1325.9990",
+            "1357.7337",
+            "1341.99"
+          ]
+        }
+      ],
+      "research_gaps": [
+        {
+          "claim": "当前 Research Context 缺少足够的新闻 Current/Previous 个股相关资讯证据，无法形成可靠判断。",
+          "evidence_ids": [],
+          "reasoning": "insufficient_evidence",
+          "interpretation": "insufficient_evidence",
+          "confidence": 0.9,
+          "status": "insufficient_evidence",
+          "finding_kind": "insufficient",
+          "finding_id": null,
+          "research_question": null,
+          "ref_finding_id": null,
+          "numbers_preserved": []
+        },
+        {
+          "claim": "当前 Research Context 缺少足够的盘口微观结构证据，无法形成可靠判断。",
+          "evidence_ids": [],
+          "reasoning": "insufficient_evidence",
+          "interpretation": "insufficient_evidence",
+          "confidence": 0.9,
+          "status": "insufficient_evidence",
+          "finding_kind": "insufficient",
+          "finding_id": null,
+          "research_question": null,
+          "ref_finding_id": null,
+          "numbers_preserved": []
+        },
+        {
+          "claim": "当前 Research Context 缺少足够的机构持仓完整时序证据，无法形成可靠判断。",
+          "evidence_ids": [],
+          "reasoning": "insufficient_evidence",
+          "interpretation": "insufficient_evidence",
+          "confidence": 0.9,
+          "status": "insufficient_evidence",
+          "finding_kind": "insufficient",
+          "finding_id": null,
+          "research_question": null,
+          "ref_finding_id": null,
+          "numbers_preserved": []
+        }
+      ],
+      "evidence_references": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_5570a1a010",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_94d80062bf",
+        "derived_derived_600519_20260814_d7efcdac03"
+      ],
+      "excluded_audit": [
+        {
+          "evidence_id": "eastmoney_event_600519_20251230_8edd2c4a89",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=228"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20251106_8643d65ba0",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=282"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20250902_75635c8100",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=347"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20230628_484be97a87",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=1144"
+        },
+        {
+          "evidence_id": "eastmoney_event_600519_20230628_4f1a933788",
+          "reason": "out_of_window",
+          "detail": "company_event age_days=1144"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_40f0ec6a2e",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:51:58 [market] 【机构龙虎榜解读】CDN+液冷+算力租赁，提供GPU云算力、CPU云算力等一站式算力云服务，在国内已建"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_b780101e98",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:44:05 [market] 南向资金今日净卖出逾13亿港元 联想集团遭卖出居前"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_85fa70f428",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:41:53 [market] 富维股份：获合资品牌客户座椅项目定点 预计总销售金额28.6亿元"
+        },
+        {
+          "evidence_id": "cls_event_macro_20260814_8374cf9b66",
+          "reason": "irrelevant",
+          "detail": "claim=2026-08-14 17:36:33 [market] *ST闻泰：上半年净亏损4.06亿元 同比转亏"
+        }
+      ],
+      "relevance_notes": [
+        "irrelevant excluded from core",
+        "macro_market → macro_background only",
+        "industry_related requires strong industry tokens"
+      ],
+      "time_context": {
+        "research_as_of_date": "2026-08-15"
+      },
+      "uncertainty_boundaries": [
+        "状态描述；不作目标价。",
+        "insufficient_evidence"
+      ],
+      "contract_notes": [
+        "canonical_findings is the only authoritative research expression",
+        "compat/reference/cross_evidence_findings must not invent new research facts",
+        "weight is selection priority, not investment probability",
+        "Grounded synthesis is deterministic, not autonomous research"
+      ]
+    },
+    "debate": {
+      "stock_code": "600519",
+      "bull": {
+        "stock_code": "600519",
+        "stance": "bull",
+        "thesis": "Bull thesis live fixture",
+        "claims": [
+          {
+            "claim_id": "BULL_01",
+            "stance": "bull",
+            "claim": "（误导性）现有证据已经证明增长全面恢复，估值应立即重估。",
+            "reasoning": "live fixture",
+            "evidence_ids": [
+              "derived_derived_600519_20251231_1aa9df0253",
+              "derived_derived_600519_20251231_23d97142ea"
+            ],
+            "confidence": 0.9,
+            "importance": 0.9,
+            "canonical_finding_ids": [
+              "TENSION_FUND_PROFIT_VS_GROWTH"
+            ]
+          }
+        ],
+        "key_risks": [
+          "增长仍不确定"
+        ],
+        "uncertainties": [
+          "阶段性未验证"
+        ]
+      },
+      "bear": {
+        "stock_code": "600519",
+        "stance": "bear",
+        "thesis": "Bear thesis live fixture",
+        "claims": [
+          {
+            "claim_id": "BEAR_01",
+            "stance": "bear",
+            "claim": "（被压制）增长仍不确定。",
+            "reasoning": "live fixture",
+            "evidence_ids": [
+              "derived_derived_600519_20251231_1aa9df0253",
+              "derived_derived_600519_20251231_23d97142ea"
+            ],
+            "confidence": 0.8,
+            "importance": 0.9,
+            "canonical_finding_ids": [
+              "TENSION_FUND_PROFIT_VS_GROWTH"
+            ]
+          }
+        ],
+        "key_opportunities": [
+          "高盈利仍在"
+        ],
+        "uncertainties": [
+          "结构未证实"
+        ]
+      },
+      "challenges": [
+        {
+          "challenge_id": "CH_BEAR_01",
+          "challenger": "bear",
+          "target_claim_id": "BULL_01",
+          "challenge_type": "interpretation_conflict",
+          "argument": "Bear 质疑 Bull 过度强调缓冲。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253"
+          ],
+          "strength": 0.6
+        },
+        {
+          "challenge_id": "CH_ADV_01",
+          "challenger": "bear",
+          "target_claim_id": "BULL_01",
+          "challenge_type": "evidence_insufficient",
+          "argument": "所谓『已经证明恢复』缺乏多期可核对证据。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253"
+          ],
+          "strength": 0.95
+        }
+      ],
+      "rebuttals": [
+        {
+          "rebuttal_id": "RB_BULL_01",
+          "author": "bull",
+          "target_challenge_id": "CH_BEAR_01",
+          "response_type": "reject",
+          "argument": "Challenge 未提供足以推翻缓冲解释的新证据，予以 reject。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea"
+          ]
+        },
+        {
+          "rebuttal_id": "RB_ADV_01",
+          "author": "bull",
+          "target_challenge_id": "CH_ADV_01",
+          "response_type": "partially_accept",
+          "argument": "承认缺少多期确认，但仍主张建设性解释。",
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253"
+          ]
+        }
+      ],
+      "evidence_weights": [],
+      "debate_summary": {
+        "shared_facts": [
+          "live fixture shared fact"
+        ],
+        "core_disagreements": [
+          "阶段性 vs 结构性"
+        ],
+        "unresolved_issues": [
+          "对抗性 Debate：恢复主张缺少多期证据，不得写成已证明"
+        ]
+      },
+      "execution": {
+        "parallel_claims": true,
+        "parallel_challenges": true,
+        "parallel_rebuttals": true,
+        "max_rounds": 2,
+        "rounds_executed": [
+          "claims",
+          "challenges",
+          "rebuttals"
+        ],
+        "started_at": "2026-08-15T00:00:00+00:00",
+        "finished_at": "2026-08-15T00:00:01+00:00",
+        "duration_ms": 1
+      },
+      "metadata": {
+        "force_resolution": "bull_supported",
+        "force_assessment_strength": "strong",
+        "live_fixture": true,
+        "adversarial": true
+      }
+    },
+    "assembly_notes": [
+      "canonical_findings is the only authoritative research expression",
+      "compat sections must not be scanned for new facts",
+      "EvidencePack is not primary input; evidence_id lookup is read-only for citation",
+      "weight is selection priority already applied upstream, not investment probability",
+      "grounded synthesizer is deterministic, not autonomous research"
+    ]
+  },
+  "expected_frame": {
+    "primary_axis": "growth_vs_profitability",
+    "secondary_axis": "",
+    "assessment_strength": "strong",
+    "debate_state": "bull_supported",
+    "support_strength": null,
+    "pressure_level": "severe",
+    "scenario_direction": "conditional",
+    "cross_tension": false,
+    "contradiction_handling": false,
+    "decision_boundary": false,
+    "uncertainty_state": "preserved",
+    "valuation_dependency": "",
+    "market_signal_role": ""
+  }
+}

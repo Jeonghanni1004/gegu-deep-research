@@ -1,0 +1,6 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "status": 200,
+  "body": "{\"id\":\"39eee6f7-941b-404e-ae71-ba07d16c6b9e\",\"object\":\"chat.completion\",\"created\":1786862464,\"model\":\"deepseek-v4-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"pong\\\": true}\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":14,\"completion_tokens\":6,\"total_tokens\":20,\"prompt_tokens_details\":{\"cached_tokens\":0},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":14},\"system_fingerprint\":\"a26a7955944dc5c60445bff77fac9c8e\"}"
+}

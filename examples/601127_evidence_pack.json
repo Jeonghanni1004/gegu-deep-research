@@ -1,0 +1,4393 @@
+{
+  "stock_code": "601127",
+  "generated_at": "2026-08-19T15:37:55+08:00",
+  "evidence_count": 119,
+  "counts_by_type": {
+    "FACT": 63,
+    "DERIVED": 18,
+    "EVENT": 35,
+    "EXPECTATION": 3
+  },
+  "evidence": [
+    {
+      "evidence_id": "akshare_fact_601127_stockname_ca8fd12cc4",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "stock_name",
+      "claim": "股票名称为 赛力斯",
+      "value": {
+        "metric": "stock_name",
+        "value": "赛力斯",
+        "unit": "text"
+      },
+      "source": {
+        "provider": "eastmoney.PC_HSF10.CompanySurvey",
+        "source_type": "company_info",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.company_info"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_industry_62189817ed",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "industry",
+      "claim": "所属行业为 制造业-汽车制造业",
+      "value": {
+        "metric": "industry",
+        "value": "制造业-汽车制造业",
+        "unit": "text"
+      },
+      "source": {
+        "provider": "eastmoney.PC_HSF10.CompanySurvey",
+        "source_type": "company_info",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033468480555555553,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.company_info"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_listingdat_9b667e0ed6",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "listing_date",
+      "claim": "上市日期为 2016-06-15",
+      "value": {
+        "metric": "listing_date",
+        "value": "2016-06-15",
+        "unit": "text"
+      },
+      "source": {
+        "provider": "eastmoney.PC_HSF10.CompanySurvey",
+        "source_type": "company_info",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033468744444444445,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.company_info"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_totalshare_2b8cd69c5d",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_shares",
+      "claim": "总股本为 1741985086.0",
+      "value": {
+        "metric": "total_shares",
+        "value": 1741985086.0,
+        "unit": "count"
+      },
+      "source": {
+        "provider": "eastmoney.PC_HSF10.CompanySurvey",
+        "source_type": "company_info",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033468933333333332,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.company_info"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_floatshare_1cd1b0fe56",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "float_shares",
+      "claim": "流通股本为 1557203392.0",
+      "value": {
+        "metric": "float_shares",
+        "value": 1557203392.0,
+        "unit": "count"
+      },
+      "source": {
+        "provider": "eastmoney.PC_HSF10.CompanySurvey",
+        "source_type": "company_info",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003346918611111111,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.company_info"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_totalmarke_dd979718e3",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_market_cap",
+      "claim": "总市值为 879.35 亿元",
+      "value": {
+        "metric": "total_market_cap",
+        "value": 87935407141.28,
+        "unit": "money"
+      },
+      "source": {
+        "provider": "eastmoney.PC_HSF10.CompanySurvey",
+        "source_type": "company_info",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.company_info"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_9c0b3e0f6f",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_revenue",
+      "claim": "2025-12-31 营业收入为 1650.54 亿元",
+      "value": {
+        "metric": "operating_revenue",
+        "value": 165053636639.13,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033469924999999998,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_ff6780a29c",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_cost",
+      "claim": "2025-12-31 营业成本为 1169.54 亿元",
+      "value": {
+        "metric": "operating_cost",
+        "value": 116953831365.74,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_e66b6beb3f",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_profit",
+      "claim": "2025-12-31 营业利润为 75.18 亿元",
+      "value": {
+        "metric": "operating_profit",
+        "value": 7517935744.56,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033470302777777777,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_be2a9c513a",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "net_profit_parent",
+      "claim": "2025-12-31 归母净利润为 59.57 亿元",
+      "value": {
+        "metric": "net_profit_parent",
+        "value": 5956787449.91,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347058888888889,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_3070661af9",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "gross_profit",
+      "claim": "2025-12-31 毛利为 481.00 亿元",
+      "value": {
+        "metric": "gross_profit",
+        "value": 48099805273.39,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347076944444444,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_248de403ab",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "eps_basic",
+      "claim": "2025-12-31 基本每股收益为 3.68 元",
+      "value": {
+        "metric": "eps_basic",
+        "value": 3.68,
+        "unit": "CNY/share",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033470941666666667,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_4df138777b",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_revenue",
+      "claim": "2024-12-31 营业收入为 1451.76 亿元",
+      "value": {
+        "metric": "operating_revenue",
+        "value": 145175822053.79,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347108611111111,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_8530a827ea",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_cost",
+      "claim": "2024-12-31 营业成本为 1072.10 亿元",
+      "value": {
+        "metric": "operating_cost",
+        "value": 107209697670.22,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_ec609c634e",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_profit",
+      "claim": "2024-12-31 营业利润为 49.42 亿元",
+      "value": {
+        "metric": "operating_profit",
+        "value": 4942184755.17,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033471355555555553,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_f182714664",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "net_profit_parent",
+      "claim": "2024-12-31 归母净利润为 59.46 亿元",
+      "value": {
+        "metric": "net_profit_parent",
+        "value": 5945945362.82,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033471486111111112,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_50c166bc13",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "gross_profit",
+      "claim": "2024-12-31 毛利为 379.66 亿元",
+      "value": {
+        "metric": "gross_profit",
+        "value": 37966124383.57001,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033471616666666667,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_e351a4242b",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "eps_basic",
+      "claim": "2024-12-31 基本每股收益为 3.94 元",
+      "value": {
+        "metric": "eps_basic",
+        "value": 3.94,
+        "unit": "CNY/share",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033471747222222226,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_187a85840d",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_revenue",
+      "claim": "2026-03-31 营业收入为 257.46 亿元",
+      "value": {
+        "metric": "operating_revenue",
+        "value": 25745711786.75,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033471877777777777,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_a2b790d07f",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_cost",
+      "claim": "2026-03-31 营业成本为 189.90 亿元",
+      "value": {
+        "metric": "operating_cost",
+        "value": 18990470700.37,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_6967bc0770",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_profit",
+      "claim": "2026-03-31 营业利润为 8.06 亿元",
+      "value": {
+        "metric": "operating_profit",
+        "value": 805558027.55,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347213888888889,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_f344d9f7f9",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "net_profit_parent",
+      "claim": "2026-03-31 归母净利润为 7.54 亿元",
+      "value": {
+        "metric": "net_profit_parent",
+        "value": 754464672.82,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347226388888889,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_cc6f5fd78c",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "gross_profit",
+      "claim": "2026-03-31 毛利为 67.55 亿元",
+      "value": {
+        "metric": "gross_profit",
+        "value": 6755241086.380001,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347238888888889,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_5044e4635d",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "eps_basic",
+      "claim": "2026-03-31 基本每股收益为 0.43 元",
+      "value": {
+        "metric": "eps_basic",
+        "value": 0.43,
+        "unit": "CNY/share",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_profit_sheet_by_report_em",
+        "source_type": "income_statement",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347251388888889,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "income_statement"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_acac1ee7d0",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_assets",
+      "claim": "2025-12-31 总资产为 1439.06 亿元",
+      "value": {
+        "metric": "total_assets",
+        "value": 143905863420.75,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033472680555555554,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_9e46f5b9f0",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_liabilities",
+      "claim": "2025-12-31 总负债为 1020.48 亿元",
+      "value": {
+        "metric": "total_liabilities",
+        "value": 102047535793.91,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347281666666667,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_b3de8f3b87",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_equity",
+      "claim": "2025-12-31 净资产(归母权益)为 409.18 亿元",
+      "value": {
+        "metric": "total_equity",
+        "value": 40918132577.88,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033472944444444446,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_532ec28e0e",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "cash_and_equivalents",
+      "claim": "2025-12-31 货币资金为 872.87 亿元",
+      "value": {
+        "metric": "cash_and_equivalents",
+        "value": 87286711951.55,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_e8b63ea5a3",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "accounts_receivable",
+      "claim": "2025-12-31 应收账款为 17.36 亿元",
+      "value": {
+        "metric": "accounts_receivable",
+        "value": 1735698480.44,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_eaeb4d95ae",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "inventory",
+      "claim": "2025-12-31 存货为 24.47 亿元",
+      "value": {
+        "metric": "inventory",
+        "value": 2446801030.87,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_0558ce6e23",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_assets",
+      "claim": "2024-12-31 总资产为 943.64 亿元",
+      "value": {
+        "metric": "total_assets",
+        "value": 94363958922.89,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033473475000000003,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_e415d5bdeb",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_liabilities",
+      "claim": "2024-12-31 总负债为 824.58 亿元",
+      "value": {
+        "metric": "total_liabilities",
+        "value": 82458401238.54,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033473605555555553,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_da11aefda4",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_equity",
+      "claim": "2024-12-31 净资产(归母权益)为 122.64 亿元",
+      "value": {
+        "metric": "total_equity",
+        "value": 12264245429.4,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033473730555555552,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_35e0183db8",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "cash_and_equivalents",
+      "claim": "2024-12-31 货币资金为 459.55 亿元",
+      "value": {
+        "metric": "cash_and_equivalents",
+        "value": 45955437989.8,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_8736f4f1f2",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "accounts_receivable",
+      "claim": "2024-12-31 应收账款为 23.62 亿元",
+      "value": {
+        "metric": "accounts_receivable",
+        "value": 2361932209.18,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_e4eb128c8d",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "inventory",
+      "claim": "2024-12-31 存货为 25.52 亿元",
+      "value": {
+        "metric": "inventory",
+        "value": 2552448609.01,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_c2c475e1e0",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_assets",
+      "claim": "2026-03-31 总资产为 1237.48 亿元",
+      "value": {
+        "metric": "total_assets",
+        "value": 123747865038.34,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347423611111111,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_75f01bd751",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_liabilities",
+      "claim": "2026-03-31 总负债为 815.78 亿元",
+      "value": {
+        "metric": "total_liabilities",
+        "value": 81577828433.66,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033474355555555553,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_d672f9ee9e",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_equity",
+      "claim": "2026-03-31 净资产(归母权益)为 413.10 亿元",
+      "value": {
+        "metric": "total_equity",
+        "value": 41310177392.59,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033474474999999997,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_47f15f27cd",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "cash_and_equivalents",
+      "claim": "2026-03-31 货币资金为 638.54 亿元",
+      "value": {
+        "metric": "cash_and_equivalents",
+        "value": 63854356000.03,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_44133a8837",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "accounts_receivable",
+      "claim": "2026-03-31 应收账款为 14.86 亿元",
+      "value": {
+        "metric": "accounts_receivable",
+        "value": 1486033193.81,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_eaf5c95b53",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "inventory",
+      "claim": "2026-03-31 存货为 19.57 亿元",
+      "value": {
+        "metric": "inventory",
+        "value": 1956759292.93,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_balance_sheet_by_report_em",
+        "source_type": "balance_sheet",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "balance_sheet"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_21af2c8318",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_cash_flow",
+      "claim": "2025-12-31 经营活动现金流为 289.14 亿元",
+      "value": {
+        "metric": "operating_cash_flow",
+        "value": 28913743329.24,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347503611111111,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_530abde2ce",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "investing_cash_flow",
+      "claim": "2025-12-31 投资活动现金流为 -50.33 亿元",
+      "value": {
+        "metric": "investing_cash_flow",
+        "value": -5032543021.48,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_a158718cc1",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "financing_cash_flow",
+      "claim": "2025-12-31 融资活动现金流为 182.77 亿元",
+      "value": {
+        "metric": "financing_cash_flow",
+        "value": 18276630420.41,
+        "unit": "CNY",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_903e77b925",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_cash_flow",
+      "claim": "2024-12-31 经营活动现金流为 225.15 亿元",
+      "value": {
+        "metric": "operating_cash_flow",
+        "value": 22515265144.17,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347543611111111,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_18fd55506c",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "investing_cash_flow",
+      "claim": "2024-12-31 投资活动现金流为 -165.09 亿元",
+      "value": {
+        "metric": "investing_cash_flow",
+        "value": -16509335238.09,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20241231_da90369696",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "financing_cash_flow",
+      "claim": "2024-12-31 融资活动现金流为 -41.67 亿元",
+      "value": {
+        "metric": "financing_cash_flow",
+        "value": -4166685115.44,
+        "unit": "CNY",
+        "period": "2024-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2024-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_b2f2f4ebc5",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "operating_cash_flow",
+      "claim": "2026-03-31 经营活动现金流为 -209.50 亿元",
+      "value": {
+        "metric": "operating_cash_flow",
+        "value": -20950295141.48,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033475811111111113,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_2cbcd1060a",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "investing_cash_flow",
+      "claim": "2026-03-31 投资活动现金流为 -43.52 亿元",
+      "value": {
+        "metric": "investing_cash_flow",
+        "value": -4352042841.04,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_27099bdb40",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "financing_cash_flow",
+      "claim": "2026-03-31 融资活动现金流为 -6.23 亿元",
+      "value": {
+        "metric": "financing_cash_flow",
+        "value": -622559136.3,
+        "unit": "CNY",
+        "period": "2026-03-31"
+      },
+      "source": {
+        "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+        "source_type": "cash_flow",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2026-03-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "statement": "cash_flow"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_61e24e5019",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "main_business_segment",
+      "claim": "2025-12-31 主营构成「新能源汽车」收入 1556.11 亿元，占比 94.28%，毛利率 28.76%",
+      "value": {
+        "metric": "main_business_segment",
+        "business_segment": "新能源汽车",
+        "revenue": 155611342442.8,
+        "revenue_ratio": 0.942793,
+        "gross_margin": 0.287622,
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_zygc_em",
+        "source_type": "main_business",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033476391666666665,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "category_type": "按产品分类"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_c4b4b0d9a9",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "main_business_segment",
+      "claim": "2025-12-31 主营构成「其他(补充)」收入 54.35 亿元，占比 3.29%，毛利率 56.63%",
+      "value": {
+        "metric": "main_business_segment",
+        "business_segment": "其他(补充)",
+        "revenue": 5435328856.55,
+        "revenue_ratio": 0.032931,
+        "gross_margin": 0.566279,
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_zygc_em",
+        "source_type": "main_business",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033476538888888886,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "category_type": "按产品分类"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_35237b076d",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "main_business_segment",
+      "claim": "2025-12-31 主营构成「其他」收入 21.04 亿元，占比 1.27%，毛利率 10.19%",
+      "value": {
+        "metric": "main_business_segment",
+        "business_segment": "其他",
+        "revenue": 2104397250.54,
+        "revenue_ratio": 0.01275,
+        "gross_margin": 0.101944,
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_zygc_em",
+        "source_type": "main_business",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033476677777777774,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "category_type": "按产品分类"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20251231_98e5eda2ea",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "main_business_segment",
+      "claim": "2025-12-31 主营构成「传统燃油车」收入 19.03 亿元，占比 1.15%，毛利率 2.64%",
+      "value": {
+        "metric": "main_business_segment",
+        "business_segment": "传统燃油车",
+        "revenue": 1902568089.24,
+        "revenue_ratio": 0.011527,
+        "gross_margin": 0.026352,
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "akshare.stock_zygc_em",
+        "source_type": "main_business",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033476808333333333,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "category_type": "按产品分类"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_239bd5aafa",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "close_price",
+      "claim": "2026-08-19 最新价格为 50.48 元",
+      "value": {
+        "metric": "latest_price",
+        "value": 50.48,
+        "unit": "CNY",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_f0cf4975d9",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "pe",
+      "claim": "2026-08-19 市盈率PE(TTM)为 14.75",
+      "value": {
+        "metric": "pe",
+        "value": 14.74570589,
+        "unit": "ratio_or_cny",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_ba9424c34d",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "pb",
+      "claim": "2026-08-19 市净率PB为 2.13",
+      "value": {
+        "metric": "pb",
+        "value": 2.12866206,
+        "unit": "ratio_or_cny",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_a38b24b37b",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "ps",
+      "claim": "2026-08-19 市销率PS为 0.51",
+      "value": {
+        "metric": "ps",
+        "value": 0.51228806,
+        "unit": "ratio_or_cny",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_a520e9381b",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "total_market_cap",
+      "claim": "2026-08-19 总市值为 879.35 亿元",
+      "value": {
+        "metric": "total_market_cap",
+        "value": 87935407141.28,
+        "unit": "ratio_or_cny",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_daad971c69",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "float_market_cap",
+      "claim": "2026-08-19 流通市值为 786.08 亿元",
+      "value": {
+        "metric": "float_market_cap",
+        "value": 78607627228.16,
+        "unit": "ratio_or_cny",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_1b200c20f0",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "turnover_rate",
+      "claim": "2026-08-19 换手率为 1.7343%",
+      "value": {
+        "metric": "turnover_rate",
+        "value": 1.7342740928219094,
+        "unit": "percent",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "akshare.stock_value_em",
+        "source_type": "market_snapshot",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "layer": "raw.market_snapshot"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_94b6934679",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "revenue_yoy",
+      "claim": "2025-12-31 营业收入同比增长 13.69%",
+      "value": {
+        "metric": "revenue_yoy",
+        "value": 0.13692234908079212,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347906111111111,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "(revenue_t - revenue_t-1) / abs(revenue_t-1)",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_5d9c5121f8",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "net_profit_yoy",
+      "claim": "2025-12-31 归母净利润同比增长 0.18%",
+      "value": {
+        "metric": "net_profit_yoy",
+        "value": 0.0018234420985089655,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.00334792,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "(np_t - np_t-1) / abs(np_t-1)",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_6b0d3cc53d",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "gross_margin",
+      "claim": "2025-12-31 毛利率为 29.14%",
+      "value": {
+        "metric": "gross_margin",
+        "value": 0.29141923954426074,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033479336111111114,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "(revenue - operating_cost) / revenue",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_f2a5edc053",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "net_margin",
+      "claim": "2025-12-31 净利率为 3.61%",
+      "value": {
+        "metric": "net_margin",
+        "value": 0.036090010321516285,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347946388888889,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "net_profit_parent / revenue",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_8f6bc3786a",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "roe",
+      "claim": "2025-12-31 ROE为 14.56%",
+      "value": {
+        "metric": "roe",
+        "value": 0.14557818440449038,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033479594444444445,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "net_profit_parent / ending_equity",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_f8cff2e6b7",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "debt_to_asset_ratio",
+      "claim": "2025-12-31 资产负债率为 70.91%",
+      "value": {
+        "metric": "debt_to_asset_ratio",
+        "value": 0.7091270179557925,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0033479719444444445,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "total_liabilities / total_assets",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_7e09ef5a6d",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "ocf_to_net_profit",
+      "claim": "2025-12-31 经营现金流/净利润为 485.39%",
+      "value": {
+        "metric": "ocf_to_net_profit",
+        "value": 4.853915566464749,
+        "unit": "ratio",
+        "period": "2025-12-31"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_fundamentals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": "2025-12-31",
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.003347984444444445,
+        "status": "periodic"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "operating_cash_flow / net_profit_parent",
+        "inputs": {
+          "revenue": 165053636639.13,
+          "prior_revenue": 145175822053.79,
+          "net_profit_parent": 5956787449.91,
+          "prior_net_profit_parent": 5945945362.82,
+          "total_equity": 40918132577.88,
+          "total_assets": 143905863420.75,
+          "total_liabilities": 102047535793.91,
+          "operating_cash_flow": 28913743329.24,
+          "note": "ROE uses ending equity (not average equity)."
+        }
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_0d349d4b18",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "ma5",
+      "claim": "2026-08-19 MA5为 52.5880",
+      "value": {
+        "metric": "ma5",
+        "value": 52.588,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "SMA(close,5)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_226cac6ef6",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "ma20",
+      "claim": "2026-08-19 MA20为 56.2900",
+      "value": {
+        "metric": "ma20",
+        "value": 56.290000000000006,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "SMA(close,20)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_5666692101",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "ma60",
+      "claim": "2026-08-19 MA60为 62.2758",
+      "value": {
+        "metric": "ma60",
+        "value": 62.27583333333334,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "SMA(close,60)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_052c188e38",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "ma250",
+      "claim": "2026-08-19 MA250为 105.3671",
+      "value": {
+        "metric": "ma250",
+        "value": 105.36712,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "SMA(close,250)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_9187d97fec",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "macd_dif",
+      "claim": "2026-08-19 MACD DIF为 -2.1402",
+      "value": {
+        "metric": "macd_dif",
+        "value": -2.140165445348167,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "EMA12-EMA26"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_0fd60fb6fc",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "macd_dea",
+      "claim": "2026-08-19 MACD DEA为 -1.7262",
+      "value": {
+        "metric": "macd_dea",
+        "value": -1.7262287368313607,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "EMA9(DIF)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_0c961698ae",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "macd_hist",
+      "claim": "2026-08-19 MACD HIST为 -0.8279",
+      "value": {
+        "metric": "macd_hist",
+        "value": -0.8278734170336124,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "(DIF-DEA)*2"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_896be60641",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "rsi_14",
+      "claim": "2026-08-19 RSI(14)为 29.5575",
+      "value": {
+        "metric": "rsi_14",
+        "value": 29.55752510545217,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "RSI(14)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_b56f7666dc",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "high_52w",
+      "claim": "2026-08-19 52周最高价为 173.5500",
+      "value": {
+        "metric": "high_52w",
+        "value": 173.55,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": null
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_e857511cc1",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "low_52w",
+      "claim": "2026-08-19 52周最低价为 50.1300",
+      "value": {
+        "metric": "low_52w",
+        "value": 50.13,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": null
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_99c90bf1e6",
+      "stock_code": "601127",
+      "evidence_type": "DERIVED",
+      "subtype": "price_position_in_52w_range",
+      "claim": "2026-08-19 当前价格在52周区间中的位置为 0.0028",
+      "value": {
+        "metric": "price_position_in_52w_range",
+        "value": 0.00283584508183434,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": "(close-low52)/(high52-low52)"
+      }
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_8a7e3baa6f",
+      "stock_code": "601127",
+      "evidence_type": "FACT",
+      "subtype": "close_price",
+      "claim": "2026-08-19 收盘价为 50.4800",
+      "value": {
+        "metric": "close",
+        "value": 50.48,
+        "unit": "price_or_ratio",
+        "period": "2026-08-19"
+      },
+      "source": {
+        "provider": "python.derived",
+        "source_type": "derived_technicals",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": null,
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 7.63,
+        "status": "very_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "formula": null
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260808_ea4feef647",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-08-08 公司公告：赛力斯:H股公告(董事会会议召开日期)",
+      "value": {
+        "title": "赛力斯:H股公告(董事会会议召开日期)",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "其他"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608071827752539.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-08-08 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-08 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 271.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260804_48eee81ef6",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-08-04 公司公告：赛力斯:2026年7月份产销快报",
+      "value": {
+        "title": "赛力斯:2026年7月份产销快报",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "月度经营情况"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608031827596573.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-08-04 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-04 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 367.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260804_9f38af164b",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-08-04 公司公告：赛力斯:关于股份回购进展公告",
+      "value": {
+        "title": "赛力斯:关于股份回购进展公告",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "回购进展情况"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608031827596572.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-08-04 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-04 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 367.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260804_6b6fffdd82",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-08-04 公司公告：赛力斯:H股公告(股份发行人及根据《上市规则》第十九B章上市的香港预托证券发行人的证券变动月报表)",
+      "value": {
+        "title": "赛力斯:H股公告(股份发行人及根据《上市规则》第十九B章上市的香港预托证券发行人的证券变动月报表)",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "其他"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608031827592712.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-08-04 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-04 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 367.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260731_fa09a502b6",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-07-31 公司公告：赛力斯:关于子公司增资扩股的进展公告",
+      "value": {
+        "title": "赛力斯:关于子公司增资扩股的进展公告",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "增资扩股"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202607301827493070.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-07-31 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-07-31 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 463.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260721_4505fd8840",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-07-21 公司公告：赛力斯:关于股份回购进展公告",
+      "value": {
+        "title": "赛力斯:关于股份回购进展公告",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "回购进展情况"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202607201827154600.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-07-21 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-07-21 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 703.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260721_4bfc1de6a5",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "announcement",
+      "claim": "2026-07-21 公司公告：赛力斯:关于公司董事、高级管理人员及骨干团队增持A股及H股股份结果的更正公告",
+      "value": {
+        "title": "赛力斯:关于公司董事、高级管理人员及骨干团队增持A股及H股股份结果的更正公告",
+        "content": "",
+        "category": "company",
+        "column_names": [
+          "股东/实际控制人股份增持",
+          "其他"
+        ]
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "announcement",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202607201827154599.html",
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-07-21 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-07-21 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 703.63,
+        "status": "historical_recent"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "company"
+      }
+    },
+    {
+      "evidence_id": "ths_expectation_601127_2026_e6f6e866a9",
+      "stock_code": "601127",
+      "evidence_type": "EXPECTATION",
+      "subtype": "eps_consensus",
+      "claim": "2026 年 EPS 一致预期为 4.80 元，共 22 家机构（更新于 2026-08-19）",
+      "value": {
+        "metric": "EPS",
+        "forecast_year": "2026",
+        "value": 4.8,
+        "min_value": 3.52,
+        "max_value": 6.39,
+        "institution_count": 22,
+        "unit": "CNY/share"
+      },
+      "source": {
+        "provider": "tonghuashun",
+        "source_type": "consensus_estimate",
+        "url": "https://basic.10jqka.com.cn/new/601127/worth.html",
+        "retrieved_at": "2026-08-19T07:37:53+00:00",
+        "published_at": null,
+        "updated_at": "2026-08-19"
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:53+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0005713291666666667,
+        "status": "periodic"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "raw_row": {
+          "年度": 2026,
+          "预测机构数": 22,
+          "最小值": 3.52,
+          "均值": 4.8,
+          "最大值": 6.39,
+          "行业平均数": 1.7
+        }
+      }
+    },
+    {
+      "evidence_id": "ths_expectation_601127_2027_ebbb47c112",
+      "stock_code": "601127",
+      "evidence_type": "EXPECTATION",
+      "subtype": "eps_consensus",
+      "claim": "2027 年 EPS 一致预期为 6.31 元，共 22 家机构（更新于 2026-08-19）",
+      "value": {
+        "metric": "EPS",
+        "forecast_year": "2027",
+        "value": 6.31,
+        "min_value": 4.31,
+        "max_value": 8.18,
+        "institution_count": 22,
+        "unit": "CNY/share"
+      },
+      "source": {
+        "provider": "tonghuashun",
+        "source_type": "consensus_estimate",
+        "url": "https://basic.10jqka.com.cn/new/601127/worth.html",
+        "retrieved_at": "2026-08-19T07:37:53+00:00",
+        "published_at": null,
+        "updated_at": "2026-08-19"
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:53+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0005713461111111111,
+        "status": "periodic"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "raw_row": {
+          "年度": 2027,
+          "预测机构数": 22,
+          "最小值": 4.31,
+          "均值": 6.31,
+          "最大值": 8.18,
+          "行业平均数": 2.19
+        }
+      }
+    },
+    {
+      "evidence_id": "ths_expectation_601127_2028_007798299f",
+      "stock_code": "601127",
+      "evidence_type": "EXPECTATION",
+      "subtype": "eps_consensus",
+      "claim": "2028 年 EPS 一致预期为 7.93 元，共 20 家机构（更新于 2026-08-19）",
+      "value": {
+        "metric": "EPS",
+        "forecast_year": "2028",
+        "value": 7.93,
+        "min_value": 6.06,
+        "max_value": 10.32,
+        "institution_count": 20,
+        "unit": "CNY/share"
+      },
+      "source": {
+        "provider": "tonghuashun",
+        "source_type": "consensus_estimate",
+        "url": "https://basic.10jqka.com.cn/new/601127/worth.html",
+        "retrieved_at": "2026-08-19T07:37:53+00:00",
+        "published_at": null,
+        "updated_at": "2026-08-19"
+      },
+      "time": {
+        "data_date": "2026-08-19",
+        "report_date": null,
+        "published_at": null,
+        "retrieved_at": "2026-08-19T07:37:53+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.00057136,
+        "status": "periodic"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "raw_row": {
+          "年度": 2028,
+          "预测机构数": 20,
+          "最小值": 6.06,
+          "均值": 7.93,
+          "最大值": 10.32,
+          "行业平均数": 2.76
+        }
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260720_e36127929c",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "shareholder_change",
+      "claim": "2026-07-20 股东其他团队核心成员增持178.6500 万股",
+      "value": {
+        "title": "2026-07-20 股东其他团队核心成员增持178.6500 万股",
+        "holder_name": "其他团队核心成员",
+        "direction": "增持",
+        "change_num": 178.65,
+        "change_rate": -3.6722,
+        "hold_ratio": null,
+        "trade_average_price": 56.0034,
+        "start_date": "2026-07-15 00:00:00",
+        "end_date": "2026-07-17 00:00:00",
+        "category": "shareholder",
+        "raw": {
+          "MARKET": "二级市场",
+          "AFTER_HOLDER_NUM": null,
+          "AFTER_CHANGE_RATE": 0.102555413038
+        }
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "shareholder_change",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2026-07-20 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2026-07-17",
+        "report_date": null,
+        "published_at": "2026-07-20 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 727.63,
+        "status": "stale"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "shareholder"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20250419_e873ca34c2",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "shareholder_change",
+      "claim": "2025-04-19 股东其他团队核心成员5人增持13.0300 万股",
+      "value": {
+        "title": "2025-04-19 股东其他团队核心成员5人增持13.0300 万股",
+        "holder_name": "其他团队核心成员5人",
+        "direction": "增持",
+        "change_num": 13.03,
+        "change_rate": -0.1147,
+        "hold_ratio": null,
+        "trade_average_price": 134.1827,
+        "start_date": "2025-04-08 00:00:00",
+        "end_date": "2025-04-18 00:00:00",
+        "category": "shareholder",
+        "raw": {
+          "MARKET": "二级市场",
+          "AFTER_HOLDER_NUM": null,
+          "AFTER_CHANGE_RATE": 0.007977391053
+        }
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "shareholder_change",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2025-04-19 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2025-04-18",
+        "report_date": null,
+        "published_at": "2025-04-19 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 11695.63,
+        "status": "stale"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "shareholder"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20241018_3e0e01988a",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "shareholder_change",
+      "claim": "2024-10-18 股东段伟增持20.5400 万股",
+      "value": {
+        "title": "2024-10-18 股东段伟增持20.5400 万股",
+        "holder_name": "段伟",
+        "direction": "增持",
+        "change_num": 20.54,
+        "change_rate": -1.5317,
+        "hold_ratio": null,
+        "trade_average_price": 90.6285,
+        "start_date": "2024-10-16 00:00:00",
+        "end_date": "2024-10-17 00:00:00",
+        "category": "shareholder",
+        "raw": {
+          "MARKET": "二级市场",
+          "AFTER_HOLDER_NUM": null,
+          "AFTER_CHANGE_RATE": 0.013604611377
+        }
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "shareholder_change",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2024-10-18 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2024-10-17",
+        "report_date": null,
+        "published_at": "2024-10-18 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 16087.63,
+        "status": "stale"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "shareholder"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20241018_1956888cff",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "shareholder_change",
+      "claim": "2024-10-18 股东岑远川增持19.1700 万股",
+      "value": {
+        "title": "2024-10-18 股东岑远川增持19.1700 万股",
+        "holder_name": "岑远川",
+        "direction": "增持",
+        "change_num": 19.17,
+        "change_rate": -1.5317,
+        "hold_ratio": null,
+        "trade_average_price": 90.6839,
+        "start_date": "2024-10-16 00:00:00",
+        "end_date": "2024-10-17 00:00:00",
+        "category": "shareholder",
+        "raw": {
+          "MARKET": "二级市场",
+          "AFTER_HOLDER_NUM": null,
+          "AFTER_CHANGE_RATE": 0.012697195721
+        }
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "shareholder_change",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2024-10-18 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2024-10-17",
+        "report_date": null,
+        "published_at": "2024-10-18 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 16087.63,
+        "status": "stale"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "shareholder"
+      }
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20241016_3dbf30333e",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "shareholder_change",
+      "claim": "2024-10-16 股东陈业君增持23.9000 万股",
+      "value": {
+        "title": "2024-10-16 股东陈业君增持23.9000 万股",
+        "holder_name": "陈业君",
+        "direction": "增持",
+        "change_num": 23.9,
+        "change_rate": -3.3441,
+        "hold_ratio": null,
+        "trade_average_price": 93.0448,
+        "start_date": "2024-08-29 00:00:00",
+        "end_date": "2024-10-15 00:00:00",
+        "category": "shareholder",
+        "raw": {
+          "MARKET": "二级市场",
+          "AFTER_HOLDER_NUM": null,
+          "AFTER_CHANGE_RATE": 0.015830097951
+        }
+      },
+      "source": {
+        "provider": "eastmoney",
+        "source_type": "shareholder_change",
+        "url": null,
+        "retrieved_at": "2026-08-19T07:37:43+00:00",
+        "published_at": "2024-10-16 00:00:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": "2024-10-15",
+        "report_date": null,
+        "published_at": "2024-10-16 00:00:00",
+        "retrieved_at": "2026-08-19T07:37:43+00:00"
+      },
+      "freshness": {
+        "age_hours": 16135.63,
+        "status": "stale"
+      },
+      "reliability": "high",
+      "metadata": {
+        "event_category": "shareholder"
+      }
+    },
+    {
+      "evidence_id": "界面新闻_event_601127_20260819_237931763e",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 10:47:06 [market] “涨”声一片！中秋备货推动蛋价进入旺季模式",
+      "value": {
+        "title": "“涨”声一片！中秋备货推动蛋价进入旺季模式",
+        "content": "【“涨”声一片！中秋备货推动蛋价进入旺季模式】8月以来，全国鸡蛋市场正式进入中秋备货旺季，价格持续走强。据Mysteel农产品数据终端监测，8月17日主产区均价已升至5.15元/斤，较8月8日的4.46元/斤上涨0.69元/斤，9天累计涨幅达15.5%，同比涨幅高达58.46%，为近三年同期最高水平。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "界面新闻",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193845879230.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 10:47:06",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 10:47:06",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "界面新闻"
+      }
+    },
+    {
+      "evidence_id": "新华财经_event_601127_20260819_2de7af5b6d",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 13:34:42 [market] 人民币中间价创三年半新高 后市或呈偏强双向波动",
+      "value": {
+        "title": "人民币中间价创三年半新高 后市或呈偏强双向波动",
+        "content": "【人民币中间价创三年半新高 后市或呈偏强双向波动】人民币汇率延续升值走势。19日，人民币对美元汇率中间价报6.7854，升至三年半高位，较2025年末7.03的水平升值约3.55%，人民币兑美元即期汇率则从6.989升至6.74，升值幅度超3.4%。多位分析人士认为，本轮人民币汇率走强并非单一因素推动，而是美元回调、国内出口保持较快增长、企业结汇需求释放以及汇率预期改善共同作用的结果。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "新华财经",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193846046027.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 13:34:42",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 13:34:42",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "新华财经"
+      }
+    },
+    {
+      "evidence_id": "澎湃新闻_event_601127_20260819_29a5e9baf2",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:32:02 [market] 北京链家：“诚意卖”服务范围拓展至北京全市 近半数房源成交周期缩短至8天",
+      "value": {
+        "title": "北京链家：“诚意卖”服务范围拓展至北京全市 近半数房源成交周期缩短至8天",
+        "content": "【北京链家：“诚意卖”服务范围拓展至北京全市 近半数房源成交周期缩短至8天】8月19日，北京链家披露数据，自今年3月在北京42个片区落地“诚意卖”以来，累计上线房源268套，成交突破100单，整体成交率59.8%。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "澎湃新闻",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193846222588.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 15:32:02",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:32:02",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "澎湃新闻"
+      }
+    },
+    {
+      "evidence_id": "券商中国_event_601127_20260819_a32d52b130",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:17:34 [market] 事关每个人看病报销，全民医保“十五五”规划发布",
+      "value": {
+        "title": "事关每个人看病报销，全民医保“十五五”规划发布",
+        "content": "今天（19日），国家医保局发布《全民医疗保障“十五五”规划》。到2029年基本医保基本实现省级统筹《全民医疗保障“十五五”规划》提出，健全多层次医疗保障体系，提升大病保险和医疗救助保障水平，提高基金抗风险能力和使用效率，到2029年基本实现省级统筹：持续提升全民医保参保质量，提高职工基本医疗保险的参保人数占比。继续推动落实新生儿“出生一件事”联办，实现“出生即参、待遇即享”。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "券商中国",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193846216145.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 15:17:34",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:17:34",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "券商中国"
+      }
+    },
+    {
+      "evidence_id": "界面新闻_event_601127_20260819_a81e1665ae",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:16:38 [market] 连续7日！央行7天期逆回购“零操作”",
+      "value": {
+        "title": "连续7日！央行7天期逆回购“零操作”",
+        "content": "7天期逆回购自8月11日起，连续7天“零操作”，与此同时，央行于12日预告的4次隔夜逆回购已全部落地，每日操作量并未达到6000亿上限。东方金诚首席宏观分析师王青对界面新闻表示，这主要是源于8月14日以来资金面较为充裕，金融机构每个交易日对隔夜逆回购操作的需求不足6000亿上限。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "界面新闻",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193846219935.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 15:16:38",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:16:38",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "界面新闻"
+      }
+    },
+    {
+      "evidence_id": "cls_event_601127_20260819_886ff1de80",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 12:27:46 [market] 存储“双雄”会师A股进程加速！长存控股完成IPO辅导",
+      "value": {
+        "title": "存储“双雄”会师A股进程加速！长存控股完成IPO辅导",
+        "content": "【存储“双雄”会师A股进程加速！长存控股完成IPO辅导】证监会官网显示，长江存储控股股份有限公司日前向湖北证监局提交《辅导工作完成报告》，公司IPO辅导状态变更为辅导验收。从产业版图来看，长存控股旗下子公司涵盖长江存储、长存资本、长存科服、宏茂微等多家企业，长存控股已逐步构建了“闪存制造、晶圆代工、封装测试、产业投资、园区运营与创新孵化”等业务板块协同发展的产业生态，业务体系涵盖了从产品研发、生产制造到产业投资、创新孵化的全价值链环节。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "http://finance.eastmoney.com/a/202608193845949768.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 12:27:46",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 12:27:46",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "经济参考网_event_601127_20260819_cd80e97357",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 14:53:39 [market] 《全民医疗保障“十五五”规划》来了：生育津贴直接发个人、报销向基层倾斜",
+      "value": {
+        "title": "《全民医疗保障“十五五”规划》来了：生育津贴直接发个人、报销向基层倾斜",
+        "content": "国家医疗保障局近日印发《全民医疗保障“十五五”规划》（以下简称《规划》），明确到2030年全面建成覆盖全民、统筹城乡、公平统一、安全规范、可持续的多层次医疗保障体系。具体来看，《规划》指出，到2030年，公平医保普惠均衡，基本医保公共服务可及性进一步增强。法治医保规范完善，医疗保障法制体系基本形成，依法行政能力持续提升，行政执法更加严格规范。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "经济参考网",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193846198450.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 14:53:39",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 14:53:39",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "经济参考网"
+      }
+    },
+    {
+      "evidence_id": "人民财讯_event_601127_20260819_b415d93460",
+      "stock_code": "601127",
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 14:51:41 [market] 工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术",
+      "value": {
+        "title": "工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术",
+        "content": "【工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术】8月18日，中国人工智能产业发展联盟第十八次全会在北京召开。工业和信息化部科技司副司长甘小斌在致辞中指出，工业和信息化部深入贯彻落实党中央、国务院决策部署，坚持以制造业为主战场、以应用牵引为主线，推动人工智能产业发展和赋能新型工业化。下一步将把握变革机遇，一体化推进技术创新、应用落地、生态培育、安全治理。",
+        "category": "market",
+        "matched_keywords": null
+      },
+      "source": {
+        "provider": "人民财讯",
+        "source_type": "news",
+        "url": "http://finance.eastmoney.com/a/202608193846195321.html",
+        "retrieved_at": "2026-08-19T07:37:54+00:00",
+        "published_at": "2026-08-19 14:51:41",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 14:51:41",
+        "retrieved_at": "2026-08-19T07:37:54+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "人民财讯"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_839bd0d7dc",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:36:23 [market] 消息称三星电子目标今年9月率先完成1d nm DRAM内存研发",
+      "value": {
+        "title": "消息称三星电子目标今年9月率先完成1d nm DRAM内存研发",
+        "content": "【消息称三星电子目标今年9月率先完成1d nm DRAM内存研发】《科创板日报》19日讯，近日，据业内人士透露，三星电子目标2026年9月率先完成1d nm DRAM内存研发，2026年12月进入量产转移阶段，2027年上半年启动生产线建设，有望2027年底实现首批量产。 （TheBell）",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458223",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:36:23",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:36:23",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_c2cb88b664",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:36:05 [market] 硅片价格持续上涨 多晶硅成交仍僵持",
+      "value": {
+        "title": "硅片价格持续上涨 多晶硅成交仍僵持",
+        "content": "【硅片价格持续上涨 多晶硅成交仍僵持】财联社8月19日电，多晶硅N型复投料报价39-42元/千克，目前厂家报价相对稳定，市场成交极少，部分下游开始选择跟贸易商交易，硅料厂继续观望下游及本环节实际成交落地情况。8月多晶硅继续增加，产量或突破11万吨，后续有个别基地有复产计划。市场18X硅片价格1.105-1.123元/片，210RN硅片价格1.148-1.153元/片，210N硅片价格1.241-1.256元/片。各尺寸硅片维持涨势，其中电池环节210R已经接受1.15元/片的报价，183硅片或因供应紧张，使得价格进一步上涨。 （上海有色网）",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458224",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:36:05",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:36:05",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_b6a84e5be7",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:35:59 [market] 财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+      "value": {
+        "title": "财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+        "content": "财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458222",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:35:59",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:35:59",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_3e6a0c296d",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:35:27 [market] 财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+      "value": {
+        "title": "财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+        "content": "财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458221",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:35:27",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:35:27",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_dd2c83cfe4",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:33:49 [market] 外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议",
+      "value": {
+        "title": "外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议",
+        "content": "【外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者就王毅外长即将访问印尼及举行有关机制会的相关情况提问。对此，林剑表示，在两国元首战略引领下，中印尼命运共同体建设深入推进，五大支柱合作取得丰硕成果。当前世界百年变局加速演进。中印尼作为发展中大国和全球南方主要代表，加强战略沟通和团结协作具有重要意义。双方启动中国印尼全面战略对话机制，举行外长防长“2+2”对话机制第二次部长级会议，充分彰显中印尼关系的高水平和战略性。在全面战略对话机制首次会上，双方将着眼加强发展战略对接，探讨深化中印尼命运共同体建设的务实举措，助力两国的现代化进程。在“2+2”机制会上，王毅外长、董军防长将同印尼重点就政治安全与防务合作、国际地区形势等深入交换意见。中方愿同印尼遵循两国元首的战略引领，办好两大机制会议，统筹推进发展与安全合作，加快构建具有地区和全球影响力的中印尼命运共同体，为各自国家人民带来更多福祉，为地区和世界的和平发展作出更大贡献。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458218",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:33:49",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:33:49",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_980804b759",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:33:12 [market] 北京市新增20款已完成备案的生成式人工智能服务",
+      "value": {
+        "title": "北京市新增20款已完成备案的生成式人工智能服务",
+        "content": "【北京市新增20款已完成备案的生成式人工智能服务】财联社8月19日电，截至2026年8月19日，北京市新增20款已完成备案的生成式人工智能服务，累计已完成279款生成式人工智能服务备案。",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458217",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:33:12",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:33:12",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_5785d8dd6d",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:31:00 [market] 财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+      "value": {
+        "title": "财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+        "content": "财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458215",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:31:00",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:31:00",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_e657e12707",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:30:23 [market] 财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+      "value": {
+        "title": "财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+        "content": "财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458212",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:30:23",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:30:23",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_06f1a7d6d5",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:29:09 [market] 王毅外长即将访问韩国 外交部介绍此访期待",
+      "value": {
+        "title": "王毅外长即将访问韩国 外交部介绍此访期待",
+        "content": "【王毅外长即将访问韩国 外交部介绍此访期待】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者提问，中方发布了王毅外长即将访问韩国的消息，中方对此访有何期待？林剑表示，中韩互为近邻和合作伙伴。建交34年来，中韩关系全面快速发展，为两国人民带来实实在在的利益，也为促进地区和平稳定与发展繁荣作出积极贡献。林剑指出，去年底今年初，习近平主席同李在明总统成功实现互访，并达成重要共识，开辟中韩关系发展新局面。相信王毅外长此访将有助于双方进一步落实好两国元首重要共识，加强沟通、增进互信、深化交流合作，共同推动中韩战略合作伙伴关系不断向前发展。",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458210",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:29:09",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:29:09",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_5500d0f9a0",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "market_news",
+      "claim": "2026-08-19 15:28:13 [market] 外交部：国际社会应共同抵制和阻止日本右翼势力危险动向",
+      "value": {
+        "title": "外交部：国际社会应共同抵制和阻止日本右翼势力危险动向",
+        "content": "【外交部：国际社会应共同抵制和阻止日本右翼势力危险动向】财联社8月19日电，外交部发言人林剑8月19日主持例行记者会。有记者提问，我们关注到俄罗斯外长拉夫罗夫17日对媒体表示，希望日本充分认真阅读《联合国宪章》，包括第一百零七条及“敌国条款”，日本当年是在承认军国主义罪行，承认联合国宪章全部内容的情况下加入联合国，如果日本领导层试图突破本国宪法约束，改写国际法，逃避历史责任，当然会引起严重担忧。请问中方对此有何评论？\n\n林剑表示，中方赞同拉夫罗夫外长的有关表态，“敌国条款”是《联合国宪章》的重要规定。今年是东京审判开庭80周年，重申敌国条款的含义，强调这一条款约束力，对于捍卫中国人民抗日战争和世界反法西斯战争胜利成果，严防军国主义幽灵死灰复燃具有重要意义。如今高市政府却对日本的历史罪行避而不谈，不仅不反思，还想方设法企图抛弃和平主义，突破日本宪法和国际、国内法规制，图谋加速“再军事化”，这是对战后国际秩序的公然挑战，世界上所有爱好和平的国家，都应共同抵制和阻止日本右翼势力这一危险动向，共同维护二战胜利成果和战后国际秩序，防止历史悲剧重演。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458208",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:28:13",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:28:13",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "market",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_d929750045",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "macro_news",
+      "claim": "2026-08-19 15:28:09 [macro] 财联社8月19日电，印尼央行行长称，准备扩大激励措施，采取其他措施以吸引资本流入，解决流动性分布不均的问题。",
+      "value": {
+        "title": "财联社8月19日电，印尼央行行长称，准备扩大激励措施，采取其他措施以吸引资本流入，解决流动性分布不均的问题。",
+        "content": "财联社8月19日电，印尼央行行长称，准备扩大激励措施，采取其他措施以吸引资本流入，解决流动性分布不均的问题。",
+        "category": "macro",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458207",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:28:09",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:28:09",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "macro",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_8c43214796",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "macro_news",
+      "claim": "2026-08-19 15:21:40 [macro] 财联社8月19日电，印尼央行关键利率维持在5.75%，预估为5.75%。",
+      "value": {
+        "title": "财联社8月19日电，印尼央行关键利率维持在5.75%，预估为5.75%。",
+        "content": "财联社8月19日电，印尼央行将关键利率维持在5.75%，符合预期。",
+        "category": "macro",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458198",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:21:40",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:21:40",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "macro",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_5d1f096fce",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "macro_news",
+      "claim": "2026-08-19 15:15:37 [macro] 财联社8月19日电，毕马威首席经济学家Yael Selfin表示，尽管英国7月份通胀率从2.6%升至2.9%，标志着通胀开始逐步上升，但这不太可能促使英国央行加息。",
+      "value": {
+        "title": "财联社8月19日电，毕马威首席经济学家Yael Selfin表示，尽管英国7月份通胀率从2.6%升至2.9%，标志着通胀开始逐步上升，但这不太可能促使英国央行加息。",
+        "content": "财联社8月19日电，毕马威首席经济学家Yael Selfin表示，尽管英国7月份通胀率从2.6%升至2.9%，标志着通胀开始逐步上升，但这不太可能促使英国央行加息。",
+        "category": "macro",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458189",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:15:37",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:15:37",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "macro",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_08afebb407",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "macro_news",
+      "claim": "2026-08-19 15:15:06 [macro] 财联社8月19日电，丹斯克银行分析师预计，美联储2026年12 月、2027年3月各加息25bp，政策利率升至4.00%至4.25%，以应对内在通胀压力。",
+      "value": {
+        "title": "财联社8月19日电，丹斯克银行分析师预计，美联储2026年12 月、2027年3月各加息25bp，政策利率升至4.00%至4.25%，以应对内在通胀压力。",
+        "content": "财联社8月19日电，丹斯克银行分析师预计，美联储2026年12 月、2027年3月各加息25bp，政策利率升至4.00%至4.25%，以应对内在通胀压力。",
+        "category": "macro",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458188",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:15:06",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:15:06",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "macro",
+        "raw_source_label": "财联社"
+      }
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_3b17e61564",
+      "stock_code": null,
+      "evidence_type": "EVENT",
+      "subtype": "macro_news",
+      "claim": "2026-08-19 15:07:21 [macro] 财联社8月19日电，印尼央行代理行长称，预计美国国债收益率将继续上升，预计美联储将在第四季度加息。",
+      "value": {
+        "title": "财联社8月19日电，印尼央行代理行长称，预计美国国债收益率将继续上升，预计美联储将在第四季度加息。",
+        "content": "财联社8月19日电，印尼央行代理行长称，预计美国国债收益率将继续上升，预计美联储将在第四季度加息。",
+        "category": "macro",
+        "matched_keywords": []
+      },
+      "source": {
+        "provider": "cls",
+        "source_type": "news_flash",
+        "url": "https://www.cls.cn/detail/2458174",
+        "retrieved_at": "2026-08-19T07:37:52+00:00",
+        "published_at": "2026-08-19 15:07:21",
+        "updated_at": null
+      },
+      "time": {
+        "data_date": null,
+        "report_date": null,
+        "published_at": "2026-08-19 15:07:21",
+        "retrieved_at": "2026-08-19T07:37:52+00:00"
+      },
+      "freshness": {
+        "age_hours": 0.0,
+        "status": "very_recent"
+      },
+      "reliability": "medium_high",
+      "metadata": {
+        "event_category": "macro",
+        "raw_source_label": "财联社"
+      }
+    }
+  ],
+  "metadata": {
+    "inputs": {
+      "bundle": "C:\\Users\\86137\\ashare-deep-research\\examples\\601127_bundle.json",
+      "market_information": "C:\\Users\\86137\\ashare-deep-research\\examples\\601127_market_information.json",
+      "eastmoney": "C:\\Users\\86137\\ashare-deep-research\\examples\\601127_eastmoney_test.json",
+      "cls": "C:\\Users\\86137\\ashare-deep-research\\examples\\601127_cls_test.json",
+      "ths": "C:\\Users\\86137\\ashare-deep-research\\examples\\601127_ths_test.json"
+    },
+    "notes": [
+      "Sina news is excluded from core Evidence Layer.",
+      "Evidence contains facts only; no bull/bear stance fields."
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "total_runs": 100,
+  "openai_success": 17,
+  "grounded_fallback": 43,
+  "grounded_direct": 0,
+  "repair": 17,
+  "regenerate": 0,
+  "reject": 41,
+  "provider_failure": 40,
+  "validation_failure": 0,
+  "information_loss": 0,
+  "unsupported_external_fact": 0,
+  "contract_violation": 0,
+  "judgment_drift": 3,
+  "acceptable": 52,
+  "fixture_results": [
+    {
+      "fixture_id": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "signatures": [
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved",
+        "volume_vs_margin|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 2
+    },
+    {
+      "fixture_id": "E02_consumer_bull_supported_moderate",
+      "signatures": [
+        "volume_vs_margin|unresolved|unresolved|conditional|elevated||xt|preserved",
+        "growth_vs_profitability|moderate|bull_supported|conditional|elevated|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 2
+    },
+    {
+      "fixture_id": "E03_consumer_bear_supported_moderate",
+      "signatures": [
+        "volume_vs_margin|unresolved|unresolved|conditional|elevated||xt|preserved",
+        "growth_vs_profitability|moderate|bear_supported|conditional|elevated|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 2
+    },
+    {
+      "fixture_id": "E04_consumer_strong_limiting_challenge",
+      "signatures": [
+        "growth_vs_profitability|strong|bull_supported|conditional|elevated|strong|xt|preserved",
+        "volume_vs_margin|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 2
+    },
+    {
+      "fixture_id": "E05_consumer_dual_tension_cross",
+      "signatures": [
+        "volume_vs_margin|unresolved|unresolved|conditional|elevated||xt|preserved",
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 2
+    },
+    {
+      "fixture_id": "E06_adversarial_fund_pressure",
+      "signatures": [
+        "growth_vs_profitability|moderate|bull_supported|conditional|severe|strong|xt|preserved"
+      ],
+      "n_unique_signatures": 1
+    },
+    {
+      "fixture_id": "E07_mfg_volume_vs_margin_bull",
+      "signatures": [],
+      "n_unique_signatures": 0
+    },
+    {
+      "fixture_id": "E08_semi_util_vs_asp_bear",
+      "signatures": [],
+      "n_unique_signatures": 0
+    },
+    {
+      "fixture_id": "E09_mfg_bull_strong_mild_pressure",
+      "signatures": [],
+      "n_unique_signatures": 0
+    },
+    {
+      "fixture_id": "E10_semi_bull_strong_severe_pressure",
+      "signatures": [],
+      "n_unique_signatures": 0
+    }
+  ],
+  "openai_success_rate": 0.17,
+  "acceptable_rate": 0.52,
+  "fallback_rate": 0.43
+}

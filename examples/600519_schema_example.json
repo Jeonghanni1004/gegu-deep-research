@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "stock_code": "600519",
+  "retrieved_at": "2026-08-14T08:54:58+00:00",
+  "layers": {
+    "raw": {
+      "company_info": {
+        "stock_code": "600519",
+        "stock_name": "贵州茅台",
+        "exchange": "Shanghai Stock Exchange",
+        "listing_date": "2001-08-27",
+        "industry": "制造业-酒、饮料和精制茶制造业",
+        "total_shares": 1250081601.0,
+        "float_shares": 1250081601.0,
+        "total_market_cap": 1677597007725.99,
+        "_meta": {
+          "source": "eastmoney.PC_HSF10.CompanySurvey",
+          "retrieved_at": "2026-08-14T08:54:58+00:00",
+          "enrichment_source": "akshare.stock_value_em",
+          "data_date": "2026-08-14"
+        }
+      },
+      "main_business": {
+        "latest_report_date": "2025-12-31",
+        "items": [
+          {
+            "report_date": "2025-12-31",
+            "category_type": "按产品分类",
+            "business_segment": "茅台酒",
+            "revenue": 146499906480.49,
+            "revenue_ratio": 0.867695,
+            "gross_margin": 0.935258
+          }
+        ]
+      },
+      "financials": {
+        "income_statement": {
+          "items": [
+            {
+              "report_date": "2025-12-31",
+              "operating_revenue": 168838102514.79,
+              "operating_cost": 14892277570.91,
+              "operating_profit": null,
+              "net_profit_parent": 82320067101.68,
+              "gross_profit": 153945824943.88,
+              "eps_basic": null,
+              "rd_expense": null,
+              "selling_expense": null,
+              "admin_expense": null,
+              "finance_expense": null
+            }
+          ]
+        },
+        "balance_sheet": {
+          "items": [
+            {
+              "report_date": "2025-12-31",
+              "total_assets": 303834844021.44,
+              "total_liabilities": 49875590112.37,
+              "total_equity": 244637811032.18,
+              "cash_and_equivalents": null,
+              "accounts_receivable": null,
+              "inventory": null,
+              "goodwill": null,
+              "short_term_borrowings": null,
+              "long_term_borrowings": null
+            }
+          ]
+        },
+        "cash_flow": {
+          "items": [
+            {
+              "report_date": "2025-12-31",
+              "operating_cash_flow": 61522204989.35,
+              "investing_cash_flow": null,
+              "financing_cash_flow": null
+            }
+          ]
+        }
+      },
+      "market_history": {
+        "adjust": "qfq",
+        "items": [
+          {
+            "date": "2026-08-14",
+            "open": 1355.0,
+            "high": 1359.0,
+            "low": 1338.14,
+            "close": 1341.99,
+            "volume": 2985315.0,
+            "amount": 4024065608.0
+          }
+        ]
+      },
+      "market_snapshot": {
+        "latest_price": 1341.99,
+        "pe": 20.28162804,
+        "pb": 6.19281633,
+        "ps": 9.56911891,
+        "total_market_cap": 1677597007725.99,
+        "float_market_cap": 1677597007725.99,
+        "turnover_rate": 0.23880961031759076,
+        "data_date": "2026-08-14"
+      }
+    },
+    "derived": {
+      "fundamentals": {
+        "latest": {
+          "report_date": "2025-12-31",
+          "revenue_yoy": -0.012060035021223029,
+          "net_profit_yoy": -0.045322548171580886,
+          "gross_margin": 0.9117955168348006,
+          "net_margin": 0.48756806594926555,
+          "roe": 0.3364977259825608,
+          "debt_to_asset_ratio": 0.16415362192247623,
+          "ocf_to_net_profit": 0.747353678822432
+        }
+      },
+      "technicals": {
+        "latest": {
+          "data_date": "2026-08-14",
+          "ma5": 1347.128,
+          "ma20": 1325.999,
+          "ma60": 1259.2065,
+          "ma250": 1357.73368,
+          "macd_dif": 24.14269651403174,
+          "macd_dea": 24.569803013447245,
+          "macd_hist": -0.8542129988310094,
+          "rsi_14": 59.15558286018414,
+          "high_52w": 1531.75,
+          "low_52w": 1151.01,
+          "price_position_in_52w_range": 0.5016021431948312
+        }
+      }
+    },
+    "ai_analysis": {
+      "status": "not_implemented",
+      "note": "Reserved for stage-2 AI agent. Do not mix into raw/derived.",
+      "items": []
+    }
+  },
+  "todos": []
+}

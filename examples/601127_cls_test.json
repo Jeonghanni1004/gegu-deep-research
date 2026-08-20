@@ -1,0 +1,2312 @@
+{
+  "stock_code": "601127",
+  "stock_name": "赛力斯",
+  "retrieved_at": "2026-08-19T07:37:52+00:00",
+  "source": "cls",
+  "reference": [
+    "TradingAgents-astock get_global_news (legacy nodeapi/telegraphList)",
+    "a-stock-data cls_telegraph (v1/roll/get_roll_list + local sign)"
+  ],
+  "attempts": {
+    "v1_roll": {
+      "ok": true,
+      "elapsed_sec": 0.75,
+      "error": null
+    },
+    "legacy_telegraph": {
+      "ok": true,
+      "elapsed_sec": 0.25,
+      "error": null
+    },
+    "search_name": {
+      "ok": true,
+      "elapsed_sec": 0.26,
+      "error": null
+    },
+    "search_code": {
+      "ok": true,
+      "elapsed_sec": 0.27,
+      "error": null
+    }
+  },
+  "quality_notes": [
+    "稳定访问依赖 curl_cffi Chrome impersonation；plain requests 常返回空 roll_data。",
+    "已拿到全市场滚动快讯，但本页未命中茅台关键词；需持续滚动/扩大窗口或改用搜索。",
+    "cls.cn/api/sw 关键词搜索未返回可用结构化结果。"
+  ],
+  "v1_roll": {
+    "meta": {
+      "pages": [
+        {
+          "request": {
+            "method": "GET",
+            "url": "https://www.cls.cn/v1/roll/get_roll_list",
+            "signed": true,
+            "page": 1,
+            "attempt": 1,
+            "transport": "curl_cffi.chrome124",
+            "last_time": ""
+          },
+          "http_status": 200,
+          "bytes": 128702,
+          "count": 50,
+          "errno": 0
+        },
+        {
+          "request": {
+            "method": "GET",
+            "url": "https://www.cls.cn/v1/roll/get_roll_list",
+            "signed": true,
+            "page": 2,
+            "attempt": 1,
+            "transport": "curl_cffi.chrome124",
+            "last_time": "1787121781"
+          },
+          "http_status": 200,
+          "bytes": 128702,
+          "count": 50,
+          "errno": 0
+        },
+        {
+          "request": {
+            "method": "GET",
+            "url": "https://www.cls.cn/v1/roll/get_roll_list",
+            "signed": true,
+            "page": 2,
+            "attempt": 1,
+            "transport": "curl_cffi.chrome124",
+            "last_time": "1787121781"
+          },
+          "http_status": 200,
+          "bytes": 128702,
+          "count": 0,
+          "duplicate_page": true
+        }
+      ],
+      "transport": "curl_cffi.chrome124"
+    },
+    "parse_ok": true,
+    "count": 50,
+    "items": [
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "消息称三星电子目标今年9月率先完成1d nm DRAM内存研发",
+        "published_at": "2026-08-19 15:36:23",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458223",
+        "content": "【消息称三星电子目标今年9月率先完成1d nm DRAM内存研发】《科创板日报》19日讯，近日，据业内人士透露，三星电子目标2026年9月率先完成1d nm DRAM内存研发，2026年12月进入量产转移阶段，2027年上半年启动生产线建设，有望2027年底实现首批量产。 （TheBell）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458223,
+            "subject_id": 1279,
+            "subject_name": "半导体芯片",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 105270,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 457,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "硅片价格持续上涨 多晶硅成交仍僵持",
+        "published_at": "2026-08-19 15:36:05",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458224",
+        "content": "【硅片价格持续上涨 多晶硅成交仍僵持】财联社8月19日电，多晶硅N型复投料报价39-42元/千克，目前厂家报价相对稳定，市场成交极少，部分下游开始选择跟贸易商交易，硅料厂继续观望下游及本环节实际成交落地情况。8月多晶硅继续增加，产量或突破11万吨，后续有个别基地有复产计划。市场18X硅片价格1.105-1.123元/片，210RN硅片价格1.148-1.153元/片，210N硅片价格1.241-1.256元/片。各尺寸硅片维持涨势，其中电池环节210R已经接受1.15元/片的报价，183硅片或因供应紧张，使得价格进一步上涨。 （上海有色网）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458224,
+            "subject_id": 1477,
+            "subject_name": "光伏",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 44333,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 140,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+        "published_at": "2026-08-19 15:35:59",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458222",
+        "content": "财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458222,
+            "subject_id": 1501,
+            "subject_name": "期货市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 59085,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 88,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458222,
+            "subject_id": 1690,
+            "subject_name": "盐湖提锂",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 16071,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 93,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458222,
+            "subject_id": 1313,
+            "subject_name": "锂电池",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 38246,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 198,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458222,
+            "subject_id": 11409,
+            "subject_name": "碳中和期货",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 10264,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+        "published_at": "2026-08-19 15:35:27",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458221",
+        "content": "财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458221,
+            "subject_id": 1097,
+            "subject_name": "港股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 27991,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议",
+        "published_at": "2026-08-19 15:33:49",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458218",
+        "content": "【外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者就王毅外长即将访问印尼及举行有关机制会的相关情况提问。对此，林剑表示，在两国元首战略引领下，中印尼命运共同体建设深入推进，五大支柱合作取得丰硕成果。当前世界百年变局加速演进。中印尼作为发展中大国和全球南方主要代表，加强战略沟通和团结协作具有重要意义。双方启动中国印尼全面战略对话机制，举行外长防长“2+2”对话机制第二次部长级会议，充分彰显中印尼关系的高水平和战略性。在全面战略对话机制首次会上，双方将着眼加强发展战略对接，探讨深化中印尼命运共同体建设的务实举措，助力两国的现代化进程。在“2+2”机制会上，王毅外长、董军防长将同印尼重点就政治安全与防务合作、国际地区形势等深入交换意见。中方愿同印尼遵循两国元首的战略引领，办好两大机制会议，统筹推进发展与安全合作，加快构建具有地区和全球影响力的中印尼命运共同体，为各自国家人民带来更多福祉，为地区和世界的和平发展作出更大贡献。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "北京市新增20款已完成备案的生成式人工智能服务",
+        "published_at": "2026-08-19 15:33:12",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458217",
+        "content": "【北京市新增20款已完成备案的生成式人工智能服务】财联社8月19日电，截至2026年8月19日，北京市新增20款已完成备案的生成式人工智能服务，累计已完成279款生成式人工智能服务备案。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458217,
+            "subject_id": 1321,
+            "subject_name": "人工智能",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 71682,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 207,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+        "published_at": "2026-08-19 15:31:00",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458215",
+        "content": "财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458215,
+            "subject_id": 12552,
+            "subject_name": "诺和诺德",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 6856,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458215,
+            "subject_id": 10874,
+            "subject_name": "减肥药",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 7849,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 2423,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+        "published_at": "2026-08-19 15:30:23",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458212",
+        "content": "财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458212,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "王毅外长即将访问韩国 外交部介绍此访期待",
+        "published_at": "2026-08-19 15:29:09",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458210",
+        "content": "【王毅外长即将访问韩国 外交部介绍此访期待】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者提问，中方发布了王毅外长即将访问韩国的消息，中方对此访有何期待？林剑表示，中韩互为近邻和合作伙伴。建交34年来，中韩关系全面快速发展，为两国人民带来实实在在的利益，也为促进地区和平稳定与发展繁荣作出积极贡献。林剑指出，去年底今年初，习近平主席同李在明总统成功实现互访，并达成重要共识，开辟中韩关系发展新局面。相信王毅外长此访将有助于双方进一步落实好两国元首重要共识，加强沟通、增进互信、深化交流合作，共同推动中韩战略合作伙伴关系不断向前发展。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "外交部：国际社会应共同抵制和阻止日本右翼势力危险动向",
+        "published_at": "2026-08-19 15:28:13",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458208",
+        "content": "【外交部：国际社会应共同抵制和阻止日本右翼势力危险动向】财联社8月19日电，外交部发言人林剑8月19日主持例行记者会。有记者提问，我们关注到俄罗斯外长拉夫罗夫17日对媒体表示，希望日本充分认真阅读《联合国宪章》，包括第一百零七条及“敌国条款”，日本当年是在承认军国主义罪行，承认联合国宪章全部内容的情况下加入联合国，如果日本领导层试图突破本国宪法约束，改写国际法，逃避历史责任，当然会引起严重担忧。请问中方对此有何评论？\n\n林剑表示，中方赞同拉夫罗夫外长的有关表态，“敌国条款”是《联合国宪章》的重要规定。今年是东京审判开庭80周年，重申敌国条款的含义，强调这一条款约束力，对于捍卫中国人民抗日战争和世界反法西斯战争胜利成果，严防军国主义幽灵死灰复燃具有重要意义。如今高市政府却对日本的历史罪行避而不谈，不仅不反思，还想方设法企图抛弃和平主义，突破日本宪法和国际、国内法规制，图谋加速“再军事化”，这是对战后国际秩序的公然挑战，世界上所有爱好和平的国家，都应共同抵制和阻止日本右翼势力这一危险动向，共同维护二战胜利成果和战后国际秩序，防止历史悲剧重演。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458208,
+            "subject_id": 10738,
+            "subject_name": "外交动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 9774,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，印尼央行行长称，准备扩大激励措施，采取其他措施以吸引资本流入，解决流动性分布不均的问题。",
+        "published_at": "2026-08-19 15:28:09",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458207",
+        "content": "财联社8月19日电，印尼央行行长称，准备扩大激励措施，采取其他措施以吸引资本流入，解决流动性分布不均的问题。",
+        "category": "macro",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458207,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "美韩宣布原定年度联合军演提前结束 外交部表态",
+        "published_at": "2026-08-19 15:27:54",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458206",
+        "content": "【美韩宣布原定年度联合军演提前结束 外交部表态】财联社8月19日电，外交部发言人林剑主持例行记者会。法新社记者提问，美韩双方今天表示将提前结束原定的年度联合军演。就在几天前，特朗普总统刚以他与朝鲜领导人金正恩的良好关系为由，提出缩减演习规模。请问中方如何看待美韩这些年度军演？对今年演习提前收场又有何评论？“我们此前回应过相关的问题。”林剑指出，维护朝鲜半岛的和平稳定、推动半岛问题的政治解决，符合各方的共同利益。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "外交部：中方坚决反对在人工智能问题上搞选边站队、阵营对抗",
+        "published_at": "2026-08-19 15:26:14",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458204",
+        "content": "【外交部：中方坚决反对在人工智能问题上搞选边站队、阵营对抗】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者就美国政府拟对《人工智能机遇伙伴关系联合声明》提出联署要求提问。对此，林剑表示，人工智能是全人类共同的智慧结晶和宝贵财富。国际社会普遍期待广泛开展人工智能合作，各国有权根据自身的国情和发展需要选择合作伙伴。中方坚决反对在人工智能问题上搞选边站队、阵营对抗。希望各方摒弃零和思维，坚持和衷共济，尊重各国的数字主权，携手构建公正合理的全球人工智能治理体系，让人工智能成为促进共同繁荣、维护共同安全的重要动力源。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458204,
+            "subject_id": 10738,
+            "subject_name": "外交动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 9774,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，截至目前，南向资金净卖出额达80亿港元。",
+        "published_at": "2026-08-19 15:24:27",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458202",
+        "content": "财联社8月19日电，截至目前，南向资金净卖出额达80亿港元。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458202,
+            "subject_id": 1750,
+            "subject_name": "沪深港通资金动向",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 48197,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "SK海力士美股夜盘涨超5% 公司拟回购40万亿韩元股票",
+        "published_at": "2026-08-19 15:23:34",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458200",
+        "content": "【SK海力士美股夜盘涨超5% 公司拟回购40万亿韩元股票 】财联社8月19日电，SK海力士美股夜盘涨超5%，此前一度跌超3%。消息面上，SK海力士拟回购40万亿韩元（约合286亿美元）股份，股票回购后将注销，以提升股东回报。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458200,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458200,
+            "subject_id": 1098,
+            "subject_name": "美股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 67023,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "高盛预计2035年太空经济规模将达1.8万亿美元",
+        "published_at": "2026-08-19 15:23:23",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458201",
+        "content": "【高盛预计2035年太空经济规模将达1.8万亿美元】财联社8月19日电，高盛在《第二太空时代》的研报中指出，预计随着发射成本下降、私人资本涌入以及公开市场融资渠道的全面打开，太空即将成为“工业经济的新支柱”。高盛分析师进一步指出：“近地轨道(LEO)基础设施是现代太空经济中最明显的商业桥头堡之一，它正在扩展、补充甚至与地面网络形成竞争。”高盛分析师在报告中预计，到2035年，太空经济规模将达到1.8万亿美元，届时私营资本将取代政府资金，成为该行业最大的增长引擎。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458201,
+            "subject_id": 11575,
+            "subject_name": "商业航天",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 17894,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 2528,
+            "channel": "stib,cls"
+          },
+          {
+            "article_id": 2458201,
+            "subject_id": 2681,
+            "subject_name": "太空探索",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 9073,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458201,
+            "subject_id": 10505,
+            "subject_name": "卫星通信",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 11287,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 454,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458201,
+            "subject_id": 1094,
+            "subject_name": "券商策略",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 60566,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，印尼央行关键利率维持在5.75%，预估为5.75%。",
+        "published_at": "2026-08-19 15:21:40",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458198",
+        "content": "财联社8月19日电，印尼央行将关键利率维持在5.75%，符合预期。",
+        "category": "macro",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458198,
+            "subject_id": 1501,
+            "subject_name": "期货市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 59085,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 88,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458198,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "阿布扎比国家石油公司削减对亚洲原油出货量 旗舰原油价格上涨",
+        "published_at": "2026-08-19 15:20:07",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458194",
+        "content": "【阿布扎比国家石油公司削减对亚洲原油出货量 旗舰原油价格上涨】财联社8月19日电，知情人士透露，阿布扎比国家石油公司（ADNOC）计划在8月和9月削减对亚洲客户的原油供应量，此举已推高了旗舰原油品种穆尔班（Murban）的价格，本周穆尔班原油价格一度较布伦特原油期货溢价近每桶7美元。知情人士称，现货市场上的供应量将减少约5%。此次减产适用于场外交易，这意味着通过阿布扎比洲际交易所购买的实物原油不受影响。另一位知情人士表示，此次供应减少是由于阿布扎比陆上油田的计划维护。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458194,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458194,
+            "subject_id": 1501,
+            "subject_name": "期货市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 59085,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 88,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458194,
+            "subject_id": 1583,
+            "subject_name": "原油市场动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 46802,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 316,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458194,
+            "subject_id": 1741,
+            "subject_name": "海外大宗商品",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 33863,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458194,
+            "subject_id": 11394,
+            "subject_name": "能源类期货",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 8689,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "山东数据集团揭牌成立",
+        "published_at": "2026-08-19 15:17:06",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458190",
+        "content": "【山东数据集团揭牌成立】财联社8月19日电，据浪潮集团消息，8月19日，山东数据集团有限公司（简称“山东数据集团”）在济南正式揭牌成立。山东数据集团将重点开展数据资源开发利用、数据基础设施建设运营、数字政府平台建设运营、数据产业生态构建、数字经济赋能增效以及数据科技创新与数字人才培养等工作，全力当好公共数据运营示范者、数字政府建设促进者、数据生态引领者，打造成为山东数据要素产业链的“链主”企业。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458190,
+            "subject_id": 1089,
+            "subject_name": "TMT行业观察",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 25277,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458190,
+            "subject_id": 1635,
+            "subject_name": "基建投资",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 21882,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 321,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458190,
+            "subject_id": 9392,
+            "subject_name": "数字经济",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 17803,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 342,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458190,
+            "subject_id": 9409,
+            "subject_name": "数字人",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 8023,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 1867,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458190,
+            "subject_id": 9285,
+            "subject_name": "数字政府",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 6281,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 571,
+            "channel": "stib,cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，毕马威首席经济学家Yael Selfin表示，尽管英国7月份通胀率从2.6%升至2.9%，标志着通胀开始逐步上升，但这不太可能促使英国央行加息。",
+        "published_at": "2026-08-19 15:15:37",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458189",
+        "content": "财联社8月19日电，毕马威首席经济学家Yael Selfin表示，尽管英国7月份通胀率从2.6%升至2.9%，标志着通胀开始逐步上升，但这不太可能促使英国央行加息。",
+        "category": "macro",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458189,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，丹斯克银行分析师预计，美联储2026年12 月、2027年3月各加息25bp，政策利率升至4.00%至4.25%，以应对内在通胀压力。",
+        "published_at": "2026-08-19 15:15:06",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458188",
+        "content": "财联社8月19日电，丹斯克银行分析师预计，美联储2026年12 月、2027年3月各加息25bp，政策利率升至4.00%至4.25%，以应对内在通胀压力。",
+        "category": "macro",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458188,
+            "subject_id": 1489,
+            "subject_name": "银行业动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 35023,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 79,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458188,
+            "subject_id": 3140,
+            "subject_name": "美联储动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 33666,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458188,
+            "subject_id": 7381,
+            "subject_name": "美国宏观速递",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 19463,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，截至目前，南向资金净卖出额达70亿港元。",
+        "published_at": "2026-08-19 15:13:40",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458186",
+        "content": "财联社8月19日电，截至目前，南向资金净卖出额达70亿港元。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458186,
+            "subject_id": 1750,
+            "subject_name": "沪深港通资金动向",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 48197,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，奇瑞旗下机器人子公司AiMoga正考虑独立上市。",
+        "published_at": "2026-08-19 15:12:30",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458183",
+        "content": "财联社8月19日电，奇瑞旗下机器人子公司AiMoga正考虑独立上市。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458183,
+            "subject_id": 1309,
+            "subject_name": "机器人",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 45192,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 201,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "机构：预估2026年中国人形机器人市场规模达150亿元",
+        "published_at": "2026-08-19 15:11:42",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458181",
+        "content": "【机构：预估2026年中国人形机器人市场规模达150亿元】《科创板日报》19日讯，据TrendForce集邦咨询最新机器人产业研究，中国人形机器人部署开始进入汽车、3C、航空、物流及能源等多元场景，产品商业化的考验随之展开。8月19日的2026世界机器人大会(WRC)，首次规划“采购日”，集中进行采购洽谈与产业链对接，反映产业发展重心已从技术展示延伸至实际需求。TrendForce集邦咨询预估，2026年中国人形机器人市场规模将达150亿元，且随量产规模扩大、应用场景增加，2027年市场规模至少可维持60%以上的成长。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458181,
+            "subject_id": 1309,
+            "subject_name": "机器人",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 45192,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 201,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "8月19日涨停分析",
+        "published_at": "2026-08-19 15:09:37",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458180",
+        "content": "【8月19日涨停分析】财联社8月19日电，今日全市场共36股涨停，连板股总数7只，12股封板未遂，封板率为75%（不含ST股、退市股）。焦点股方面，农业种植板块金健米业3连板、京粮控股3连板，化肥股红四方3连板。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458180,
+            "subject_id": 1103,
+            "subject_name": "盘面直播",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 181335,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "蔚聚科技（安徽）有限公司发生工商变更 增资至7.25亿",
+        "published_at": "2026-08-19 15:08:29",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458177",
+        "content": "【蔚聚科技（安徽）有限公司发生工商变更 增资至7.25亿】财联社8月19日电，天眼查显示，近日，蔚聚科技（安徽）有限公司发生工商变更，新增奇瑞汽车股份有限公司、合肥合锻智能制造股份有限公司等为股东，同时，注册资本由约3.7亿人民币增至7.25亿人民币，增幅约94%。该公司成立于2023年4月，法定代表人为曲玉，经营范围包括新兴能源技术研发、新材料技术研发、工业工程设计服务等，现由蔚来控股有限公司及上述新增股东共同持股。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，沙特证券交易所宣布因突发技术问题临时暂停交易。",
+        "published_at": "2026-08-19 15:08:06",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458176",
+        "content": "财联社8月19日电，沙特证券交易所宣布因突发技术问题临时暂停交易。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458176,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，印尼央行代理行长称，预计美国国债收益率将继续上升，预计美联储将在第四季度加息。",
+        "published_at": "2026-08-19 15:07:21",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458174",
+        "content": "财联社8月19日电，印尼央行代理行长称，预计美国国债收益率将继续上升，预计美联储将在第四季度加息。",
+        "category": "macro",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458174,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "韩国上半年风险投资达8.87万亿韩元 创历史同期新高",
+        "published_at": "2026-08-19 15:06:35",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458171",
+        "content": "【韩国上半年风险投资达8.87万亿韩元 创历史同期新高】财联社8月19日电，韩国政府周三公布的数据显示，在人工智能、机器人等前沿技术投资热度高涨的背景下，2026 年上半年韩国对风险企业及初创公司的投资规模达到8.87万亿韩元（约合63.4亿美元），同比增长54.3%，创下历史同期新高。多笔规模超1000亿韩元的大额投资集中流向人工智能、半导体和机器人领域。信息通信技术（ICT）生产领域的投资同比增长143.3%；电子、机械及设备行业紧随其后，投资额同比增长90.4%；信息通信技术服务领域投资同比增长62.2%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458171,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "欧洲主要股指开盘小幅波动",
+        "published_at": "2026-08-19 15:03:17",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458168",
+        "content": "【欧洲主要股指开盘小幅波动】财联社8月19日电，欧洲斯托克50指数开盘涨0.1%，德国DAX指数平开，英国富时100指数平开，法国CAC40指数涨0.1%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458168,
+            "subject_id": 8709,
+            "subject_name": "欧股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 13541,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "收评：创业板指低开低走跌超6% 全市场逾百股跌停",
+        "published_at": "2026-08-19 15:03:07",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458158",
+        "content": "【收评：创业板指低开低走跌超6% 全市场逾百股跌停】财联社8月19日电，市场全天调整，三大指数低开低走。沪深两市成交额2.51万亿，较上一个交易日放量1103亿。盘面上，市场热点较为杂乱，全市场超5000只个股下跌，逾百股跌停。从板块来看，煤炭板块逆势走强，宝泰隆、陕西黑猫、大有能源、美锦能源涨停。化工板块异动拉升，红四方3连板，华锦股份、中毅达涨停。房地产板块表现活跃，我爱我家、南都物业涨停。农业板块反复活跃，京粮控股3连板。银行板块逆势拉升，江苏银行创历史新高。下跌方面，高位股集体退潮，爱丽家居、一鸣食品、金螳螂、桂发祥跌停。人形机器人概念震荡下挫，中大力德、巨轮智能、五洲新春、晋拓股份跌停。截至收盘，沪指跌2.4%，深成指跌5.01%，创业板指跌6.26%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458158,
+            "subject_id": 1103,
+            "subject_name": "盘面直播",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 181335,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "国内商品期货收盘涨跌不一 燃料油涨超6%",
+        "published_at": "2026-08-19 15:02:15",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458160",
+        "content": "【国内商品期货收盘涨跌不一 燃料油涨超6%】财联社8月19日电，国内商品期货收盘涨跌不一，燃料油涨超6%，焦煤涨超3%，甲醇、沥青、焦炭、BR橡胶、玉米涨超2%，白糖、乙二醇、豆油、工业硅涨超1%。跌幅方面，沪银跌超4%，碳酸锂跌超3%，铂、钯、纯碱跌超2%，玻璃、国际铜、沪锌、多晶硅跌超1%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458160,
+            "subject_id": 1501,
+            "subject_name": "期货市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 59085,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 88,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458160,
+            "subject_id": 1171,
+            "subject_name": "有色金属",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 29705,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 2412,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458160,
+            "subject_id": 1741,
+            "subject_name": "海外大宗商品",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 33863,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458160,
+            "subject_id": 1503,
+            "subject_name": "煤炭",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 20128,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 56,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458160,
+            "subject_id": 1548,
+            "subject_name": "有色·铜",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 16198,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 115,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "巴基斯坦强烈谴责以色列袭击叙利亚",
+        "published_at": "2026-08-19 15:01:40",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458159",
+        "content": "【巴基斯坦强烈谴责以色列袭击叙利亚】财联社8月19日电，巴基斯坦外交部通报，巴基斯坦强烈谴责以色列对叙利亚伊德利卜省阿布杜胡尔空军基地发动的无端袭击。此类挑衅行为公然违反国际法，并可能进一步破坏地区和平与稳定。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458159,
+            "subject_id": 10986,
+            "subject_name": "中东冲突",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 51618,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "全球首项 我国牵头制定的钢铁行业智能制造国际标准发布",
+        "published_at": "2026-08-19 15:00:51",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458156",
+        "content": "【全球首项 我国牵头制定的钢铁行业智能制造国际标准发布】财联社8月19日电，我国牵头制定的全球首项钢铁行业智能制造领域国际标准《钢铁行业智能制造指南》近日发布。该国际标准由我国专家担任项目负责人，汇聚日本、荷兰、法国等多国专家协同参与、联合研制，为全球钢铁行业的数字化转型搭建起互联互通的通用技术底座。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458156,
+            "subject_id": 1387,
+            "subject_name": "智能制造",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 18141,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 206,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458156,
+            "subject_id": 1173,
+            "subject_name": "钢铁",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 16944,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 28,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，截至目前，南向资金净卖出额达60亿港元。",
+        "published_at": "2026-08-19 15:00:46",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458155",
+        "content": "财联社8月19日电，截至目前，南向资金净卖出额达60亿港元。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458155,
+            "subject_id": 1750,
+            "subject_name": "沪深港通资金动向",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 48197,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "保时捷回应“2030年前停产Taycan”：精简衍生车型，并非砍掉整个车系",
+        "published_at": "2026-08-19 14:59:57",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458154",
+        "content": "【保时捷回应“2030年前停产Taycan”：精简衍生车型，并非砍掉整个车系】财联社8月19日电，近日，德国媒体报道称，保时捷计划于2030年前停产其首款纯电轿车Taycan。据称，保时捷工会委员会已原则上与管理层达成协议，同意在2030年前后逐步结束Taycan的生产，但尚未形成正式书面文件。对此，保时捷德国总部回应称：公司正在精简Taycan的衍生车型数量以降低产品复杂度，而非砍掉整个车系。短期内，没有停产Taycan的计划。“我们已为该车型投入大量资源，并将根据市场需求的变化，持续评估其未来发展。” （经济观察报）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458154,
+            "subject_id": 1090,
+            "subject_name": "汽车大新闻",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 28942,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 268,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "五角大楼正评估减少在中东军事存在",
+        "published_at": "2026-08-19 14:59:26",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458153",
+        "content": "【五角大楼正评估减少在中东军事存在】财联社8月19日电，据多名要求匿名的知情人士18日向美国《华盛顿邮报》披露，五角大楼正就美军在中东地区的军事存在作非正式评估，其中一个关键领域是伊朗战事结束后是否要从波斯湾撤军。设在那里的美军基地在战事中损毁严重，已有专家建议美军将部队和装备西撤至约旦、以色列或沙特的红海沿岸。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458153,
+            "subject_id": 1485,
+            "subject_name": "军工",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 31339,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 222,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458153,
+            "subject_id": 10986,
+            "subject_name": "中东冲突",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 51618,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458153,
+            "subject_id": 11408,
+            "subject_name": "航运期货",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 8666,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "多只宽基ETF显著放量 沪深300ETF华泰柏瑞尾盘近半小时成交超30亿元",
+        "published_at": "2026-08-19 14:57:38",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458150",
+        "content": "【多只宽基ETF显著放量 沪深300ETF华泰柏瑞尾盘近半小时成交超30亿元】财联社8月19日电，尾盘多只宽基ETF显著放量，沪深300ETF华泰柏瑞（510300）尾盘近半小时成交超30亿元，中证1000ETF南方（512100）、中证500ETF南方（510500）、中证1000ETF广发（560010）尾盘半小时均成交超10亿元。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458150,
+            "subject_id": 1103,
+            "subject_name": "盘面直播",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 181335,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458150,
+            "subject_id": 1797,
+            "subject_name": "ETF最新动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 13020,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，时隔9个交易日，科创板50ETF华夏（588000）、创业板ETF易方达（159915）成交额再度双双破百亿。",
+        "published_at": "2026-08-19 14:57:03",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458149",
+        "content": "财联社8月19日电，时隔9个交易日，科创板50ETF华夏（588000）、创业板ETF易方达（159915）成交额再度双双破百亿。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，受SK海力士拟回购40万亿韩元股票消息提振，SK海力士美股夜盘涨超3%，此前一度跌超3%。",
+        "published_at": "2026-08-19 14:56:25",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458146",
+        "content": "财联社8月19日电，受SK海力士拟回购40万亿韩元股票消息提振，SK海力士美股夜盘涨超3%，此前一度跌超3%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458146,
+            "subject_id": 1098,
+            "subject_name": "美股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 67023,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，MINIMAX-W跌超10%，成交近25亿港元。",
+        "published_at": "2026-08-19 14:55:39",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458147",
+        "content": "财联社8月19日电，MINIMAX-W跌超10%，成交近25亿港元。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458147,
+            "subject_id": 1097,
+            "subject_name": "港股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 27991,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "“大家电BU解散”风波四起 追觅相关人士回应",
+        "published_at": "2026-08-19 14:53:25",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458143",
+        "content": "【“大家电BU解散”风波四起 追觅相关人士回应】财联社8月19日电，针对近日“追觅大家电BU解散、拖欠某冰箱项目服务商款项”的传闻，有上游供应商向记者透露，追觅南京溧水冰箱工厂建设停滞。“大家电本来就是贴牌业务，战略调整也正常。目前追觅货款支付正常，其清洁电器和吹风机等主体业务是健康的。”针对相关解散传闻，追觅全屋智能家电事业群总裁庾仁宗近日回应称，大家电BU解散系谣言。“大家电作为追觅四大赛道全屋智能家庭的核心业务，所有业务均正常进行。由于前期舆情等缘故，供应商沟通中有些过激，相关问题公司正在处理。”庾仁宗说。对于南京冰箱生产线建设停滞的消息，截至发稿，追觅相关人士尚未就记者的询问作出回应。 （第一财经）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "大规模私募仓位升至88.56% 超七成已“满仓”",
+        "published_at": "2026-08-19 14:53:12",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458127",
+        "content": "【大规模私募仓位升至88.56% 超七成已“满仓”】财联社8月19日电，私募排排网数据显示，截至8月14日，股票私募仓位指数为83.97%，已连续7周保持在83%以上。其中，大规模私募仓位指数升至88.56%，较前一周上升1.24个百分点，再创年内新高；中规模、小规模私募仓位指数分别为83.96%、82.63%。从仓位结构看，满仓（仓位超80%）的大规模私募占比达77.11%，同样创下年内新高，低仓和空仓占比合计不足4%。 （财联社记者 吴雨其）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458127,
+            "subject_id": 1353,
+            "subject_name": "证券私募动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 16397,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术",
+        "published_at": "2026-08-19 14:51:25",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458141",
+        "content": "【工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术】财联社8月19日电，中国人工智能产业发展联盟第十八次全会8月18日在北京召开。工业和信息化部科技司副司长甘小斌在致辞中指出，工业和信息化部深入贯彻落实党中央、国务院决策部署，坚持以制造业为主战场、以应用牵引为主线，推动人工智能产业发展和赋能新型工业化。下一步将把握变革机遇，一体化推进技术创新、应用落地、生态培育、安全治理。一是要以技术攻关为驱动，加快智能芯片等关键核心技术攻关，探索类脑智能、世界模型、物理模型等前沿技术；二是要以场景应用为牵引，深入实施“模数共振”、人形机器人与具身智能实景实训等，打造模型、数据、场景的良性互促；三是要以生态优化为支撑，坚持标准引领，加快关键领域标准研制和应用，推出有影响力的事实标准；四是要以安全治理为保障，启动伦理审查先导行动，健全人工智能科技伦理治理体系，创新安全治理技术工具，建立覆盖全生命周期的安全治理机制。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458141,
+            "subject_id": 1321,
+            "subject_name": "人工智能",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 71682,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 207,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458141,
+            "subject_id": 1089,
+            "subject_name": "TMT行业观察",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 25277,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458141,
+            "subject_id": 1279,
+            "subject_name": "半导体芯片",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 105270,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 457,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458141,
+            "subject_id": 1309,
+            "subject_name": "机器人",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 45192,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 201,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458141,
+            "subject_id": 10978,
+            "subject_name": "新型工业化",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 8331,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 2436,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，受SK海力士拟回购40万亿韩元股票消息提振，SK海力士美股夜盘直线拉升，现涨超1%，此前一度跌超3%。",
+        "published_at": "2026-08-19 14:50:32",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458139",
+        "content": "财联社8月19日电，受SK海力士拟回购40万亿韩元股票消息提振，SK海力士美股夜盘直线拉升，现涨超1%，此前一度跌超3%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458139,
+            "subject_id": 1098,
+            "subject_name": "美股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 67022,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "SK海力士：将把2025年至2027年股东回报目标扩大至自由现金流的50%以上",
+        "published_at": "2026-08-19 14:48:55",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458138",
+        "content": "【SK海力士：将把2025年至2027年股东回报目标扩大至自由现金流的50%以上】财联社8月19日电，SK海力士表示，将把2025年至2027年的股东回报目标扩大至累计自由现金流的50%以上。考虑通过派发固定股息和特别股息扩大派息规模。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458138,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458138,
+            "subject_id": 1279,
+            "subject_name": "半导体芯片",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 105270,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 457,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，截至目前，南向资金净卖出额达50亿港元。",
+        "published_at": "2026-08-19 14:45:47",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458136",
+        "content": "财联社8月19日电，截至目前，南向资金净卖出额达50亿港元。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458136,
+            "subject_id": 1750,
+            "subject_name": "沪深港通资金动向",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 48197,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "人形机器人板块持续下挫 多只ETF跌超9%",
+        "published_at": "2026-08-19 14:44:18",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458133",
+        "content": "【人形机器人板块持续下挫 多只ETF跌超9%】财联社8月19日电，尾盘人形机器人板块持续下挫，机器人ETF华安（159039）、机器人ETF大成（159048）、机器人ETF广发（159050）等多只ETF跌超9%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458133,
+            "subject_id": 1103,
+            "subject_name": "盘面直播",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 181335,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458133,
+            "subject_id": 1797,
+            "subject_name": "ETF最新动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 13020,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458133,
+            "subject_id": 12683,
+            "subject_name": "人形机器人",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 10683,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 2067,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，焦煤期货主力合约涨幅达3.26%，最新报1584.5元/吨。",
+        "published_at": "2026-08-19 14:43:50",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458135",
+        "content": "财联社8月19日电，焦煤期货主力合约涨幅达3.26%，最新报1584.5元/吨。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458135,
+            "subject_id": 1501,
+            "subject_name": "期货市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 59085,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 88,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458135,
+            "subject_id": 1503,
+            "subject_name": "煤炭",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 20128,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 56,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458135,
+            "subject_id": 11405,
+            "subject_name": "黑色系期货",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 9885,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "SK海力士拟回购40万亿韩元并注销",
+        "published_at": "2026-08-19 14:43:01",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458134",
+        "content": "【SK海力士拟回购40万亿韩元并注销】财联社8月19日电，SK海力士拟回购40万亿韩元（约合286亿美元）股份。股票回购后将注销，以提升股东回报。 SK海力士表示，股票回购预定从8月20日开始，为期约三个月。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458134,
+            "subject_id": 1486,
+            "subject_name": "回购股票",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 20157,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 250,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458134,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458134,
+            "subject_id": 1279,
+            "subject_name": "半导体芯片",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 105270,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 457,
+            "channel": "cls,stib"
+          }
+        ]
+      }
+    ],
+    "pages_fetched": 3
+  },
+  "legacy_telegraph": {
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://www.cls.cn/nodeapi/telegraphList",
+        "params": {
+          "rn": "50",
+          "page": "1"
+        }
+      },
+      "http_status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 9042,
+      "text_preview": "<!DOCTYPE html><html lang=\"zh\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\"/><meta name=\"renderer\" content"
+    },
+    "parse_ok": false,
+    "error": "JSON parse failed (likely HTML after Next.js migration): Expecting value: line 1 column 1 (char 0)",
+    "items": []
+  },
+  "search_name": {
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://www.cls.cn/api/sw",
+        "params": {
+          "app": "CailianpressWeb",
+          "os": "web",
+          "sv": "7.7.5",
+          "keyword": "赛力斯",
+          "type": "telegram",
+          "page": "1"
+        }
+      },
+      "http_status": 405,
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 49,
+      "text_preview": "{\"error\":\"code=405, message=Method Not Allowed\"}\n",
+      "transport": "curl_cffi.chrome124"
+    },
+    "parse_ok": true,
+    "count": 0,
+    "items": [],
+    "raw_top_keys": [
+      "error"
+    ]
+  },
+  "search_code": {
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://www.cls.cn/api/sw",
+        "params": {
+          "app": "CailianpressWeb",
+          "os": "web",
+          "sv": "7.7.5",
+          "keyword": "601127",
+          "type": "telegram",
+          "page": "1"
+        }
+      },
+      "http_status": 405,
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 49,
+      "text_preview": "{\"error\":\"code=405, message=Method Not Allowed\"}\n",
+      "transport": "curl_cffi.chrome124"
+    },
+    "parse_ok": true,
+    "count": 0,
+    "items": [],
+    "raw_top_keys": [
+      "error"
+    ]
+  },
+  "primary_api": "v1/roll/get_roll_list",
+  "summary": {
+    "roll_total": 50,
+    "stock_related_total": 0,
+    "stock_related_30d": 0,
+    "stock_related_90d": 0,
+    "all_30d": 50,
+    "industry_or_macro_in_30d_sample": 5,
+    "filter_30": {
+      "cutoff": "2026-07-20T15:37:53",
+      "kept": 0
+    },
+    "filter_90": {
+      "cutoff": "2026-05-21T15:37:53",
+      "kept": 0
+    },
+    "all_30_meta": {
+      "cutoff": "2026-07-20T15:37:53",
+      "kept": 50
+    },
+    "can_filter_by_code_native": false,
+    "can_filter_by_keyword_client_side": true,
+    "has_published_at": true,
+    "has_title": true,
+    "has_content": true,
+    "has_url": true,
+    "related_30_sample": [],
+    "related_90_sample": [],
+    "market_30_sample": [
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "消息称三星电子目标今年9月率先完成1d nm DRAM内存研发",
+        "published_at": "2026-08-19 15:36:23",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458223",
+        "content": "【消息称三星电子目标今年9月率先完成1d nm DRAM内存研发】《科创板日报》19日讯，近日，据业内人士透露，三星电子目标2026年9月率先完成1d nm DRAM内存研发，2026年12月进入量产转移阶段，2027年上半年启动生产线建设，有望2027年底实现首批量产。 （TheBell）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458223,
+            "subject_id": 1279,
+            "subject_name": "半导体芯片",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 105270,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 457,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "硅片价格持续上涨 多晶硅成交仍僵持",
+        "published_at": "2026-08-19 15:36:05",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458224",
+        "content": "【硅片价格持续上涨 多晶硅成交仍僵持】财联社8月19日电，多晶硅N型复投料报价39-42元/千克，目前厂家报价相对稳定，市场成交极少，部分下游开始选择跟贸易商交易，硅料厂继续观望下游及本环节实际成交落地情况。8月多晶硅继续增加，产量或突破11万吨，后续有个别基地有复产计划。市场18X硅片价格1.105-1.123元/片，210RN硅片价格1.148-1.153元/片，210N硅片价格1.241-1.256元/片。各尺寸硅片维持涨势，其中电池环节210R已经接受1.15元/片的报价，183硅片或因供应紧张，使得价格进一步上涨。 （上海有色网）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458224,
+            "subject_id": 1477,
+            "subject_name": "光伏",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 44333,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 140,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+        "published_at": "2026-08-19 15:35:59",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458222",
+        "content": "财联社8月19日电，广期所品种仓单及变化如下：碳酸锂期货仓单38608手，环比上个交易日增加1239手；多晶硅期货仓单22580手，环比上个交易日增加270手；工业硅期货仓单33511手，环比上个交易日增加288手。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458222,
+            "subject_id": 1501,
+            "subject_name": "期货市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 59085,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 88,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458222,
+            "subject_id": 1690,
+            "subject_name": "盐湖提锂",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 16071,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 93,
+            "channel": "cls"
+          },
+          {
+            "article_id": 2458222,
+            "subject_id": 1313,
+            "subject_name": "锂电池",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 38246,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 198,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458222,
+            "subject_id": 11409,
+            "subject_name": "碳中和期货",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 10264,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+        "published_at": "2026-08-19 15:35:27",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458221",
+        "content": "财联社8月19日电，港股巨星传奇尾盘跌超20%，昨日收涨近35%。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458221,
+            "subject_id": 1097,
+            "subject_name": "港股动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 27991,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议",
+        "published_at": "2026-08-19 15:33:49",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458218",
+        "content": "【外交部：中方愿同印尼遵循两国元首的战略引领 办好两大机制会议】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者就王毅外长即将访问印尼及举行有关机制会的相关情况提问。对此，林剑表示，在两国元首战略引领下，中印尼命运共同体建设深入推进，五大支柱合作取得丰硕成果。当前世界百年变局加速演进。中印尼作为发展中大国和全球南方主要代表，加强战略沟通和团结协作具有重要意义。双方启动中国印尼全面战略对话机制，举行外长防长“2+2”对话机制第二次部长级会议，充分彰显中印尼关系的高水平和战略性。在全面战略对话机制首次会上，双方将着眼加强发展战略对接，探讨深化中印尼命运共同体建设的务实举措，助力两国的现代化进程。在“2+2”机制会上，王毅外长、董军防长将同印尼重点就政治安全与防务合作、国际地区形势等深入交换意见。中方愿同印尼遵循两国元首的战略引领，办好两大机制会议，统筹推进发展与安全合作，加快构建具有地区和全球影响力的中印尼命运共同体，为各自国家人民带来更多福祉，为地区和世界的和平发展作出更大贡献。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "北京市新增20款已完成备案的生成式人工智能服务",
+        "published_at": "2026-08-19 15:33:12",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458217",
+        "content": "【北京市新增20款已完成备案的生成式人工智能服务】财联社8月19日电，截至2026年8月19日，北京市新增20款已完成备案的生成式人工智能服务，累计已完成279款生成式人工智能服务备案。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458217,
+            "subject_id": 1321,
+            "subject_name": "人工智能",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 71682,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 207,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+        "published_at": "2026-08-19 15:31:00",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458215",
+        "content": "财联社8月19日电，诺和诺德启动低剂量司美格鲁肽（Wegovy®）片剂在新肥胖研究中的试验。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458215,
+            "subject_id": 12552,
+            "subject_name": "诺和诺德",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 6856,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls,stib"
+          },
+          {
+            "article_id": 2458215,
+            "subject_id": 10874,
+            "subject_name": "减肥药",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 7849,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 2423,
+            "channel": "cls,stib"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+        "published_at": "2026-08-19 15:30:23",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458212",
+        "content": "财联社8月19日电，沙特证券交易所将于2026年8月19日周三恢复交易，开盘竞价阶段将于上午10:15开始。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458212,
+            "subject_id": 1556,
+            "subject_name": "环球市场情报",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 167092,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "王毅外长即将访问韩国 外交部介绍此访期待",
+        "published_at": "2026-08-19 15:29:09",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458210",
+        "content": "【王毅外长即将访问韩国 外交部介绍此访期待】财联社8月19日电，外交部发言人林剑主持例行记者会。有记者提问，中方发布了王毅外长即将访问韩国的消息，中方对此访有何期待？林剑表示，中韩互为近邻和合作伙伴。建交34年来，中韩关系全面快速发展，为两国人民带来实实在在的利益，也为促进地区和平稳定与发展繁荣作出积极贡献。林剑指出，去年底今年初，习近平主席同李在明总统成功实现互访，并达成重要共识，开辟中韩关系发展新局面。相信王毅外长此访将有助于双方进一步落实好两国元首重要共识，加强沟通、增进互信、深化交流合作，共同推动中韩战略合作伙伴关系不断向前发展。",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": []
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "外交部：国际社会应共同抵制和阻止日本右翼势力危险动向",
+        "published_at": "2026-08-19 15:28:13",
+        "source": "财联社",
+        "url": "https://www.cls.cn/detail/2458208",
+        "content": "【外交部：国际社会应共同抵制和阻止日本右翼势力危险动向】财联社8月19日电，外交部发言人林剑8月19日主持例行记者会。有记者提问，我们关注到俄罗斯外长拉夫罗夫17日对媒体表示，希望日本充分认真阅读《联合国宪章》，包括第一百零七条及“敌国条款”，日本当年是在承认军国主义罪行，承认联合国宪章全部内容的情况下加入联合国，如果日本领导层试图突破本国宪法约束，改写国际法，逃避历史责任，当然会引起严重担忧。请问中方对此有何评论？\n\n林剑表示，中方赞同拉夫罗夫外长的有关表态，“敌国条款”是《联合国宪章》的重要规定。今年是东京审判开庭80周年，重申敌国条款的含义，强调这一条款约束力，对于捍卫中国人民抗日战争和世界反法西斯战争胜利成果，严防军国主义幽灵死灰复燃具有重要意义。如今高市政府却对日本的历史罪行避而不谈，不仅不反思，还想方设法企图抛弃和平主义，突破日本宪法和国际、国内法规制，图谋加速“再军事化”，这是对战后国际秩序的公然挑战，世界上所有爱好和平的国家，都应共同抵制和阻止日本右翼势力这一危险动向，共同维护二战胜利成果和战后国际秩序，防止历史悲剧重演。 （央视新闻）",
+        "category": "market",
+        "matched_keywords": [],
+        "stock_related": false,
+        "api": "v1/roll/get_roll_list",
+        "raw_subjects": [
+          {
+            "article_id": 2458208,
+            "subject_id": 10738,
+            "subject_name": "外交动态",
+            "subject_img": "",
+            "subject_description": "",
+            "category_id": 0,
+            "attention_num": 9774,
+            "is_attention": false,
+            "is_reporter_subject": false,
+            "plate_id": 0,
+            "channel": "cls"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,988 @@
+{
+  "stock_code": "601127",
+  "agent": "fundamental",
+  "research_as_of_date": "2026-08-19",
+  "summary": "research_as_of_date=2026-08-19。已压缩为 canonical 研究命题：盈利能力是否仍强，增长动能是否承压？；利润质量是否得到经营现金流支持？；财务缓冲与经营规模如何共同约束风险判断？。关键数字保留在 canonical_findings 中。不含买卖建议。",
+  "core_facts": [
+    {
+      "claim": "股票名称为 赛力斯",
+      "evidence_ids": [
+        "akshare_fact_601127_stockname_ca8fd12cc4"
+      ],
+      "reasoning": "核心事实锚点 akshare_fact_601127_stockname_ca8fd12cc4（按 weight 优先选取）。",
+      "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+      "confidence": 0.9,
+      "status": "supported",
+      "finding_kind": "atomic",
+      "finding_id": "FACT_NAME",
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "所属行业为 制造业-汽车制造业",
+      "evidence_ids": [
+        "akshare_fact_601127_industry_62189817ed"
+      ],
+      "reasoning": "核心事实锚点 akshare_fact_601127_industry_62189817ed（按 weight 优先选取）。",
+      "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+      "confidence": 0.9,
+      "status": "supported",
+      "finding_kind": "atomic",
+      "finding_id": "FACT_INDUSTRY",
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "2025-12-31 ROE为 14.56%",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a"
+      ],
+      "reasoning": "核心事实锚点 derived_derived_601127_20251231_8f6bc3786a（按 weight 优先选取）。",
+      "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+      "confidence": 0.9,
+      "status": "supported",
+      "finding_kind": "atomic",
+      "finding_id": "FACT_ROE",
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    }
+  ],
+  "key_research_findings": [
+    {
+      "claim": "[ref:FINDING_FUND_CASH_QUALITY] 利润质量是否得到经营现金流支持？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "reference → FINDING_FUND_CASH_QUALITY",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.78,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_FUND_CASH_QUALITY",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_FUND_BALANCE_OP] 财务缓冲与经营规模如何共同约束风险判断？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_f8cff2e6b7",
+        "akshare_fact_601127_20260331_47f15f27cd",
+        "akshare_fact_601127_20260331_187a85840d",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "reference → FINDING_FUND_BALANCE_OP",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.74,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_FUND_BALANCE_OP",
+      "numbers_preserved": []
+    }
+  ],
+  "research_tensions": [
+    {
+      "claim": "[ref:TENSION_FUND_PROFIT_VS_GROWTH] 盈利能力是否仍强，增长动能是否承压？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_PROFIT_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.84,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:TENSION_FUND_VALUATION_VS_GROWTH] 当前估值需要怎样的盈利/增长假设才能成立？",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "akshare_fact_601127_20260819_ba9424c34d",
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_VALUATION_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.72,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "numbers_preserved": []
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "claim": "当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    }
+  ],
+  "canonical_findings": [
+    {
+      "claim": "2025-12-31 ROE为 14.56%、2025-12-31 毛利率为 29.14%；同时 2025-12-31 归母净利润同比增长 0.18%、2025-12-31 营业收入同比增长 13.69%。这表明盈利能力仍处较高水平，但增长端已出现压力，基本面主要矛盾在增长动能而非盈利能力本身。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "候选证据经 weight 选择后对照盈利能力指标与增长指标。",
+      "interpretation": "现有证据可以支持“盈利能力仍强、增长承压”的分化判断；但单期同比不足以判定是短期波动还是结构性问题，需后续验证需求、渠道与管理层指引。",
+      "confidence": 0.84,
+      "status": "supported",
+      "finding_kind": "tension",
+      "finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "research_question": "盈利能力是否仍强，增长动能是否承压？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2025-12-31",
+        "14.56%",
+        "29.14%",
+        "0.18%",
+        "13.69%"
+      ]
+    },
+    {
+      "claim": "2025-12-31 经营现金流/净利润为 485.39%；2026-03-31 经营活动现金流为 -209.50 亿元；2026-03-31 归母净利润为 7.54 亿元。经营现金流与净利润对照后，利润质量需要用现金含量来约束，而不能只看利润表结果。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "在同一研究问题下联合经营现金流与净利润证据。",
+      "interpretation": "若现金含量稳定，则利润表波动的说服力更强；反之需提高对利润质量的警惕。边界：未覆盖完整多期趋势时不作趋势定论。",
+      "confidence": 0.78,
+      "status": "supported",
+      "finding_kind": "cross",
+      "finding_id": "FINDING_FUND_CASH_QUALITY",
+      "research_question": "利润质量是否得到经营现金流支持？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2025-12-31",
+        "485.39%",
+        "2026-03-31",
+        "209.50",
+        "7.54"
+      ]
+    },
+    {
+      "claim": "2025-12-31 资产负债率为 70.91%；2026-03-31 货币资金为 638.54 亿元；2026-03-31 营业收入为 257.46 亿元；2026-03-31 归母净利润为 7.54 亿元。杠杆/流动性指标需对照经营规模理解：财务缓冲提供风险约束，但不能单独替代增长判断。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_f8cff2e6b7",
+        "akshare_fact_601127_20260331_47f15f27cd",
+        "akshare_fact_601127_20260331_187a85840d",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "资产负债表与经营结果共同约束风险判断。",
+      "interpretation": "财务健康是缓冲维度；与增长压力并存时，二者回答不同问题。",
+      "confidence": 0.74,
+      "status": "supported",
+      "finding_kind": "cross",
+      "finding_id": "FINDING_FUND_BALANCE_OP",
+      "research_question": "财务缓冲与经营规模如何共同约束风险判断？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2025-12-31",
+        "70.91%",
+        "2026-03-31",
+        "638.54",
+        "257.46",
+        "7.54"
+      ]
+    },
+    {
+      "claim": "2026-08-19 市盈率PE(TTM)为 14.75；2026-08-19 市净率PB为 2.13；2025-12-31 ROE为 14.56%；2025-12-31 归母净利润同比增长 0.18%；2025-12-31 营业收入同比增长 13.69%。估值属于 as_of 市场截面，盈利/增速属于财报期；若增长承压而盈利能力仍高，则估值合理性更依赖未来增长恢复，而不能仅由历史盈利能力解释。",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "akshare_fact_601127_20260819_ba9424c34d",
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "跨时间尺度：估值截面 × 财务期盈利/增长。",
+      "interpretation": "这是条件判断而非买卖建议；证据不足以给出目标估值。",
+      "confidence": 0.72,
+      "status": "supported",
+      "finding_kind": "tension",
+      "finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "research_question": "当前估值需要怎样的盈利/增长假设才能成立？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2026-08-19",
+        "14.75",
+        "2.13",
+        "2025-12-31",
+        "14.56%",
+        "0.18%",
+        "13.69%"
+      ]
+    }
+  ],
+  "business_model": {
+    "narrative": "公司身份锚点（不展开业务推断）。",
+    "findings": [
+      {
+        "claim": "股票名称为 赛力斯",
+        "evidence_ids": [
+          "akshare_fact_601127_stockname_ca8fd12cc4"
+        ],
+        "reasoning": "核心事实锚点 akshare_fact_601127_stockname_ca8fd12cc4（按 weight 优先选取）。",
+        "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+        "confidence": 0.9,
+        "status": "supported",
+        "finding_kind": "atomic",
+        "finding_id": "FACT_NAME",
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      },
+      {
+        "claim": "所属行业为 制造业-汽车制造业",
+        "evidence_ids": [
+          "akshare_fact_601127_industry_62189817ed"
+        ],
+        "reasoning": "核心事实锚点 akshare_fact_601127_industry_62189817ed（按 weight 优先选取）。",
+        "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+        "confidence": 0.9,
+        "status": "supported",
+        "finding_kind": "atomic",
+        "finding_id": "FACT_INDUSTRY",
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": [
+      "客户结构"
+    ]
+  },
+  "financial_performance": {
+    "narrative": "财务表现命题见 canonical。",
+    "findings": [
+      {
+        "claim": "[ref:TENSION_FUND_PROFIT_VS_GROWTH] 盈利能力是否仍强，增长动能是否承压？",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_8f6bc3786a",
+          "derived_derived_601127_20251231_6b0d3cc53d",
+          "derived_derived_601127_20251231_5d9c5121f8",
+          "derived_derived_601127_20251231_94b6934679"
+        ],
+        "reasoning": "reference → TENSION_FUND_PROFIT_VS_GROWTH",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.84,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+        "numbers_preserved": []
+      },
+      {
+        "claim": "[ref:TENSION_FUND_VALUATION_VS_GROWTH] 当前估值需要怎样的盈利/增长假设才能成立？",
+        "evidence_ids": [
+          "akshare_fact_601127_20260819_f0cf4975d9",
+          "akshare_fact_601127_20260819_ba9424c34d",
+          "derived_derived_601127_20251231_8f6bc3786a",
+          "derived_derived_601127_20251231_5d9c5121f8",
+          "derived_derived_601127_20251231_94b6934679"
+        ],
+        "reasoning": "reference → TENSION_FUND_VALUATION_VS_GROWTH",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.72,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "profitability": {
+    "narrative": "盈利能力命题引用 canonical，不重复全文。",
+    "findings": [
+      {
+        "claim": "[ref:TENSION_FUND_PROFIT_VS_GROWTH] 盈利能力是否仍强，增长动能是否承压？",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_8f6bc3786a",
+          "derived_derived_601127_20251231_6b0d3cc53d",
+          "derived_derived_601127_20251231_5d9c5121f8",
+          "derived_derived_601127_20251231_94b6934679"
+        ],
+        "reasoning": "reference → TENSION_FUND_PROFIT_VS_GROWTH",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.84,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "financial_health": {
+    "narrative": "财务健康命题引用 canonical。",
+    "findings": [
+      {
+        "claim": "[ref:FINDING_FUND_BALANCE_OP] 财务缓冲与经营规模如何共同约束风险判断？",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_f8cff2e6b7",
+          "akshare_fact_601127_20260331_47f15f27cd",
+          "akshare_fact_601127_20260331_187a85840d",
+          "akshare_fact_601127_20260331_f344d9f7f9"
+        ],
+        "reasoning": "reference → FINDING_FUND_BALANCE_OP",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.74,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "FINDING_FUND_BALANCE_OP",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "cash_flow": {
+    "narrative": "现金流命题引用 canonical。",
+    "findings": [
+      {
+        "claim": "[ref:FINDING_FUND_CASH_QUALITY] 利润质量是否得到经营现金流支持？",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_7e09ef5a6d",
+          "akshare_fact_601127_20260331_b2f2f4ebc5",
+          "akshare_fact_601127_20260331_f344d9f7f9"
+        ],
+        "reasoning": "reference → FINDING_FUND_CASH_QUALITY",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.78,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "FINDING_FUND_CASH_QUALITY",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "recent_events": {
+    "narrative": "公司事件使用 90d 窗口。",
+    "findings": [
+      {
+        "claim": "2026-08-08 公司公告：赛力斯:H股公告(董事会会议召开日期)",
+        "evidence_ids": [
+          "eastmoney_event_601127_20260808_ea4feef647"
+        ],
+        "reasoning": "事件锚点按 weight 优先选取。",
+        "interpretation": "单事件不作趋势外推。",
+        "confidence": 0.65,
+        "status": "supported",
+        "finding_kind": "atomic",
+        "finding_id": "FACT_EVENT",
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "market_expectations": {
+    "narrative": "一致预期为截面，非已实现盈利。",
+    "findings": [
+      {
+        "claim": "2026 年 EPS 一致预期为 4.80 元，共 22 家机构（更新于 2026-08-19）；2027 年 EPS 一致预期为 6.31 元，共 22 家机构（更新于 2026-08-19）；2028 年 EPS 一致预期为 7.93 元，共 20 家机构（更新于 2026-08-19）",
+        "evidence_ids": [
+          "ths_expectation_601127_2026_e6f6e866a9",
+          "ths_expectation_601127_2027_ebbb47c112",
+          "ths_expectation_601127_2028_007798299f"
+        ],
+        "reasoning": "多期一致预期截面（按 weight 选取）。",
+        "interpretation": "EXPECTATION，不作买卖建议。",
+        "confidence": 0.7,
+        "status": "supported",
+        "finding_kind": "cross",
+        "finding_id": "FACT_EXPECT",
+        "research_question": "一致预期截面是什么？",
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "cross_evidence_findings": [
+    {
+      "claim": "[ref:TENSION_FUND_PROFIT_VS_GROWTH] 盈利能力是否仍强，增长动能是否承压？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_PROFIT_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.84,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_FUND_CASH_QUALITY] 利润质量是否得到经营现金流支持？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "reference → FINDING_FUND_CASH_QUALITY",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.78,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_FUND_CASH_QUALITY",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_FUND_BALANCE_OP] 财务缓冲与经营规模如何共同约束风险判断？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_f8cff2e6b7",
+        "akshare_fact_601127_20260331_47f15f27cd",
+        "akshare_fact_601127_20260331_187a85840d",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "reference → FINDING_FUND_BALANCE_OP",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.74,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_FUND_BALANCE_OP",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:TENSION_FUND_VALUATION_VS_GROWTH] 当前估值需要怎样的盈利/增长假设才能成立？",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "akshare_fact_601127_20260819_ba9424c34d",
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_VALUATION_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.72,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "numbers_preserved": []
+    }
+  ],
+  "key_strengths": [
+    {
+      "claim": "[ref:TENSION_FUND_PROFIT_VS_GROWTH] 盈利能力是否仍强，增长动能是否承压？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_PROFIT_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.84,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_FUND_CASH_QUALITY] 利润质量是否得到经营现金流支持？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "reasoning": "reference → FINDING_FUND_CASH_QUALITY",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.78,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_FUND_CASH_QUALITY",
+      "numbers_preserved": []
+    }
+  ],
+  "key_weaknesses": [
+    {
+      "claim": "[ref:TENSION_FUND_PROFIT_VS_GROWTH] 盈利能力是否仍强，增长动能是否承压？",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_PROFIT_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.84,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:TENSION_FUND_VALUATION_VS_GROWTH] 当前估值需要怎样的盈利/增长假设才能成立？",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "akshare_fact_601127_20260819_ba9424c34d",
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "reasoning": "reference → TENSION_FUND_VALUATION_VS_GROWTH",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.72,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "numbers_preserved": []
+    }
+  ],
+  "key_uncertainties": [
+    {
+      "claim": "当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    }
+  ],
+  "evidence_citations": [
+    {
+      "statement": "2025-12-31 ROE为 14.56%、2025-12-31 毛利率为 29.14%；同时 2025-12-31 归母净利润同比增长 0.18%、2025-12-31 营业收入同比增长 13.69%。这表明盈利能力仍处较高水平，但增长端已出现压力，基本面主要矛盾在增长动能而非盈利能力本身。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "sources": [
+        {
+          "evidence_id": "derived_derived_601127_20251231_8f6bc3786a",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 ROE为 14.56%"
+        },
+        {
+          "evidence_id": "derived_derived_601127_20251231_6b0d3cc53d",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 毛利率为 29.14%"
+        },
+        {
+          "evidence_id": "derived_derived_601127_20251231_5d9c5121f8",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 归母净利润同比增长 0.18%"
+        },
+        {
+          "evidence_id": "derived_derived_601127_20251231_94b6934679",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 营业收入同比增长 13.69%"
+        }
+      ]
+    },
+    {
+      "statement": "2025-12-31 经营现金流/净利润为 485.39%；2026-03-31 经营活动现金流为 -209.50 亿元；2026-03-31 归母净利润为 7.54 亿元。经营现金流与净利润对照后，利润质量需要用现金含量来约束，而不能只看利润表结果。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "sources": [
+        {
+          "evidence_id": "derived_derived_601127_20251231_7e09ef5a6d",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 经营现金流/净利润为 485.39%"
+        },
+        {
+          "evidence_id": "akshare_fact_601127_20260331_b2f2f4ebc5",
+          "provider": "akshare.stock_cash_flow_sheet_by_report_em",
+          "url": null,
+          "date": "2026-03-31",
+          "claim": "2026-03-31 经营活动现金流为 -209.50 亿元"
+        },
+        {
+          "evidence_id": "akshare_fact_601127_20260331_f344d9f7f9",
+          "provider": "akshare.stock_profit_sheet_by_report_em",
+          "url": null,
+          "date": "2026-03-31",
+          "claim": "2026-03-31 归母净利润为 7.54 亿元"
+        }
+      ]
+    },
+    {
+      "statement": "2025-12-31 资产负债率为 70.91%；2026-03-31 货币资金为 638.54 亿元；2026-03-31 营业收入为 257.46 亿元；2026-03-31 归母净利润为 7.54 亿元。杠杆/流动性指标需对照经营规模理解：财务缓冲提供风险约束，但不能单独替代增长判断。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_f8cff2e6b7",
+        "akshare_fact_601127_20260331_47f15f27cd",
+        "akshare_fact_601127_20260331_187a85840d",
+        "akshare_fact_601127_20260331_f344d9f7f9"
+      ],
+      "sources": [
+        {
+          "evidence_id": "derived_derived_601127_20251231_f8cff2e6b7",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 资产负债率为 70.91%"
+        },
+        {
+          "evidence_id": "akshare_fact_601127_20260331_47f15f27cd",
+          "provider": "akshare.stock_balance_sheet_by_report_em",
+          "url": null,
+          "date": "2026-03-31",
+          "claim": "2026-03-31 货币资金为 638.54 亿元"
+        },
+        {
+          "evidence_id": "akshare_fact_601127_20260331_187a85840d",
+          "provider": "akshare.stock_profit_sheet_by_report_em",
+          "url": null,
+          "date": "2026-03-31",
+          "claim": "2026-03-31 营业收入为 257.46 亿元"
+        },
+        {
+          "evidence_id": "akshare_fact_601127_20260331_f344d9f7f9",
+          "provider": "akshare.stock_profit_sheet_by_report_em",
+          "url": null,
+          "date": "2026-03-31",
+          "claim": "2026-03-31 归母净利润为 7.54 亿元"
+        }
+      ]
+    },
+    {
+      "statement": "2026-08-19 市盈率PE(TTM)为 14.75；2026-08-19 市净率PB为 2.13；2025-12-31 ROE为 14.56%；2025-12-31 归母净利润同比增长 0.18%；2025-12-31 营业收入同比增长 13.69%。估值属于 as_of 市场截面，盈利/增速属于财报期；若增长承压而盈利能力仍高，则估值合理性更依赖未来增长恢复，而不能仅由历史盈利能力解释。",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "akshare_fact_601127_20260819_ba9424c34d",
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_601127_20260819_f0cf4975d9",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-19",
+          "claim": "2026-08-19 市盈率PE(TTM)为 14.75"
+        },
+        {
+          "evidence_id": "akshare_fact_601127_20260819_ba9424c34d",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-19",
+          "claim": "2026-08-19 市净率PB为 2.13"
+        },
+        {
+          "evidence_id": "derived_derived_601127_20251231_8f6bc3786a",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 ROE为 14.56%"
+        },
+        {
+          "evidence_id": "derived_derived_601127_20251231_5d9c5121f8",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 归母净利润同比增长 0.18%"
+        },
+        {
+          "evidence_id": "derived_derived_601127_20251231_94b6934679",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 营业收入同比增长 13.69%"
+        }
+      ]
+    },
+    {
+      "statement": "股票名称为 赛力斯",
+      "evidence_ids": [
+        "akshare_fact_601127_stockname_ca8fd12cc4"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_601127_stockname_ca8fd12cc4",
+          "provider": "eastmoney.PC_HSF10.CompanySurvey",
+          "url": null,
+          "date": "2026-08-19",
+          "claim": "股票名称为 赛力斯"
+        }
+      ]
+    },
+    {
+      "statement": "所属行业为 制造业-汽车制造业",
+      "evidence_ids": [
+        "akshare_fact_601127_industry_62189817ed"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_601127_industry_62189817ed",
+          "provider": "eastmoney.PC_HSF10.CompanySurvey",
+          "url": null,
+          "date": "2026-08-19",
+          "claim": "所属行业为 制造业-汽车制造业"
+        }
+      ]
+    },
+    {
+      "statement": "2025-12-31 ROE为 14.56%",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a"
+      ],
+      "sources": [
+        {
+          "evidence_id": "derived_derived_601127_20251231_8f6bc3786a",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2025-12-31",
+          "claim": "2025-12-31 ROE为 14.56%"
+        }
+      ]
+    }
+  ],
+  "used_evidence_ids": [
+    "akshare_fact_601127_20260331_187a85840d",
+    "akshare_fact_601127_20260331_47f15f27cd",
+    "akshare_fact_601127_20260331_b2f2f4ebc5",
+    "akshare_fact_601127_20260331_f344d9f7f9",
+    "akshare_fact_601127_20260819_ba9424c34d",
+    "akshare_fact_601127_20260819_f0cf4975d9",
+    "akshare_fact_601127_industry_62189817ed",
+    "akshare_fact_601127_stockname_ca8fd12cc4",
+    "derived_derived_601127_20251231_5d9c5121f8",
+    "derived_derived_601127_20251231_6b0d3cc53d",
+    "derived_derived_601127_20251231_7e09ef5a6d",
+    "derived_derived_601127_20251231_8f6bc3786a",
+    "derived_derived_601127_20251231_94b6934679",
+    "derived_derived_601127_20251231_f8cff2e6b7"
+  ],
+  "excluded_audit": [
+    {
+      "evidence_id": "eastmoney_event_601127_20250419_e873ca34c2",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=487"
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20241018_3e0e01988a",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=670"
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20241018_1956888cff",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=670"
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20241016_3dbf30333e",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=672"
+    },
+    {
+      "evidence_id": "界面新闻_event_601127_20260819_237931763e",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "新华财经_event_601127_20260819_2de7af5b6d",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "澎湃新闻_event_601127_20260819_29a5e9baf2",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "券商中国_event_601127_20260819_a32d52b130",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "界面新闻_event_601127_20260819_a81e1665ae",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_601127_20260819_886ff1de80",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "经济参考网_event_601127_20260819_cd80e97357",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "人民财讯_event_601127_20260819_b415d93460",
+      "reason": "irrelevant",
+      "detail": "claim=2026-08-19 14:51:41 [market] 工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_839bd0d7dc",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_c2cb88b664",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_b6a84e5be7",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_3e6a0c296d",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_dd2c83cfe4",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_980804b759",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_5785d8dd6d",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_e657e12707",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_06f1a7d6d5",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_5500d0f9a0",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_d929750045",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_8c43214796",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_5d1f096fce",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_08afebb407",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260819_3b17e61564",
+      "reason": "irrelevant",
+      "detail": "macro_not_in_fundamental_core"
+    }
+  ]
+}

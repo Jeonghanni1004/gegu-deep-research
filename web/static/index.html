@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deep Research Workspace</title>
+  <link rel="stylesheet" href="/static/styles.css?v=insight1" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <div>
+          <div class="brand-title">Deep Research Workspace</div>
+          <div class="brand-sub">AI 研究团队 · Evidence → Debate → Final Analyst</div>
+        </div>
+      </div>
+      <div class="top-meta" id="top-meta">Replay · 不调用 LLM</div>
+    </header>
+
+    <main>
+      <section id="view-home" class="view active">
+        <div class="hero">
+          <p class="eyebrow">Research Team</p>
+          <h1>输入一只股票，观察完整研究过程</h1>
+          <p class="lede">
+            AI 完成深度研究后，你先看 Brief 与核心矛盾，再追溯证据与多空争议——不是自动生成一篇研报。
+          </p>
+          <form id="search-form" class="search-card" autocomplete="off">
+            <label for="query">股票代码 / 名称</label>
+            <div class="search-row">
+              <input id="query" name="query" placeholder="例如：601127 / 赛力斯 · 600519 / 贵州茅台" value="601127" />
+              <button type="submit" class="btn-primary">开始深度研究</button>
+            </div>
+            <p class="hint">Replay 模式：读取本地 grounded artifacts，不发起新的模型调用</p>
+          </form>
+          <div class="chip-row" id="example-chips"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>可回放研究</h2>
+            <span class="muted">本地 artifacts</span>
+          </div>
+          <div id="study-list" class="study-list"></div>
+        </div>
+      </section>
+
+      <section id="view-progress" class="view">
+        <div class="progress-layout">
+          <aside class="team-rail">
+            <h2>研究团队</h2>
+            <ul id="stage-list" class="stage-list"></ul>
+            <div class="status-box" id="status-box">
+              <div class="status-label">当前 Agent</div>
+              <div class="status-value" id="status-agent">—</div>
+              <div class="status-note" id="status-note">准备启动</div>
+            </div>
+            <div class="mini-stats" id="mini-stats"></div>
+          </aside>
+          <div class="progress-main">
+            <h1 id="progress-title">分析进行中</h1>
+            <p class="lede" id="progress-lede">正在回放已完成的研究链路…</p>
+            <ol id="timeline" class="timeline"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-report" class="view">
+        <div class="workspace-shell">
+          <aside class="pipeline-rail" id="pipeline-rail"></aside>
+          <div class="workspace-main">
+            <div class="report-toolbar">
+              <button type="button" class="btn-ghost" id="btn-home">← Workspace</button>
+              <div id="report-identity" class="report-identity"></div>
+            </div>
+            <nav class="tabs" id="tabs">
+              <button type="button" data-tab="brief" class="tab active">Research Brief</button>
+              <button type="button" data-tab="judgment" class="tab">Final Judgment</button>
+              <button type="button" data-tab="evidence" class="tab">Evidence</button>
+              <button type="button" data-tab="debate" class="tab">Debate</button>
+              <button type="button" data-tab="details" class="tab">Details</button>
+            </nav>
+            <div id="tab-brief" class="tab-pane active"></div>
+            <div id="tab-judgment" class="tab-pane"></div>
+            <div id="tab-evidence" class="tab-pane"></div>
+            <div id="tab-debate" class="tab-pane"></div>
+            <div id="tab-details" class="tab-pane"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+  <script src="/static/app.js?v=insight1"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+{
+  "exec": "as_of=2026-08-15：Debate 主 resolution=unresolved（support_strength=n/a）。事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）支持“高盈利与增长承压并存”，但 Challenge/Rebuttal 未能裁定解释框架；校准后主判断：事实清楚、解释未决；不得机械中性，也不得越权裁定。assessment_strength=unresolved；evidence_pressure=elevated。删除 Debate 将无法得到该未决裁定。 跨 tension DERIVED：增长恢复实际上是连接经营表现（PROFIT_VS_GROWTH）与估值解释（VALUATION_VS_GROWTH）的中间条件——因此增长不确定性不仅影响基本面判断，也抬高估值叙事门槛。 跨 tension：短期价格/均线结构改善（SHORT_VS_LONG）最多提供市场尺度旁证，不能自动解除基本面增长争议；价格改善≠增长争议已关闭。 Debate 语义：仍有效/未关闭 Challenge=['CH_BULL_01', 'CH_BEAR_01']；关键 Rebuttal 处理=['RB_BEAR_01', 'RB_BULL_01']；因此结论强度受 Challenge 限制，而非 Bull/Bear 条数。",
+  "thesis": "Core thesis（校准）：事实清楚、解释未决；不得机械中性，也不得越权裁定。strength=unresolved。不得把 Bull/Bear 条数平均成中性。",
+  "base": "Base（非机械）：resolution=unresolved、support_strength=None、evidence_pressure=elevated。最符合当前证据且不过度补全的解释：事实清楚、解释未决；不得机械中性，也不得越权裁定。事实锚点（2025-12-31、33.65%、91.18%、4.53%、1.21%）；strength=unresolved。",
+  "bull": "Bull 边界：仅当出现可核对的新证据——连续报告期收入与利润同比改善——之后，Bull 解释才获得更强支持，主解释才可移向“阶段性承压得到验证”。在该新证据出现前，不得把乐观描述当作 Base。",
+  "bear": "Bear 边界：仅当出现可核对的新证据——多期增长持续恶化且无对冲证据——之后，Bear 解释才获得更强支持，主解释才可移向“增长压力权重进一步上升”。在该新证据出现前，不得把悲观描述当作 Base。",
+  "drivers": [
+    "驱动（TENSION_FUND_PROFIT_VS_GROWTH）：Debate resolution=unresolved 决定该命题在最终判断中的权重；存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械",
+    "驱动（TENSION_FUND_VALUATION_VS_GROWTH）：Debate resolution=partially_resolved 决定该命题在最终判断中的权重；Challenge/Rebuttal 混合结果：事实清楚，但解释优势不足以锁定单边框架。",
+    "驱动（TENSION_MKT_SHORT_VS_LONG）：Debate resolution=unresolved 决定该命题在最终判断中的权重；存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械"
+  ],
+  "unc": [
+    "Primary tension TENSION_FUND_PROFIT_VS_GROWTH Debate unresolved：存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械平均，只能保留未决。",
+    "Debate unresolved survival：单期利润下滑是否阶段性，现有 Evidence 无法裁定。",
+    "Debate unresolved survival：高盈利能力与低增长并存时，投资叙事权重如何分配，留给 Final Analyst。",
+    "Debate unresolved survival：客户结构、管理层指引等关键商业细节仍不足。",
+    "Debate unresolved survival：当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+    "Debate unresolved survival：利润同比下滑是否阶段性，现有单期 Evidence 无法确认长期恶化。"
+  ],
+  "gaps": [
+    "继承 Research gap：当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+    "继承 Research gap：当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+    "继承 Research gap：当前 Research Context 缺少足够的新闻 Current/Previous 个股相关资讯证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+    "继承 Research gap：当前 Research Context 缺少足够的盘口微观结构证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+    "继承 Research gap：当前 Research Context 缺少足够的机构持仓完整时序证据，无法形成可靠判断。 FA 不得补全为已确认事实。"
+  ],
+  "tensions": [
+    {
+      "tension_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "research_question": "盈利能力是否仍强，增长动能是否承压？",
+      "bull_position": "公司盈利能力仍具有较强韧性，资本回报与毛利率水平提供支持性证据。",
+      "bear_position": "盈利与收入增速承压，削弱“增长驱动”的投资价值叙事。",
+      "resolution": "unresolved",
+      "resolution_reason": "存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械平均，只能保留未决。",
+      "assessment_strength": "tentative",
+      "support_strength": null,
+      "decisive_evidence_ids": [
+        "derived_derived_600519_20251231_1aa9df0253",
+        "derived_derived_600519_20251231_23d97142ea",
+        "derived_derived_600519_20251231_326895f599",
+        "derived_derived_600519_20251231_b21d45697e",
+        "akshare_fact_600519_20260331_f83c681f65"
+      ],
+      "current_assessment": {
+        "role": "tension_assessment",
+        "kind": "UNCERTAINTY",
+        "text": "Debate 未裁定 TENSION_FUND_PROFIT_VS_GROWTH：事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）清楚，但 Bull/Bear 解释无法被当前 Challenge/Rebuttal 有效区分。assessment_strength=tentative。原因：存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械平均，只能保留未决。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [
+          "CH_BULL_01",
+          "CH_BEAR_01",
+          "RB_BEAR_01",
+          "RB_BULL_01"
+        ],
+        "numbers_used": [
+          "2025-12-31",
+          "33.65%",
+          "91.18%",
+          "4.53%",
+          "1.21%"
+        ],
+        "assessment_strength": "tentative",
+        "inference_status": "DERIVED",
+        "layer": "INFERENCE"
+      },
+      "unresolved_challenges": [
+        "CH_BULL_01",
+        "CH_BEAR_01"
+      ],
+      "accepted_rebuttals": [],
+      "partially_accepted_rebuttals": [
+        "RB_BEAR_01",
+        "RB_BULL_01"
+      ],
+      "layer": "INFERENCE"
+    },
+    {
+      "tension_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "research_question": "当前估值需要怎样的盈利/增长假设才能成立？",
+      "bull_position": "Bull 未对本 tension 立论",
+      "bear_position": "估值与一致预期/事件证据不足以支撑“风险已被充分消化”的乐观假设。",
+      "resolution": "unresolved",
+      "resolution_reason": "Challenge/Rebuttal 混合结果：事实清楚，但解释优势不足以锁定单边框架。",
+      "assessment_strength": "tentative",
+      "support_strength": null,
+      "decisive_evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "ths_expectation_600519_2026_4ddb99e909",
+        "eastmoney_event_600519_20260718_beb32085ed"
+      ],
+      "current_assessment": {
+        "role": "tension_assessment",
+        "kind": "INFERENCE",
+        "text": "Debate resolution=partially_resolved：部分争议收敛，但 TENSION_FUND_VALUATION_VS_GROWTH 仍有残余未决；因此 Base 只能采用有限收敛的解释框架。strength=tentative。依据：Challenge/Rebuttal 混合结果：事实清楚，但解释优势不足以锁定单边框架。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_VALUATION_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "akshare_fact_600519_20260814_e0cb0863ad",
+          "akshare_fact_600519_20260814_9d752dac82",
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [
+          "CH_BULL_03",
+          "RB_BEAR_03"
+        ],
+        "numbers_used": [
+          "2026-08-14",
+          "20.28",
+          "6.19",
+          "2025-12-31",
+          "33.65%",
+          "4.53%"
+        ],
+        "assessment_strength": "tentative",
+        "inference_status": "DERIVED",
+        "layer": "INFERENCE"
+      },
+      "unresolved_challenges": [
+        "CH_BULL_03"
+      ],
+      "accepted_rebuttals": [],
+      "partially_accepted_rebuttals": [
+        "RB_BEAR_03"
+      ],
+      "layer": "INFERENCE"
+    },
+    {
+      "tension_id": "TENSION_MKT_SHORT_VS_LONG",
+      "research_question": "短中期趋势与长期均线是否冲突？",
+      "bull_position": "短中期价格结构与一致预期快照提供偏积极的市场侧支持线索。",
+      "bear_position": "价格相对长期均线与区间位置显示中期上行仍面临结构压力。",
+      "resolution": "unresolved",
+      "resolution_reason": "存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械平均，只能保留未决。",
+      "assessment_strength": "unresolved",
+      "support_strength": null,
+      "decisive_evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "current_assessment": {
+        "role": "tension_assessment",
+        "kind": "UNCERTAINTY",
+        "text": "Debate 未裁定 TENSION_MKT_SHORT_VS_LONG：事实（2026-08-14、1347.1280、1325.9990、1357.7337、1341.99）清楚，但 Bull/Bear 解释无法被当前 Challenge/Rebuttal 有效区分。assessment_strength=unresolved。原因：存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械平均，只能保留未决。",
+        "canonical_finding_ids": [
+          "TENSION_MKT_SHORT_VS_LONG"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20260814_0a0a03c36d",
+          "derived_derived_600519_20260814_d7efcdac03",
+          "derived_derived_600519_20260814_5570a1a010",
+          "akshare_fact_600519_20260814_0e265beb0b"
+        ],
+        "debate_refs": [
+          "CH_BULL_02",
+          "CH_BEAR_03",
+          "RB_BEAR_02",
+          "RB_BULL_03"
+        ],
+        "numbers_used": [
+          "2026-08-14",
+          "1347.1280",
+          "1325.9990",
+          "1357.7337",
+          "1341.99"
+        ],
+        "assessment_strength": "unresolved",
+        "inference_status": "DERIVED",
+        "layer": "INFERENCE"
+      },
+      "unresolved_challenges": [
+        "CH_BULL_02",
+        "CH_BEAR_03"
+      ],
+      "accepted_rebuttals": [
+        "RB_BEAR_02"
+      ],
+      "partially_accepted_rebuttals": [
+        "RB_BULL_03"
+      ],
+      "layer": "INFERENCE"
+    }
+  ],
+  "why": {
+    "supported_facts": [
+      "支撑命题 TENSION_FUND_PROFIT_VS_GROWTH 的关键事实数字：2025-12-31、33.65%、91.18%、4.53%、1.21%。"
+    ],
+    "interpretation_advantage": "无解释优势；优势在于诚实保留未决",
+    "unresolved": [
+      "CH_BULL_01",
+      "CH_BEAR_01"
+    ],
+    "reason_base_case_selected": "Base 选择依据 Debate resolution=unresolved + support_strength=None + evidence_pressure=elevated：存在 evidence_insufficient 或未关闭的 interpretation_conflict，且对应 Rebuttal 为 accept/partially_accept 或缺失；因此不能在 Bull/Bear 解释间做机械平均，只能保留未决。；校准框架：事实清楚、解释未决；不得机械中性，也不得越权裁定",
+    "primary_resolution": "unresolved",
+    "debate_support_strength": null,
+    "evidence_pressure": "elevated",
+    "calibrated_frame": "事实清楚、解释未决；不得机械中性，也不得越权裁定",
+    "active_challenges": [
+      "CH_BULL_01",
+      "CH_BEAR_01"
+    ],
+    "accepted_rebuttals": [
+      "RB_BEAR_01",
+      "RB_BULL_01"
+    ],
+    "limiting_challenge": "CH_BULL_01"
+  },
+  "wwcmv": [
+    {
+      "trigger_evidence_description": "连续≥2个报告期营业收入与归母净利润同比同向改善或恶化（可核对）",
+      "would_affect": "primary_resolution / base_case",
+      "direction": "unresolved_to_resolved",
+      "related_gap_or_boundary": "单期同比不足以区分阶段性与结构性",
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ]
+    },
+    {
+      "trigger_evidence_description": "关键 Challenge 的 Rebuttal 从 partially_accept/accept 变为 reject（或相反）",
+      "would_affect": "debate_resolution",
+      "direction": "more_constructive",
+      "related_gap_or_boundary": "Debate Challenge/Rebuttal 状态是 judgment driver",
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ]
+    },
+    {
+      "trigger_evidence_description": "公司披露可核对客户结构/集中度或渠道库存与批价",
+      "would_affect": "research_gaps",
+      "direction": "unresolved_to_resolved",
+      "related_gap_or_boundary": "客户结构等 Research gap",
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ]
+    }
+  ],
+  "fund_findings": [
+    {
+      "id": "TENSION_FUND_PROFIT_VS_GROWTH",
+      "q": "盈利能力是否仍强，增长动能是否承压？",
+      "claim": "2025-12-31 ROE为 33.65%、2025-12-31 毛利率为 91.18%；同时 2025-12-31 归母净利润同比下降 4.53%、2025-12-31 营业收入同比下降 1.21%。这表明盈利能力仍处较高水平，但增长端已出现压力，基本面主要矛盾在增长动能而非盈利能力本身。",
+      "interp": "现有证据可以支持“盈利能力仍强、增长承压”的分化判断；但单期同比不足以判定是短期波动还是结构性问题，需后续验证需求、渠道与管理层指引。",
+      "nums": [
+        "2025-12-31",
+        "33.65%",
+        "91.18%",
+        "4.53%",
+        "1.21%"
+      ]
+    },
+    {
+      "id": "FINDING_FUND_CASH_QUALITY",
+      "q": "利润质量是否得到经营现金流支持？",
+      "claim": "2025-12-31 经营现金流/净利润为 74.74%；2026-03-31 经营活动现金流为 269.10 亿元；2026-03-31 归母净利润为 272.43 亿元。经营现金流与净利润对照后，利润质量需要用现金含量来约束，而不能只看利润表结果。",
+      "interp": "若现金含量稳定，则利润表波动的说服力更强；反之需提高对利润质量的警惕。边界：未覆盖完整多期趋势时不作趋势定论。",
+      "nums": [
+        "2025-12-31",
+        "74.74%",
+        "2026-03-31",
+        "269.10",
+        "272.43"
+      ]
+    },
+    {
+      "id": "FINDING_FUND_BALANCE_OP",
+      "q": "财务缓冲与经营规模如何共同约束风险判断？",
+      "claim": "2025-12-31 资产负债率为 16.42%；2026-03-31 货币资金为 487.87 亿元；2026-03-31 营业收入为 539.09 亿元；2026-03-31 归母净利润为 272.43 亿元。杠杆/流动性指标需对照经营规模理解：财务缓冲提供风险约束，但不能单独替代增长判断。",
+      "interp": "财务健康是缓冲维度；与增长压力并存时，二者回答不同问题。",
+      "nums": [
+        "2025-12-31",
+        "16.42%",
+        "2026-03-31",
+        "487.87",
+        "539.09",
+        "272.43"
+      ]
+    },
+    {
+      "id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "q": "当前估值需要怎样的盈利/增长假设才能成立？",
+      "claim": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2025-12-31 ROE为 33.65%；2025-12-31 归母净利润同比下降 4.53%；2025-12-31 营业收入同比下降 1.21%。估值属于 as_of 市场截面，盈利/增速属于财报期；若增长承压而盈利能力仍高，则估值合理性更依赖未来增长恢复，而不能仅由历史盈利能力解释。",
+      "interp": "这是条件判断而非买卖建议；证据不足以给出目标估值。",
+      "nums": [
+        "2026-08-14",
+        "20.28",
+        "6.19",
+        "2025-12-31",
+        "33.65%",
+        "4.53%",
+        "1.21%"
+      ]
+    }
+  ],
+  "mkt_findings": [
+    {
+      "id": "FINDING_MKT_PRICE_MA",
+      "q": "价格相对均线结构处于什么状态？",
+      "claim": "2026-08-14 最新价格为 1341.99 元；2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA60为 1259.2065；2026-08-14 MA250为 1357.7337。对照结果显示短中期均线呈多头排列；价格相对均线的位置需分短中长期解读，不等于趋势预测。",
+      "interp": "描述状态，不给出交易指令。",
+      "nums": [
+        "2026-08-14",
+        "1341.99",
+        "1347.1280",
+        "1325.9990",
+        "1259.2065",
+        "1357.7337"
+      ]
+    },
+    {
+      "id": "TENSION_MKT_SHORT_VS_LONG",
+      "q": "短中期趋势与长期均线是否冲突？",
+      "claim": "2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA250为 1357.7337；2026-08-14 最新价格为 1341.99 元。短中期均线与长期均线（MA250）可能指向不同时间尺度状态；因此短期动能与长期压力/支撑必须分开表述，避免混用。",
+      "interp": "冲突存在并不自动指向方向选择；只定义研究问题。",
+      "nums": [
+        "2026-08-14",
+        "1347.1280",
+        "1325.9990",
+        "1357.7337",
+        "1341.99"
+      ]
+    },
+    {
+      "id": "FINDING_MKT_VAL_PRICE",
+      "q": "估值与价格位置如何共同描述定价状态？",
+      "claim": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2026-08-14 最新价格为 1341.99 元；2026-08-14 当前价格在52周区间中的位置为 0.5016。估值与价格/52周位置同属 as_of 截面，可共同描述定价状态，但不能单独推导涨跌方向。",
+      "interp": "状态描述；不作目标价。",
+      "nums": [
+        "2026-08-14",
+        "20.28",
+        "6.19",
+        "1341.99",
+        "52",
+        "0.5016"
+      ]
+    }
+  ],
+  "debate_bull": [
+    {
+      "claim_id": "BULL_01",
+      "claim": "公司盈利能力仍具有较强韧性，资本回报与毛利率水平提供支持性证据。",
+      "reasoning": "Fundamental Research 与 DERIVED 指标显示高 ROE / 高毛利率并存；这支持“盈利质量仍强”的解释，而非股价必然上涨。 同时需承认：2025-12-31 归母净利润同比下降 4.53% 表明短期利润增速承压。 立场对齐 Research canonical `TENSION_FUND_PROFIT_VS_GROWTH`（不重复生成同义研究结论）。",
+      "evidence_ids": [
+        "derived_derived_600519_20251231_1aa9df0253",
+        "derived_derived_600519_20251231_23d97142ea",
+        "derived_derived_600519_20251231_326895f599"
+      ],
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ],
+      "layer": "INFERENCE"
+    },
+    {
+      "claim_id": "BULL_02",
+      "claim": "财务健康与现金流证据支持公司基本面具备抗风险缓冲。",
+      "reasoning": "经营现金流及相关比率、资产负债结构可被解释为基本面缓冲；Bull Case 将其视为投资价值的支持性事实，同时不否认增速放缓风险。",
+      "evidence_ids": [
+        "derived_derived_600519_20251231_e5ea7a9e51",
+        "akshare_fact_600519_20260331_f8d51f60b8",
+        "derived_derived_600519_20251231_e5ef691e0a"
+      ],
+      "canonical_finding_ids": [
+        "FINDING_FUND_CASH_QUALITY"
+      ],
+      "layer": "INFERENCE"
+    },
+    {
+      "claim_id": "BULL_03",
+      "claim": "短中期价格结构与一致预期快照提供偏积极的市场侧支持线索。",
+      "reasoning": "Market Research 中的均线结构/52周位置/一致预期属于可引用证据；可解释为短中期动能与机构预期仍存，但不能外推为确定性上涨。",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_94d80062bf",
+        "ths_expectation_600519_2026_4ddb99e909"
+      ],
+      "canonical_finding_ids": [
+        "TENSION_MKT_SHORT_VS_LONG"
+      ],
+      "layer": "INFERENCE"
+    }
+  ],
+  "debate_bear": [
+    {
+      "claim_id": "BEAR_01",
+      "claim": "盈利与收入增速承压，削弱“增长驱动”的投资价值叙事。",
+      "reasoning": "归母净利润/营收同比下滑是可核验负面事实；Bear Case 将其解释为盈利动能恶化信号。 同时承认：2025-12-31 ROE为 33.65% 显示静态盈利能力仍高。 风险解读对齐 Research canonical `TENSION_FUND_PROFIT_VS_GROWTH`（引用张力，不复制全文）。",
+      "evidence_ids": [
+        "derived_derived_600519_20251231_326895f599",
+        "derived_derived_600519_20251231_b21d45697e",
+        "akshare_fact_600519_20260331_f83c681f65",
+        "akshare_fact_600519_20260331_2fb3ab92d0",
+        "derived_derived_600519_20251231_1aa9df0253"
+      ],
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ],
+      "layer": "INFERENCE"
+    },
+    {
+      "claim_id": "BEAR_02",
+      "claim": "价格相对长期均线与区间位置显示中期上行仍面临结构压力。",
+      "reasoning": "若价格位于长期均线下方或仅处52周中部，可解释为趋势尚未确认强势突破；这是对市场结构的风险解读，不是买卖指令。",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "canonical_finding_ids": [
+        "TENSION_MKT_SHORT_VS_LONG"
+      ],
+      "layer": "INFERENCE"
+    },
+    {
+      "claim_id": "BEAR_03",
+      "claim": "估值与一致预期/事件证据不足以支撑“风险已被充分消化”的乐观假设。",
+      "reasoning": "PE 等估值事实与 EXPECTATION/EVENT 仅提供快照；Bear Case 强调：在增速承压背景下，乐观定价假设证据不足。 同时承认 Bull 可能成立的部分：2025-12-31 毛利率为 91.18%",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "ths_expectation_600519_2026_4ddb99e909",
+        "eastmoney_event_600519_20260718_beb32085ed",
+        "eastmoney_event_600519_20251230_8edd2c4a89"
+      ],
+      "canonical_finding_ids": [
+        "TENSION_FUND_VALUATION_VS_GROWTH"
+      ],
+      "layer": "INFERENCE"
+    }
+  ]
+}

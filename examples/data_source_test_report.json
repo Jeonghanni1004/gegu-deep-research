@@ -1,0 +1,590 @@
+{
+  "retrieved_at": "2026-08-14T09:53:11+00:00",
+  "stock_code": "600519",
+  "eastmoney": {
+    "attempts": {
+      "stock_news": {
+        "ok": true,
+        "elapsed_sec": 0.14,
+        "error": null
+      },
+      "stock_news_sina_fallback": {
+        "ok": true,
+        "elapsed_sec": 0.19,
+        "error": null
+      },
+      "global_news_em": {
+        "ok": true,
+        "elapsed_sec": 1.43,
+        "error": null
+      },
+      "announcements": {
+        "ok": true,
+        "elapsed_sec": 1.8,
+        "error": null
+      },
+      "dragon_tiger_90d": {
+        "ok": true,
+        "elapsed_sec": 1.5,
+        "error": null
+      },
+      "lockup": {
+        "ok": true,
+        "elapsed_sec": 1.44,
+        "error": null
+      },
+      "holder_change": {
+        "ok": true,
+        "elapsed_sec": 1.73,
+        "error": null
+      },
+      "fund_flow_hist": {
+        "ok": false,
+        "elapsed_sec": 1.31,
+        "error": {
+          "type": "ConnectionError",
+          "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+        }
+      }
+    },
+    "news_total": 30,
+    "news_30": 30,
+    "news_source_used": "sina.vCB_AllNewsStock (TradingAgents fallback)",
+    "announcements_total": 30,
+    "announcements_30": 1,
+    "announcements_90": 19,
+    "global_news_count": 30,
+    "dragon_tiger": 0,
+    "lockup": 0,
+    "holder_change": 13,
+    "fund_flow_ok": false,
+    "quality_notes": [
+      "东财 search-api 仅返回 passportWeb（个股新闻 cmsArticleWebOld 为空），已按 TradingAgents 回退到新浪个股新闻。"
+    ]
+  },
+  "cls": {
+    "attempts": {
+      "v1_roll": {
+        "ok": true,
+        "elapsed_sec": 0.84,
+        "error": null
+      },
+      "legacy_telegraph": {
+        "ok": true,
+        "elapsed_sec": 0.28,
+        "error": null
+      },
+      "search_name": {
+        "ok": true,
+        "elapsed_sec": 0.27,
+        "error": null
+      },
+      "search_code": {
+        "ok": true,
+        "elapsed_sec": 0.28,
+        "error": null
+      }
+    },
+    "primary_api": "v1/roll/get_roll_list",
+    "summary": {
+      "roll_total": 50,
+      "stock_related_total": 0,
+      "stock_related_30d": 0,
+      "stock_related_90d": 0,
+      "all_30d": 50,
+      "industry_or_macro_in_30d_sample": 6,
+      "filter_30": {
+        "cutoff": "2026-07-15T17:53:11",
+        "kept": 0
+      },
+      "filter_90": {
+        "cutoff": "2026-05-16T17:53:11",
+        "kept": 0
+      },
+      "all_30_meta": {
+        "cutoff": "2026-07-15T17:53:11",
+        "kept": 50
+      },
+      "can_filter_by_code_native": false,
+      "can_filter_by_keyword_client_side": true,
+      "has_published_at": true,
+      "has_title": true,
+      "has_content": true,
+      "has_url": true,
+      "related_30_sample": [],
+      "related_90_sample": [],
+      "market_30_sample": [
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "财联社8月14日电，航运巨头马士基股价涨幅扩大，现上涨6.8%，触及2022年8月以来最高水平。",
+          "published_at": "2026-08-14 17:52:24",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454680",
+          "content": "财联社8月14日电，航运巨头马士基股价涨幅扩大，现上涨6.8%，触及2022年8月以来最高水平。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454680,
+              "subject_id": 8709,
+              "subject_name": "欧股动态",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 13539,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454680,
+              "subject_id": 1480,
+              "subject_name": "航运",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 12118,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 139,
+              "channel": "cls"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "【机构龙虎榜解读】CDN+液冷+算力租赁，提供GPU云算力、CPU云算力等一站式算力云服务，在国内已建立多个算力节点，自主研发的液冷技术，包括单相浸没式液冷和冷板方案，机构大额净买入这家公司",
+          "published_at": "2026-08-14 17:51:58",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454669",
+          "content": "①CDN+液冷+算力租赁，提供GPU云算力、CPU云算力等一站式算力云服务，在国内已建立多个算力节点，自主研发的液冷技术，包括单相浸没式液冷和冷板方案，机构大额净买入这家公司；②CPO+光芯片，已与多家光芯片与模组企业开展合作并进行批量供应，光学元器件产品常用于通信光模块、硅光模块中激光光源的高效准直、聚焦或光纤耦合，这家公司获净买入。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": []
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "财联社8月14日电，摩根大通看好内存需求，给予闪迪\"增持\"评级，目标价2250美元。",
+          "published_at": "2026-08-14 17:51:03",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454678",
+          "content": "财联社8月14日电，摩根大通看好内存需求，给予闪迪\"增持\"评级，目标价2250美元。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454678,
+              "subject_id": 2409,
+              "subject_name": "存储芯片",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 19642,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 412,
+              "channel": "cls,stib"
+            },
+            {
+              "article_id": 2454678,
+              "subject_id": 1098,
+              "subject_name": "美股动态",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 66800,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454678,
+              "subject_id": 1094,
+              "subject_name": "券商策略",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 60496,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "传音控股港股上市获中国证监会备案",
+          "published_at": "2026-08-14 17:48:05",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454677",
+          "content": "【传音控股港股上市获中国证监会备案】财联社8月14日电，中国证监会国际合作司发布关于深圳传音控股股份有限公司境外发行上市备案通知书，公司拟发行不超过132,386,200股境外上市普通股并在香港联合交易所上市。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454677,
+              "subject_id": 1194,
+              "subject_name": "港股IPO动态",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 13953,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "南向资金今日净卖出逾13亿港元 联想集团遭卖出居前",
+          "published_at": "2026-08-14 17:44:05",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454675",
+          "content": "【南向资金今日净卖出逾13亿港元 联想集团遭卖出居前】财联社8月14日电，南向资金今日净卖出13.16亿港元。其中，联想集团、阿里巴巴-W分别遭净卖出10.72亿港元、10.63亿港元；MINIMAX-W获净买入约13.64亿港元。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454675,
+              "subject_id": 9870,
+              "subject_name": "南向资金追踪",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 8953,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454675,
+              "subject_id": 3075,
+              "subject_name": "港股通",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 12790,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454675,
+              "subject_id": 1750,
+              "subject_name": "沪深港通资金动向",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 48138,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "财联社8月14日电，高盛维持谷歌“买入”评级及435美元目标价。",
+          "published_at": "2026-08-14 17:43:19",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454674",
+          "content": "财联社8月14日电，高盛维持谷歌“买入”评级及435美元目标价。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454674,
+              "subject_id": 1098,
+              "subject_name": "美股动态",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 66800,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454674,
+              "subject_id": 1094,
+              "subject_name": "券商策略",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 60496,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "财联社8月14日电，罗马尼亚总理表示，反应堆停机期间将重启燃煤电厂。",
+          "published_at": "2026-08-14 17:42:52",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454673",
+          "content": "财联社8月14日电，罗马尼亚总理表示，反应堆停机期间将重启燃煤电厂。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454673,
+              "subject_id": 1556,
+              "subject_name": "环球市场情报",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 166674,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "富维股份：获合资品牌客户座椅项目定点 预计总销售金额28.6亿元",
+          "published_at": "2026-08-14 17:41:53",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454672",
+          "content": "【富维股份：获合资品牌客户座椅项目定点 预计总销售金额28.6亿元】财联社8月14日电，富维股份(600742.SH)公告称，公司收到某知名合资品牌主机厂新能源项目定点通知书，将为其车型开发座椅产品。项目预计于2027年10月及11月开始批量供货，生命周期8年，总销售金额预计28.6亿元。本次定点不会对本年度业绩产生重大影响，实际供货量存在不确定性。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454672,
+              "subject_id": 1555,
+              "subject_name": "A股公告速递",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 231997,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls,stib"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "*ST闻泰：上半年净亏损4.06亿元 同比转亏",
+          "published_at": "2026-08-14 17:36:33",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454670",
+          "content": "【*ST闻泰：上半年净亏损4.06亿元 同比转亏】财联社8月14日电，*ST闻泰(600745.SH)发布2026年半年度报告，实现营业收入15.14亿元，同比下降94.02%；归属于上市公司股东的净利润为亏损4.06亿元，上年同期盈利4.74亿元，同比转亏。报告期内，受剥离产品集成业务和安世境外控制权受限影响，公司业务结构改变，业务规模下降，营业收入较上年同期大幅下降。同时可转债利息、长期资产折旧摊销等固定成本不会随业务规模变动，故利润情况较上年同期大幅下降。小财注：公司Q2净利润亏损2.17亿，Q1净利润-1.89亿，据此计算，Q2净利润环比持续亏损。",
+          "category": "market",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454670,
+              "subject_id": 1555,
+              "subject_name": "A股公告速递",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 231997,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls,stib"
+            }
+          ]
+        },
+        {
+          "type": "market_news",
+          "stock_code": null,
+          "title": "2026年中央国库现金管理商业银行定期存款（十四期）招投标 本期操作量700亿元",
+          "published_at": "2026-08-14 17:33:46",
+          "source": "财联社",
+          "url": "https://www.cls.cn/detail/2454667",
+          "content": "【2026年中央国库现金管理商业银行定期存款（十四期）招投标 本期操作量700亿元】财联社8月14日电，为提高中央国库现金使用效益，加强财政政策与货币政策的协调配合，财政部、中国人民银行定于2026年8月19日上午9:50至10:20，通过中国人民银行中央国库现金管理商业银行定期存款业务系统进行2026年中央国库现金管理商业银行定期存款（十四期）招投标。本期操作量700亿元，期限1个月，起息日为2026年8月19日，到期日为2026年9月16日（遇节假日顺延），以利率招标、单一价位中标方式面向中央国库现金管理商业银行定期存款业务参与银行进行招投标。招投标有关事宜按照《中央国库现金管理商业银行定期存款业务操作规程》、《中央国库现金管理商业银行定期存款招投标规则》及相关规定执行。",
+          "category": "macro",
+          "matched_keywords": [],
+          "stock_related": false,
+          "api": "v1/roll/get_roll_list",
+          "raw_subjects": [
+            {
+              "article_id": 2454667,
+              "subject_id": 1489,
+              "subject_name": "银行业动态",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 35014,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 79,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454667,
+              "subject_id": 1350,
+              "subject_name": "中国央行动态",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 685964,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            },
+            {
+              "article_id": 2454667,
+              "subject_id": 1605,
+              "subject_name": "货币政策动向",
+              "subject_img": "",
+              "subject_description": "",
+              "category_id": 0,
+              "attention_num": 27539,
+              "is_attention": false,
+              "is_reporter_subject": false,
+              "plate_id": 0,
+              "channel": "cls"
+            }
+          ]
+        }
+      ]
+    },
+    "quality_notes": [
+      "稳定访问依赖 curl_cffi Chrome impersonation；plain requests 常返回空 roll_data。",
+      "已拿到全市场滚动快讯，但本页未命中茅台关键词；需持续滚动/扩大窗口或改用搜索。",
+      "cls.cn/api/sw 关键词搜索未返回可用结构化结果。"
+    ]
+  },
+  "ths": {
+    "attempts": {
+      "worth_html": {
+        "ok": true,
+        "elapsed_sec": 0.97,
+        "error": null
+      },
+      "ajax_probes": {
+        "ok": true,
+        "elapsed_sec": 0.32,
+        "error": null
+      }
+    },
+    "summary": {
+      "got_current_consensus": true,
+      "metrics_found": [
+        "EPS"
+      ],
+      "forecast_years": [
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "has_institution_count": true,
+      "has_updated_at": true,
+      "has_rating_or_target_text": true,
+      "has_historical_timeseries_api": false,
+      "historical_timeseries_note": "本 PoC 仅拿到 worth.html 当前截面表格；未发现可用的一致预期历史时间序列 JSON。HTML 中可能有图表脚本提示，但不等于可稳定抽取的历史序列。"
+    },
+    "consensus": [
+      {
+        "type": "consensus_estimate",
+        "stock_code": "600519",
+        "metric": "EPS",
+        "forecast_year": "2026",
+        "value": 68.7,
+        "min_value": 65.02,
+        "max_value": 77.85,
+        "institution_count": 46,
+        "updated_at": "2026-08-14",
+        "source": "同花顺",
+        "raw_row": {
+          "年度": 2026,
+          "预测机构数": 46,
+          "最小值": 65.02,
+          "均值": 68.7,
+          "最大值": 77.85,
+          "行业平均数": 8.34
+        }
+      },
+      {
+        "type": "consensus_estimate",
+        "stock_code": "600519",
+        "metric": "EPS",
+        "forecast_year": "2027",
+        "value": 72.45,
+        "min_value": 67.61,
+        "max_value": 84.02,
+        "institution_count": 46,
+        "updated_at": "2026-08-14",
+        "source": "同花顺",
+        "raw_row": {
+          "年度": 2027,
+          "预测机构数": 46,
+          "最小值": 67.61,
+          "均值": 72.45,
+          "最大值": 84.02,
+          "行业平均数": 8.86
+        }
+      },
+      {
+        "type": "consensus_estimate",
+        "stock_code": "600519",
+        "metric": "EPS",
+        "forecast_year": "2028",
+        "value": 76.03,
+        "min_value": 69.53,
+        "max_value": 85.06,
+        "institution_count": 41,
+        "updated_at": "2026-08-14",
+        "source": "同花顺",
+        "raw_row": {
+          "年度": 2028,
+          "预测机构数": 41,
+          "最小值": 69.53,
+          "均值": 76.03,
+          "最大值": 85.06,
+          "行业平均数": 9.15
+        }
+      }
+    ],
+    "quality_notes": [
+      "已拿到当前一致预期截面；历史变化时间序列未能通过公开接口稳定获取。"
+    ]
+  }
+}

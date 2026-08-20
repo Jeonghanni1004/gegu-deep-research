@@ -1,0 +1,201 @@
+{
+  "passed": 39,
+  "total": 39,
+  "results": [
+    {
+      "name": "live_fixture_count",
+      "ok": true,
+      "detail": "6"
+    },
+    {
+      "name": "live_fixture_ids",
+      "ok": true,
+      "detail": "['A_unresolved', 'B_bull_moderate', 'C_bear_moderate', 'D_bull_strong_limiting', 'E_dual_tension', 'F_adversarial_debate']"
+    },
+    {
+      "name": "live_contract_consumption",
+      "ok": true,
+      "detail": "fund=4 mkt=3"
+    },
+    {
+      "name": "live_schema_validity_A_unresolved",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "live_evidence_traceability_A_unresolved",
+      "ok": true,
+      "detail": "['TENSION_FUND_PROFIT_VS_GROWTH', 'TENSION_FUND_VALUATION_VS_GROWTH', 'TENSION_MKT_SHORT_VS_LONG']"
+    },
+    {
+      "name": "live_numeric_grounding_A_unresolved",
+      "ok": true,
+      "detail": "['2025-12-31', '33.65%', '91.18%', '4.53%']"
+    },
+    {
+      "name": "live_schema_validity_B_bull_moderate",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "live_evidence_traceability_B_bull_moderate",
+      "ok": true,
+      "detail": "['TENSION_FUND_PROFIT_VS_GROWTH', 'TENSION_FUND_VALUATION_VS_GROWTH', 'TENSION_MKT_SHORT_VS_LONG']"
+    },
+    {
+      "name": "live_numeric_grounding_B_bull_moderate",
+      "ok": true,
+      "detail": "['2025-12-31', '33.65%', '91.18%', '4.53%']"
+    },
+    {
+      "name": "live_schema_validity_C_bear_moderate",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "live_evidence_traceability_C_bear_moderate",
+      "ok": true,
+      "detail": "['TENSION_FUND_PROFIT_VS_GROWTH', 'TENSION_FUND_VALUATION_VS_GROWTH', 'TENSION_MKT_SHORT_VS_LONG']"
+    },
+    {
+      "name": "live_numeric_grounding_C_bear_moderate",
+      "ok": true,
+      "detail": "['2025-12-31', '33.65%', '91.18%', '4.53%']"
+    },
+    {
+      "name": "live_schema_validity_D_bull_strong_limiting",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "live_evidence_traceability_D_bull_strong_limiting",
+      "ok": true,
+      "detail": "['TENSION_FUND_PROFIT_VS_GROWTH', 'TENSION_FUND_VALUATION_VS_GROWTH', 'TENSION_MKT_SHORT_VS_LONG']"
+    },
+    {
+      "name": "live_numeric_grounding_D_bull_strong_limiting",
+      "ok": true,
+      "detail": "['2025-12-31', '33.65%', '91.18%', '4.53%']"
+    },
+    {
+      "name": "live_schema_validity_E_dual_tension",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "live_evidence_traceability_E_dual_tension",
+      "ok": true,
+      "detail": "['TENSION_FUND_PROFIT_VS_GROWTH', 'TENSION_FUND_VALUATION_VS_GROWTH', 'TENSION_MKT_SHORT_VS_LONG']"
+    },
+    {
+      "name": "live_numeric_grounding_E_dual_tension",
+      "ok": true,
+      "detail": "['2025-12-31', '33.65%', '91.18%', '4.53%']"
+    },
+    {
+      "name": "live_schema_validity_F_adversarial_debate",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "live_evidence_traceability_F_adversarial_debate",
+      "ok": true,
+      "detail": "['TENSION_FUND_PROFIT_VS_GROWTH', 'TENSION_FUND_VALUATION_VS_GROWTH', 'TENSION_MKT_SHORT_VS_LONG']"
+    },
+    {
+      "name": "live_numeric_grounding_F_adversarial_debate",
+      "ok": true,
+      "detail": "['33.65%', '4.53%', '1.21%']"
+    },
+    {
+      "name": "live_uncertainty_preservation",
+      "ok": true,
+      "detail": "unresolved"
+    },
+    {
+      "name": "live_resolution_consumption_bull",
+      "ok": true,
+      "detail": "bull_supported"
+    },
+    {
+      "name": "live_resolution_consumption_bear",
+      "ok": true,
+      "detail": "bear_supported"
+    },
+    {
+      "name": "live_calibration",
+      "ok": true,
+      "detail": "strong"
+    },
+    {
+      "name": "live_non_mechanical",
+      "ok": true,
+      "detail": "elevated vs severe"
+    },
+    {
+      "name": "live_cross_tension",
+      "ok": true,
+      "detail": "{'prioritization': True, 'implication': True, 'cross_tension': True, 'debate_resolution': True, 'decision_boundary': False, 'contradiction': True}"
+    },
+    {
+      "name": "live_market_fundamental_contradiction",
+      "ok": true,
+      "detail": "压并存”，但 Challenge/Rebuttal 未能裁定解释框架；校准后主判断：事实清楚、解释未决；不得机械中性，也不得越权裁定。assessment_strength=unresolved；ev"
+    },
+    {
+      "name": "live_scenario_boundary",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "live_analytical_increment",
+      "ok": true,
+      "detail": "{'prioritization': True, 'implication': True, 'cross_tension': True, 'debate_resolution': True, 'decision_boundary': False, 'contradiction': True}"
+    },
+    {
+      "name": "live_prioritization",
+      "ok": true,
+      "detail": "{'prioritization': True, 'implication': True, 'cross_tension': True, 'debate_resolution': True, 'decision_boundary': False, 'contradiction': True}"
+    },
+    {
+      "name": "live_adversarial_debate",
+      "ok": true,
+      "detail": "主导解释更明确偏向盈利缓冲 / 非结构性恶化框架（仍非确定事实）；但 Research 事实结构显示增长/现金流压力偏重，因此 Debate bull_supported 不能机械等于乐观结论，FA "
+    },
+    {
+      "name": "live_reject_or_fallback",
+      "ok": true,
+      "detail": "['analytical_increment_v2: executive lacks debate-driven increment', 'semantic_cross_tension: multi-tension executive lacks bridge intent', 'unsupported_inference: 市场已经重新定价 @stmt[0]', 'unsupported_inference: 投资者预期改善 @stmt[0]']"
+    },
+    {
+      "name": "live_no_external_fact",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "live_no_external_number",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "live_api_key_present",
+      "ok": true,
+      "detail": "live=True FA_LIVE=False"
+    },
+    {
+      "name": "live_ab_artifacts_saved",
+      "ok": true,
+      "detail": "C:\\Users\\86137\\ashare-deep-research\\examples\\fa_live"
+    },
+    {
+      "name": "live_openai_skipped_documented",
+      "ok": true,
+      "detail": "FA_LIVE not set or no API key — OpenAI live not executed"
+    },
+    {
+      "name": "live_grounded_openai_invariant",
+      "ok": true,
+      "detail": "skipped_live"
+    }
+  ]
+}

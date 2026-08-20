@@ -1,0 +1,13 @@
+{
+  "run_count": 0,
+  "schema_failures": 0,
+  "grounding_failures": 0,
+  "unsupported_numbers": 0,
+  "fallback_count": 0,
+  "semantic_failures": 0,
+  "assessment_drift": 0,
+  "phrase_seal_dependency": 0,
+  "information_loss": 0,
+  "modes": [],
+  "strengths": []
+}

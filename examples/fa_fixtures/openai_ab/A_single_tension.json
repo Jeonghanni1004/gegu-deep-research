@@ -1,0 +1,9 @@
+{
+  "grounded_resolution": "bull_supported",
+  "openai_resolution": "bull_supported",
+  "grounded_len": 573,
+  "openai_len": 697,
+  "openai_richer": true,
+  "grounded_exec": "as_of=2026-08-15：Debate 主 resolution=bull_supported（support_strength=moderate）。在事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）与 Research pressure=elevated 约束下，校准后主判断：当前更明确偏向盈利缓冲有效、增长压力尚未被证伪为结构性（仍保留条件）。assessment_strength=moderate。Debate resolutio",
+  "openai_exec": "as_of=2026-08-15：Debate 主 resolution=bull_supported（support_strength=moderate）。在事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）与 Research pressure=elevated 约束下，校准后主判断：当前更明确偏向盈利缓冲有效、增长压力尚未被证伪为结构性（仍保留条件）。assessment_strength=moderate。Debate resolution 是解释输入而非答案；不得把弱支持写成强结论，也不得忽略仍有效的 Challe"
+}

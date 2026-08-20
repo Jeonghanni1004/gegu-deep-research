@@ -1,0 +1,243 @@
+{
+  "total_runs": 10,
+  "openai_success": 10,
+  "grounded_fallback": 0,
+  "grounded_direct": 0,
+  "repair": 10,
+  "regenerate": 1,
+  "retry": 0,
+  "reject": 0,
+  "provider_failure": 0,
+  "provider_quota_failure": 0,
+  "validation_failure": 0,
+  "evidence_repair_failure": 0,
+  "json_parse_failure": 0,
+  "schema_sanitization_failure": 0,
+  "information_loss": 0,
+  "unsupported_external_fact": 0,
+  "contract_violation": 0,
+  "judgment_drift": 0,
+  "debate_state_drift": 0,
+  "primary_axis_drift": 0,
+  "assessment_drift": 0,
+  "acceptable": 10,
+  "failure_codes_before_fallback": {},
+  "failure_stages": {},
+  "run_attributions": [
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E04_consumer_strong_limiting_challenge",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E04_consumer_strong_limiting_challenge",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E05_consumer_dual_tension_cross",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E05_consumer_dual_tension_cross",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": true
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "signatures": [
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "unresolved"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "unresolved"
+      ]
+    },
+    {
+      "fixture_id": "E02_consumer_bull_supported_moderate",
+      "signatures": [
+        "growth_vs_profitability|moderate|bull_supported|conditional|elevated|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E03_consumer_bear_supported_moderate",
+      "signatures": [
+        "growth_vs_profitability|moderate|bear_supported|conditional|elevated|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bear_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E04_consumer_strong_limiting_challenge",
+      "signatures": [
+        "growth_vs_profitability|moderate|bull_supported|conditional|elevated|strong|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E05_consumer_dual_tension_cross",
+      "signatures": [
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "unresolved"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "unresolved"
+      ]
+    }
+  ],
+  "openai_success_rate": 1.0,
+  "acceptable_rate": 1.0,
+  "fallback_rate": 0.0
+}

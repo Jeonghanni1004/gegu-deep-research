@@ -1,0 +1,590 @@
+{
+  "total_runs": 30,
+  "openai_success": 28,
+  "grounded_fallback": 2,
+  "grounded_direct": 0,
+  "repair": 28,
+  "regenerate": 5,
+  "retry": 0,
+  "reject": 0,
+  "provider_failure": 0,
+  "validation_failure": 1,
+  "evidence_repair_failure": 1,
+  "json_parse_failure": 0,
+  "schema_sanitization_failure": 0,
+  "information_loss": 0,
+  "unsupported_external_fact": 0,
+  "contract_violation": 0,
+  "judgment_drift": 0,
+  "debate_state_drift": 0,
+  "primary_axis_drift": 0,
+  "assessment_drift": 0,
+  "acceptable": 30,
+  "failure_codes_before_fallback": {
+    "VALIDATION_FAILURE": 1,
+    "EVIDENCE_REPAIR_FAILURE": 1
+  },
+  "failure_stages": {
+    "validation": 1,
+    "evidence_repair": 1
+  },
+  "run_attributions": [
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E02_consumer_bull_supported_moderate",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E03_consumer_bear_supported_moderate",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E04_consumer_strong_limiting_challenge",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E04_consumer_strong_limiting_challenge",
+      "run": 2,
+      "openai_success": false,
+      "fallback": true,
+      "stage": "validation",
+      "failure_code": "VALIDATION_FAILURE",
+      "cause": "openai FA validation failed: semantic_unresolved: debate unresolved_issues not preserved",
+      "action": "fallback",
+      "attempt": 2,
+      "retry_used": false,
+      "regenerate_used": true
+    },
+    {
+      "fixture": "E04_consumer_strong_limiting_challenge",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E05_consumer_dual_tension_cross",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E05_consumer_dual_tension_cross",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E05_consumer_dual_tension_cross",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E06_adversarial_fund_pressure",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E06_adversarial_fund_pressure",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": true
+    },
+    {
+      "fixture": "E06_adversarial_fund_pressure",
+      "run": 3,
+      "openai_success": false,
+      "fallback": true,
+      "stage": "evidence_repair",
+      "failure_code": "EVIDENCE_REPAIR_FAILURE",
+      "cause": "openai FA evidence repair failed: unresolved_numbers=1347.13,1326.00,100%",
+      "action": "fallback",
+      "attempt": 2,
+      "retry_used": false,
+      "regenerate_used": true
+    },
+    {
+      "fixture": "E07_mfg_volume_vs_margin_bull",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E07_mfg_volume_vs_margin_bull",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": true
+    },
+    {
+      "fixture": "E07_mfg_volume_vs_margin_bull",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": true
+    },
+    {
+      "fixture": "E08_semi_util_vs_asp_bear",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E08_semi_util_vs_asp_bear",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E08_semi_util_vs_asp_bear",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E09_mfg_bull_strong_mild_pressure",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E09_mfg_bull_strong_mild_pressure",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E09_mfg_bull_strong_mild_pressure",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E10_semi_bull_strong_severe_pressure",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E10_semi_bull_strong_severe_pressure",
+      "run": 2,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    },
+    {
+      "fixture": "E10_semi_bull_strong_severe_pressure",
+      "run": 3,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "signatures": [
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "unresolved"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "unresolved"
+      ]
+    },
+    {
+      "fixture_id": "E02_consumer_bull_supported_moderate",
+      "signatures": [
+        "growth_vs_profitability|moderate|bull_supported|conditional|elevated|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E03_consumer_bear_supported_moderate",
+      "signatures": [
+        "growth_vs_profitability|moderate|bear_supported|conditional|elevated|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bear_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E04_consumer_strong_limiting_challenge",
+      "signatures": [
+        "growth_vs_profitability|moderate|bull_supported|conditional|elevated|strong|xt|preserved",
+        "growth_vs_profitability|strong|bull_supported|conditional|elevated|strong|xt|preserved"
+      ],
+      "n_unique_signatures": 2,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate",
+        "strong"
+      ]
+    },
+    {
+      "fixture_id": "E05_consumer_dual_tension_cross",
+      "signatures": [
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "unresolved"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "unresolved"
+      ]
+    },
+    {
+      "fixture_id": "E06_adversarial_fund_pressure",
+      "signatures": [
+        "growth_vs_profitability|moderate|bull_supported|conditional|severe|strong|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E07_mfg_volume_vs_margin_bull",
+      "signatures": [
+        "volume_vs_margin|moderate|bull_supported|conditional|mild|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "volume_vs_margin"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E08_semi_util_vs_asp_bear",
+      "signatures": [
+        "utilization_vs_asp|moderate|bear_supported|conditional|mild|moderate|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bear_supported"
+      ],
+      "primary_axes": [
+        "utilization_vs_asp"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E09_mfg_bull_strong_mild_pressure",
+      "signatures": [
+        "volume_vs_margin|moderate|bull_supported|conditional|mild|strong|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "volume_vs_margin"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    },
+    {
+      "fixture_id": "E10_semi_bull_strong_severe_pressure",
+      "signatures": [
+        "utilization_vs_asp|moderate|bull_supported|conditional|severe|strong|xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "bull_supported"
+      ],
+      "primary_axes": [
+        "utilization_vs_asp"
+      ],
+      "assessment_strengths": [
+        "moderate"
+      ]
+    }
+  ],
+  "openai_success_rate": 0.9333333333333333,
+  "acceptable_rate": 1.0,
+  "fallback_rate": 0.06666666666666667
+}

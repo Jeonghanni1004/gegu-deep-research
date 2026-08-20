@@ -1,0 +1,48 @@
+{
+  "n": 15,
+  "fixture_ids": [
+    "E01_consumer_profit_strong_growth_weak_unresolved",
+    "E02_consumer_bull_supported_moderate",
+    "E03_consumer_bear_supported_moderate",
+    "E04_consumer_strong_limiting_challenge",
+    "E05_consumer_dual_tension_cross",
+    "E06_adversarial_fund_pressure",
+    "E07_mfg_volume_vs_margin_bull",
+    "E08_semi_util_vs_asp_bear",
+    "E09_mfg_bull_strong_mild_pressure",
+    "E10_semi_bull_strong_severe_pressure",
+    "E11_bank_style_unresolved",
+    "E12_pharma_style_unresolved",
+    "E13_newenergy_style_bull",
+    "E14_tech_style_bear",
+    "E15_cyclical_style_dual"
+  ],
+  "industries": [
+    "制造",
+    "医药",
+    "半导体",
+    "周期",
+    "新能源",
+    "消费",
+    "科技",
+    "银行"
+  ],
+  "structures": [
+    "adversarial",
+    "bear_supported",
+    "bull_supported",
+    "cross_tension",
+    "dual_tension",
+    "fundamental_market_unclear",
+    "fundamental_weak_market_mixed",
+    "growth_strong_profit_weak",
+    "mild_pressure",
+    "non_mechanical",
+    "profit_strong_growth_weak",
+    "severe_pressure",
+    "strong_support_severe_challenge",
+    "unresolved",
+    "utilization_vs_asp",
+    "volume_vs_margin"
+  ]
+}

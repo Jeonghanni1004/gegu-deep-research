@@ -1,0 +1,802 @@
+{
+  "stock_code": "600519",
+  "agent": "market",
+  "research_as_of_date": "2026-08-19",
+  "summary": "research_as_of_date=2026-08-19。市场研究压缩为 canonical 命题：价格相对均线结构处于什么状态？；短中期趋势与长期均线是否冲突？；估值与价格位置如何共同描述定价状态？。关键数字保留在 canonical_findings。不含买卖建议。",
+  "core_facts": [
+    {
+      "claim": "2026-08-14 最新价格为 1341.99 元",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "reasoning": "核心事实锚点 akshare_fact_600519_20260814_0e265beb0b（按 weight 优先选取）。",
+      "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+      "confidence": 0.9,
+      "status": "supported",
+      "finding_kind": "atomic",
+      "finding_id": "FACT_CLOSE",
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "2026-08-14 市盈率PE(TTM)为 20.28",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad"
+      ],
+      "reasoning": "核心事实锚点 akshare_fact_600519_20260814_e0cb0863ad（按 weight 优先选取）。",
+      "interpretation": "仅作事实锚点，分析见 canonical_findings。",
+      "confidence": 0.9,
+      "status": "supported",
+      "finding_kind": "atomic",
+      "finding_id": "FACT_PE",
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    }
+  ],
+  "key_research_findings": [
+    {
+      "claim": "[ref:FINDING_MKT_PRICE_MA] 价格相对均线结构处于什么状态？",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_5570a1a010"
+      ],
+      "reasoning": "reference → FINDING_MKT_PRICE_MA",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.8,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_MKT_PRICE_MA",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_MKT_VAL_PRICE] 估值与价格位置如何共同描述定价状态？",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "reasoning": "reference → FINDING_MKT_VAL_PRICE",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.76,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_MKT_VAL_PRICE",
+      "numbers_preserved": []
+    }
+  ],
+  "research_tensions": [
+    {
+      "claim": "[ref:TENSION_MKT_SHORT_VS_LONG] 短中期趋势与长期均线是否冲突？",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "reasoning": "reference → TENSION_MKT_SHORT_VS_LONG",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.82,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_MKT_SHORT_VS_LONG",
+      "numbers_preserved": []
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "claim": "当前 Research Context 缺少足够的新闻 Current/Previous 个股相关资讯证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "当前 Research Context 缺少足够的盘口微观结构证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "当前 Research Context 缺少足够的机构持仓完整时序证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    }
+  ],
+  "canonical_findings": [
+    {
+      "claim": "2026-08-14 最新价格为 1341.99 元；2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA60为 1259.2065；2026-08-14 MA250为 1357.7337。对照结果显示短中期均线呈多头排列；价格相对均线的位置需分短中长期解读，不等于趋势预测。",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_5570a1a010"
+      ],
+      "reasoning": "价格与均线在同一 as_of 截面对照。",
+      "interpretation": "描述状态，不给出交易指令。",
+      "confidence": 0.8,
+      "status": "supported",
+      "finding_kind": "cross",
+      "finding_id": "FINDING_MKT_PRICE_MA",
+      "research_question": "价格相对均线结构处于什么状态？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2026-08-14",
+        "1341.99",
+        "1347.1280",
+        "1325.9990",
+        "1259.2065",
+        "1357.7337"
+      ]
+    },
+    {
+      "claim": "2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA250为 1357.7337；2026-08-14 最新价格为 1341.99 元。短中期均线与长期均线（MA250）可能指向不同时间尺度状态；因此短期动能与长期压力/支撑必须分开表述，避免混用。",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "reasoning": "不同时间尺度均线对照形成趋势张力。",
+      "interpretation": "冲突存在并不自动指向方向选择；只定义研究问题。",
+      "confidence": 0.82,
+      "status": "supported",
+      "finding_kind": "tension",
+      "finding_id": "TENSION_MKT_SHORT_VS_LONG",
+      "research_question": "短中期趋势与长期均线是否冲突？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2026-08-14",
+        "1347.1280",
+        "1325.9990",
+        "1357.7337",
+        "1341.99"
+      ]
+    },
+    {
+      "claim": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2026-08-14 最新价格为 1341.99 元；2026-08-14 当前价格在52周区间中的位置为 0.5016。估值与价格/52周位置同属 as_of 截面，可共同描述定价状态，但不能单独推导涨跌方向。",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "reasoning": "估值指标与价格位置在同一研究问题下联合。",
+      "interpretation": "状态描述；不作目标价。",
+      "confidence": 0.76,
+      "status": "supported",
+      "finding_kind": "cross",
+      "finding_id": "FINDING_MKT_VAL_PRICE",
+      "research_question": "估值与价格位置如何共同描述定价状态？",
+      "ref_finding_id": null,
+      "numbers_preserved": [
+        "2026-08-14",
+        "20.28",
+        "6.19",
+        "1341.99",
+        "52",
+        "0.5016"
+      ]
+    }
+  ],
+  "price_status": {
+    "narrative": "价格/估值状态见 canonical。",
+    "findings": [
+      {
+        "claim": "[ref:FINDING_MKT_PRICE_MA] 价格相对均线结构处于什么状态？",
+        "evidence_ids": [
+          "akshare_fact_600519_20260814_0e265beb0b",
+          "derived_derived_600519_20260814_0a0a03c36d",
+          "derived_derived_600519_20260814_d7efcdac03",
+          "derived_derived_600519_20260814_84f0964810",
+          "derived_derived_600519_20260814_5570a1a010"
+        ],
+        "reasoning": "reference → FINDING_MKT_PRICE_MA",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.8,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "FINDING_MKT_PRICE_MA",
+        "numbers_preserved": []
+      },
+      {
+        "claim": "[ref:FINDING_MKT_VAL_PRICE] 估值与价格位置如何共同描述定价状态？",
+        "evidence_ids": [
+          "akshare_fact_600519_20260814_e0cb0863ad",
+          "akshare_fact_600519_20260814_9d752dac82",
+          "akshare_fact_600519_20260814_0e265beb0b",
+          "derived_derived_600519_20260814_94d80062bf"
+        ],
+        "reasoning": "reference → FINDING_MKT_VAL_PRICE",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.76,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "FINDING_MKT_VAL_PRICE",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "trend": {
+    "narrative": "趋势张力见 canonical。",
+    "findings": [
+      {
+        "claim": "[ref:TENSION_MKT_SHORT_VS_LONG] 短中期趋势与长期均线是否冲突？",
+        "evidence_ids": [
+          "derived_derived_600519_20260814_0a0a03c36d",
+          "derived_derived_600519_20260814_d7efcdac03",
+          "derived_derived_600519_20260814_5570a1a010",
+          "akshare_fact_600519_20260814_0e265beb0b"
+        ],
+        "reasoning": "reference → TENSION_MKT_SHORT_VS_LONG",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.82,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "TENSION_MKT_SHORT_VS_LONG",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "moving_average_structure": {
+    "narrative": "均线结构引用价格×均线命题。",
+    "findings": [
+      {
+        "claim": "[ref:FINDING_MKT_PRICE_MA] 价格相对均线结构处于什么状态？",
+        "evidence_ids": [
+          "akshare_fact_600519_20260814_0e265beb0b",
+          "derived_derived_600519_20260814_0a0a03c36d",
+          "derived_derived_600519_20260814_d7efcdac03",
+          "derived_derived_600519_20260814_84f0964810",
+          "derived_derived_600519_20260814_5570a1a010"
+        ],
+        "reasoning": "reference → FINDING_MKT_PRICE_MA",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.8,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "FINDING_MKT_PRICE_MA",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "momentum": {
+    "narrative": "动量补充。",
+    "findings": [
+      {
+        "claim": "2026-08-14 RSI(14)为 59.1556；2026-08-14 MACD HIST为 -0.8542。二者需一并观察，避免单指标结论。",
+        "evidence_ids": [
+          "derived_derived_600519_20260814_d261fff065",
+          "derived_derived_600519_20260814_29903dc199"
+        ],
+        "reasoning": "动量指标同截面联合。",
+        "interpretation": "补充状态，不升级为独立交易信号。",
+        "confidence": 0.68,
+        "status": "supported",
+        "finding_kind": "cross",
+        "finding_id": "FINDING_MKT_MOMENTUM",
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "technical_signals": {
+    "narrative": "技术信号由趋势张力与动量补充构成。",
+    "findings": [
+      {
+        "claim": "[ref:TENSION_MKT_SHORT_VS_LONG] 短中期趋势与长期均线是否冲突？",
+        "evidence_ids": [
+          "derived_derived_600519_20260814_0a0a03c36d",
+          "derived_derived_600519_20260814_d7efcdac03",
+          "derived_derived_600519_20260814_5570a1a010",
+          "akshare_fact_600519_20260814_0e265beb0b"
+        ],
+        "reasoning": "reference → TENSION_MKT_SHORT_VS_LONG",
+        "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+        "confidence": 0.82,
+        "status": "supported",
+        "finding_kind": "reference",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": "TENSION_MKT_SHORT_VS_LONG",
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "recent_market_events": {
+    "narrative": "事件按 research_role 分层，禁止弱相关拼盘伪 cross。",
+    "findings": [
+      {
+        "claim": "当前 Research Context 缺少足够的Current 7d 个股资讯证据，无法形成可靠判断。",
+        "evidence_ids": [],
+        "reasoning": "insufficient_evidence",
+        "interpretation": "insufficient_evidence",
+        "confidence": 0.9,
+        "status": "insufficient_evidence",
+        "finding_kind": "insufficient",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      },
+      {
+        "claim": "宏观背景：2026-08-14 17:18:24 [market] 两部门：在更大范围内支持中小规模跨国公司开展业务",
+        "evidence_ids": [
+          "cls_event_600519_20260814_acb7968054"
+        ],
+        "reasoning": "research_role=macro_background",
+        "interpretation": "宏观背景不得冒充公司基本面证据。",
+        "confidence": 0.7,
+        "status": "supported",
+        "finding_kind": "atomic",
+        "finding_id": "FACT_MACRO_BG",
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "market_expectations": {
+    "narrative": "一致预期截面。",
+    "findings": [
+      {
+        "claim": "2026 年 EPS 一致预期为 68.70 元，共 46 家机构（更新于 2026-08-14）；2027 年 EPS 一致预期为 72.45 元，共 46 家机构（更新于 2026-08-14）；2028 年 EPS 一致预期为 76.03 元，共 41 家机构（更新于 2026-08-14）",
+        "evidence_ids": [
+          "ths_expectation_600519_2026_4ddb99e909",
+          "ths_expectation_600519_2027_49bf58cdd9",
+          "ths_expectation_600519_2028_6873dd77a0"
+        ],
+        "reasoning": "按 weight 选取预期截面。",
+        "interpretation": "EXPECTATION。",
+        "confidence": 0.7,
+        "status": "supported",
+        "finding_kind": "cross",
+        "finding_id": "FACT_EXPECT",
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": []
+  },
+  "news_narrative": {
+    "narrative": "新闻窗不足以支持可靠 narrative change。",
+    "findings": [
+      {
+        "claim": "当前 Research Context 缺少足够的新闻 Current/Previous 个股相关资讯证据，无法形成可靠判断。",
+        "evidence_ids": [],
+        "reasoning": "insufficient_evidence",
+        "interpretation": "insufficient_evidence",
+        "confidence": 0.9,
+        "status": "insufficient_evidence",
+        "finding_kind": "insufficient",
+        "finding_id": null,
+        "research_question": null,
+        "ref_finding_id": null,
+        "numbers_preserved": []
+      }
+    ],
+    "insufficient_topics": [
+      "news_windows"
+    ]
+  },
+  "cross_evidence_findings": [
+    {
+      "claim": "[ref:FINDING_MKT_PRICE_MA] 价格相对均线结构处于什么状态？",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_5570a1a010"
+      ],
+      "reasoning": "reference → FINDING_MKT_PRICE_MA",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.8,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_MKT_PRICE_MA",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:TENSION_MKT_SHORT_VS_LONG] 短中期趋势与长期均线是否冲突？",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "reasoning": "reference → TENSION_MKT_SHORT_VS_LONG",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.82,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_MKT_SHORT_VS_LONG",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_MKT_VAL_PRICE] 估值与价格位置如何共同描述定价状态？",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "reasoning": "reference → FINDING_MKT_VAL_PRICE",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.76,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_MKT_VAL_PRICE",
+      "numbers_preserved": []
+    }
+  ],
+  "key_strengths": [
+    {
+      "claim": "[ref:FINDING_MKT_PRICE_MA] 价格相对均线结构处于什么状态？",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_5570a1a010"
+      ],
+      "reasoning": "reference → FINDING_MKT_PRICE_MA",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.8,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_MKT_PRICE_MA",
+      "numbers_preserved": []
+    },
+    {
+      "claim": "[ref:FINDING_MKT_VAL_PRICE] 估值与价格位置如何共同描述定价状态？",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "reasoning": "reference → FINDING_MKT_VAL_PRICE",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.76,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "FINDING_MKT_VAL_PRICE",
+      "numbers_preserved": []
+    }
+  ],
+  "key_weaknesses": [
+    {
+      "claim": "[ref:TENSION_MKT_SHORT_VS_LONG] 短中期趋势与长期均线是否冲突？",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "reasoning": "reference → TENSION_MKT_SHORT_VS_LONG",
+      "interpretation": "详见 canonical_findings；本节不重复同一研究命题全文。",
+      "confidence": 0.82,
+      "status": "supported",
+      "finding_kind": "reference",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": "TENSION_MKT_SHORT_VS_LONG",
+      "numbers_preserved": []
+    }
+  ],
+  "key_uncertainties": [
+    {
+      "claim": "当前 Research Context 缺少足够的新闻 Current/Previous 个股相关资讯证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "当前 Research Context 缺少足够的盘口微观结构证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    },
+    {
+      "claim": "当前 Research Context 缺少足够的机构持仓完整时序证据，无法形成可靠判断。",
+      "evidence_ids": [],
+      "reasoning": "insufficient_evidence",
+      "interpretation": "insufficient_evidence",
+      "confidence": 0.9,
+      "status": "insufficient_evidence",
+      "finding_kind": "insufficient",
+      "finding_id": null,
+      "research_question": null,
+      "ref_finding_id": null,
+      "numbers_preserved": []
+    }
+  ],
+  "evidence_citations": [
+    {
+      "statement": "2026-08-14 最新价格为 1341.99 元；2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA60为 1259.2065；2026-08-14 MA250为 1357.7337。对照结果显示短中期均线呈多头排列；价格相对均线的位置需分短中长期解读，不等于趋势预测。",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_84f0964810",
+        "derived_derived_600519_20260814_5570a1a010"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_600519_20260814_0e265beb0b",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 最新价格为 1341.99 元"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_0a0a03c36d",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA5为 1347.1280"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_d7efcdac03",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA20为 1325.9990"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_84f0964810",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA60为 1259.2065"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_5570a1a010",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA250为 1357.7337"
+        }
+      ]
+    },
+    {
+      "statement": "2026-08-14 MA5为 1347.1280；2026-08-14 MA20为 1325.9990；2026-08-14 MA250为 1357.7337；2026-08-14 最新价格为 1341.99 元。短中期均线与长期均线（MA250）可能指向不同时间尺度状态；因此短期动能与长期压力/支撑必须分开表述，避免混用。",
+      "evidence_ids": [
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_d7efcdac03",
+        "derived_derived_600519_20260814_5570a1a010",
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "sources": [
+        {
+          "evidence_id": "derived_derived_600519_20260814_0a0a03c36d",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA5为 1347.1280"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_d7efcdac03",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA20为 1325.9990"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_5570a1a010",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 MA250为 1357.7337"
+        },
+        {
+          "evidence_id": "akshare_fact_600519_20260814_0e265beb0b",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 最新价格为 1341.99 元"
+        }
+      ]
+    },
+    {
+      "statement": "2026-08-14 市盈率PE(TTM)为 20.28；2026-08-14 市净率PB为 6.19；2026-08-14 最新价格为 1341.99 元；2026-08-14 当前价格在52周区间中的位置为 0.5016。估值与价格/52周位置同属 as_of 截面，可共同描述定价状态，但不能单独推导涨跌方向。",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "derived_derived_600519_20260814_94d80062bf"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_600519_20260814_e0cb0863ad",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 市盈率PE(TTM)为 20.28"
+        },
+        {
+          "evidence_id": "akshare_fact_600519_20260814_9d752dac82",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 市净率PB为 6.19"
+        },
+        {
+          "evidence_id": "akshare_fact_600519_20260814_0e265beb0b",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 最新价格为 1341.99 元"
+        },
+        {
+          "evidence_id": "derived_derived_600519_20260814_94d80062bf",
+          "provider": "python.derived",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 当前价格在52周区间中的位置为 0.5016"
+        }
+      ]
+    },
+    {
+      "statement": "2026-08-14 最新价格为 1341.99 元",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_600519_20260814_0e265beb0b",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 最新价格为 1341.99 元"
+        }
+      ]
+    },
+    {
+      "statement": "2026-08-14 市盈率PE(TTM)为 20.28",
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_e0cb0863ad"
+      ],
+      "sources": [
+        {
+          "evidence_id": "akshare_fact_600519_20260814_e0cb0863ad",
+          "provider": "akshare.stock_value_em",
+          "url": null,
+          "date": "2026-08-14",
+          "claim": "2026-08-14 市盈率PE(TTM)为 20.28"
+        }
+      ]
+    }
+  ],
+  "used_evidence_ids": [
+    "akshare_fact_600519_20260814_0e265beb0b",
+    "akshare_fact_600519_20260814_9d752dac82",
+    "akshare_fact_600519_20260814_e0cb0863ad",
+    "derived_derived_600519_20260814_0a0a03c36d",
+    "derived_derived_600519_20260814_5570a1a010",
+    "derived_derived_600519_20260814_84f0964810",
+    "derived_derived_600519_20260814_94d80062bf",
+    "derived_derived_600519_20260814_d7efcdac03"
+  ],
+  "excluded_audit": [
+    {
+      "evidence_id": "eastmoney_event_600519_20251230_8edd2c4a89",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=232"
+    },
+    {
+      "evidence_id": "eastmoney_event_600519_20251106_8643d65ba0",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=286"
+    },
+    {
+      "evidence_id": "eastmoney_event_600519_20250902_75635c8100",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=351"
+    },
+    {
+      "evidence_id": "eastmoney_event_600519_20230628_484be97a87",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=1148"
+    },
+    {
+      "evidence_id": "eastmoney_event_600519_20230628_4f1a933788",
+      "reason": "out_of_window",
+      "detail": "company_event age_days=1148"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260814_40f0ec6a2e",
+      "reason": "irrelevant",
+      "detail": "claim=2026-08-14 17:51:58 [market] 【机构龙虎榜解读】CDN+液冷+算力租赁，提供GPU云算力、CPU云算力等一站式算力云服务，在国内已建"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260814_b780101e98",
+      "reason": "irrelevant",
+      "detail": "claim=2026-08-14 17:44:05 [market] 南向资金今日净卖出逾13亿港元 联想集团遭卖出居前"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260814_85fa70f428",
+      "reason": "irrelevant",
+      "detail": "claim=2026-08-14 17:41:53 [market] 富维股份：获合资品牌客户座椅项目定点 预计总销售金额28.6亿元"
+    },
+    {
+      "evidence_id": "cls_event_macro_20260814_8374cf9b66",
+      "reason": "irrelevant",
+      "detail": "claim=2026-08-14 17:36:33 [market] *ST闻泰：上半年净亏损4.06亿元 同比转亏"
+    }
+  ]
+}

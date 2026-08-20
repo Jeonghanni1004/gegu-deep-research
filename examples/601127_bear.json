@@ -1,0 +1,68 @@
+{
+  "stock_code": "601127",
+  "stance": "bear",
+  "thesis": "基于相同 Evidence，Bear Case 强调增速承压与长期价格结构压力，并承认高 ROE/高毛利率等支持性事实；分歧在 interpretation，不在事实本身。",
+  "claims": [
+    {
+      "claim_id": "BEAR_01",
+      "stance": "bear",
+      "claim": "盈利与收入增速承压，削弱“增长驱动”的投资价值叙事。",
+      "reasoning": "归母净利润/营收同比下滑是可核验负面事实；Bear Case 将其解释为盈利动能恶化信号。 同时承认：2025-12-31 ROE为 14.56% 显示静态盈利能力仍高。 风险解读对齐 Research canonical `TENSION_FUND_PROFIT_VS_GROWTH`（引用张力，不复制全文）。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679",
+        "akshare_fact_601127_20260331_f344d9f7f9",
+        "akshare_fact_601127_20260331_187a85840d",
+        "derived_derived_601127_20251231_8f6bc3786a"
+      ],
+      "confidence": 0.84,
+      "importance": 0.95,
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ]
+    },
+    {
+      "claim_id": "BEAR_02",
+      "stance": "bear",
+      "claim": "价格相对长期均线与区间位置显示中期上行仍面临结构压力。",
+      "reasoning": "若价格位于长期均线下方或仅处52周中部，可解释为趋势尚未确认强势突破；这是对市场结构的风险解读，不是买卖指令。",
+      "evidence_ids": [
+        "derived_derived_601127_20260819_052c188e38",
+        "akshare_fact_601127_20260819_239bd5aafa",
+        "derived_derived_601127_20260819_99c90bf1e6"
+      ],
+      "confidence": 0.72,
+      "importance": 0.78,
+      "canonical_finding_ids": [
+        "TENSION_MKT_SHORT_VS_LONG"
+      ]
+    },
+    {
+      "claim_id": "BEAR_03",
+      "stance": "bear",
+      "claim": "估值与一致预期/事件证据不足以支撑“风险已被充分消化”的乐观假设。",
+      "reasoning": "PE 等估值事实与 EXPECTATION/EVENT 仅提供快照；Bear Case 强调：在增速承压背景下，乐观定价假设证据不足。 同时承认 Bull 可能成立的部分：2025-12-31 毛利率为 29.14%",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "ths_expectation_601127_2026_e6f6e866a9",
+        "eastmoney_event_601127_20260808_ea4feef647",
+        "eastmoney_event_601127_20260804_48eee81ef6"
+      ],
+      "confidence": 0.66,
+      "importance": 0.7,
+      "canonical_finding_ids": [
+        "TENSION_FUND_VALUATION_VS_GROWTH"
+      ]
+    }
+  ],
+  "key_opportunities": [
+    "Bull 可能成立：2025-12-31 ROE为 14.56%",
+    "Bull 可能成立：2025-12-31 毛利率为 29.14%",
+    "短中期均线结构可能被解释为偏积极动能（Market Research）。"
+  ],
+  "uncertainties": [
+    "利润同比下滑是否阶段性，现有单期 Evidence 无法确认长期恶化。",
+    "客户结构与管理层指引在 Evidence Pack 中不足，限制空头因果链条完整性。",
+    "动量指标解读不稳定：2026-08-19 RSI(14)为 29.5575"
+  ]
+}

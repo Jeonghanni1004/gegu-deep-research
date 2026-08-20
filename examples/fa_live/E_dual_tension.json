@@ -1,0 +1,934 @@
+{
+  "fixture_id": "E_dual_tension",
+  "title": "Fundamental + Market dual tension",
+  "intent": "要求 cross-tension：经营×估值×价格，而非三条并列总结",
+  "live_available": true,
+  "openai_mode": "skipped",
+  "notes": [
+    "Live OpenAI skipped: set FA_LIVE=1 and RESEARCH_LLM_API_KEY or OPENAI_API_KEY to run"
+  ],
+  "grounded_errors": [],
+  "openai_errors": [],
+  "openai_increment": {},
+  "grounded_has_increment": true,
+  "openai_has_increment": false,
+  "scenario_ok_grounded": true,
+  "scenario_ok_openai": false,
+  "invariants": [
+    "openai_missing"
+  ],
+  "external_numbers_openai": [],
+  "grounded_exec": "as_of=2026-08-19：Debate 主 resolution=unresolved（support_strength=n/a）。事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）支持“高盈利与增长承压并存”，但 Challenge/Rebuttal 未能裁定解释框架；校准后主判断：事实清楚、解释未决；不得机械中性，也不得越权裁定。assessment_strength=unresolved；evidence_pressure=elevated。删除 Debate 将无法得到该未决裁定。 跨 tension DERIVED：增长恢复实际上是连接经营表现（PROFIT_VS_GROWTH）与估值解释（VALUATION_VS_GROWTH）的中间条件——因此增长不确定性不仅影响基本面判断，也抬高估值叙事门槛。 跨 tension：短期价格/均线结构改善（SHORT_VS_LONG）最多提供市场尺度旁证，不能自动解除基本面增长争议；价格改善≠增长争议已关闭。 Debate 语义：仍有效/未关闭 Challenge=['CH_BEAR_01']；关键 Rebuttal 处理=['RB_BULL_01']；因此结论强度受 Challenge 限制，而非 Bull/Bear 条数。",
+  "openai_exec": null,
+  "grounded": {
+    "stock_code": "600519",
+    "research_as_of_date": "2026-08-19",
+    "analyst_mode": "grounded",
+    "executive_assessment": {
+      "kind": "UNCERTAINTY",
+      "text": "as_of=2026-08-19：Debate 主 resolution=unresolved（support_strength=n/a）。事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）支持“高盈利与增长承压并存”，但 Challenge/Rebuttal 未能裁定解释框架；校准后主判断：事实清楚、解释未决；不得机械中性，也不得越权裁定。assessment_strength=unresolved；evidence_pressure=elevated。删除 Debate 将无法得到该未决裁定。 跨 tension DERIVED：增长恢复实际上是连接经营表现（PROFIT_VS_GROWTH）与估值解释（VALUATION_VS_GROWTH）的中间条件——因此增长不确定性不仅影响基本面判断，也抬高估值叙事门槛。 跨 tension：短期价格/均线结构改善（SHORT_VS_LONG）最多提供市场尺度旁证，不能自动解除基本面增长争议；价格改善≠增长争议已关闭。 Debate 语义：仍有效/未关闭 Challenge=['CH_BEAR_01']；关键 Rebuttal 处理=['RB_BULL_01']；因此结论强度受 Challenge 限制，而非 Bull/Bear 条数。",
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH",
+        "TENSION_FUND_VALUATION_VS_GROWTH",
+        "TENSION_MKT_SHORT_VS_LONG"
+      ],
+      "evidence_ids": [
+        "akshare_fact_600519_20260814_0e265beb0b",
+        "akshare_fact_600519_20260814_9d752dac82",
+        "akshare_fact_600519_20260814_e0cb0863ad",
+        "derived_derived_600519_20251231_1aa9df0253",
+        "derived_derived_600519_20251231_23d97142ea",
+        "derived_derived_600519_20251231_326895f599",
+        "derived_derived_600519_20251231_b21d45697e",
+        "derived_derived_600519_20260814_0a0a03c36d",
+        "derived_derived_600519_20260814_5570a1a010",
+        "derived_derived_600519_20260814_d7efcdac03"
+      ],
+      "debate_refs": [
+        "unresolved",
+        "unresolved",
+        "unresolved"
+      ],
+      "numbers_used": [
+        "2025-12-31",
+        "33.65%",
+        "91.18%",
+        "4.53%",
+        "1.21%"
+      ],
+      "assessment_strength": "unresolved",
+      "inference_status": "CONDITIONAL"
+    },
+    "core_thesis": {
+      "kind": "INFERENCE",
+      "text": "Core thesis（校准）：事实清楚、解释未决；不得机械中性，也不得越权裁定。strength=unresolved。不得把 Bull/Bear 条数平均成中性。",
+      "canonical_finding_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ],
+      "evidence_ids": [
+        "derived_derived_600519_20251231_1aa9df0253",
+        "derived_derived_600519_20251231_23d97142ea",
+        "derived_derived_600519_20251231_326895f599",
+        "derived_derived_600519_20251231_b21d45697e"
+      ],
+      "debate_refs": [],
+      "numbers_used": [
+        "2025-12-31",
+        "33.65%",
+        "91.18%",
+        "4.53%"
+      ],
+      "assessment_strength": "unresolved",
+      "inference_status": "DERIVED"
+    },
+    "key_drivers": [
+      {
+        "kind": "INFERENCE",
+        "text": "驱动（TENSION_FUND_PROFIT_VS_GROWTH）：Debate resolution=unresolved 决定该命题在最终判断中的权重；Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_PROFIT_VS_GROWTH 的对立解释；blocking=1 interp_open=0。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [
+          "BULL_01",
+          "BEAR_01"
+        ],
+        "numbers_used": [],
+        "assessment_strength": "tentative",
+        "inference_status": null
+      },
+      {
+        "kind": "INFERENCE",
+        "text": "驱动（TENSION_FUND_VALUATION_VS_GROWTH）：Debate resolution=unresolved 决定该命题在最终判断中的权重；Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_VALUATION_VS_GROWTH 的对立解释；blocking=0 interp_open=0。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_VALUATION_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "akshare_fact_600519_20260814_e0cb0863ad",
+          "akshare_fact_600519_20260814_9d752dac82",
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": "tentative",
+        "inference_status": null
+      },
+      {
+        "kind": "INFERENCE",
+        "text": "驱动（TENSION_MKT_SHORT_VS_LONG）：Debate resolution=unresolved 决定该命题在最终判断中的权重；Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_MKT_SHORT_VS_LONG 的对立解释；blocking=0 interp_open=0。",
+        "canonical_finding_ids": [
+          "TENSION_MKT_SHORT_VS_LONG"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20260814_0a0a03c36d",
+          "derived_derived_600519_20260814_d7efcdac03",
+          "derived_derived_600519_20260814_5570a1a010",
+          "akshare_fact_600519_20260814_0e265beb0b"
+        ],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": "tentative",
+        "inference_status": null
+      }
+    ],
+    "core_tensions": [
+      {
+        "tension_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+        "research_question": "盈利能力是否仍强，增长动能是否承压？",
+        "fact_anchor": {
+          "kind": "FACT",
+          "text": "支撑命题 TENSION_FUND_PROFIT_VS_GROWTH 的关键事实数字：2025-12-31、33.65%、91.18%、4.53%、1.21%。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_PROFIT_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2025-12-31",
+            "33.65%",
+            "91.18%",
+            "4.53%",
+            "1.21%"
+          ],
+          "assessment_strength": null,
+          "inference_status": null
+        },
+        "bull_reference": "BULL_01",
+        "bear_reference": "BEAR_01",
+        "bull_interpretation": {
+          "kind": "INFERENCE",
+          "text": "若增长压力主要来自阶段性需求或渠道因素，则高盈利缓冲（2025-12-31、33.65%、91.18%、4.53%）仍可约束“盈利崩塌”叙事；但该解释目前仅是条件假设。Debate resolution=unresolved：不足以验证阶段性假设。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_PROFIT_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [
+            "BULL_01"
+          ],
+          "numbers_used": [
+            "2025-12-31",
+            "33.65%",
+            "91.18%",
+            "4.53%"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": null
+        },
+        "bear_interpretation": {
+          "kind": "INFERENCE",
+          "text": "若同比下滑反映更持久的需求/结构压力，则增长不确定性应主导解释框架，估值对恢复的依赖上升（事实锚点含 2025-12-31、33.65%、91.18%、4.53%）；但把单期同比直接升级为结构性恶化，仍受 Challenge 约束。当前 resolution=unresolved。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_PROFIT_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [
+            "BEAR_01"
+          ],
+          "numbers_used": [
+            "2025-12-31",
+            "33.65%",
+            "91.18%",
+            "4.53%"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": null
+        },
+        "challenges": [
+          {
+            "claim_id": "BULL_01",
+            "challenge_id": "CH_BEAR_01",
+            "rebuttal_id": null,
+            "challenge_type": "evidence_insufficient",
+            "response_type": null,
+            "summary": "现有证据不足以区分阶段性与结构性。"
+          }
+        ],
+        "rebuttals": [
+          {
+            "claim_id": null,
+            "challenge_id": "CH_BEAR_01",
+            "rebuttal_id": "RB_BULL_01",
+            "challenge_type": null,
+            "response_type": "partially_accept",
+            "summary": "承认单期证据不足，无法完全反驳。"
+          }
+        ],
+        "debate_resolution": {
+          "tension_id": "TENSION_FUND_PROFIT_VS_GROWTH",
+          "bull_position": "增长压力可能是阶段性的，高盈利构成缓冲。",
+          "bear_position": "增长承压可能更持久，削弱增长驱动叙事。",
+          "bull_reference_ids": [
+            "BULL_01"
+          ],
+          "bear_reference_ids": [
+            "BEAR_01"
+          ],
+          "decisive_evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea"
+          ],
+          "unresolved_challenges": [
+            "CH_BEAR_01"
+          ],
+          "accepted_rebuttals": [],
+          "rejected_rebuttals": [],
+          "partially_accepted_rebuttals": [
+            "RB_BULL_01"
+          ],
+          "resolution": "unresolved",
+          "resolution_reason": "Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_PROFIT_VS_GROWTH 的对立解释；blocking=1 interp_open=0。",
+          "assessment_strength": "tentative",
+          "support_strength": null
+        },
+        "current_assessment": {
+          "kind": "UNCERTAINTY",
+          "text": "Debate 未裁定 TENSION_FUND_PROFIT_VS_GROWTH：事实（2025-12-31、33.65%、91.18%、4.53%、1.21%）清楚，但 Bull/Bear 解释无法被当前 Challenge/Rebuttal 有效区分。assessment_strength=tentative。原因：Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_PROFIT_VS_GROWTH 的对立解释；blocking=1 interp_open=0。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_PROFIT_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [
+            "CH_BEAR_01",
+            "RB_BULL_01"
+          ],
+          "numbers_used": [
+            "2025-12-31",
+            "33.65%",
+            "91.18%",
+            "4.53%",
+            "1.21%"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": "DERIVED"
+        },
+        "conditions_to_change": [
+          "连续报告期收入/净利润同比方向可核对切换 → 可能把 unresolved 推向单边收敛",
+          "客户结构/渠道批价等 gap 被填补 → 改变阶段性 vs 结构性权重",
+          "关键 Challenge 的 Rebuttal 从 partially_accept 转为 reject（或相反）→ 应触发 judgment flip"
+        ]
+      },
+      {
+        "tension_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+        "research_question": "当前估值需要怎样的盈利/增长假设才能成立？",
+        "fact_anchor": {
+          "kind": "FACT",
+          "text": "支撑命题 TENSION_FUND_VALUATION_VS_GROWTH 的关键事实数字：2026-08-14、20.28、6.19、2025-12-31、33.65%、4.53%。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_VALUATION_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "2025-12-31",
+            "33.65%",
+            "4.53%",
+            "1.21%"
+          ],
+          "assessment_strength": null,
+          "inference_status": null
+        },
+        "bull_reference": "",
+        "bear_reference": "",
+        "bull_interpretation": {
+          "kind": "INFERENCE",
+          "text": "若增长压力主要来自阶段性需求或渠道因素，则高盈利缓冲（2026-08-14、20.28、6.19、2025-12-31）仍可约束“盈利崩塌”叙事；但该解释目前仅是条件假设。Debate resolution=unresolved：不足以验证阶段性假设。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_VALUATION_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "2025-12-31"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": null
+        },
+        "bear_interpretation": {
+          "kind": "INFERENCE",
+          "text": "若同比下滑反映更持久的需求/结构压力，则增长不确定性应主导解释框架，估值对恢复的依赖上升（事实锚点含 2026-08-14、20.28、6.19、2025-12-31）；但把单期同比直接升级为结构性恶化，仍受 Challenge 约束。当前 resolution=unresolved。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_VALUATION_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "2025-12-31"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": null
+        },
+        "challenges": [],
+        "rebuttals": [],
+        "debate_resolution": {
+          "tension_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+          "bull_position": "Bull 未对本 tension 立论",
+          "bear_position": "Bear 未对本 tension 立论",
+          "bull_reference_ids": [],
+          "bear_reference_ids": [],
+          "decisive_evidence_ids": [],
+          "unresolved_challenges": [],
+          "accepted_rebuttals": [],
+          "rejected_rebuttals": [],
+          "partially_accepted_rebuttals": [],
+          "resolution": "unresolved",
+          "resolution_reason": "Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_VALUATION_VS_GROWTH 的对立解释；blocking=0 interp_open=0。",
+          "assessment_strength": "tentative",
+          "support_strength": null
+        },
+        "current_assessment": {
+          "kind": "UNCERTAINTY",
+          "text": "Debate 未裁定 TENSION_FUND_VALUATION_VS_GROWTH：事实（2026-08-14、20.28、6.19、2025-12-31、33.65%）清楚，但 Bull/Bear 解释无法被当前 Challenge/Rebuttal 有效区分。assessment_strength=tentative。原因：Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_VALUATION_VS_GROWTH 的对立解释；blocking=0 interp_open=0。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_VALUATION_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "akshare_fact_600519_20260814_e0cb0863ad",
+            "akshare_fact_600519_20260814_9d752dac82",
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_326895f599",
+            "derived_derived_600519_20251231_b21d45697e"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "20.28",
+            "6.19",
+            "2025-12-31",
+            "33.65%",
+            "4.53%"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": "DERIVED"
+        },
+        "conditions_to_change": [
+          "连续报告期收入/净利润同比方向可核对切换 → 可能把 unresolved 推向单边收敛",
+          "客户结构/渠道批价等 gap 被填补 → 改变阶段性 vs 结构性权重",
+          "关键 Challenge 的 Rebuttal 从 partially_accept 转为 reject（或相反）→ 应触发 judgment flip"
+        ]
+      },
+      {
+        "tension_id": "TENSION_MKT_SHORT_VS_LONG",
+        "research_question": "短中期趋势与长期均线是否冲突？",
+        "fact_anchor": {
+          "kind": "FACT",
+          "text": "支撑命题 TENSION_MKT_SHORT_VS_LONG 的关键事实数字：2026-08-14、1347.1280、1325.9990、1357.7337、1341.99。",
+          "canonical_finding_ids": [
+            "TENSION_MKT_SHORT_VS_LONG"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_5570a1a010",
+            "akshare_fact_600519_20260814_0e265beb0b"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "1347.1280",
+            "1325.9990",
+            "1357.7337",
+            "1341.99"
+          ],
+          "assessment_strength": null,
+          "inference_status": null
+        },
+        "bull_reference": "",
+        "bear_reference": "",
+        "bull_interpretation": {
+          "kind": "INFERENCE",
+          "text": "若短中期价格结构改善被解读为动能线索，它最多提供市场尺度旁证，不能单独证明财务增长争议已解决；该解读的可用性取决于 Debate 是否关闭证据不足挑战。",
+          "canonical_finding_ids": [
+            "TENSION_MKT_SHORT_VS_LONG"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_5570a1a010",
+            "akshare_fact_600519_20260814_0e265beb0b"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "1347.1280",
+            "1325.9990",
+            "1357.7337"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": null
+        },
+        "bear_interpretation": {
+          "kind": "INFERENCE",
+          "text": "若长期均线压力被赋予更高权重，则短中期多头排列不能外推为趋势已确认；该谨慎框架是否成为主解释，取决于相关 Challenge 是否被有效 rebut。",
+          "canonical_finding_ids": [
+            "TENSION_MKT_SHORT_VS_LONG"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_5570a1a010",
+            "akshare_fact_600519_20260814_0e265beb0b"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "1347.1280",
+            "1325.9990",
+            "1357.7337"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": null
+        },
+        "challenges": [],
+        "rebuttals": [],
+        "debate_resolution": {
+          "tension_id": "TENSION_MKT_SHORT_VS_LONG",
+          "bull_position": "Bull 未对本 tension 立论",
+          "bear_position": "Bear 未对本 tension 立论",
+          "bull_reference_ids": [],
+          "bear_reference_ids": [],
+          "decisive_evidence_ids": [],
+          "unresolved_challenges": [],
+          "accepted_rebuttals": [],
+          "rejected_rebuttals": [],
+          "partially_accepted_rebuttals": [],
+          "resolution": "unresolved",
+          "resolution_reason": "Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_MKT_SHORT_VS_LONG 的对立解释；blocking=0 interp_open=0。",
+          "assessment_strength": "tentative",
+          "support_strength": null
+        },
+        "current_assessment": {
+          "kind": "UNCERTAINTY",
+          "text": "Debate 未裁定 TENSION_MKT_SHORT_VS_LONG：事实（2026-08-14、1347.1280、1325.9990、1357.7337、1341.99）清楚，但 Bull/Bear 解释无法被当前 Challenge/Rebuttal 有效区分。assessment_strength=tentative。原因：Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_MKT_SHORT_VS_LONG 的对立解释；blocking=0 interp_open=0。",
+          "canonical_finding_ids": [
+            "TENSION_MKT_SHORT_VS_LONG"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20260814_0a0a03c36d",
+            "derived_derived_600519_20260814_d7efcdac03",
+            "derived_derived_600519_20260814_5570a1a010",
+            "akshare_fact_600519_20260814_0e265beb0b"
+          ],
+          "debate_refs": [],
+          "numbers_used": [
+            "2026-08-14",
+            "1347.1280",
+            "1325.9990",
+            "1357.7337",
+            "1341.99"
+          ],
+          "assessment_strength": "tentative",
+          "inference_status": "DERIVED"
+        },
+        "conditions_to_change": [
+          "连续报告期收入/净利润同比方向可核对切换 → 可能把 unresolved 推向单边收敛",
+          "客户结构/渠道批价等 gap 被填补 → 改变阶段性 vs 结构性权重",
+          "关键 Challenge 的 Rebuttal 从 partially_accept 转为 reject（或相反）→ 应触发 judgment flip"
+        ]
+      }
+    ],
+    "assessment_basis": {
+      "supported_facts": [
+        "支撑命题 TENSION_FUND_PROFIT_VS_GROWTH 的关键事实数字：2025-12-31、33.65%、91.18%、4.53%、1.21%。"
+      ],
+      "interpretation_advantage": "无解释优势；优势在于诚实保留未决",
+      "unresolved": [
+        "CH_BEAR_01"
+      ],
+      "reason_base_case_selected": "Base 选择依据 Debate resolution=unresolved + support_strength=None + evidence_pressure=elevated：Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_PROFIT_VS_GROWTH 的对立解释；blocking=1 interp_open=0。；校准框架：事实清楚、解释未决；不得机械中性，也不得越权裁定",
+      "primary_resolution": "unresolved",
+      "debate_support_strength": null,
+      "evidence_pressure": "elevated",
+      "calibrated_frame": "事实清楚、解释未决；不得机械中性，也不得越权裁定",
+      "active_challenges": [
+        "CH_BEAR_01"
+      ],
+      "accepted_rebuttals": [
+        "RB_BULL_01"
+      ],
+      "limiting_challenge": "CH_BEAR_01"
+    },
+    "base_case": {
+      "label": "base",
+      "thesis": {
+        "kind": "UNCERTAINTY",
+        "text": "Base（非机械）：resolution=unresolved、support_strength=None、evidence_pressure=elevated。最符合当前证据且不过度补全的解释：事实清楚、解释未决；不得机械中性，也不得越权裁定。事实锚点（2025-12-31、33.65%、91.18%、4.53%、1.21%）；strength=unresolved。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [],
+        "numbers_used": [
+          "2025-12-31",
+          "33.65%",
+          "91.18%",
+          "4.53%",
+          "1.21%"
+        ],
+        "assessment_strength": "unresolved",
+        "inference_status": "DERIVED"
+      },
+      "supporting_canonical_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ],
+      "required_assumptions": [],
+      "inconsistent_with": [
+        "把 Bull/Bear claim 条数平均成中性",
+        "把 Debate resolution 直接当作最终答案",
+        "在 weak support 时宣称基本面已经改善/增长逻辑已经失效"
+      ],
+      "explanation_shift_variable": "Debate support_strength × Research evidence_pressure"
+    },
+    "bull_case": {
+      "label": "bull",
+      "thesis": {
+        "kind": "INFERENCE",
+        "text": "Bull 边界：仅当出现可核对的新证据——连续报告期收入与利润同比改善——之后，Bull 解释才获得更强支持，主解释才可移向“阶段性承压得到验证”。在该新证据出现前，不得把乐观描述当作 Base。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [],
+        "numbers_used": [
+          "2025-12-31",
+          "33.65%",
+          "91.18%",
+          "4.53%"
+        ],
+        "assessment_strength": null,
+        "inference_status": "DERIVED"
+      },
+      "supporting_canonical_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ],
+      "required_assumptions": [
+        {
+          "kind": "ASSUMPTION",
+          "text": "假设后续出现可核对的多期增长改善（当前未成立）。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_PROFIT_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea"
+          ],
+          "debate_refs": [],
+          "numbers_used": [],
+          "assessment_strength": null,
+          "inference_status": "CONDITIONAL"
+        }
+      ],
+      "inconsistent_with": [
+        "声称增长已经恢复",
+        "忽略现有同比压力事实",
+        "仅用乐观措辞替代触发条件"
+      ],
+      "explanation_shift_variable": "多期收入/净利润同比方向（新证据触发）"
+    },
+    "bear_case": {
+      "label": "bear",
+      "thesis": {
+        "kind": "INFERENCE",
+        "text": "Bear 边界：仅当出现可核对的新证据——多期增长持续恶化且无对冲证据——之后，Bear 解释才获得更强支持，主解释才可移向“增长压力权重进一步上升”。在该新证据出现前，不得把悲观描述当作 Base。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [],
+        "numbers_used": [
+          "2025-12-31",
+          "33.65%",
+          "91.18%",
+          "4.53%"
+        ],
+        "assessment_strength": null,
+        "inference_status": "DERIVED"
+      },
+      "supporting_canonical_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH"
+      ],
+      "required_assumptions": [
+        {
+          "kind": "ASSUMPTION",
+          "text": "假设后续多期增长持续恶化且缺乏对冲证据（当前仅为条件分支）。",
+          "canonical_finding_ids": [
+            "TENSION_FUND_PROFIT_VS_GROWTH"
+          ],
+          "evidence_ids": [
+            "derived_derived_600519_20251231_1aa9df0253",
+            "derived_derived_600519_20251231_23d97142ea"
+          ],
+          "debate_refs": [],
+          "numbers_used": [],
+          "assessment_strength": null,
+          "inference_status": "CONDITIONAL"
+        }
+      ],
+      "inconsistent_with": [
+        "把高 ROE 写成增长驱动仍强",
+        "抹掉 evidence_insufficient 挑战",
+        "仅用悲观措辞替代触发条件"
+      ],
+      "explanation_shift_variable": "多期增长恶化是否持续（新证据触发）"
+    },
+    "what_would_change_my_view": [
+      {
+        "trigger_evidence_description": "连续≥2个报告期营业收入与归母净利润同比同向改善或恶化（可核对）",
+        "would_affect": "primary_resolution / base_case",
+        "direction": "unresolved_to_resolved",
+        "related_gap_or_boundary": "单期同比不足以区分阶段性与结构性",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ]
+      },
+      {
+        "trigger_evidence_description": "关键 Challenge 的 Rebuttal 从 partially_accept/accept 变为 reject（或相反）",
+        "would_affect": "debate_resolution",
+        "direction": "more_constructive",
+        "related_gap_or_boundary": "Debate Challenge/Rebuttal 状态是 judgment driver",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ]
+      },
+      {
+        "trigger_evidence_description": "公司披露可核对客户结构/集中度或渠道库存与批价",
+        "would_affect": "research_gaps",
+        "direction": "unresolved_to_resolved",
+        "related_gap_or_boundary": "客户结构等 Research gap",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ]
+      }
+    ],
+    "uncertainty": [
+      {
+        "kind": "UNCERTAINTY",
+        "text": "Primary tension TENSION_FUND_PROFIT_VS_GROWTH Debate unresolved：Fixture/metadata 指定 unresolved：Challenge/Rebuttal 未能裁定 TENSION_FUND_PROFIT_VS_GROWTH 的对立解释；blocking=1 interp_open=0。",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea"
+        ],
+        "debate_refs": [
+          "CH_BEAR_01"
+        ],
+        "numbers_used": [],
+        "assessment_strength": "unresolved",
+        "inference_status": "DERIVED"
+      },
+      {
+        "kind": "UNCERTAINTY",
+        "text": "Debate unresolved survival：阶段性 vs 结构性未决",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH",
+          "TENSION_FUND_VALUATION_VS_GROWTH",
+          "TENSION_MKT_SHORT_VS_LONG"
+        ],
+        "evidence_ids": [],
+        "debate_refs": [
+          "debate_summary.unresolved_issues"
+        ],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      },
+      {
+        "kind": "UNCERTAINTY",
+        "text": "Debate unresolved survival：短期价格改善能否验证基本面争议仍未决",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH",
+          "TENSION_FUND_VALUATION_VS_GROWTH",
+          "TENSION_MKT_SHORT_VS_LONG"
+        ],
+        "evidence_ids": [],
+        "debate_refs": [
+          "debate_summary.unresolved_issues"
+        ],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      }
+    ],
+    "research_gaps": [
+      {
+        "kind": "UNCERTAINTY",
+        "text": "继承 Research gap：当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+        "canonical_finding_ids": [],
+        "evidence_ids": [],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      },
+      {
+        "kind": "UNCERTAINTY",
+        "text": "继承 Research gap：当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+        "canonical_finding_ids": [],
+        "evidence_ids": [],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      },
+      {
+        "kind": "UNCERTAINTY",
+        "text": "继承 Research gap：当前 Research Context 缺少足够的新闻 Current/Previous 个股相关资讯证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+        "canonical_finding_ids": [],
+        "evidence_ids": [],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      },
+      {
+        "kind": "UNCERTAINTY",
+        "text": "继承 Research gap：当前 Research Context 缺少足够的盘口微观结构证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+        "canonical_finding_ids": [],
+        "evidence_ids": [],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      },
+      {
+        "kind": "UNCERTAINTY",
+        "text": "继承 Research gap：当前 Research Context 缺少足够的机构持仓完整时序证据，无法形成可靠判断。 FA 不得补全为已确认事实。",
+        "canonical_finding_ids": [],
+        "evidence_ids": [],
+        "debate_refs": [],
+        "numbers_used": [],
+        "assessment_strength": null,
+        "inference_status": null
+      }
+    ],
+    "evidence_trace": [
+      {
+        "conclusion_ref": "executive_assessment",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH",
+          "TENSION_FUND_VALUATION_VS_GROWTH",
+          "TENSION_MKT_SHORT_VS_LONG"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea"
+        ],
+        "debate_refs": [
+          "unresolved",
+          "unresolved",
+          "unresolved"
+        ]
+      },
+      {
+        "conclusion_ref": "assessment_basis",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea",
+          "derived_derived_600519_20251231_326895f599",
+          "derived_derived_600519_20251231_b21d45697e"
+        ],
+        "debate_refs": [
+          "CH_BEAR_01"
+        ]
+      },
+      {
+        "conclusion_ref": "core_tensions:TENSION_FUND_PROFIT_VS_GROWTH",
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ],
+        "evidence_ids": [
+          "derived_derived_600519_20251231_1aa9df0253",
+          "derived_derived_600519_20251231_23d97142ea"
+        ],
+        "debate_refs": [
+          "unresolved",
+          "CH_BEAR_01"
+        ]
+      },
+      {
+        "conclusion_ref": "core_tensions:TENSION_FUND_VALUATION_VS_GROWTH",
+        "canonical_finding_ids": [
+          "TENSION_FUND_VALUATION_VS_GROWTH"
+        ],
+        "evidence_ids": [],
+        "debate_refs": [
+          "unresolved"
+        ]
+      },
+      {
+        "conclusion_ref": "core_tensions:TENSION_MKT_SHORT_VS_LONG",
+        "canonical_finding_ids": [
+          "TENSION_MKT_SHORT_VS_LONG"
+        ],
+        "evidence_ids": [],
+        "debate_refs": [
+          "unresolved"
+        ]
+      }
+    ],
+    "canonical_finding_ids": [
+      "TENSION_FUND_PROFIT_VS_GROWTH",
+      "TENSION_FUND_VALUATION_VS_GROWTH",
+      "TENSION_MKT_SHORT_VS_LONG"
+    ],
+    "evidence_ids": [
+      "derived_derived_600519_20251231_1aa9df0253",
+      "derived_derived_600519_20251231_23d97142ea",
+      "derived_derived_600519_20251231_326895f599",
+      "derived_derived_600519_20251231_b21d45697e"
+    ],
+    "meta": {
+      "no_trade_advice": true,
+      "grounded_is_not_autonomous": true,
+      "selected_tension_ids": [
+        "TENSION_FUND_PROFIT_VS_GROWTH",
+        "TENSION_FUND_VALUATION_VS_GROWTH",
+        "TENSION_MKT_SHORT_VS_LONG"
+      ],
+      "primary_resolution": "unresolved",
+      "assessment_strength": "unresolved",
+      "debate_support_strength": null,
+      "evidence_pressure": "elevated",
+      "notes": [
+        "Debate resolution is an input, not the answer",
+        "support_strength calibrates claim amplitude (not probability)",
+        "evidence_pressure from Research prevents mechanical Debate following",
+        "Grounded synthesizer is deterministic, not autonomous research"
+      ]
+    }
+  },
+  "openai": null
+}

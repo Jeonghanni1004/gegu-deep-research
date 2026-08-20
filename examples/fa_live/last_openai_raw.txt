@@ -1,0 +1,297 @@
+{
+  "stock_code": "688981",
+  "research_as_of_date": "2026-08-15",
+  "analyst_mode": "openai",
+  "executive_assessment": {
+    "kind": "INFERENCE",
+    "text": "最重要矛盾是半导体利用率回升与ASP下滑、现金消耗加速并存，且Debate虽裁定bull_supported但Research压力severe，证据不足以机械乐观。Debate未改变核心事实，仅强化了建设性解释的优先级，但Challenge仍限制强度：现金与ASP压力未被推翻。Fundamental×Market不一致：基本面增长承压（营收-1.21%、净利-4.53%）而市场短中期均线多头（MA5>MA20），长期均线MA250仍在上方，价格处于52周区间中部（0.5016），表明市场定价未完全反映基本面压力，或隐含未来增长恢复预期。可验证新证据：后续季度ASP企稳或现金含量改善将支持bull；若ASP继续下滑或现金恶化则bear占优。",
+    "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP", "FINDING_FUND_CASH_QUALITY", "FINDING_FUND_BALANCE_OP", "TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_PRICE_MA", "TENSION_MKT_SHORT_VS_LONG", "FINDING_MKT_VAL_PRICE"],
+    "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e", "derived_derived_600519_20251231_e5ea7a9e51", "akshare_fact_600519_20260331_f8d51f60b8", "akshare_fact_600519_20260331_f83c681f65", "derived_derived_600519_20251231_e5ef691e0a", "akshare_fact_600519_20260331_30e2904d77", "akshare_fact_600519_20260331_2fb3ab92d0", "akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "akshare_fact_600519_20260814_0e265beb0b", "derived_derived_600519_20260814_0a0a03c36d", "derived_derived_600519_20260814_d7efcdac03", "derived_derived_600519_20260814_84f0964810", "derived_derived_600519_20260814_5570a1a010", "derived_derived_600519_20260814_94d80062bf"],
+    "debate_refs": [],
+    "numbers_used": ["78%", "6.5%", "12%", "74.74%", "269.10", "272.43", "16.42%", "487.87", "539.09", "20.28", "6.19", "33.65%", "4.53%", "1.21%", "1341.99", "1347.1280", "1325.9990", "1259.2065", "1357.7337", "0.5016"],
+    "assessment_strength": "tentative",
+    "inference_status": "DERIVED"
+  },
+  "core_thesis": {
+    "kind": "INFERENCE",
+    "text": "核心判断：基本面呈现盈利能力仍强（ROE 33.65%）但增长承压（营收-1.21%、净利-4.53%）的分化，市场定价（PE 20.28、价格在52周区间中部0.5016）未完全反映该压力，需依赖未来增长恢复才能支撑当前估值。",
+    "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_VAL_PRICE"],
+    "evidence_ids": ["akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e", "derived_derived_600519_20260814_0e265beb0b", "derived_derived_600519_20260814_94d80062bf"],
+    "assessment_strength": "tentative",
+    "inference_status": "DERIVED"
+  },
+  "key_drivers": [
+    {
+      "kind": "INFERENCE",
+      "text": "半导体利用率回升（78%）与ASP下滑（6.5%）及现金消耗加速（12%）之间的张力是首要驱动，决定建设性解释的可持续性。",
+      "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+      "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e"],
+      "inference_status": "DERIVED"
+    },
+    {
+      "kind": "INFERENCE",
+      "text": "估值（PE 20.28、PB 6.19）与增长承压（净利-4.53%）的匹配度是第二驱动，决定市场是否已price in压力。",
+      "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH"],
+      "evidence_ids": ["akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e"],
+      "inference_status": "DERIVED"
+    }
+  ],
+  "core_tensions": [
+    {
+      "tension_id": "TENSION_SEMI_UTIL_VS_ASP",
+      "research_question": "利用率回升与ASP下滑、现金消耗加速如何共同影响建设性判断？",
+      "fact_anchor": {
+        "kind": "FACT",
+        "text": "利用率78%，ASP下滑6.5%，现金消耗加速12%（2025-12-31）。",
+        "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+        "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e"],
+        "numbers_used": ["78%", "6.5%", "12%"]
+      },
+      "bull_reference": "BULL_01",
+      "bear_reference": "BEAR_01",
+      "bull_interpretation": {
+        "kind": "INFERENCE",
+        "text": "若后续季度利用率持续回升且ASP企稳，则建设性解释获得支撑，现金消耗压力将缓解。",
+        "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+        "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea"],
+        "inference_status": "CONDITIONAL"
+      },
+      "bear_interpretation": {
+        "kind": "INFERENCE",
+        "text": "若ASP继续下滑或现金消耗未见改善，则利用率回升不足以支撑乐观，建设性解释受限。",
+        "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+        "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea"],
+        "inference_status": "CONDITIONAL"
+      },
+      "challenges": [
+        {
+          "challenge_id": "CH_01",
+          "claim_id": "BULL_01",
+          "challenge_type": "interpretation_conflict",
+          "summary": "强支持仍受现金与ASP压力限制，利用率回升不足以单独支撑建设性解释。"
+        }
+      ],
+      "rebuttals": [
+        {
+          "rebuttal_id": "RB_01",
+          "challenge_id": "CH_01",
+          "response_type": "reject",
+          "summary": "Challenge未提供足以推翻建设性解释的新证据，予以reject。"
+        }
+      ],
+      "debate_resolution": {
+        "tension_id": "TENSION_SEMI_UTIL_VS_ASP",
+        "bull_position": "利用率回升支持建设性解释",
+        "bear_position": "ASP与现金约束限制乐观幅度",
+        "bull_reference_ids": ["BULL_01"],
+        "bear_reference_ids": ["BEAR_01"],
+        "decisive_evidence_ids": ["derived_derived_600519_20251231_1aa9df0253"],
+        "unresolved_challenges": ["CH_01"],
+        "accepted_rebuttals": [],
+        "rejected_rebuttals": ["RB_01"],
+        "partially_accepted_rebuttals": [],
+        "resolution": "bull_supported",
+        "resolution_reason": "Debate裁定bull_supported，但Challenge仍限制强度，证据不足以完全消除ASP与现金压力。",
+        "assessment_strength": "tentative",
+        "support_strength": null
+      }
+    },
+    {
+      "tension_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+      "research_question": "当前估值需要怎样的盈利/增长假设才能成立？",
+      "fact_anchor": {
+        "kind": "FACT",
+        "text": "PE(TTM) 20.28，PB 6.19，ROE 33.65%，净利同比-4.53%，营收同比-1.21%。",
+        "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH"],
+        "evidence_ids": ["akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e"],
+        "numbers_used": ["20.28", "6.19", "33.65%", "4.53%", "1.21%"]
+      },
+      "bull_reference": "BULL_01",
+      "bear_reference": "BEAR_01",
+      "bull_interpretation": {
+        "kind": "INFERENCE",
+        "text": "若未来增长恢复且盈利能力维持高位，则当前估值合理。",
+        "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH"],
+        "evidence_ids": ["akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "derived_derived_600519_20251231_326895f599"],
+        "inference_status": "CONDITIONAL"
+      },
+      "bear_interpretation": {
+        "kind": "INFERENCE",
+        "text": "若增长持续承压且无恢复迹象，则当前估值缺乏支撑。",
+        "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH"],
+        "evidence_ids": ["akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "derived_derived_600519_20251231_b21d45697e"],
+        "inference_status": "CONDITIONAL"
+      },
+      "challenges": [],
+      "rebuttals": [],
+      "debate_resolution": {
+        "tension_id": "TENSION_FUND_VALUATION_VS_GROWTH",
+        "bull_position": "估值依赖未来增长恢复",
+        "bear_position": "增长承压使估值缺乏支撑",
+        "bull_reference_ids": ["BULL_01"],
+        "bear_reference_ids": ["BEAR_01"],
+        "decisive_evidence_ids": [],
+        "unresolved_challenges": [],
+        "accepted_rebuttals": [],
+        "rejected_rebuttals": [],
+        "partially_accepted_rebuttals": [],
+        "resolution": "unresolved",
+        "resolution_reason": "证据不足以裁定估值与增长之间的匹配度，需未来增长数据验证。",
+        "assessment_strength": "tentative",
+        "support_strength": null
+      }
+    }
+  ],
+  "current_assessment": {
+    "kind": "INFERENCE",
+    "text": "当前判断：基本面分化（盈利强、增长弱）与市场定价（短中期多头但长期均线压制）并存，Debate bull_supported但受ASP与现金压力限制，整体评估为tentative。",
+    "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP", "TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_PRICE_MA", "TENSION_MKT_SHORT_VS_LONG"],
+    "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "akshare_fact_600519_20260814_0e265beb0b", "derived_derived_600519_20260814_0a0a03c36d", "derived_derived_600519_20260814_d7efcdac03", "derived_derived_600519_20260814_84f0964810", "derived_derived_600519_20260814_5570a1a010"],
+    "inference_status": "DERIVED"
+  },
+  "conditions_to_change": [
+    "若后续季度ASP企稳或现金含量改善，则bull_supported强度提升。",
+    "若ASP继续下滑或现金恶化，则bear解释占优。"
+  ],
+  "assessment_basis": {
+    "supported_facts": ["利用率78%", "ASP下滑6.5%", "现金消耗加速12%", "经营现金流/净利润74.74%", "资产负债率16.42%", "PE 20.28", "PB 6.19", "价格1341.99", "52周位置0.5016"],
+    "interpretation_advantage": "bull_supported但受Challenge限制，建设性解释未被推翻但强度受限。",
+    "unresolved": ["ASP与政策约束仍在", "增长承压是否短期波动或结构性问题未定"],
+    "reason_base_case_selected": "基于基本面分化与市场定价不一致，选择谨慎中性作为基准。",
+    "primary_resolution": "bull_supported",
+    "debate_support_strength": null,
+    "evidence_pressure": "severe",
+    "calibrated_frame": "bull_supported但受severe压力，评估强度tentative。",
+    "active_challenges": ["CH_01"],
+    "accepted_rebuttals": [],
+    "limiting_challenge": "CH_01"
+  },
+  "base_case": {
+    "label": "base",
+    "thesis": {
+      "kind": "UNCERTAINTY",
+      "text": "基本面盈利强但增长承压，市场定价未完全反映压力，需未来增长数据确认方向。",
+      "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_VAL_PRICE"],
+      "evidence_ids": ["akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e", "derived_derived_600519_20260814_94d80062bf"],
+      "inference_status": "DERIVED"
+    },
+    "supporting_canonical_ids": ["TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_VAL_PRICE"],
+    "required_assumptions": [],
+    "inconsistent_with": ["若增长持续下滑则估值承压"],
+    "explanation_shift_variable": "增长恢复速度"
+  },
+  "bull_case": {
+    "label": "bull",
+    "thesis": {
+      "kind": "INFERENCE",
+      "text": "若后续季度利用率持续回升且ASP企稳，则建设性解释获得支撑，估值合理。",
+      "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+      "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea"],
+      "inference_status": "CONDITIONAL"
+    },
+    "supporting_canonical_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+    "required_assumptions": [
+      {
+        "kind": "ASSUMPTION",
+        "text": "假设利用率回升趋势持续且ASP不再下滑。",
+        "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+        "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253"],
+        "inference_status": "CONDITIONAL"
+      }
+    ],
+    "inconsistent_with": ["ASP持续下滑", "现金消耗加速"],
+    "explanation_shift_variable": "ASP走势"
+  },
+  "bear_case": {
+    "label": "bear",
+    "thesis": {
+      "kind": "INFERENCE",
+      "text": "若ASP继续下滑或现金消耗未见改善，则利用率回升不足以支撑乐观，估值承压。",
+      "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+      "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea"],
+      "inference_status": "CONDITIONAL"
+    },
+    "supporting_canonical_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+    "required_assumptions": [
+      {
+        "kind": "ASSUMPTION",
+        "text": "假设ASP下滑趋势持续或现金消耗未见改善。",
+        "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+        "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253"],
+        "inference_status": "CONDITIONAL"
+      }
+    ],
+    "inconsistent_with": ["利用率持续回升且ASP企稳"],
+    "explanation_shift_variable": "ASP走势"
+  },
+  "what_would_change_my_view": [
+    {
+      "trigger_evidence_description": "后续季度ASP环比企稳或回升（时间尺度：1-2个季度）",
+      "would_affect": "primary_resolution / base_case",
+      "direction": "unresolved_to_resolved",
+      "related_gap_or_boundary": "ASP与政策约束未决",
+      "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"]
+    },
+    {
+      "trigger_evidence_description": "经营现金流/净利润比率持续高于74.74%且改善（时间尺度：2个季度）",
+      "would_affect": "base_case",
+      "direction": "unresolved_to_resolved",
+      "related_gap_or_boundary": "利润质量需现金含量约束",
+      "canonical_finding_ids": ["FINDING_FUND_CASH_QUALITY"]
+    }
+  ],
+  "uncertainty": [
+    {
+      "kind": "UNCERTAINTY",
+      "text": "单期同比不足以判定增长承压是短期波动还是结构性问题。",
+      "canonical_finding_ids": ["TENSION_FUND_VALUATION_VS_GROWTH"],
+      "evidence_ids": []
+    },
+    {
+      "kind": "UNCERTAINTY",
+      "text": "ASP与政策约束仍在，限制bull_supported的强度。",
+      "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP"],
+      "evidence_ids": []
+    }
+  ],
+  "research_gaps": [
+    {
+      "kind": "UNCERTAINTY",
+      "text": "缺少客户结构证据，无法判断需求可持续性。",
+      "canonical_finding_ids": [],
+      "evidence_ids": []
+    },
+    {
+      "kind": "UNCERTAINTY",
+      "text": "缺少管理层展望原文，无法确认指引方向。",
+      "canonical_finding_ids": [],
+      "evidence_ids": []
+    },
+    {
+      "kind": "UNCERTAINTY",
+      "text": "缺少新闻资讯与盘口微观结构证据，市场状态判断受限。",
+      "canonical_finding_ids": [],
+      "evidence_ids": []
+    }
+  ],
+  "evidence_trace": [
+    {
+      "conclusion_ref": "executive_assessment",
+      "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP", "FINDING_FUND_CASH_QUALITY", "FINDING_FUND_BALANCE_OP", "TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_PRICE_MA", "TENSION_MKT_SHORT_VS_LONG", "FINDING_MKT_VAL_PRICE"],
+      "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e", "derived_derived_600519_20251231_e5ea7a9e51", "akshare_fact_600519_20260331_f8d51f60b8", "akshare_fact_600519_20260331_f83c681f65", "derived_derived_600519_20251231_e5ef691e0a", "akshare_fact_600519_20260331_30e2904d77", "akshare_fact_600519_20260331_2fb3ab92d0", "akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "akshare_fact_600519_20260814_0e265beb0b", "derived_derived_600519_20260814_0a0a03c36d", "derived_derived_600519_20260814_d7efcdac03", "derived_derived_600519_20260814_84f0964810", "derived_derived_600519_20260814_5570a1a010", "derived_derived_600519_20260814_94d80062bf"],
+      "debate_refs": []
+    }
+  ],
+  "canonical_finding_ids": ["TENSION_SEMI_UTIL_VS_ASP", "FINDING_FUND_CASH_QUALITY", "FINDING_FUND_BALANCE_OP", "TENSION_FUND_VALUATION_VS_GROWTH", "FINDING_MKT_PRICE_MA", "TENSION_MKT_SHORT_VS_LONG", "FINDING_MKT_VAL_PRICE"],
+  "evidence_ids": ["derived_derived_600519_20251231_1aa9df0253", "derived_derived_600519_20251231_23d97142ea", "derived_derived_600519_20251231_326895f599", "derived_derived_600519_20251231_b21d45697e", "derived_derived_600519_20251231_e5ea7a9e51", "akshare_fact_600519_20260331_f8d51f60b8", "akshare_fact_600519_20260331_f83c681f65", "derived_derived_600519_20251231_e5ef691e0a", "akshare_fact_600519_20260331_30e2904d77", "akshare_fact_600519_20260331_2fb3ab92d0", "akshare_fact_600519_20260814_e0cb0863ad", "akshare_fact_600519_20260814_9d752dac82", "akshare_fact_600519_20260814_0e265beb0b", "derived_derived_600519_20260814_0a0a03c36d", "derived_derived_600519_20260814_d7efcdac03", "derived_derived_600519_20260814_84f0964810", "derived_derived_600519_20260814_5570a1a010", "derived_derived_600519_20260814_94d80062bf"],
+  "meta": {
+    "no_trade_advice": true,
+    "grounded_is_not_autonomous": true,
+    "selected_tension_ids": ["TENSION_SEMI_UTIL_VS_ASP", "TENSION_FUND_VALUATION_VS_GROWTH"],
+    "primary_resolution": "bull_supported",
+    "assessment_strength": "tentative",
+    "debate_support_strength": null,
+    "evidence_pressure": "severe",
+    "notes": ["openai_live"]
+  }
+}

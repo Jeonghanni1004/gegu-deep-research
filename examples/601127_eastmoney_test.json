@@ -1,0 +1,1034 @@
+{
+  "stock_code": "601127",
+  "stock_name": "赛力斯",
+  "retrieved_at": "2026-08-19T07:37:43+00:00",
+  "source": "eastmoney",
+  "reference": "TradingAgents-astock tradingagents/dataflows/a_stock.py",
+  "attempts": {
+    "stock_news": {
+      "ok": true,
+      "elapsed_sec": 0.13,
+      "error": null
+    },
+    "stock_news_sina_fallback": {
+      "ok": true,
+      "elapsed_sec": 0.19,
+      "error": null
+    },
+    "global_news_em": {
+      "ok": true,
+      "elapsed_sec": 1.49,
+      "error": null
+    },
+    "announcements": {
+      "ok": true,
+      "elapsed_sec": 1.37,
+      "error": null
+    },
+    "dragon_tiger_90d": {
+      "ok": true,
+      "elapsed_sec": 1.35,
+      "error": null
+    },
+    "lockup": {
+      "ok": true,
+      "elapsed_sec": 1.51,
+      "error": null
+    },
+    "holder_change": {
+      "ok": true,
+      "elapsed_sec": 1.5,
+      "error": null
+    },
+    "fund_flow_hist": {
+      "ok": false,
+      "elapsed_sec": 1.45,
+      "error": {
+        "type": "ConnectionError",
+        "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      }
+    }
+  },
+  "quality_notes": [
+    "东财 search-api 仅返回 passportWeb（个股新闻 cmsArticleWebOld 为空），已按 TradingAgents 回退到新浪个股新闻。"
+  ],
+  "news": {
+    "source_used": "sina.vCB_AllNewsStock (TradingAgents fallback)",
+    "total_returned": 30,
+    "recent_30_count": 30,
+    "recent_90_count": 30,
+    "filter_30": {
+      "cutoff": "2026-07-20T15:37:43",
+      "unparsed": 0,
+      "kept": 30
+    },
+    "filter_90": {
+      "cutoff": "2026-05-21T15:37:43",
+      "unparsed": 0,
+      "kept": 30
+    },
+    "duplicate_titles": 0,
+    "has_content_ratio": 0.0,
+    "avg_content_len": 0,
+    "announcement_guess_count": 0,
+    "sample": [
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "吉利完成职业经理人接棒！营收破1700亿增15%，打响民营车企去家族化",
+        "published_at": "2026-08-19 14:23:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1279746217/4c4760a902701jhom",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "港股汽车板块承压，小米微涨，赛力斯创历史新低",
+        "published_at": "2026-08-19 11:31:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1651428902/626ece2602001izym",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "欧委会批准奔驰宝马赛力斯共同控股逸安启",
+        "published_at": "2026-08-19 09:47:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1644983660/620c756c02001ugxm",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "欧委会批准奔驰、宝马、赛力斯共同控股超充合资公司逸安启",
+        "published_at": "2026-08-19 09:26:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/5182171545/134e1a99902002ieoe",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "赛力斯：8月18日获融资买入1.48亿元，融资余额连续3天增加，市场人气旺盛属强势市场",
+        "published_at": "2026-08-19 08:11:00",
+        "source": "新浪财经",
+        "url": "https://finance.sina.com.cn/stock/aiassist/lr/2026-08-19/doc-ininuzku8365822.shtml",
+        "content": "",
+        "is_announcement_guess": false
+      }
+    ],
+    "recent_30_sample": [
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "吉利完成职业经理人接棒！营收破1700亿增15%，打响民营车企去家族化",
+        "published_at": "2026-08-19 14:23:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1279746217/4c4760a902701jhom",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "港股汽车板块承压，小米微涨，赛力斯创历史新低",
+        "published_at": "2026-08-19 11:31:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1651428902/626ece2602001izym",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "欧委会批准奔驰宝马赛力斯共同控股逸安启",
+        "published_at": "2026-08-19 09:47:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1644983660/620c756c02001ugxm",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "欧委会批准奔驰、宝马、赛力斯共同控股超充合资公司逸安启",
+        "published_at": "2026-08-19 09:26:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/5182171545/134e1a99902002ieoe",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "赛力斯：8月18日获融资买入1.48亿元，融资余额连续3天增加，市场人气旺盛属强势市场",
+        "published_at": "2026-08-19 08:11:00",
+        "source": "新浪财经",
+        "url": "https://finance.sina.com.cn/stock/aiassist/lr/2026-08-19/doc-ininuzku8365822.shtml",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "赛力斯官宣问界全系行业率先使用在售量产车型进行全场景体验",
+        "published_at": "2026-08-18 20:18:00",
+        "source": "新浪财经",
+        "url": "https://t.cj.sina.cn/articles/view/1826017320/6cd6d02802001veve",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "从中国西极到上海 问界与百万用户同行开展极限长测",
+        "published_at": "2026-08-18 19:36:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/1838672663/6d97eb1700101p22y",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "张兴海与用户万里同行 共同见证问界“五高”标准",
+        "published_at": "2026-08-18 19:16:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/2311077472/89c03e6002002mz8k",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "横贯华夏两极 问界汽车品质万里行长测圆满达成",
+        "published_at": "2026-08-18 18:54:00",
+        "source": "新浪财经",
+        "url": "https://cj.sina.cn/articles/view/2660807713/9e98b42102701ui32",
+        "content": "",
+        "is_announcement_guess": false
+      },
+      {
+        "type": "stock_news",
+        "stock_code": "601127",
+        "title": "通过「马斯克」严选，「豆包」补上特斯拉唯一短板",
+        "published_at": "2026-08-18 18:36:00",
+        "source": "新浪财经",
+        "url": "https://t.cj.sina.cn/articles/view/1750070171/684ff39b01901hfkg",
+        "content": "",
+        "is_announcement_guess": false
+      }
+    ],
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllNewsStock.php?symbol=sh601127&Page=1"
+      },
+      "http_status": 200,
+      "bytes": 57350,
+      "note": "TradingAgents fallback when Eastmoney stock news is empty"
+    },
+    "result_keys": null
+  },
+  "global_news_em": {
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://np-listapi.eastmoney.com/comm/web/getNewsByColumns",
+        "params": {
+          "client": "web",
+          "biz": "web_news_col",
+          "column": "350",
+          "order": "1",
+          "needInteractData": "0",
+          "page_index": "1",
+          "page_size": "30",
+          "req_trace": "poc600519",
+          "fields": "code,showTime,title,mediaName,summary,url,uniqueUrl,Np_dst",
+          "types": "1,20"
+        }
+      },
+      "http_status": 200,
+      "bytes": 23520
+    },
+    "count": 30,
+    "items": [
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "“涨”声一片！中秋备货推动蛋价进入旺季模式",
+        "published_at": "2026-08-19 10:47:06",
+        "source": "界面新闻",
+        "url": "http://finance.eastmoney.com/a/202608193845879230.html",
+        "content": "【“涨”声一片！中秋备货推动蛋价进入旺季模式】8月以来，全国鸡蛋市场正式进入中秋备货旺季，价格持续走强。据Mysteel农产品数据终端监测，8月17日主产区均价已升至5.15元/斤，较8月8日的4.46元/斤上涨0.69元/斤，9天累计涨幅达15.5%，同比涨幅高达58.46%，为近三年同期最高水平。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "人民币中间价创三年半新高 后市或呈偏强双向波动",
+        "published_at": "2026-08-19 13:34:42",
+        "source": "新华财经",
+        "url": "http://finance.eastmoney.com/a/202608193846046027.html",
+        "content": "【人民币中间价创三年半新高 后市或呈偏强双向波动】人民币汇率延续升值走势。19日，人民币对美元汇率中间价报6.7854，升至三年半高位，较2025年末7.03的水平升值约3.55%，人民币兑美元即期汇率则从6.989升至6.74，升值幅度超3.4%。多位分析人士认为，本轮人民币汇率走强并非单一因素推动，而是美元回调、国内出口保持较快增长、企业结汇需求释放以及汇率预期改善共同作用的结果。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "北京链家：“诚意卖”服务范围拓展至北京全市 近半数房源成交周期缩短至8天",
+        "published_at": "2026-08-19 15:32:02",
+        "source": "澎湃新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846222588.html",
+        "content": "【北京链家：“诚意卖”服务范围拓展至北京全市 近半数房源成交周期缩短至8天】8月19日，北京链家披露数据，自今年3月在北京42个片区落地“诚意卖”以来，累计上线房源268套，成交突破100单，整体成交率59.8%。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "事关每个人看病报销，全民医保“十五五”规划发布",
+        "published_at": "2026-08-19 15:17:34",
+        "source": "券商中国",
+        "url": "http://finance.eastmoney.com/a/202608193846216145.html",
+        "content": "今天（19日），国家医保局发布《全民医疗保障“十五五”规划》。到2029年基本医保基本实现省级统筹《全民医疗保障“十五五”规划》提出，健全多层次医疗保障体系，提升大病保险和医疗救助保障水平，提高基金抗风险能力和使用效率，到2029年基本实现省级统筹：持续提升全民医保参保质量，提高职工基本医疗保险的参保人数占比。继续推动落实新生儿“出生一件事”联办，实现“出生即参、待遇即享”。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "连续7日！央行7天期逆回购“零操作”",
+        "published_at": "2026-08-19 15:16:38",
+        "source": "界面新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846219935.html",
+        "content": "7天期逆回购自8月11日起，连续7天“零操作”，与此同时，央行于12日预告的4次隔夜逆回购已全部落地，每日操作量并未达到6000亿上限。东方金诚首席宏观分析师王青对界面新闻表示，这主要是源于8月14日以来资金面较为充裕，金融机构每个交易日对隔夜逆回购操作的需求不足6000亿上限。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "存储“双雄”会师A股进程加速！长存控股完成IPO辅导",
+        "published_at": "2026-08-19 12:27:46",
+        "source": "财联社",
+        "url": "http://finance.eastmoney.com/a/202608193845949768.html",
+        "content": "【存储“双雄”会师A股进程加速！长存控股完成IPO辅导】证监会官网显示，长江存储控股股份有限公司日前向湖北证监局提交《辅导工作完成报告》，公司IPO辅导状态变更为辅导验收。从产业版图来看，长存控股旗下子公司涵盖长江存储、长存资本、长存科服、宏茂微等多家企业，长存控股已逐步构建了“闪存制造、晶圆代工、封装测试、产业投资、园区运营与创新孵化”等业务板块协同发展的产业生态，业务体系涵盖了从产品研发、生产制造到产业投资、创新孵化的全价值链环节。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "《全民医疗保障“十五五”规划》来了：生育津贴直接发个人、报销向基层倾斜",
+        "published_at": "2026-08-19 14:53:39",
+        "source": "经济参考网",
+        "url": "http://finance.eastmoney.com/a/202608193846198450.html",
+        "content": "国家医疗保障局近日印发《全民医疗保障“十五五”规划》（以下简称《规划》），明确到2030年全面建成覆盖全民、统筹城乡、公平统一、安全规范、可持续的多层次医疗保障体系。具体来看，《规划》指出，到2030年，公平医保普惠均衡，基本医保公共服务可及性进一步增强。法治医保规范完善，医疗保障法制体系基本形成，依法行政能力持续提升，行政执法更加严格规范。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术",
+        "published_at": "2026-08-19 14:51:41",
+        "source": "人民财讯",
+        "url": "http://finance.eastmoney.com/a/202608193846195321.html",
+        "content": "【工信部甘小斌：加快智能芯片等关键核心技术攻关 探索类脑智能、世界模型、物理模型等前沿技术】8月18日，中国人工智能产业发展联盟第十八次全会在北京召开。工业和信息化部科技司副司长甘小斌在致辞中指出，工业和信息化部深入贯彻落实党中央、国务院决策部署，坚持以制造业为主战场、以应用牵引为主线，推动人工智能产业发展和赋能新型工业化。下一步将把握变革机遇，一体化推进技术创新、应用落地、生态培育、安全治理。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "国家统计局：7月全国城镇不包含在校生16-24岁劳动力失业率为17.9%",
+        "published_at": "2026-08-19 14:51:00",
+        "source": "澎湃新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846200990.html",
+        "content": "8月19日，国家统计局公布7月份分年龄组失业率数据。7月份，全国城镇不包含在校生的16—24岁劳动力失业率为17.9%，较上月上升3个百分点；全国城镇不包含在校生的25—29岁劳动力失业率为7.2%，较上月上升0.1个百分点；全国城镇不包含在校生的30—59岁劳动力失业率为3.9%，较上月下降0.1个百分点。整体看，城镇调查失业率季节性上升。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "上海张江高新区：建设世界领先科技园区，到2030年三大先导产业规模达2.5万亿元",
+        "published_at": "2026-08-19 14:45:16",
+        "source": "新华财经",
+        "url": "http://finance.eastmoney.com/a/202608193846191653.html",
+        "content": "上海张江高新区：建设世界领先科技园区，到2030年三大先导产业规模达2.5万亿元",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "全民医疗保障“十五五”规划：落实大病保险对符合规定的困难人群倾斜支付政策",
+        "published_at": "2026-08-19 14:45:12",
+        "source": "北京商报",
+        "url": "http://finance.eastmoney.com/a/202608193846191913.html",
+        "content": "8月19日，国家医保局印发《全民医疗保障“十五五”规划》。其中提到，提升大病保险和医疗救助保障水平。规范城乡居民大病保险制度。规范大病保险支付范围，合理确定从城乡居民基本医保基金中划拨比例、起付标准、分段报销比例、最高支付限额等。落实大病保险对符合规定的困难人群倾斜支付政策。规范职工大病保险和职工大额医疗费用补助制度。规范大病保险资金使用和经办管理。同时，完善医疗救助制度。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "全民医疗保障“十五五”规划：推动构建全国统一的医药采购市场",
+        "published_at": "2026-08-19 14:45:03",
+        "source": "北京商报",
+        "url": "http://finance.eastmoney.com/a/202608193846192395.html",
+        "content": "8月19日，国家医保局印发《全民医疗保障“十五五”规划》。其中提到，推动构建全国统一的医药采购市场。构建完善记录药品耗材物联信息的医药集中采购平台，持续提高医药集中采购平台服务能力。强化挂网规则统一协同，优化准入服务，推动挂网申请在全国范围内联审通办。推动公立医疗机构落实药品和高值医用耗材平台网采责任，提高网采率。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "全民医疗保障“十五五”规划：全面落实参保女职工享受国家法定产假生育津贴待遇",
+        "published_at": "2026-08-19 14:45:01",
+        "source": "北京商报",
+        "url": "http://finance.eastmoney.com/a/202608193846191589.html",
+        "content": "8月19日，国家医保局印发《全民医疗保障“十五五”规划》。其中提到，完善生育保险制度。推动用人单位职工应参尽参，全面落实由失业保险基金为领取失业保险金人员代缴职工医保（含生育保险）费政策。大力推动参加职工医保的灵活就业人员、农民工、新就业形态人员参加生育保险。全面落实参保女职工享受国家法定产假生育津贴待遇。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "全民医疗保障“十五五”规划：鼓励商保与基本医保衔接互补、差异化发展",
+        "published_at": "2026-08-19 14:44:59",
+        "source": "北京商报",
+        "url": "http://finance.eastmoney.com/a/202608193846191748.html",
+        "content": "8月19日，国家医保局印发《全民医疗保障“十五五”规划》。其中提到，大力推动商业医疗保险发展。积极支持商业医疗保险在多层次医疗保障体系中更好发挥作用，提升服务保障水平。鼓励商保与基本医保衔接互补、差异化发展。聚焦群众多样化需求，支持商保丰富产品供给。在风险可控、经营可持续基础上，积极将医疗新技术、新服务、新药品、新器械应用纳入商保保障。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "全民医疗保障“十五五”规划：全面建立医疗服务价格分类形成机制",
+        "published_at": "2026-08-19 14:44:58",
+        "source": "北京商报",
+        "url": "http://finance.eastmoney.com/a/202608193846192150.html",
+        "content": "8月19日，国家医保局印发《全民医疗保障“十五五”规划》。其中提到，深入推进医疗服务价格改革。加强医疗服务价格宏观管理。常态化运行灵敏有度的医疗服务价格动态调整机制。全面建立医疗服务价格分类形成机制。加强医疗服务价格项目管理，基本实现全国医疗服务价格项目统一规范，加强医疗服务价格项目新增管理，探索建立医疗服务价格预立项制度，根据临床需要和服务产出等因素及时新增或优化价格项目。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "亚宠发布报告：2026年中国宠物消费市场规模将至3365亿元",
+        "published_at": "2026-08-19 14:24:00",
+        "source": "上海证券报·中国证券网",
+        "url": "http://finance.eastmoney.com/a/202608193846101184.html",
+        "content": "【亚宠发布报告：2026年中国宠物消费市场规模将至3365亿元】宠物行业数据分析和咨询机构亚宠研究院发布的《宠物行业蓝皮书：2026中国宠物行业发展报告》称，2026年，中国宠物行业告别粗放规模增量时代，养宠消费需求发生结构性质变，产业进入存量价值重构新周期。数据显示，2023年以来，宠物消费市场规模增速维持在4%-5%，低增速常态化，预计2026年将以4.3%的年增长率增长至3365亿元。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "未来五年，医疗保障这样提质增效",
+        "published_at": "2026-08-19 14:17:45",
+        "source": "新华社",
+        "url": "http://finance.eastmoney.com/a/202608193846146381.html",
+        "content": "新华财经北京8月19日电一份关系13亿多参保人的医疗保障蓝图，正式绘就。8月19日，国家医保局公布《全民医疗保障“十五五”规划》，明确未来五年目标：到2030年，基本医保公共服务可及性进一步增强，医保安全保障能力巩固提升，医保基金使用效能进一步提升。规划从8个方面提出26条务实举借，着立构建一张覆盖全民、统筹城乡、公平统一、安全规范、可持续的多层次医疗保障网。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "前7个月民企进出口占全国总值近六成 外贸主力军地位持续稳固",
+        "published_at": "2026-08-19 14:17:41",
+        "source": "中国经营报",
+        "url": "http://finance.eastmoney.com/a/202608193846109913.html",
+        "content": "8月17日，国家统计局发布1—7月国民经济数据，1—7月份，货物进出口总额301264亿元，同比增长17.3%。其中，出口174400亿元，增长14.0%；进口126864亿元，增长22.0%。1—7月份，一般贸易进出口同比增长10.2%。对共建“一带一路”国家进出口增长15.5%。7月份，货物进出口总额46580亿元，同比增长19.2%。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "晓数点｜临港新片区七周年，一图速览亮眼 “成绩单”",
+        "published_at": "2026-08-19 14:05:11",
+        "source": "第一财经",
+        "url": "http://finance.eastmoney.com/a/202608193846079460.html",
+        "content": "晓数点｜临港新片区七周年，一图速览亮眼 “成绩单”",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "医保十五五规划正式发布，医保参保率维持95%左右",
+        "published_at": "2026-08-19 14:04:58",
+        "source": "每日经济新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846089150.html",
+        "content": "截至8月19日13时03分，港股通生物科技ETF（159102）下跌0.36%，医药ETF（512120）下跌1.83%，生物医药ETF（159508）下跌2.77%。相关个股方面，特宝生物上涨7.93%，再鼎医药上涨4.82%，信达生物上涨2.22%。消息面上，国家医保局今天（19日）发布《全民医疗保障“十五五”规划》。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "市场监管总局：1至7月依法办结垄断协议和滥用市场支配地位案件13件",
+        "published_at": "2026-08-19 14:02:35",
+        "source": "界面新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846114887.html",
+        "content": "今年以来，市场监管部门依法查办一批重大案件。截至7月，依法办结垄断协议和滥用市场支配地位案件13件。今年上半年，市场监管部门深入推进公用事业、互联网、原料药、驾培等领域线索核查工作，对案件办理实行“一案一策”，持续加强平台经济常态化监管，有序开展电商平台补贴及外卖平台服务行业市场竞争状况调查、评估，在反垄断实践中不断探索整治“内卷式”竞争的有效举措。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "市场监管总局：1至7月依法办结垄断协议和滥用市场支配地位案件13件",
+        "published_at": "2026-08-19 14:00:51",
+        "source": "央视新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846071193.html",
+        "content": "【市场监管总局：1至7月依法办结垄断协议和滥用市场支配地位案件13件】记者今天（19日）了解到，今年以来，市场监管部门依法查办一批重大案件。截至7月，依法办结垄断协议和滥用市场支配地位案件13件。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "中国海关支持更多中小企业享受AEO制度优势",
+        "published_at": "2026-08-19 13:58:10",
+        "source": "央视新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846126833.html",
+        "content": "8月17日至28日，2026年亚太经合组织（APEC）第三次高官会及相关会议在大连举行。今起，海关系列会议举办。今天的研讨会关注赋能亚太地区中小企业，构建稳定韧性的亚太供应链框架。记者从现场了解到，今天的与会嘉宾有来自13个APEC经济体的海关、相关国际组织、AEO企业等150余名代表。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "财信证券：高新技术、硬科技板块呈现供需两旺格局",
+        "published_at": "2026-08-19 13:52:00",
+        "source": "上海证券报·中国证券网",
+        "url": "http://finance.eastmoney.com/a/202608193846089492.html",
+        "content": "近日，财信证券发布研究报告解读7月份经济数据。财信证券认为，整体来看，7月经济运行总体平稳，结构延续向新向优发展态势。一方面是外需保持韧性；另一方面是代表新动能的高新技术、硬科技板块呈现供需两旺格局。具体来看，进出口延续高速增长，贸易结构向新向优特征明显。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "医保“十五五”规划划定集采重点，以中选价格为医保支付标准",
+        "published_at": "2026-08-19 13:47:53",
+        "source": "第一财经",
+        "url": "http://finance.eastmoney.com/a/202608193846089291.html",
+        "content": "8月19日，国家医保局正式发布《全民医疗保障“十五五”规划》（下称规划），这一规划通过一系列具体指标和民生实事，划定了未来五年我国医疗保障领域改革的重点任务和重要举措。深化医疗服务改革是规划的重点任务之一。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "7月银行结售汇实现顺差183亿美元 涉外收支规模扩大",
+        "published_at": "2026-08-19 13:46:58",
+        "source": "每日经济新闻",
+        "url": "http://finance.eastmoney.com/a/202608193846054941.html",
+        "content": "日前，国家外汇管理局披露7月银行结售汇数据。2026年7月，银行结汇2663亿美元，售汇2480亿美元。1月~7月，银行累计结汇18316亿美元，累计售汇15422亿美元。数据显示，银行结售汇继续维持顺差。“比如说美元如果处于升值趋势，我就先不结汇，再等一等，换更多人民币。”业内资深人士告诉记者，企业结售汇的时机很重要，与汇率走势有密切关系。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "国家统计局发布2026年7月份分年龄组失业率数据",
+        "published_at": "2026-08-19 13:38:48",
+        "source": "财联社",
+        "url": "http://finance.eastmoney.com/a/202608193846049597.html",
+        "content": "【国家统计局发布2026年7月份分年龄组失业率数据】国家统计局发布2026年7月份分年龄组失业率数据。7月份，全国城镇不包含在校生的16-24岁劳动力失业率为17.9%，不包含在校生的25-29岁劳动力失业率为7.2%，不包含在校生的30-59岁劳动力失业率为3.9%。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "北京市市长殷勇：上半年工业机器人、服务机器人产量分别增长76%和2.3倍",
+        "published_at": "2026-08-19 13:43:31",
+        "source": "中国证券报·中证金牛座",
+        "url": "http://finance.eastmoney.com/a/202608193846050022.html",
+        "content": "【北京市市长殷勇：上半年工业机器人、服务机器人产量分别增长76%和2.3倍】8月19日，2026世界机器人大会在京开幕。北京市市长殷勇在开幕式上表示，北京市坚持把机器人作为高精尖产业重点培育方向，加快打造具有全球影响力的机器人创新高地。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "工业和信息化部副部长辛国斌：上半年机器人产业规上企业营收达1655亿元，同比增长24.5%",
+        "published_at": "2026-08-19 13:41:17",
+        "source": "中国证券报·中证金牛座",
+        "url": "http://finance.eastmoney.com/a/202608193846049930.html",
+        "content": "【工业和信息化部副部长辛国斌：上半年机器人产业规上企业营收达1655亿元，同比增长24.5%】8月19日，工业和信息化部副部长辛国斌在2026世界机器人大会开幕式上表示，2025年机器人产业规模以上企业营业收入突破3000亿元，近五年年均增速超20%，今年上半年达到1655亿元，同比增长24.5%。机器人技术和产品已广泛应用于国民经济和社会发展的方方面面，成为推动高质量发展的重要力量。",
+        "stock_related": false,
+        "category": "market"
+      },
+      {
+        "type": "market_news",
+        "stock_code": null,
+        "title": "事关住房公积金：租房提取门槛降低 灵活就业人员也可以缴存",
+        "published_at": "2026-08-19 00:03:00",
+        "source": "南方都市报",
+        "url": "http://finance.eastmoney.com/a/202608183844895322.html",
+        "content": "【事关住房公积金：租房提取门槛降低 灵活就业人员也可以缴存】8月18日，国务院发布《国务院关于修改〈住房公积金管理条例〉的决定》（以下简称《决定》），自2026年9月20日起施行。据了解，《住房公积金管理条例》（以下简称《条例》）自1999年颁布以来，经历了2002年第一次修订、2019年第二次修订，本次为第三次修订，也是最大的一次系统性修订。",
+        "stock_related": false,
+        "category": "market"
+      }
+    ],
+    "related_count": 0
+  },
+  "announcements": {
+    "ok": true,
+    "total_returned": 30,
+    "recent_30_count": 7,
+    "recent_90_count": 30,
+    "filter_30": {
+      "cutoff": "2026-07-20T15:37:46",
+      "unparsed": 0,
+      "kept": 7
+    },
+    "filter_90": {
+      "cutoff": "2026-05-21T15:37:46",
+      "unparsed": 0,
+      "kept": 30
+    },
+    "sample": [
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:H股公告(董事会会议召开日期)",
+        "published_at": "2026-08-08 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608071827752539.html",
+        "content": "",
+        "column_names": [
+          "其他"
+        ],
+        "art_code": "AN202608071827752539"
+      },
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:2026年7月份产销快报",
+        "published_at": "2026-08-04 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608031827596573.html",
+        "content": "",
+        "column_names": [
+          "月度经营情况"
+        ],
+        "art_code": "AN202608031827596573"
+      },
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:关于股份回购进展公告",
+        "published_at": "2026-08-04 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608031827596572.html",
+        "content": "",
+        "column_names": [
+          "回购进展情况"
+        ],
+        "art_code": "AN202608031827596572"
+      },
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:H股公告(股份发行人及根据《上市规则》第十九B章上市的香港预托证券发行人的证券变动月报表)",
+        "published_at": "2026-08-04 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202608031827592712.html",
+        "content": "",
+        "column_names": [
+          "其他"
+        ],
+        "art_code": "AN202608031827592712"
+      },
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:关于子公司增资扩股的进展公告",
+        "published_at": "2026-07-31 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202607301827493070.html",
+        "content": "",
+        "column_names": [
+          "增资扩股"
+        ],
+        "art_code": "AN202607301827493070"
+      },
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:关于股份回购进展公告",
+        "published_at": "2026-07-21 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202607201827154600.html",
+        "content": "",
+        "column_names": [
+          "回购进展情况"
+        ],
+        "art_code": "AN202607201827154600"
+      },
+      {
+        "type": "announcement",
+        "stock_code": "601127",
+        "title": "赛力斯:关于公司董事、高级管理人员及骨干团队增持A股及H股股份结果的更正公告",
+        "published_at": "2026-07-21 00:00:00",
+        "source": "东方财富公告",
+        "url": "https://data.eastmoney.com/notices/detail/601127/AN202607201827154599.html",
+        "content": "",
+        "column_names": [
+          "股东/实际控制人股份增持",
+          "其他"
+        ],
+        "art_code": "AN202607201827154599"
+      }
+    ],
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://np-anotice-stock.eastmoney.com/api/security/ann",
+        "params": {
+          "page_size": "30",
+          "page_index": "1",
+          "ann_type": "A",
+          "client_source": "web",
+          "stock_list": "601127",
+          "f_node": "0",
+          "s_node": "0"
+        }
+      },
+      "http_status": 200,
+      "bytes": 18970
+    }
+  },
+  "dragon_tiger_90d": {
+    "ok": true,
+    "count": 0,
+    "sample": [],
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "reportName": "RPT_DAILYBILLBOARD_DETAILSNEW",
+        "filter": "(TRADE_DATE>='2026-05-21')(TRADE_DATE<='2026-08-19')(SECURITY_CODE=\"601127\")"
+      },
+      "http_status": 200
+    },
+    "message": "返回数据为空"
+  },
+  "lockup": {
+    "ok": true,
+    "count": 8,
+    "sample": [
+      {
+        "SECUCODE": "601127.SH",
+        "SECURITY_CODE": "601127",
+        "FREE_DATE": "2028-03-27 00:00:00",
+        "BATCH_HOLDER_NUM": 3,
+        "CURRENT_FREE_SHARES": 7616.2694,
+        "LIFT_MARKET_CAP": 384469.279312,
+        "FREE_SHARES_TYPE": "定向增发机构配售股份",
+        "B20_ADJCHRATE": null,
+        "A20_ADJCHRATE": null,
+        "FREE_SHARES": 163336.6086,
+        "NON_FREE_SHARES": 0,
+        "FREE_RATIO": 0.048909920433,
+        "MARKET_TYPE": "sh",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "NEW": 50.48,
+        "TOTAL_RATIO": 0.043721783046,
+        "ABLE_FREE_SHARES": 7616.2694,
+        "ALIFT_MARKET_CAP": 384469.279312,
+        "TRADE_MARKET_CODE": "069001001001",
+        "EUTIME": "2026-03-20 18:31:31",
+        "SECURITY_TYPE_CODE": "058001001",
+        "LISTING_STATE": "0",
+        "IS_NEW": "0",
+        "TOTALSHARES_RATIO": 0.046629285775
+      },
+      {
+        "SECUCODE": "601127.SH",
+        "SECURITY_CODE": "601127",
+        "FREE_DATE": "2026-03-27 00:00:00",
+        "BATCH_HOLDER_NUM": 3,
+        "CURRENT_FREE_SHARES": 4742.1199,
+        "LIFT_MARKET_CAP": 452493.080858,
+        "FREE_SHARES_TYPE": "定向增发机构配售股份",
+        "B20_ADJCHRATE": -11.38763198,
+        "A20_ADJCHRATE": -3.35106383,
+        "FREE_SHARES": 155720.3392,
+        "NON_FREE_SHARES": 7616.2694,
+        "FREE_RATIO": 0.030452797139,
+        "MARKET_TYPE": "sh",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "NEW": 95.42,
+        "TOTAL_RATIO": 0.027222505738,
+        "ABLE_FREE_SHARES": 4742.1199,
+        "ALIFT_MARKET_CAP": 452493.080858,
+        "TRADE_MARKET_CODE": "069001001001",
+        "EUTIME": "2026-03-20 18:52:11",
+        "SECURITY_TYPE_CODE": "058001001",
+        "LISTING_STATE": "0",
+        "IS_NEW": "0",
+        "TOTALSHARES_RATIO": 0.029032804958
+      },
+      {
+        "SECUCODE": "601127.SH",
+        "SECURITY_CODE": "601127",
+        "FREE_DATE": "2023-04-17 00:00:00",
+        "BATCH_HOLDER_NUM": 1,
+        "CURRENT_FREE_SHARES": 32738.0952,
+        "LIFT_MARKET_CAP": 1102291.665384,
+        "FREE_SHARES_TYPE": "定向增发机构配售股份",
+        "B20_ADJCHRATE": -15.70397112,
+        "A20_ADJCHRATE": -14.25512389,
+        "FREE_SHARES": 149728.3184,
+        "NON_FREE_SHARES": 0,
+        "FREE_RATIO": 0.218649989193,
+        "MARKET_TYPE": "sh",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "NEW": 33.67,
+        "TOTAL_RATIO": 0.218649989193,
+        "ABLE_FREE_SHARES": 32738.0952,
+        "ALIFT_MARKET_CAP": 1102291.665384,
+        "TRADE_MARKET_CODE": "069001001001",
+        "EUTIME": "2023-04-07 18:38:44",
+        "SECURITY_TYPE_CODE": "058001001",
+        "LISTING_STATE": "0",
+        "IS_NEW": "0",
+        "TOTALSHARES_RATIO": 0.218649989193
+      },
+      {
+        "SECUCODE": "601127.SH",
+        "SECURITY_CODE": "601127",
+        "FREE_DATE": "2023-01-16 00:00:00",
+        "BATCH_HOLDER_NUM": 17,
+        "CURRENT_FREE_SHARES": 13716.8141,
+        "LIFT_MARKET_CAP": 545243.360475,
+        "FREE_SHARES_TYPE": "定向增发机构配售股份",
+        "B20_ADJCHRATE": -10.97019658,
+        "A20_ADJCHRATE": -14.95726496,
+        "FREE_SHARES": 116989.8131,
+        "NON_FREE_SHARES": 32738.0952,
+        "FREE_RATIO": 0.117247935838,
+        "MARKET_TYPE": "sh",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "NEW": 39.75,
+        "TOTAL_RATIO": 0.091611605717,
+        "ABLE_FREE_SHARES": 13716.8141,
+        "ALIFT_MARKET_CAP": 545243.360475,
+        "TRADE_MARKET_CODE": "069001001001",
+        "EUTIME": "2023-01-06 19:15:47",
+        "SECURITY_TYPE_CODE": "058001001",
+        "LISTING_STATE": "0",
+        "IS_NEW": "0",
+        "TOTALSHARES_RATIO": 0.091611605717
+      },
+      {
+        "SECUCODE": "601127.SH",
+        "SECURITY_CODE": "601127",
+        "FREE_DATE": "2021-12-28 00:00:00",
+        "BATCH_HOLDER_NUM": 10,
+        "CURRENT_FREE_SHARES": 5636.8913,
+        "LIFT_MARKET_CAP": 326094.161705,
+        "FREE_SHARES_TYPE": "定向增发机构配售股份",
+        "B20_ADJCHRATE": -13.8551507,
+        "A20_ADJCHRATE": -14.76066144,
+        "FREE_SHARES": 103254.7937,
+        "NON_FREE_SHARES": 32738.0952,
+        "FREE_RATIO": 0.054592054257,
+        "MARKET_TYPE": "sh",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "NEW": 57.85,
+        "TOTAL_RATIO": 0.041449897459,
+        "ABLE_FREE_SHARES": 5636.8913,
+        "ALIFT_MARKET_CAP": 326094.161705,
+        "TRADE_MARKET_CODE": "069001001001",
+        "EUTIME": "2024-11-20 15:18:08",
+        "SECURITY_TYPE_CODE": "058001001",
+        "LISTING_STATE": "0",
+        "IS_NEW": "0",
+        "TOTALSHARES_RATIO": 0.041449897459
+      }
+    ],
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "reportName": "RPT_LIFT_STAGE"
+      },
+      "http_status": 200
+    },
+    "message": "ok"
+  },
+  "holder_change": {
+    "ok": true,
+    "count": 20,
+    "sample": [
+      {
+        "CHANGE_NUM": 178.65,
+        "NOTICE_DATE": "2026-07-20 00:00:00",
+        "SECURITY_CODE": "601127",
+        "HOLDER_NAME": "其他团队核心成员",
+        "AFTER_CHANGE_RATE": 0.102555413038,
+        "CHANGE_NUM_SYMBOL": 178.65,
+        "CHANGE_RATE": -3.6722,
+        "END_DATE": "2026-07-17 00:00:00",
+        "CLOSE_PRICE": 54.3,
+        "AFTER_HOLDER_NUM": null,
+        "HOLD_RATIO": null,
+        "TRADE_AVERAGE_PRICE": 56.0034,
+        "FREE_SHARES_RATIO": null,
+        "FREE_SHARES": null,
+        "TRADE_DATE": "2026-07-17 00:00:00",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "DIRECTION": "增持",
+        "EITIME": "2026-07-19 17:23:45",
+        "CHANGE_FREE_RATIO": 0.11,
+        "START_DATE": "2026-07-15 00:00:00",
+        "REAL_PRICE": 56.0034,
+        "NEWEST_PRICE": null,
+        "CHANGE_RATE_QUOTES": null,
+        "MARKET": "二级市场"
+      },
+      {
+        "CHANGE_NUM": 13.03,
+        "NOTICE_DATE": "2025-04-19 00:00:00",
+        "SECURITY_CODE": "601127",
+        "HOLDER_NAME": "其他团队核心成员5人",
+        "AFTER_CHANGE_RATE": 0.007977391053,
+        "CHANGE_NUM_SYMBOL": 13.03,
+        "CHANGE_RATE": -0.1147,
+        "END_DATE": "2025-04-18 00:00:00",
+        "CLOSE_PRICE": 130.61,
+        "AFTER_HOLDER_NUM": null,
+        "HOLD_RATIO": null,
+        "TRADE_AVERAGE_PRICE": 134.1827,
+        "FREE_SHARES_RATIO": null,
+        "FREE_SHARES": null,
+        "TRADE_DATE": "2025-04-18 00:00:00",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "DIRECTION": "增持",
+        "EITIME": "2025-04-18 19:36:01",
+        "CHANGE_FREE_RATIO": 0.01,
+        "START_DATE": "2025-04-08 00:00:00",
+        "REAL_PRICE": 134.1827,
+        "NEWEST_PRICE": null,
+        "CHANGE_RATE_QUOTES": null,
+        "MARKET": "二级市场"
+      },
+      {
+        "CHANGE_NUM": 20.54,
+        "NOTICE_DATE": "2024-10-18 00:00:00",
+        "SECURITY_CODE": "601127",
+        "HOLDER_NAME": "段伟",
+        "AFTER_CHANGE_RATE": 0.013604611377,
+        "CHANGE_NUM_SYMBOL": 20.54,
+        "CHANGE_RATE": -1.5317,
+        "END_DATE": "2024-10-17 00:00:00",
+        "CLOSE_PRICE": 90,
+        "AFTER_HOLDER_NUM": null,
+        "HOLD_RATIO": null,
+        "TRADE_AVERAGE_PRICE": 90.6285,
+        "FREE_SHARES_RATIO": null,
+        "FREE_SHARES": null,
+        "TRADE_DATE": "2024-10-17 00:00:00",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "DIRECTION": "增持",
+        "EITIME": "2024-10-17 17:14:14",
+        "CHANGE_FREE_RATIO": 0.01,
+        "START_DATE": "2024-10-16 00:00:00",
+        "REAL_PRICE": 90.6285,
+        "NEWEST_PRICE": null,
+        "CHANGE_RATE_QUOTES": null,
+        "MARKET": "二级市场"
+      },
+      {
+        "CHANGE_NUM": 19.17,
+        "NOTICE_DATE": "2024-10-18 00:00:00",
+        "SECURITY_CODE": "601127",
+        "HOLDER_NAME": "岑远川",
+        "AFTER_CHANGE_RATE": 0.012697195721,
+        "CHANGE_NUM_SYMBOL": 19.17,
+        "CHANGE_RATE": -1.5317,
+        "END_DATE": "2024-10-17 00:00:00",
+        "CLOSE_PRICE": 90,
+        "AFTER_HOLDER_NUM": null,
+        "HOLD_RATIO": null,
+        "TRADE_AVERAGE_PRICE": 90.6839,
+        "FREE_SHARES_RATIO": null,
+        "FREE_SHARES": null,
+        "TRADE_DATE": "2024-10-17 00:00:00",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "DIRECTION": "增持",
+        "EITIME": "2024-10-17 17:14:14",
+        "CHANGE_FREE_RATIO": 0.01,
+        "START_DATE": "2024-10-16 00:00:00",
+        "REAL_PRICE": 90.6839,
+        "NEWEST_PRICE": null,
+        "CHANGE_RATE_QUOTES": null,
+        "MARKET": "二级市场"
+      },
+      {
+        "CHANGE_NUM": 23.9,
+        "NOTICE_DATE": "2024-10-16 00:00:00",
+        "SECURITY_CODE": "601127",
+        "HOLDER_NAME": "陈业君",
+        "AFTER_CHANGE_RATE": 0.015830097951,
+        "CHANGE_NUM_SYMBOL": 23.9,
+        "CHANGE_RATE": -3.3441,
+        "END_DATE": "2024-10-15 00:00:00",
+        "CLOSE_PRICE": 89.89,
+        "AFTER_HOLDER_NUM": null,
+        "HOLD_RATIO": null,
+        "TRADE_AVERAGE_PRICE": 93.0448,
+        "FREE_SHARES_RATIO": null,
+        "FREE_SHARES": null,
+        "TRADE_DATE": "2024-10-15 00:00:00",
+        "SECURITY_NAME_ABBR": "赛力斯",
+        "DIRECTION": "增持",
+        "EITIME": "2024-10-15 21:12:26",
+        "CHANGE_FREE_RATIO": 0.02,
+        "START_DATE": "2024-08-29 00:00:00",
+        "REAL_PRICE": 93.0448,
+        "NEWEST_PRICE": null,
+        "CHANGE_RATE_QUOTES": null,
+        "MARKET": "二级市场"
+      }
+    ],
+    "meta": {
+      "request": {
+        "method": "GET",
+        "url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "reportName": "RPT_SHARE_HOLDER_INCREASE"
+      },
+      "http_status": 200
+    },
+    "message": "ok"
+  },
+  "fund_flow_hist": {
+    "ok": false,
+    "error": {
+      "type": "ConnectionError",
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    }
+  }
+}

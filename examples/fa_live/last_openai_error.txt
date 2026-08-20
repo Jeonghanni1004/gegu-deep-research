@@ -1,0 +1,10 @@
+base_url=https://api.deepseek.com
+model=deepseek-v4-flash
+error=Exception: HTTPError: 402 Client Error: Payment Required for url: https://api.deepseek.com/chat/completions
+code=PROVIDER_QUOTA_FAILURE
+stage=provider_quota
+cause=HTTPError: 402 Client Error: Payment Required for url: https://api.deepseek.com/chat/completions
+attempt=1
+retry_used=False
+regenerate_used=False
+first_provider_error=

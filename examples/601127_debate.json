@@ -1,0 +1,478 @@
+{
+  "stock_code": "601127",
+  "bull": {
+    "stock_code": "601127",
+    "stance": "bull",
+    "thesis": "基于相同 Evidence，Bull Case 强调高盈利韧性与财务缓冲，并承认利润同比下滑等负面事实；立场差异来自 interpretation，而非新造数据。",
+    "claims": [
+      {
+        "claim_id": "BULL_01",
+        "stance": "bull",
+        "claim": "公司盈利能力仍具有较强韧性，资本回报与毛利率水平提供支持性证据。",
+        "reasoning": "Fundamental Research 与 DERIVED 指标显示高 ROE / 高毛利率并存；这支持“盈利质量仍强”的解释，而非股价必然上涨。 同时需承认：2025-12-31 归母净利润同比增长 0.18% 表明短期利润增速承压。 立场对齐 Research canonical `TENSION_FUND_PROFIT_VS_GROWTH`（不重复生成同义研究结论）。",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_8f6bc3786a",
+          "derived_derived_601127_20251231_6b0d3cc53d",
+          "derived_derived_601127_20251231_5d9c5121f8"
+        ],
+        "confidence": 0.82,
+        "importance": 0.95,
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ]
+      },
+      {
+        "claim_id": "BULL_02",
+        "stance": "bull",
+        "claim": "财务健康与现金流证据支持公司基本面具备抗风险缓冲。",
+        "reasoning": "经营现金流及相关比率、资产负债结构可被解释为基本面缓冲；Bull Case 将其视为投资价值的支持性事实，同时不否认增速放缓风险。",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_7e09ef5a6d",
+          "akshare_fact_601127_20260331_b2f2f4ebc5",
+          "derived_derived_601127_20251231_f8cff2e6b7"
+        ],
+        "confidence": 0.74,
+        "importance": 0.8,
+        "canonical_finding_ids": [
+          "FINDING_FUND_CASH_QUALITY"
+        ]
+      },
+      {
+        "claim_id": "BULL_03",
+        "stance": "bull",
+        "claim": "短中期价格结构与一致预期快照提供偏积极的市场侧支持线索。",
+        "reasoning": "Market Research 中的均线结构/52周位置/一致预期属于可引用证据；可解释为短中期动能与机构预期仍存，但不能外推为确定性上涨。",
+        "evidence_ids": [
+          "derived_derived_601127_20260819_0d349d4b18",
+          "derived_derived_601127_20260819_226cac6ef6",
+          "derived_derived_601127_20260819_5666692101",
+          "derived_derived_601127_20260819_99c90bf1e6",
+          "ths_expectation_601127_2026_e6f6e866a9"
+        ],
+        "confidence": 0.68,
+        "importance": 0.7,
+        "canonical_finding_ids": [
+          "TENSION_MKT_SHORT_VS_LONG"
+        ]
+      }
+    ],
+    "key_risks": [
+      "负面证据需承认：2025-12-31 归母净利润同比增长 0.18%",
+      "营收增速风险：2025-12-31 营业收入同比增长 13.69%",
+      "长期均线压力线索：2026-08-19 MA250为 105.3671"
+    ],
+    "uncertainties": [
+      "当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+      "当前 Research Context 缺少足够的管理层展望原文证据，无法形成可靠判断。",
+      "短期增速承压是否阶段性，现有 Evidence 无法单独裁定。"
+    ]
+  },
+  "bear": {
+    "stock_code": "601127",
+    "stance": "bear",
+    "thesis": "基于相同 Evidence，Bear Case 强调增速承压与长期价格结构压力，并承认高 ROE/高毛利率等支持性事实；分歧在 interpretation，不在事实本身。",
+    "claims": [
+      {
+        "claim_id": "BEAR_01",
+        "stance": "bear",
+        "claim": "盈利与收入增速承压，削弱“增长驱动”的投资价值叙事。",
+        "reasoning": "归母净利润/营收同比下滑是可核验负面事实；Bear Case 将其解释为盈利动能恶化信号。 同时承认：2025-12-31 ROE为 14.56% 显示静态盈利能力仍高。 风险解读对齐 Research canonical `TENSION_FUND_PROFIT_VS_GROWTH`（引用张力，不复制全文）。",
+        "evidence_ids": [
+          "derived_derived_601127_20251231_5d9c5121f8",
+          "derived_derived_601127_20251231_94b6934679",
+          "akshare_fact_601127_20260331_f344d9f7f9",
+          "akshare_fact_601127_20260331_187a85840d",
+          "derived_derived_601127_20251231_8f6bc3786a"
+        ],
+        "confidence": 0.84,
+        "importance": 0.95,
+        "canonical_finding_ids": [
+          "TENSION_FUND_PROFIT_VS_GROWTH"
+        ]
+      },
+      {
+        "claim_id": "BEAR_02",
+        "stance": "bear",
+        "claim": "价格相对长期均线与区间位置显示中期上行仍面临结构压力。",
+        "reasoning": "若价格位于长期均线下方或仅处52周中部，可解释为趋势尚未确认强势突破；这是对市场结构的风险解读，不是买卖指令。",
+        "evidence_ids": [
+          "derived_derived_601127_20260819_052c188e38",
+          "akshare_fact_601127_20260819_239bd5aafa",
+          "derived_derived_601127_20260819_99c90bf1e6"
+        ],
+        "confidence": 0.72,
+        "importance": 0.78,
+        "canonical_finding_ids": [
+          "TENSION_MKT_SHORT_VS_LONG"
+        ]
+      },
+      {
+        "claim_id": "BEAR_03",
+        "stance": "bear",
+        "claim": "估值与一致预期/事件证据不足以支撑“风险已被充分消化”的乐观假设。",
+        "reasoning": "PE 等估值事实与 EXPECTATION/EVENT 仅提供快照；Bear Case 强调：在增速承压背景下，乐观定价假设证据不足。 同时承认 Bull 可能成立的部分：2025-12-31 毛利率为 29.14%",
+        "evidence_ids": [
+          "akshare_fact_601127_20260819_f0cf4975d9",
+          "ths_expectation_601127_2026_e6f6e866a9",
+          "eastmoney_event_601127_20260808_ea4feef647",
+          "eastmoney_event_601127_20260804_48eee81ef6"
+        ],
+        "confidence": 0.66,
+        "importance": 0.7,
+        "canonical_finding_ids": [
+          "TENSION_FUND_VALUATION_VS_GROWTH"
+        ]
+      }
+    ],
+    "key_opportunities": [
+      "Bull 可能成立：2025-12-31 ROE为 14.56%",
+      "Bull 可能成立：2025-12-31 毛利率为 29.14%",
+      "短中期均线结构可能被解释为偏积极动能（Market Research）。"
+    ],
+    "uncertainties": [
+      "利润同比下滑是否阶段性，现有单期 Evidence 无法确认长期恶化。",
+      "客户结构与管理层指引在 Evidence Pack 中不足，限制空头因果链条完整性。",
+      "动量指标解读不稳定：2026-08-19 RSI(14)为 29.5575"
+    ]
+  },
+  "challenges": [
+    {
+      "challenge_id": "CH_BULL_01",
+      "challenger": "bull",
+      "target_claim_id": "BEAR_01",
+      "challenge_type": "interpretation_conflict",
+      "argument": "同比下滑证明短期增长承压，但不能单独证明长期盈利能力已经系统性恶化；高 ROE/高毛利率仍是并存事实，Bear 将单期增速外推为趋势恶化存在过度解读风险。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8"
+      ],
+      "strength": 0.78
+    },
+    {
+      "challenge_id": "CH_BULL_02",
+      "challenger": "bull",
+      "target_claim_id": "BEAR_02",
+      "challenge_type": "time_sensitivity",
+      "argument": "长期均线压力属于中长期结构描述；短中期均线若呈多头排列，则“全面趋势转弱”的结论在时间尺度上可能过宽。",
+      "evidence_ids": [
+        "derived_derived_601127_20260819_0d349d4b18",
+        "derived_derived_601127_20260819_226cac6ef6",
+        "derived_derived_601127_20260819_5666692101",
+        "derived_derived_601127_20260819_052c188e38"
+      ],
+      "strength": 0.7
+    },
+    {
+      "challenge_id": "CH_BULL_03",
+      "challenger": "bull",
+      "target_claim_id": "BEAR_03",
+      "challenge_type": "assumption",
+      "argument": "“风险未被消化”是假设性判断；估值与一致预期证据只能说明快照状态，不足以单独证伪缓冲能力，证据对空头结论的充分性不足。",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "ths_expectation_601127_2026_e6f6e866a9"
+      ],
+      "strength": 0.62
+    },
+    {
+      "challenge_id": "CH_BEAR_01",
+      "challenger": "bear",
+      "target_claim_id": "BULL_01",
+      "challenge_type": "interpretation_conflict",
+      "argument": "ROE/毛利率较高能够证明当前盈利能力较强，但不能单独证明盈利增长趋势已经改善；与 2025-12-31 归母净利润同比增长 0.18% 并存时，‘韧性’解释存在 interpretation conflict。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_94b6934679",
+        "derived_derived_601127_20251231_8f6bc3786a"
+      ],
+      "strength": 0.8
+    },
+    {
+      "challenge_id": "CH_BEAR_02",
+      "challenger": "bear",
+      "target_claim_id": "BULL_02",
+      "challenge_type": "scope",
+      "argument": "财务健康与现金流缓冲不能自动覆盖增长放缓对投资叙事的冲击；Bull 将‘抗风险缓冲’扩展为投资价值支持，存在范围外推。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5"
+      ],
+      "strength": 0.68
+    },
+    {
+      "challenge_id": "CH_BEAR_03",
+      "challenger": "bear",
+      "target_claim_id": "BULL_03",
+      "challenge_type": "evidence_insufficient",
+      "argument": "短中期均线/一致预期支持偏积极解读，但相对长期均线的压力证据未被充分纳入；Bull Case 对市场结构的取证范围可能不完整。",
+      "evidence_ids": [
+        "derived_derived_601127_20260819_052c188e38",
+        "akshare_fact_601127_20260819_239bd5aafa",
+        "derived_derived_601127_20260819_0d349d4b18"
+      ],
+      "strength": 0.72
+    }
+  ],
+  "rebuttals": [
+    {
+      "rebuttal_id": "RB_BULL_01",
+      "author": "bull",
+      "target_challenge_id": "CH_BEAR_01",
+      "response_type": "partially_accept",
+      "argument": "接受‘高 ROE 不等于增长已改善’的边界；但坚持：在相同 Evidence 下，盈利韧性与增速承压可以并存，Bull Claim 强调的是能力水平而非已改善的增长趋势。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_8f6bc3786a",
+        "derived_derived_601127_20251231_6b0d3cc53d",
+        "derived_derived_601127_20251231_5d9c5121f8"
+      ]
+    },
+    {
+      "rebuttal_id": "RB_BULL_02",
+      "author": "bull",
+      "target_challenge_id": "CH_BEAR_02",
+      "response_type": "reject",
+      "argument": "现金流/财务缓冲与增长叙事属于不同分析维度；Bull 未声称缓冲可替代增长，仅主张其构成支持性条件之一。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_7e09ef5a6d",
+        "akshare_fact_601127_20260331_b2f2f4ebc5"
+      ]
+    },
+    {
+      "rebuttal_id": "RB_BULL_03",
+      "author": "bull",
+      "target_challenge_id": "CH_BEAR_03",
+      "response_type": "partially_accept",
+      "argument": "接受长期均线应被纳入完整市场结构讨论；同时指出短中期结构证据仍然有效，缺失的是‘综合权重’，不是事实虚造。",
+      "evidence_ids": [
+        "derived_derived_601127_20260819_0d349d4b18",
+        "derived_derived_601127_20260819_052c188e38",
+        "derived_derived_601127_20260819_0d349d4b18"
+      ]
+    },
+    {
+      "rebuttal_id": "RB_BEAR_01",
+      "author": "bear",
+      "target_challenge_id": "CH_BULL_01",
+      "response_type": "partially_accept",
+      "argument": "接受单期增速不能单独证明‘永久性恶化’；但坚持：在增长证据转弱时，将高 ROE 解释为已对冲增长风险，证据并不充分。",
+      "evidence_ids": [
+        "derived_derived_601127_20251231_5d9c5121f8",
+        "derived_derived_601127_20251231_8f6bc3786a"
+      ]
+    },
+    {
+      "rebuttal_id": "RB_BEAR_02",
+      "author": "bear",
+      "target_challenge_id": "CH_BULL_02",
+      "response_type": "accept",
+      "argument": "接受时间尺度区分：短中期与长期结构应分开陈述；Bear Claim 可收窄为‘长期结构压力仍在’，而非否认短中期动能证据。",
+      "evidence_ids": [
+        "derived_derived_601127_20260819_052c188e38",
+        "derived_derived_601127_20260819_0d349d4b18"
+      ]
+    },
+    {
+      "rebuttal_id": "RB_BEAR_03",
+      "author": "bear",
+      "target_challenge_id": "CH_BULL_03",
+      "response_type": "partially_accept",
+      "argument": "接受‘风险未被消化’含假设成分；因此将该点降级为 uncertainties，而非已证伪的事实。",
+      "evidence_ids": [
+        "akshare_fact_601127_20260819_f0cf4975d9",
+        "ths_expectation_601127_2026_e6f6e866a9"
+      ]
+    }
+  ],
+  "evidence_weights": [
+    {
+      "evidence_id": "akshare_fact_601127_20260331_187a85840d",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_b2f2f4ebc5",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260331_f344d9f7f9",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_239bd5aafa",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "akshare_fact_601127_20260819_f0cf4975d9",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_5d9c5121f8",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_6b0d3cc53d",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_7e09ef5a6d",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_8f6bc3786a",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_94b6934679",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "derived_derived_601127_20251231_f8cff2e6b7",
+      "reliability": "high",
+      "freshness": "periodic",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.8,
+      "weight": 0.8
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_052c188e38",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_0d349d4b18",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_226cac6ef6",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_5666692101",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "derived_derived_601127_20260819_99c90bf1e6",
+      "reliability": "high",
+      "freshness": "very_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 1.0,
+      "weight": 1.0
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260804_48eee81ef6",
+      "reliability": "high",
+      "freshness": "historical_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.7,
+      "weight": 0.7
+    },
+    {
+      "evidence_id": "eastmoney_event_601127_20260808_ea4feef647",
+      "reliability": "high",
+      "freshness": "historical_recent",
+      "reliability_weight": 1.0,
+      "freshness_weight": 0.7,
+      "weight": 0.7
+    },
+    {
+      "evidence_id": "ths_expectation_601127_2026_e6f6e866a9",
+      "reliability": "medium_high",
+      "freshness": "periodic",
+      "reliability_weight": 0.9,
+      "freshness_weight": 0.8,
+      "weight": 0.72
+    }
+  ],
+  "debate_summary": {
+    "shared_facts": [
+      "2025-12-31 ROE为 14.56%",
+      "2025-12-31 毛利率为 29.14%",
+      "2025-12-31 归母净利润同比增长 0.18%",
+      "2025-12-31 营业收入同比增长 13.69%",
+      "2026-08-19 最新价格为 50.48 元",
+      "2026-08-19 MA250为 105.3671"
+    ],
+    "core_disagreements": [
+      "bull vs claim BEAR_01: interpretation_conflict — 同比下滑证明短期增长承压，但不能单独证明长期盈利能力已经系统性恶化；高 ROE/高毛利率仍是并存事实，Bear 将单期增速外推为趋势恶化存在过度解读风险。",
+      "bear vs claim BULL_01: interpretation_conflict — ROE/毛利率较高能够证明当前盈利能力较强，但不能单独证明盈利增长趋势已经改善；与 2025-12-31 归母净利润同比增长 0.18% 并存时，‘韧性’解释存在 interpretation conflict。"
+    ],
+    "unresolved_issues": [
+      "单期利润下滑是否阶段性，现有 Evidence 无法裁定。",
+      "高盈利能力与低增长并存时，投资叙事权重如何分配，留给 Final Analyst。",
+      "客户结构、管理层指引等关键商业细节仍不足。",
+      "当前 Research Context 缺少足够的客户结构证据，无法形成可靠判断。",
+      "利润同比下滑是否阶段性，现有单期 Evidence 无法确认长期恶化。"
+    ]
+  },
+  "execution": {
+    "parallel_claims": true,
+    "parallel_challenges": true,
+    "parallel_rebuttals": true,
+    "max_rounds": 2,
+    "rounds_executed": [
+      "claims",
+      "challenges",
+      "rebuttals"
+    ],
+    "started_at": "2026-08-19T07:37:55.154774+00:00",
+    "finished_at": "2026-08-19T07:37:55.155616+00:00",
+    "duration_ms": 0
+  },
+  "metadata": {}
+}

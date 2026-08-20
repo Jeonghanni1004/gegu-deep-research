@@ -1,0 +1,68 @@
+{
+  "total_runs": 1,
+  "openai_success": 1,
+  "grounded_fallback": 0,
+  "grounded_direct": 0,
+  "repair": 1,
+  "regenerate": 0,
+  "retry": 0,
+  "reject": 0,
+  "provider_failure": 0,
+  "provider_quota_failure": 0,
+  "validation_failure": 0,
+  "evidence_repair_failure": 0,
+  "json_parse_failure": 0,
+  "schema_sanitization_failure": 0,
+  "information_loss": 0,
+  "unsupported_external_fact": 0,
+  "contract_violation": 0,
+  "judgment_drift": 0,
+  "debate_state_drift": 0,
+  "primary_axis_drift": 0,
+  "assessment_drift": 0,
+  "acceptable": 1,
+  "aborted_quota": false,
+  "incomplete": false,
+  "abort_reason": "",
+  "failure_codes_before_fallback": {},
+  "failure_stages": {},
+  "run_attributions": [
+    {
+      "fixture": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "run": 1,
+      "openai_success": true,
+      "fallback": false,
+      "stage": null,
+      "failure_code": null,
+      "cause": null,
+      "action": "none",
+      "attempt": 1,
+      "retry_used": false,
+      "regenerate_used": false
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "E01_consumer_profit_strong_growth_weak_unresolved",
+      "signatures": [
+        "growth_vs_profitability|unresolved|unresolved|conditional|elevated||xt|preserved"
+      ],
+      "n_unique_signatures": 1,
+      "debate_states": [
+        "unresolved"
+      ],
+      "primary_axes": [
+        "growth_vs_profitability"
+      ],
+      "assessment_strengths": [
+        "unresolved"
+      ]
+    }
+  ],
+  "openai_success_rate": 1.0,
+  "acceptable_rate": 1.0,
+  "fallback_rate": 0.0,
+  "formal_adjudicable": true,
+  "round": "r10",
+  "locked_r8_success_baseline": 84
+}

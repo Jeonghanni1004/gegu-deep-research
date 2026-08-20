@@ -1,0 +1,86 @@
+{
+  "passed": 16,
+  "total": 16,
+  "results": [
+    {
+      "name": "r9_premature_is_transient",
+      "pass": true,
+      "detail": "premature"
+    },
+    {
+      "name": "r9_premature_stage_provider",
+      "pass": true,
+      "detail": "stage"
+    },
+    {
+      "name": "r9_402_is_quota",
+      "pass": true,
+      "detail": "402"
+    },
+    {
+      "name": "r9_402_not_transient",
+      "pass": true,
+      "detail": "no-retry"
+    },
+    {
+      "name": "r9_402_code_quota",
+      "pass": true,
+      "detail": "PROVIDER_QUOTA_FAILURE"
+    },
+    {
+      "name": "r9_premature_retry_success",
+      "pass": true,
+      "detail": "mode=openai posts=2"
+    },
+    {
+      "name": "r9_retry_success_counts_openai",
+      "pass": true,
+      "detail": "openai_success path"
+    },
+    {
+      "name": "r9_premature_retry_then_fallback",
+      "pass": true,
+      "detail": "posts=2 code=PROVIDER_FAILURE"
+    },
+    {
+      "name": "r9_402_no_retry_fallback",
+      "pass": true,
+      "detail": "posts=1 code=PROVIDER_QUOTA_FAILURE"
+    },
+    {
+      "name": "r9_e06_100pct_no_source_fail",
+      "pass": true,
+      "detail": "action=REGENERATE unresolved=['100%']"
+    },
+    {
+      "name": "r9_invented_pct_fail",
+      "pass": true,
+      "detail": "['99.99123%']"
+    },
+    {
+      "name": "r9_1347_1280_to_1347_13_fail_closed",
+      "pass": true,
+      "detail": "action=REGENERATE unresolved=['1347.13']"
+    },
+    {
+      "name": "r9_1347_1280_exact_pass",
+      "pass": true,
+      "detail": "action=REPAIR"
+    },
+    {
+      "name": "r9_trailing_zero_when_source_1347_13",
+      "pass": true,
+      "detail": "action=REPAIR unresolved=[]"
+    },
+    {
+      "name": "r9_trailing_zero_without_source_fail",
+      "pass": true,
+      "detail": "['1347.1300']"
+    },
+    {
+      "name": "r9_fabricated_still_unsupported",
+      "pass": true,
+      "detail": "UNSUPPORTED_EXTERNAL_FACT"
+    }
+  ]
+}
