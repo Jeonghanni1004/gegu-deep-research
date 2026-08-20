@@ -1,4 +1,4 @@
-"""Presentation-only insight synthesis for Deep Research Workspace.
+"""Presentation-only insight synthesis for 个股 Deep Research.
 
 Transforms frozen Evidence / Research artifacts into ranked research signals.
 Does not call LLMs, invent facts, or change Final Analyst judgment.

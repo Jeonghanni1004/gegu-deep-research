@@ -1,8 +1,8 @@
-# A-Share Deep Research Workspace
+# 个股 Deep Research
 
-面向 A 股的 **AI 深度研究工作台（Deep Research Workspace）**。
+面向 A 股**单只股票**的 AI 深度研究工作台（Stock Deep Research）。
 
-它不是自动生成「买入/卖出研报」的工具，而是把分散的财务、公告、新闻与辩论过程，组织成：
+定位很明确：我们做的是**个股 Deep Research**——不是行业周报，也不是自动买卖建议，而是针对一只股票，把分散的财务、公告、新闻与辩论过程，组织成：
 
 > **哪些变化值得关注 → 为什么可能相关 → 下一步该研究什么**
 
@@ -127,7 +127,7 @@ schema/             # JSON Schema
 ### 启动方式
 
 ```powershell
-cd ashare-deep-research
+cd ashare-deep-research   # 本地目录名可保持不变
 pip install -r requirements-web.txt
 $env:PYTHONPATH = "src;web"
 python web\server.py
@@ -261,4 +261,4 @@ python web\server.py
 # 3. 打开赛力斯或茅台 → 看 Research Brief 洞察层
 ```
 
-欢迎直接从 Brief 页的 **Research Signals** 开始体验产品差异。
+项目名：**个股 Deep Research**。从 Brief 页的 **Research Signals** 开始体验即可。

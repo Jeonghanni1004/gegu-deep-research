@@ -1,6 +1,6 @@
-# Deep Research Demo（前端工作台）
+# 个股 Deep Research · Demo（前端工作台）
 
-浏览器产品层：读取已冻结的 grounded artifacts，**默认不调用任何 LLM**。
+浏览器产品层：针对**单只个股**回放已冻结的 grounded artifacts，**默认不调用任何 LLM**。
 
 前端静态资源：`web/static/`（`index.html` / `app.js` / `styles.css`）。
 

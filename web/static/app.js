@@ -1,4 +1,4 @@
-/* Deep Research Workspace — presentation only; never mutates judgment. */
+/* 个股 Deep Research — presentation only; never mutates judgment. */
 
 const state = {
   snapshot: null,
@@ -319,7 +319,7 @@ function renderBriefTab(snapshot) {
   return `
     <div class="brief-hero">
       <div class="brief-id">
-        <span class="eyebrow">Deep Research Workspace</span>
+        <span class="eyebrow">个股 Deep Research</span>
         <h1>${escapeHtml(r.name || snapshot.name)} <span class="code">${escapeHtml(r.symbol || snapshot.symbol)}</span></h1>
         <p class="muted">截至 ${escapeHtml(r.as_of || snapshot.as_of)} · 研究方向组织，非交易建议</p>
       </div>

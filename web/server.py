@@ -26,7 +26,7 @@ from pydantic import BaseModel, Field
 from assemble import assemble_snapshot, list_studies, resolve_symbol
 
 app = FastAPI(
-    title="A-Share Deep Research Demo",
+    title="个股 Deep Research Demo",
     description="Single-stock research workspace over frozen Final Analyst artifacts. No LLM by default.",
     version="0.1.0",
 )
