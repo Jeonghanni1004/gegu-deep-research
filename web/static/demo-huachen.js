@@ -214,8 +214,11 @@ window.HUACHEN_DEMO.buildReportHtml = function buildReportHtml() {
 
     <section class="fact-board" aria-label="核心事实">
       <div class="fact-board-head">
-        <h2>核心事实</h2>
-        <p>可验证的数字与事件 · 点击可追溯到来源</p>
+        <div>
+          <span class="fact-board-badge">FACTS</span>
+          <h2>核心事实 · 9 条可验证结论</h2>
+        </div>
+        <p>看涨 / 看跌已标注 · 点击卡片追溯原始来源</p>
       </div>
       <div class="fact-board-grid">${factBoard}</div>
     </section>

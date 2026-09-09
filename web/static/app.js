@@ -321,10 +321,22 @@ function renderDocument() {
     $("#doc-meta").textContent = "";
     $("#doc-editor").innerHTML = "";
     $("#doc-badge").textContent = "分析文档";
+    $("#doc-editor").setAttribute("contenteditable", "true");
     return;
   }
+
+  // 华辰 Demo：始终用最新模板重绘，避免 localStorage 旧 HTML 看不到事实板
+  if (doc.demo === "huachen" && window.HUACHEN_DEMO?.buildReportHtml) {
+    doc.html = window.HUACHEN_DEMO.buildReportHtml();
+    doc.sources = window.HUACHEN_DEMO.sources;
+    $("#doc-editor").dataset.boundId = "";
+    $("#doc-editor").setAttribute("contenteditable", "false");
+  } else {
+    $("#doc-editor").setAttribute("contenteditable", "true");
+  }
+
   $("#doc-title").textContent = doc.title;
-  $("#doc-meta").textContent = `${doc.symbol || "综合"} · 更新于 ${formatTime(doc.updatedAt)} · 划词自动引用 · 点击来源查看证据`;
+  $("#doc-meta").textContent = `${doc.symbol || "综合"} · 更新于 ${formatTime(doc.updatedAt)} · 划词自动引用 · 点击事实/来源可追溯`;
   $("#doc-badge").textContent = "分析文档";
   if ($("#doc-editor").dataset.boundId !== chat.id) {
     $("#doc-editor").innerHTML = doc.html;
