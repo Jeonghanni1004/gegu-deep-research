@@ -3,9 +3,12 @@
 const STORAGE_KEY = "shenyan_chats_v1";
 
 const EXAMPLE_PROMPTS = [
+  {
+    label: "Demo 完整演示",
+    text: "帮我看看华辰科技最近三个月有什么值得关注的变化，重点分析一下有哪些看涨和看跌因素。",
+  },
   { label: "个股深研", text: "帮我深度研究 601127 赛力斯，梳理当前最值得关注的矛盾。" },
   { label: "财报解读", text: "概括贵州茅台最近一期财报的关键变化，并标出需要验证的假设。" },
-  { label: "多空对比", text: "用多空辩论视角对比赛力斯销量叙事与估值压力，给出证据链。" },
   { label: "风险扫描", text: "如果我准备建仓新能源整车，当前最需要警惕的三类风险是什么？" },
 ];
 
@@ -32,6 +35,7 @@ const state = {
   sidebarCollapsed: false,
   voiceListening: false,
   recognition: null,
+  busy: false,
 };
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -138,6 +142,7 @@ function setDocOpen(open) {
   if (!open) {
     hideSelBubble();
     hideDocCtx();
+    showReportView();
   }
 }
 
@@ -213,12 +218,27 @@ function renderMessages() {
     box.innerHTML = "";
     return;
   }
+
+  // Agent Run 进行中：保留实时 DOM，避免整页重绘打断动效
+  const liveRun = box.querySelector(".agent-run:not(.complete)");
+  if (liveRun && chat.messages.some((m) => m.role === "agent-run" && m.live)) {
+    return;
+  }
+
   box.innerHTML = chat.messages
     .map((m) => {
       if (m.role === "typing") {
         return `<div class="msg assistant" data-typing="1">
           <div class="msg-avatar">深</div>
           <div class="msg-body"><div class="bubble typing"><span></span><span></span><span></span></div></div>
+        </div>`;
+      }
+      if (m.role === "agent-run") {
+        return `<div class="msg assistant" data-agent-run="${m.id || ""}">
+          <div class="msg-avatar">深</div>
+          <div class="msg-body msg-body-wide">
+            ${m.html || `<div class="agent-run-slot" data-run-id="${m.id}"></div>`}
+          </div>
         </div>`;
       }
       const quote = m.quote
@@ -246,15 +266,24 @@ function renderMessages() {
               .map((s) => `<button type="button" class="suggest-btn" data-q="${escapeHtml(s)}">${escapeHtml(s)}</button>`)
               .join("")}</div>`
           : "";
+      const quick =
+        m.quickActions?.length
+          ? `<div class="suggestions"><div class="chip-label">继续分析</div>${m.quickActions
+              .map((s) => `<button type="button" class="suggest-btn" data-q="${escapeHtml(s)}">${escapeHtml(s)}</button>`)
+              .join("")}</div>`
+          : "";
+      const evidence = m.evidenceSourceId
+        ? `<button type="button" class="evidence-link" data-source-id="${escapeHtml(m.evidenceSourceId)}">${escapeHtml(m.evidenceLabel || "查看相关证据")}</button>`
+        : "";
       const docBtn = m.hasDoc
-        ? `<button type="button" class="doc-open-btn" data-open-doc="1">📄 打开分析文档 · 划词自动引用提问</button>`
+        ? `<button type="button" class="doc-open-btn" data-open-doc="1">📄 打开分析报告 · 点击来源可查看证据</button>`
         : "";
       return `<div class="msg ${m.role}">
         <div class="msg-avatar">${m.role === "user" ? "你" : "深"}</div>
         <div class="msg-body">
           ${quote}
           <div class="bubble">${renderRichText(m.content)}${attaches}</div>
-          ${docBtn}${follow}${suggest}
+          ${evidence}${docBtn}${follow}${suggest}${quick}
         </div>
       </div>`;
     })
@@ -265,15 +294,17 @@ function renderMessages() {
   });
   box.querySelectorAll("[data-open-doc]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      renderDocument();
+      showReportView();
       setDocOpen(true);
     });
+  });
+  box.querySelectorAll("[data-source-id]").forEach((btn) => {
+    btn.addEventListener("click", () => openSourceEvidence(btn.dataset.sourceId));
   });
   box.querySelectorAll("a[data-cite]").forEach((a) => {
     a.addEventListener("click", (e) => {
       e.preventDefault();
-      toast(`引用锚点：${a.dataset.cite}`);
-      renderDocument();
+      showReportView();
       setDocOpen(true);
     });
   });
@@ -289,14 +320,73 @@ function renderDocument() {
     $("#doc-title").textContent = "未命名分析";
     $("#doc-meta").textContent = "";
     $("#doc-editor").innerHTML = "";
+    $("#doc-badge").textContent = "分析文档";
     return;
   }
   $("#doc-title").textContent = doc.title;
-  $("#doc-meta").textContent = `${doc.symbol || "综合"} · 更新于 ${formatTime(doc.updatedAt)} · 划词自动引用到对话框`;
+  $("#doc-meta").textContent = `${doc.symbol || "综合"} · 更新于 ${formatTime(doc.updatedAt)} · 划词自动引用 · 点击来源查看证据`;
+  $("#doc-badge").textContent = "分析文档";
   if ($("#doc-editor").dataset.boundId !== chat.id) {
     $("#doc-editor").innerHTML = doc.html;
     $("#doc-editor").dataset.boundId = chat.id;
   }
+  bindReportSourceClicks();
+}
+
+function bindReportSourceClicks() {
+  const editor = $("#doc-editor");
+  editor.querySelectorAll("[data-source-id]").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openSourceEvidence(btn.dataset.sourceId);
+    });
+  });
+}
+
+function showReportView() {
+  const editor = $("#doc-editor");
+  const sourceView = $("#source-view");
+  sourceView.classList.add("hidden");
+  editor.classList.remove("hidden");
+  $("#btn-back-report").classList.add("hidden");
+  $("#doc-badge").textContent = "分析文档";
+  renderDocument();
+}
+
+function openSourceEvidence(sourceId) {
+  const chat = activeChat();
+  const sources = chat?.document?.sources || window.HUACHEN_DEMO?.sources || {};
+  const src = sources[sourceId];
+  if (!src) {
+    toast("未找到对应来源", true);
+    return;
+  }
+  setDocOpen(true);
+  $("#doc-editor").classList.add("hidden");
+  $("#btn-back-report").classList.remove("hidden");
+  $("#doc-badge").textContent = "证据";
+  $("#doc-title").textContent = src.shortTitle || src.title;
+  $("#doc-meta").textContent = `${src.type} · ${src.date}`;
+  const extracted = (src.extracted || [])
+    .map((x) => `<li class="fact-extract-item"><span class="fact-dot"></span>${escapeHtml(x)}</li>`)
+    .join("");
+  $("#source-view").classList.remove("hidden");
+  $("#source-view").innerHTML = `
+    <div class="source-card">
+      <p class="source-label">来源</p>
+      <h2>${escapeHtml(src.title)}</h2>
+      <p class="source-meta-line">日期：${escapeHtml(src.date)} · 信息类型：${escapeHtml(src.type)}</p>
+      <h3>原始内容</h3>
+      <div class="source-raw">${escapeHtml(src.content).replaceAll("\n", "<br/>")}</div>
+      <h3>AI 白话解释</h3>
+      <p>${escapeHtml(src.aiExplanation)}</p>
+      <h3>AI 从这份材料中提取的事实</h3>
+      <ul class="fact-extract-list">${extracted}</ul>
+      <h3>这些信息被用于</h3>
+      <p class="source-used"><strong>${escapeHtml(src.usedFor || "—")}</strong></p>
+      <p class="source-chain">报告结论 ← AI 分析 ← 事实 ← 原始来源</p>
+    </div>`;
 }
 
 function formatTime(ts) {
@@ -390,13 +480,17 @@ function clearQuote() {
   state.quote = null;
   renderQuoteBar();
   const input = $("#composer-input");
-  input.placeholder = "输入研究问题，例如：分析赛力斯的核心矛盾…";
+  input.placeholder = "试试：帮我看看华辰科技最近三个月的看涨和看跌因素…";
 }
 
 async function sendMessage(textOverride) {
   const input = $("#composer-input");
   const text = (textOverride ?? input.value).trim();
   if (!text && !state.attachments.length) return;
+  if (state.busy) {
+    toast("研究进行中，请稍候…");
+    return;
+  }
 
   const chat = ensureChat();
   const quote = state.quote;
@@ -414,7 +508,7 @@ async function sendMessage(textOverride) {
     chat.title = text.slice(0, 22) + (text.length > 22 ? "…" : "");
   }
 
-  chat.messages = chat.messages.filter((m) => m.role !== "typing");
+  chat.messages = chat.messages.filter((m) => m.role !== "typing" && !(m.role === "agent-run" && m.live));
   chat.messages.push({
     role: "user",
     content: text || "（已上传附件）",
@@ -423,8 +517,37 @@ async function sendMessage(textOverride) {
     ts: Date.now(),
   });
   chat.updatedAt = Date.now();
-  chat.messages.push({ role: "typing" });
   saveStore();
+
+  // —— 华辰 Demo 完整投研流程 ——
+  if (window.AgentDemo?.isHuachenQuestion(text)) {
+    await runHuachenFlow(chat);
+    return;
+  }
+
+  // —— Demo 追问（报告已生成后） ——
+  const fu = window.AgentDemo?.matchFollowup?.(text);
+  if (fu && chat.document?.demo === "huachen") {
+    chat.messages.push({ role: "typing" });
+    renderAll();
+    await sleep(600 + Math.random() * 400);
+    chat.messages = chat.messages.filter((m) => m.role !== "typing");
+    chat.messages.push({
+      role: "assistant",
+      content: fu.content,
+      evidenceSourceId: fu.evidenceSourceId,
+      evidenceLabel: fu.evidenceLabel,
+      quickActions: fu.quickActions,
+      followups: fu.quickActions ? null : window.HUACHEN_DEMO.defaultFollowups.filter((q) => q !== text).slice(0, 3),
+      ts: Date.now(),
+    });
+    chat.updatedAt = Date.now();
+    saveStore();
+    renderAll();
+    return;
+  }
+
+  chat.messages.push({ role: "typing" });
   renderAll();
 
   const reply = await generateReply(text, chat, quote, attachments);
@@ -438,8 +561,54 @@ async function sendMessage(textOverride) {
   saveStore();
   renderAll();
   if (reply.document) {
+    showReportView();
     setDocOpen(true);
-    renderDocument();
+  }
+}
+
+async function runHuachenFlow(chat) {
+  state.busy = true;
+  const runId = uid();
+  chat.messages.push({ role: "agent-run", id: runId, live: true, ts: Date.now() });
+  chat.title = "华辰科技 · 近三月投研";
+  saveStore();
+  showHomeOrChat();
+  renderHistory();
+  renderMessages();
+
+  const slot = $(`.agent-run-slot[data-run-id="${runId}"]`);
+  const mount = slot?.parentElement || $(`[data-agent-run="${runId}"] .msg-body-wide`) || $("#messages");
+  if (slot) slot.remove();
+
+  try {
+    const result = await window.AgentDemo.runHuachenResearch(mount);
+    const runMsg = chat.messages.find((m) => m.id === runId);
+    if (runMsg) {
+      runMsg.live = false;
+      runMsg.html = mount.querySelector(".agent-run")?.outerHTML || "";
+    }
+    chat.messages.push({
+      role: "assistant",
+      content: result.summary,
+      hasDoc: true,
+      followups: result.followups,
+      ts: Date.now(),
+    });
+    chat.document = result.document;
+    $("#doc-editor").dataset.boundId = "";
+    chat.updatedAt = Date.now();
+    saveStore();
+    renderAll();
+    showReportView();
+    setDocOpen(true);
+  } catch (err) {
+    console.error(err);
+    toast("Demo 执行出错", true);
+    chat.messages = chat.messages.filter((m) => m.id !== runId);
+    saveStore();
+    renderAll();
+  } finally {
+    state.busy = false;
   }
 }
 
@@ -911,6 +1080,7 @@ function bindEvents() {
     if (state.docOpen) renderDocument();
   });
   $("#btn-close-doc").addEventListener("click", () => setDocOpen(false));
+  $("#btn-back-report").addEventListener("click", () => showReportView());
   $("#btn-clear-quote").addEventListener("click", clearQuote);
 
   $("#composer").addEventListener("submit", (e) => {

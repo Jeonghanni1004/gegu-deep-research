@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/static/styles.css?v=agent5" />
+  <link rel="stylesheet" href="/static/styles.css?v=demo2" />
 </head>
 <body>
   <div id="app" class="app">
@@ -54,7 +54,6 @@
         </div>
       </header>
 
-      <!-- 空态首页 -->
       <section id="view-home" class="chat-scroll view-home">
         <div class="home-hero">
           <div class="home-brand">深研</div>
@@ -64,20 +63,20 @@
         </div>
       </section>
 
-      <!-- 对话消息 -->
       <section id="view-chat" class="chat-scroll view-chat hidden" aria-live="polite">
         <div class="messages" id="messages"></div>
       </section>
     </main>
 
-    <!-- 右侧：分析文档 -->
+    <!-- 右侧：分析文档 / 证据 -->
     <aside id="doc-panel" class="doc-panel hidden" aria-label="分析文档">
       <div class="doc-toolbar">
         <div class="doc-toolbar-left">
-          <span class="doc-badge">分析文档</span>
+          <span class="doc-badge" id="doc-badge">分析文档</span>
           <span id="doc-title" class="doc-title">未命名分析</span>
         </div>
         <div class="doc-toolbar-right">
+          <button type="button" class="btn-ghost sm hidden" id="btn-back-report">返回报告</button>
           <button type="button" class="icon-btn" id="btn-close-doc" aria-label="关闭文档面板">×</button>
         </div>
       </div>
@@ -89,9 +88,9 @@
         spellcheck="false"
         data-placeholder="分析文档将在此生成，可直接编辑…"
       ></div>
+      <div id="source-view" class="source-view hidden" aria-label="证据详情"></div>
     </aside>
 
-    <!-- 底部输入：始终固定在对话+文档下方，划词后可直接提问 -->
     <footer class="composer-wrap" id="composer-wrap">
       <div id="quote-bar" class="quote-bar hidden">
         <div class="quote-bar-body">
@@ -118,30 +117,30 @@
         <textarea
           id="composer-input"
           rows="1"
-          placeholder="输入研究问题，例如：分析赛力斯的核心矛盾…"
+          placeholder="试试：帮我看看华辰科技最近三个月的看涨和看跌因素…"
           enterkeyhint="send"
         ></textarea>
         <button type="submit" class="btn-send" id="btn-send" aria-label="发送" disabled>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </button>
       </form>
-      <p class="composer-hint">支持文本 / 语音 · 可上传研报附件与图片 · Enter 发送，Shift+Enter 换行</p>
+      <p class="composer-hint">Demo 可用「华辰科技」完整演示 · Enter 发送，Shift+Enter 换行</p>
     </footer>
   </div>
 
-  <!-- 划词浮层：自动引用后仅保留复制 -->
   <div id="sel-bubble" class="sel-bubble hidden" role="toolbar" aria-label="划词操作">
     <span class="sel-bubble-hint">已引用</span>
     <button type="button" class="sel-bubble-btn" data-action="copy">复制</button>
   </div>
 
-  <!-- 文档右键菜单 -->
   <div id="doc-ctx" class="doc-ctx hidden" role="menu" aria-label="文档菜单">
     <button type="button" class="doc-ctx-item" data-action="copy" role="menuitem">复制</button>
     <button type="button" class="doc-ctx-item" data-action="copy-all" role="menuitem">复制全文</button>
   </div>
 
   <div id="toast" class="toast hidden" role="status"></div>
-  <script src="/static/app.js?v=agent5"></script>
+  <script src="/static/demo-huachen.js?v=demo2"></script>
+  <script src="/static/agent-demo.js?v=demo2"></script>
+  <script src="/static/app.js?v=demo2"></script>
 </body>
 </html>
