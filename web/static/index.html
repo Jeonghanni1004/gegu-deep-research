@@ -3,97 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>个股 Deep Research</title>
-  <link rel="stylesheet" href="/static/styles.css?v=insight2" />
+  <title>深研 · AI 智能投研助手</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css?v=agent5" />
 </head>
 <body>
-  <div id="app">
-    <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark"></span>
+  <div id="app" class="app">
+    <!-- 左侧：历史对话 -->
+    <aside id="sidebar" class="sidebar" aria-label="历史对话">
+      <div class="sidebar-top">
+        <button type="button" class="icon-btn" id="btn-toggle-sidebar" title="收起侧边栏" aria-label="收起侧边栏">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+        </button>
+        <button type="button" class="btn-new-chat" id="btn-new-chat">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          <span>新对话</span>
+        </button>
+      </div>
+      <div class="sidebar-brand">
+        <span class="brand-mark" aria-hidden="true"></span>
         <div>
-          <div class="brand-title">个股 Deep Research</div>
-          <div class="brand-sub">单只股票深度研究 · Evidence → Debate → Final Analyst</div>
+          <div class="brand-name">深研</div>
+          <div class="brand-tag">AI 智能投研助手</div>
         </div>
       </div>
-      <div class="top-meta" id="top-meta">Replay · 不调用 LLM</div>
-    </header>
-
-    <main>
-      <section id="view-home" class="view active">
-        <div class="hero">
-          <p class="eyebrow">个股 Deep Research</p>
-          <h1>输入一只股票，观察完整研究过程</h1>
-          <p class="lede">
-            针对单只个股完成深度研究后，你先看 Brief 与核心矛盾，再追溯证据与多空争议——不是自动生成一篇研报。
-          </p>
-          <form id="search-form" class="search-card" autocomplete="off">
-            <label for="query">股票代码 / 名称</label>
-            <div class="search-row">
-              <input id="query" name="query" placeholder="例如：601127 / 赛力斯 · 600519 / 贵州茅台" value="601127" />
-              <button type="submit" class="btn-primary">开始深度研究</button>
-            </div>
-            <p class="hint">Replay 模式：读取本地 grounded artifacts，不发起新的模型调用</p>
-          </form>
-          <div class="chip-row" id="example-chips"></div>
+      <nav class="history-list" id="history-list" aria-label="对话列表"></nav>
+      <div class="sidebar-foot">
+        <div class="user-chip">
+          <span class="avatar">研</span>
+          <span>投研工作台</span>
         </div>
+      </div>
+    </aside>
 
-        <div class="panel">
-          <div class="panel-head">
-            <h2>可回放研究</h2>
-            <span class="muted">本地 artifacts</span>
-          </div>
-          <div id="study-list" class="study-list"></div>
+    <button type="button" class="sidebar-reopen hidden" id="btn-reopen-sidebar" title="展开侧边栏" aria-label="展开侧边栏">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+    </button>
+
+    <!-- 中间：对话区 -->
+    <main class="main" id="main">
+      <header class="main-bar">
+        <div class="main-bar-title" id="chat-title">新对话</div>
+        <div class="main-bar-actions">
+          <button type="button" class="btn-ghost" id="btn-toggle-doc" title="分析文档">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+            <span>分析文档</span>
+          </button>
         </div>
-      </section>
+      </header>
 
-      <section id="view-progress" class="view">
-        <div class="progress-layout">
-          <aside class="team-rail">
-            <h2>研究团队</h2>
-            <ul id="stage-list" class="stage-list"></ul>
-            <div class="status-box" id="status-box">
-              <div class="status-label">当前 Agent</div>
-              <div class="status-value" id="status-agent">—</div>
-              <div class="status-note" id="status-note">准备启动</div>
-            </div>
-            <div class="mini-stats" id="mini-stats"></div>
-          </aside>
-          <div class="progress-main">
-            <h1 id="progress-title">分析进行中</h1>
-            <p class="lede" id="progress-lede">正在回放已完成的研究链路…</p>
-            <ol id="timeline" class="timeline"></ol>
-          </div>
+      <!-- 空态首页 -->
+      <section id="view-home" class="chat-scroll view-home">
+        <div class="home-hero">
+          <div class="home-brand">深研</div>
+          <h1 id="greeting" class="greeting">你好，今天想研究哪只标的？</h1>
+          <p class="greeting-sub">输入股票代码或研究问题，我会给出可编辑的分析文档，并支持追问与引用提问。</p>
+          <div class="prompt-grid" id="prompt-grid"></div>
         </div>
       </section>
 
-      <section id="view-report" class="view">
-        <div class="workspace-shell">
-          <aside class="pipeline-rail" id="pipeline-rail"></aside>
-          <div class="workspace-main">
-            <div class="report-toolbar">
-              <button type="button" class="btn-ghost" id="btn-home">← Workspace</button>
-              <div id="report-identity" class="report-identity"></div>
-            </div>
-            <nav class="tabs" id="tabs">
-              <button type="button" data-tab="brief" class="tab active">Research Brief</button>
-              <button type="button" data-tab="judgment" class="tab">Final Judgment</button>
-              <button type="button" data-tab="evidence" class="tab">Evidence</button>
-              <button type="button" data-tab="debate" class="tab">Debate</button>
-              <button type="button" data-tab="details" class="tab">Details</button>
-            </nav>
-            <div id="tab-brief" class="tab-pane active"></div>
-            <div id="tab-judgment" class="tab-pane"></div>
-            <div id="tab-evidence" class="tab-pane"></div>
-            <div id="tab-debate" class="tab-pane"></div>
-            <div id="tab-details" class="tab-pane"></div>
-          </div>
-        </div>
+      <!-- 对话消息 -->
+      <section id="view-chat" class="chat-scroll view-chat hidden" aria-live="polite">
+        <div class="messages" id="messages"></div>
       </section>
     </main>
 
-    <div id="toast" class="toast hidden"></div>
+    <!-- 右侧：分析文档 -->
+    <aside id="doc-panel" class="doc-panel hidden" aria-label="分析文档">
+      <div class="doc-toolbar">
+        <div class="doc-toolbar-left">
+          <span class="doc-badge">分析文档</span>
+          <span id="doc-title" class="doc-title">未命名分析</span>
+        </div>
+        <div class="doc-toolbar-right">
+          <button type="button" class="icon-btn" id="btn-close-doc" aria-label="关闭文档面板">×</button>
+        </div>
+      </div>
+      <div class="doc-meta" id="doc-meta"></div>
+      <div
+        id="doc-editor"
+        class="doc-editor"
+        contenteditable="true"
+        spellcheck="false"
+        data-placeholder="分析文档将在此生成，可直接编辑…"
+      ></div>
+    </aside>
+
+    <!-- 底部输入：始终固定在对话+文档下方，划词后可直接提问 -->
+    <footer class="composer-wrap" id="composer-wrap">
+      <div id="quote-bar" class="quote-bar hidden">
+        <div class="quote-bar-body">
+          <span class="quote-label">引用</span>
+          <span id="quote-text" class="quote-text"></span>
+        </div>
+        <button type="button" class="icon-btn" id="btn-clear-quote" aria-label="取消引用">×</button>
+      </div>
+      <div id="attach-preview" class="attach-preview hidden"></div>
+      <form id="composer" class="composer" autocomplete="off">
+        <div class="composer-tools">
+          <label class="tool-btn" title="上传附件" aria-label="上传附件">
+            <input type="file" id="file-attach" multiple hidden accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.md" />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+          </label>
+          <label class="tool-btn" title="上传图片" aria-label="上传图片">
+            <input type="file" id="file-image" multiple hidden accept="image/*" />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          </label>
+          <button type="button" class="tool-btn" id="btn-voice" title="语音输入" aria-label="语音输入" aria-pressed="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+          </button>
+        </div>
+        <textarea
+          id="composer-input"
+          rows="1"
+          placeholder="输入研究问题，例如：分析赛力斯的核心矛盾…"
+          enterkeyhint="send"
+        ></textarea>
+        <button type="submit" class="btn-send" id="btn-send" aria-label="发送" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+      <p class="composer-hint">支持文本 / 语音 · 可上传研报附件与图片 · Enter 发送，Shift+Enter 换行</p>
+    </footer>
   </div>
-  <script src="/static/app.js?v=insight2"></script>
+
+  <!-- 划词浮层：自动引用后仅保留复制 -->
+  <div id="sel-bubble" class="sel-bubble hidden" role="toolbar" aria-label="划词操作">
+    <span class="sel-bubble-hint">已引用</span>
+    <button type="button" class="sel-bubble-btn" data-action="copy">复制</button>
+  </div>
+
+  <!-- 文档右键菜单 -->
+  <div id="doc-ctx" class="doc-ctx hidden" role="menu" aria-label="文档菜单">
+    <button type="button" class="doc-ctx-item" data-action="copy" role="menuitem">复制</button>
+    <button type="button" class="doc-ctx-item" data-action="copy-all" role="menuitem">复制全文</button>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="/static/app.js?v=agent5"></script>
 </body>
 </html>

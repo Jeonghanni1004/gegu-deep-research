@@ -1,6 +1,6 @@
-# 个股 Deep Research · Demo（前端工作台）
+# 深研 · AI 智能投研助手（前端）
 
-浏览器产品层：针对**单只个股**回放已冻结的 grounded artifacts，**默认不调用任何 LLM**。
+浏览器产品层：对话形态的投研 Agent 工作台。
 
 前端静态资源：`web/static/`（`index.html` / `app.js` / `styles.css`）。
 
@@ -15,26 +15,17 @@ python web\server.py
 
 浏览器打开：http://127.0.0.1:8765
 
-## 当前可回放标的
+## 产品动线
 
-- `600519` 贵州茅台
-- `601127` 赛力斯
+1. **首页**：左侧历史对话（可收起/展开）；中间问候语 + 示例提问；底部对话框（文本 / 语音 / 附件 / 图片）
+2. **对话中**：助手回复可内嵌链接与证据锚点；消息下方提供「追问建议」与「建议回答」
+3. **分析文档**：右侧打开后中间对话框仍保留；文档内划词会自动写入底部引用条，右键可复制
 
-## Brief 页会看到什么
+## 与后端的关系
 
-- **当前最值得研究的变化**（Insight，非模板投资结论）
-- **Research Signals** Top 3–5
-- **Fundamental Picture** / **External Signals**
-- **Where They Might Connect**
-- 可跳转到 Evidence / Debate / Final Judgment
-
-> 改了 Python 展示层后需重启 `server.py`；前端静态文件建议硬刷新。
-
-## 行为说明
-
-- `POST /api/research/start` 仅支持 `mode=replay`
-- 前端动画是对已有 pipeline 的回放，不重新跑 Agent，不改写 Final Analyst 判断
-- Insight Layer（`insight_layer.py`）只做呈现层排序与组织
+- 普通问题：前端模拟助手回复，并生成可编辑分析文档（本地演示）
+- 提到已有 artifacts 标的（如 `600519` / `601127`）：会请求 `GET /api/research/{symbol}`，把 grounded 研究写入右侧文档
+- 历史对话保存在浏览器 `localStorage`
 
 ## 自检（无 API）
 
